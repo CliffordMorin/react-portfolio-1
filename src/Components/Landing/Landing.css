@@ -1,0 +1,51 @@
+.Landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  color: black;
+}
+
+.landing-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 223, 202);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.landing-description {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.contact-button {
+  position: absolute;
+  top: 80vh;
+  width: fit-content;
+  border-radius: 50%;
+  text-align: center;
+  justify-self: end;
+  background-color: white;
+}

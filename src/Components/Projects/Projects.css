@@ -1,0 +1,15 @@
+.Projects {
+  text-align: center;
+}
+
+.projects-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}

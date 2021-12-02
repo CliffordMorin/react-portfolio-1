@@ -1,0 +1,14 @@
+.Skills {
+  width: fit-content;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.skills-icon {
+  padding: 10px;
+}
