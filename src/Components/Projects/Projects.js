@@ -65,7 +65,7 @@ const Projects = (props) => {
         {
           title: "_C32F's Comedy Show",
           description:
-            "A joke api fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by changing the topics, playing background music, and changing the robot's name.",
+            "A joke app using two apis. The user is able to interact with the page by changing the topics, playing background music, and changing the robot's name.",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           linkText: "Live Demo",
@@ -127,7 +127,7 @@ const Projects = (props) => {
         {
           title: "_C32Fのコメディショー",
           description:
-            "ジョークテキストを取得し、APIでジョークテキストを再生します。ユーザーはページにボタンで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
+            "2つのAPIを使用して、ユーザーがページを変更することで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           linkText: "ウェブサイト",

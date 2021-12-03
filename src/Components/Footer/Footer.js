@@ -4,10 +4,12 @@ import SocialLinks from "../UI/SocialLinks";
 const Footer = (props) => {
   let content = {
     English: {
-      description: "Zach Stone 2021 .... ",
+      description:
+        "I made this portfolio using React, React-Router, and Material-UI.",
     },
     Japanese: {
-      description: "ザック・ストーン 2021 .... ",
+      description:
+        "このポートフォリオはReact, React-Router, Material-UIを使用して作成されました。",
     },
   };
 

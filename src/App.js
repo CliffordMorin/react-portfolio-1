@@ -1,17 +1,17 @@
 import "./App.css";
-
-import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { connect } from "react-redux";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App(props) {
   return (
     <div className="App">
-      <Header language={props.language} />
+      {/* <Header language={props.language} /> */}
+      <Navbar language={props.language} />
       <Landing language={props.language} />
       <About language={props.language} />
       <Projects language={props.language} />
