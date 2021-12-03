@@ -51,7 +51,7 @@ const Header = (props) => {
       <button className="nav-button" onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}
       </button>
-      <div className="nav-button" className="flag-div">
+      <div className="flag-div nav-button">
         {props.language === "English" ? (
           <div className="flag-div">
             <img
