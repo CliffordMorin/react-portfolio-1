@@ -30,7 +30,7 @@ My portfolio website
 
 ## Links
 
-- GH-Pages demo site link: (https://zachinjapan.github.io/react-portfolio)
+- GH-Pages demo site link: (https://zstone.dev)
 - Github Repository URL: (https://github.com/zachinjapan/react-portfolio)
 
 ## Technologies Used
