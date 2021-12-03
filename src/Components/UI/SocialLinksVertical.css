@@ -6,7 +6,11 @@
   align-items: center;
   flex-direction: column;
   width: 75px;
-  height: 35%;
+  height: fit-content;
+}
+
+.social-links-vertical a {
+  padding: 10px;
 }
 
 @media (max-width: 768px) {

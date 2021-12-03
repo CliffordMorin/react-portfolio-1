@@ -1,11 +1,10 @@
 .Skills {
-  width: fit-content;
   margin: auto;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: left;
   padding: 10px;
 }
 

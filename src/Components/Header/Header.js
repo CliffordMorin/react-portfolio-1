@@ -39,22 +39,21 @@ const Header = (props) => {
 
   return (
     <nav className="header">
-      <button onClick={scrollToTop}>
+      <button className="nav-button" onClick={scrollToTop}>
         {props.language === "English" ? "Home" : "ホーム"}
       </button>
-      <button onClick={scrollToAbout}>
+      <button className="nav-button" onClick={scrollToAbout}>
         {props.language === "English" ? "About" : "私について"}
       </button>
-      <button onClick={scrollToProjects}>
+      <button className="nav-button" onClick={scrollToProjects}>
         {props.language === "English" ? "Projects" : "プロジェクト"}
       </button>
-      <button onClick={scrollToContact}>
+      <button className="nav-button" onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}
       </button>
-      <div className="flag-div">
+      <div className="nav-button" className="flag-div">
         {props.language === "English" ? (
           <div className="flag-div">
-            <span> JP </span>
             <img
               className="flag"
               src={japan}
@@ -64,7 +63,6 @@ const Header = (props) => {
           </div>
         ) : (
           <div className="Japanese">
-            <span> EN </span>
             <img
               className="flag"
               src={america}

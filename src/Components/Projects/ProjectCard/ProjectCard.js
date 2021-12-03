@@ -4,7 +4,12 @@ import Button from "@mui/material/Button";
 const ProjectCard = (props) => {
   return (
     <div className="project-card">
-      <img className="project-card-img" src={props.image} alt="project" />
+      <img
+        className="project-card-img"
+        loading="lazy"
+        src={props.image}
+        alt="project"
+      />
       <div className="project-card-info">
         <h3>{props.title}</h3>
         <div className="project-description">

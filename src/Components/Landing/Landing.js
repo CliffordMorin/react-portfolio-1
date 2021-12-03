@@ -17,7 +17,7 @@ const Landing = (props) => {
     },
     Japanese: {
       title: "ザック・ストーン",
-      description: "// ウエブ開発者 //",
+      description: "// ウエブデベロッパー //",
     },
   };
 
@@ -35,10 +35,9 @@ const Landing = (props) => {
           <h3 className="landing-description">{content.description}</h3>
           <SocialLinksVertical />
         </div>
-        <button className="contact-button" onClick={scrollToAbout}>
-          {" "}
-          <MdKeyboardArrowDown />
-        </button>
+        <div className="contact-button">
+          <MdKeyboardArrowDown onClick={scrollToAbout} />
+        </div>
       </div>
     </IconContext.Provider>
   );

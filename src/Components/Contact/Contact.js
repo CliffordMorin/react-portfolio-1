@@ -1,6 +1,8 @@
 import "./Contact.css";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const Contact = (props) => {
   const [disabled, setDisabled] = useState(true);
@@ -14,10 +16,16 @@ const Contact = (props) => {
     English: {
       title: "Contact",
       description: "Software Engineer",
+      name: "Name",
+      email: "Email",
+      message: "Message",
     },
     Japanese: {
       title: "お問い合わせ",
       description: "ソフトエンジニア",
+      name: "名前",
+      email: "メールアドレス",
+      message: "メッセージ",
     },
   };
 
@@ -35,18 +43,38 @@ const Contact = (props) => {
           action="https://getform.io/f/17aa9ac3-5398-4d30-9798-3d17b1813f83"
           method="POST"
         >
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea name="message" placeholder="Message" required></textarea>
+          <TextField
+            type="text"
+            name="name"
+            placeholder={content.name}
+            required
+          />
+          <TextField
+            type="email"
+            name="email"
+            placeholder={content.email}
+            required
+          />
+          <TextField
+            name="message"
+            placeholder={content.message}
+            required
+          ></TextField>
           <ReCAPTCHA
             className="g-recaptcha"
             data-theme="light"
             onChange={handleContactButton}
             sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
           ></ReCAPTCHA>
-          <button id="submitBtn" type="submit" disabled={disabled}>
+          <Button
+            id="submitBtn"
+            type="submit"
+            disabled={disabled}
+            variant="outlined"
+            color="primary"
+          >
             Send
-          </button>
+          </Button>
         </form>
       </div>
     </div>

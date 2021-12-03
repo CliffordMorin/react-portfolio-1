@@ -9,6 +9,7 @@ import castles from "../../images/work/castles.png";
 
 const Projects = (props) => {
   let content = {
+    mainTitle: "Projects",
     English: {
       projects: [
         {
@@ -68,56 +69,54 @@ const Projects = (props) => {
       ],
     },
     Japanese: {
+      mainTitle: "プロジェクト",
       projects: [
         {
-          title: "Quote Quiz",
+          title: "引用クイズ",
           description:
-            "A React app using a famous quotes api and React Redux to create an interactive game for the user.",
+            "Reactアプリケーションで、名家の引用を使用し、React Reduxを使用してインタラクティブなゲームを作成します。",
           image: quote,
           link: "https://quotequiz.netlify.app",
           github: "https://github.com/zachinjapan/quotes",
           tags: ["React", "Redux", "API", "Netlify"],
         },
         {
-          title: "Do I Need A Jacket?",
+          title: "ジャケットが必要ですか？",
           description:
-            "An application to view the current live weather based on zipcode and determines If the user needs to wear a jacket based on data by the Washington Post.",
+            "郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tags: ["API", "Node/Express", "Heroku"],
         },
         {
-          title: "No Katakana Game",
-          description:
-            "A game where the goal is to explain the word without using any foreign loan words.",
+          title: "ノカタカナゲーム",
+          description: "外来語を使用せずに、言葉を接目するのゲーム。",
           image: nokatakana,
           link: "https://github.com/zachinjapan/no-katakana-game",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tags: ["React", "JavaScript", "Github Pages"],
         },
         {
-          title: "Castles In The Sky",
-          description:
-            "A website for a professional rock band located in New Jersey,America.",
+          title: "カーサルズ・イン・ザー・スカイ",
+          description: "アメリカのバンドのウェブサイトです。",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
           github: "",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
         {
-          title: "My Blog",
-          description:
-            "A personal blog where I write about my life and projects.",
+          title: "マイブログ",
+          description: "私の日常生活やプロジェクトについてブログです。",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
         },
         {
-          title: "_C32F's Comedy Show",
+          title: "_C32Fのコメディショー",
           description:
-            "This is a static webpage using 2 APIs. The first is a joke api which fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by chaning the topics, playing background music, and changing the name of the robot.",
+            "ジョークテキストを取得し、APIでジョークテキストを再生します。ユーザーはページにボタンで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           github: "https://github.com/zachinjapan/comedy_show",
@@ -133,7 +132,7 @@ const Projects = (props) => {
 
   return (
     <div className="Projects" id="Projects">
-      <h1>Projects</h1>
+      <h1>{content.mainTitle}</h1>
       <div className="projects-container">
         <ProjectCard
           title={content.projects[0].title}

@@ -26,7 +26,7 @@ const Skills = (props) => {
       value={{ color: "green", className: "global-class-name", size: "40px" }}
     >
       <div className="Skills">
-        <h3 className="skills-title">{content.title}</h3>
+        <h1 className="skills-title">{content.title}</h1>
         <div className="skills-container">
           <AiFillHtml5 className="skills-icon" />
           <DiCss3Full className="skills-icon" />

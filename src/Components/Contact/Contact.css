@@ -52,3 +52,8 @@
     transform-origin: 0 0;
   }
 }
+
+#submitBtn {
+  margin: auto;
+  width: 20%;
+}
