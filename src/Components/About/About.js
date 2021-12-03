@@ -10,7 +10,7 @@ const About = (props) => {
       description:
         "I'm a webd eveloper focusing on the MERN tech stack. I have experience building pages using vanila Javascript as well as React frameworks such as create-react-app or Gatsby.js. ",
       diesciption2:
-        "Have a look at my projects and contact me if you are interested in working together or looking for a new website.",
+        "Have a look at my projects and contact me using the contact form below.",
       resume: "Resume",
     },
     Japanese: {
@@ -44,7 +44,19 @@ const About = (props) => {
               margin: "10px",
             }}
           >
-            {content.resume}
+            {" "}
+            <a
+              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "white",
+                decoration: "none",
+                underline: "none",
+              }}
+            >
+              {content.resume}
+            </a>
           </Button>
         </div>
         <Skills language={props.language} />

@@ -18,6 +18,7 @@ const Projects = (props) => {
             "A React app using a famous quotes api and React Redux to create an interactive game for the user.",
           image: quote,
           link: "https://quotequiz.netlify.app",
+          linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tags: ["React", "Redux", "API", "Netlify"],
         },
@@ -27,6 +28,7 @@ const Projects = (props) => {
             "An application to view the current live weather based on zipcode and determines If the user needs to wear a jacket based on data by the Washington Post.",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
+          linkText: "Live Demo",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tags: ["API", "Node/Express", "Heroku"],
         },
@@ -36,6 +38,7 @@ const Projects = (props) => {
             "A game where the goal is to explain the word without using any foreign loan words.",
           image: nokatakana,
           link: "https://github.com/zachinjapan/no-katakana-game",
+          linkText: "Live Demo",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tags: ["React", "JavaScript", "Github Pages"],
         },
@@ -45,6 +48,7 @@ const Projects = (props) => {
             "A website for a professional rock band located in New Jersey,America.",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
+          linkText: "Live Demo",
           github: "",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
@@ -54,6 +58,7 @@ const Projects = (props) => {
             "A personal blog where I write about my life and projects.",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
+          linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
         },
@@ -63,6 +68,7 @@ const Projects = (props) => {
             "A joke api fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by changing the topics, playing background music, and changing the robot's name.",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
+          linkText: "Live Demo",
           github: "https://github.com/zachinjapan/comedy_show",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
         },
@@ -77,6 +83,7 @@ const Projects = (props) => {
             "Reactアプリケーションで、名家の引用を使用し、React Reduxを使用してインタラクティブなゲームを作成します。",
           image: quote,
           link: "https://quotequiz.netlify.app",
+          linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tags: ["React", "Redux", "API", "Netlify"],
         },
@@ -86,6 +93,7 @@ const Projects = (props) => {
             "郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
+          linkText: "ウエブサイト",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tags: ["API", "Node/Express", "Heroku"],
         },
@@ -94,6 +102,7 @@ const Projects = (props) => {
           description: "外来語を使用せずに、言葉を接目するのゲーム。",
           image: nokatakana,
           link: "https://github.com/zachinjapan/no-katakana-game",
+          linkText: "ウェブサイト",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tags: ["React", "JavaScript", "Github Pages"],
         },
@@ -102,6 +111,7 @@ const Projects = (props) => {
           description: "アメリカのバンドのウェブサイトです。",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
+          linkText: "ウェブサイト",
           github: "",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
@@ -110,6 +120,7 @@ const Projects = (props) => {
           description: "私の日常生活やプロジェクトについてブログです。",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
+          linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
         },
@@ -119,6 +130,7 @@ const Projects = (props) => {
             "ジョークテキストを取得し、APIでジョークテキストを再生します。ユーザーはページにボタンで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
+          linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/comedy_show",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
         },
@@ -139,6 +151,7 @@ const Projects = (props) => {
           description={content.projects[0].description}
           image={content.projects[0].image}
           link={content.projects[0].link}
+          linkText={content.projects[0].linkText}
           github={content.projects[0].github}
           tags={content.projects[0].tags}
         />
@@ -147,6 +160,7 @@ const Projects = (props) => {
           description={content.projects[1].description}
           image={content.projects[1].image}
           link={content.projects[1].link}
+          linkText={content.projects[1].linkText}
           github={content.projects[1].github}
           tags={content.projects[1].tags}
         />
@@ -155,6 +169,7 @@ const Projects = (props) => {
           description={content.projects[2].description}
           image={content.projects[2].image}
           link={content.projects[2].link}
+          linkText={content.projects[2].linkText}
           github={content.projects[2].github}
           tags={content.projects[2].tags}
         />
@@ -163,6 +178,7 @@ const Projects = (props) => {
           description={content.projects[3].description}
           image={content.projects[3].image}
           link={content.projects[3].link}
+          linkText={content.projects[3].linkText}
           github={content.projects[3].github}
           tags={content.projects[3].tags}
         />
@@ -171,6 +187,7 @@ const Projects = (props) => {
           description={content.projects[4].description}
           image={content.projects[4].image}
           link={content.projects[4].link}
+          linkText={content.projects[4].linkText}
           github={content.projects[4].github}
           tags={content.projects[4].tags}
         />
@@ -179,6 +196,7 @@ const Projects = (props) => {
           description={content.projects[5].description}
           image={content.projects[5].image}
           link={content.projects[5].link}
+          linkText={content.projects[5].linkText}
           github={content.projects[5].github}
           tags={content.projects[5].tags}
         />

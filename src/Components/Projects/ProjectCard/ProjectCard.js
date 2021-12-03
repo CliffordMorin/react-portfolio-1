@@ -42,7 +42,7 @@ const ProjectCard = (props) => {
             className="project-card-link"
           >
             <Button variant="contained" color="success">
-              Live
+              {props.linkText}
             </Button>
           </a>
         </div>
