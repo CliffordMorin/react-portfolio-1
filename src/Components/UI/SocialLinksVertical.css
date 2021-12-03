@@ -1,0 +1,22 @@
+.social-links-vertical {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 75px;
+  height: 35%;
+}
+
+@media (max-width: 768px) {
+  .social-links-vertical {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: auto;
+  }
+}

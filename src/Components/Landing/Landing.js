@@ -1,5 +1,5 @@
 import "../Landing/Landing.css";
-import SocialLinks from "../UI/SocialLinks";
+import SocialLinksVertical from "../UI/SocialLinksVertical";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
 
@@ -33,7 +33,7 @@ const Landing = (props) => {
         <div className="landing-content">
           <h1 className="landing-title">{content.title}</h1>
           <h3 className="landing-description">{content.description}</h3>
-          <SocialLinks />
+          <SocialLinksVertical />
         </div>
         <button className="contact-button" onClick={scrollToAbout}>
           {" "}

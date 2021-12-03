@@ -28,7 +28,7 @@ const Contact = (props) => {
   return (
     <div className="Contact" id="Contact">
       <div className="contact-container">
-        <h1>{content.title}</h1>
+        <h1 className="contact-title">{content.title}</h1>
         <form
           className="contact-form"
           name="contact-form"

@@ -16,7 +16,6 @@ function App(props) {
       <Landing language={props.language} />
       <About language={props.language} />
       <Projects language={props.language} />
-      <Work language={props.language} />
       <Contact language={props.language} />
       <Footer language={props.language} />
     </div>

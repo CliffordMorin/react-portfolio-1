@@ -10,6 +10,7 @@ const About = (props) => {
         "I'm a webdeveloper focusing on the MERN tech stack. I have experience building pages using vanila Javascript as well as React frameworks such as create-react-app or Gatsby.js. ",
       diesciption2:
         "Have a look at my projects and contact me if you are interested in working together or looking for a new website.",
+      resume: "Resume",
     },
     Japanese: {
       title: "自己紹介",
@@ -17,6 +18,7 @@ const About = (props) => {
         "Software Engineer focusing on the MERN tech stack. I have experience building pages using vanila Javascript as well as React frameworks such as creat-react-app or Gatsby.js. ",
       diesciption2:
         "Have a look at my projects and contact me if you are interested in working together or looking for a new website.",
+      resume: "履歴書",
     },
   };
 
@@ -33,6 +35,9 @@ const About = (props) => {
         <h1>{content.title}</h1>
         <p>{content.description}</p>
         <p>{content.diesciption2}</p>
+        <div className="resume-div">
+          <button> {content.resume}</button>
+        </div>
         <Skills />
       </div>
     </div>

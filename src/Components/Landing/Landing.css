@@ -6,31 +6,27 @@
   justify-content: center;
   align-items: center;
   /* background-color: black; */
-  color: black;
+  color: rgb(73, 70, 72);
+  font-family: "cursive";
+  font-size: 1.5rem;
 }
 
 .landing-content {
   width: 100%;
-  height: fit-content;
+  min-height: 280px;
+  /* max-height: fit-content; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(223, 223, 202);
+  background-color: rgb(236, 238, 241);
   border-radius: 10px;
-  padding: 20px;
+
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 768px) {
-  .landing-content {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
 .landing-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
   color: black;
   text-align: center;

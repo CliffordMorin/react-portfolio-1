@@ -15,6 +15,16 @@
   flex-wrap: wrap;
 }
 
+.resume-div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .zach-img {
   height: 300px;
   width: 300px;

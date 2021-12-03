@@ -18,12 +18,6 @@ const scrollToProjects = () => {
   document.getElementById("Projects").scrollIntoView({ behavior: "smooth" });
 };
 
-const scrollToWork = () => {
-  document
-    .getElementById("Work")
-    .scrollIntoView({ behavior: "smooth", block: "center" });
-};
-
 const scrollToContact = () => {
   document
     .getElementById("Contact")
@@ -53,9 +47,6 @@ const Header = (props) => {
       </button>
       <button onClick={scrollToProjects}>
         {props.language === "English" ? "Projects" : "プロジェクト"}
-      </button>
-      <button Click={scrollToWork}>
-        {props.language === "English" ? "Work" : "仕事"}
       </button>
       <button onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}

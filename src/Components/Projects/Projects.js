@@ -5,6 +5,7 @@ import blog from "../../images/projects/blog.png";
 import weather from "../../images/projects/weather.png";
 import nokatakana from "../../images/projects/nokatakana.png";
 import comedyshow from "../../images/projects/comedyshow.png";
+import castles from "../../images/work/castles.png";
 
 const Projects = (props) => {
   let content = {
@@ -36,6 +37,15 @@ const Projects = (props) => {
           link: "https://github.com/zachinjapan/no-katakana-game",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tags: ["React", "JavaScript", "Github Pages"],
+        },
+        {
+          title: "Castles In The Sky",
+          description:
+            "A website for a professional rock band located in New Jersey,America.",
+          image: castles,
+          link: "https://castlesinthesky.netlify.app",
+          github: "",
+          tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
         {
           title: "My Blog",
@@ -85,6 +95,15 @@ const Projects = (props) => {
           link: "https://github.com/zachinjapan/no-katakana-game",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tags: ["React", "JavaScript", "Github Pages"],
+        },
+        {
+          title: "Castles In The Sky",
+          description:
+            "A website for a professional rock band located in New Jersey,America.",
+          image: castles,
+          link: "https://castlesinthesky.netlify.app",
+          github: "",
+          tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
         {
           title: "My Blog",
@@ -155,6 +174,14 @@ const Projects = (props) => {
           link={content.projects[4].link}
           github={content.projects[4].github}
           tags={content.projects[4].tags}
+        />
+        <ProjectCard
+          title={content.projects[5].title}
+          description={content.projects[5].description}
+          image={content.projects[5].image}
+          link={content.projects[5].link}
+          github={content.projects[5].github}
+          tags={content.projects[5].tags}
         />
       </div>
     </div>
