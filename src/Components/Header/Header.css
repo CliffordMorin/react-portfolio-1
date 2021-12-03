@@ -10,7 +10,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 a:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
 }

@@ -13,19 +13,31 @@ const SocialLinks = () => {
     >
       <div className="social-links">
         <a
-          href="https://www.linkedin.com/in/joshua-m-barnes-b8a9b8a9/"
+          href="https://www.linkedin.com/in/zachinjapan888/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <BsLinkedin />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/zachinjapan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiOutlineGithub />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com/zachinjapan888"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillTwitterCircle />
         </a>
-        <a href="google.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://zstoneblog.gatsbyjs.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <MdOutlineComputer />
         </a>
       </div>

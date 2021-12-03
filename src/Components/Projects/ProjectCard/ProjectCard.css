@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 320px;
   height: fit-content;
   padding: 20px;
   border-radius: 10px;
@@ -13,6 +13,15 @@
   margin-left: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 .project-card-info {
   min-height: 300px;

@@ -5,3 +5,9 @@
   width: 400px;
   height: auto;
 }
+
+@media (max-width: 600px) {
+  .social-links {
+    width: 100%;
+  }
+}

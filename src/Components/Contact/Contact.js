@@ -40,6 +40,8 @@ const Contact = (props) => {
           <textarea name="message" placeholder="Message" required></textarea>
           <ReCAPTCHA
             className="g-recaptcha"
+            data-theme="light"
+            className="g-recaptcha"
             onChange={handleContactButton}
             sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
           ></ReCAPTCHA>

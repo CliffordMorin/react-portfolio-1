@@ -1,6 +1,8 @@
 import "./Header.css";
 import Switch from "@mui/material/Switch";
 import React from "react";
+import america from "../../images/america.png";
+import japan from "../../images/japan.png";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -57,11 +59,15 @@ const Header = (props) => {
       <a onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}
       </a>
-      <Switch
-        checked={checked}
-        onChange={handleChange}
-        inputProps={{ "aria-label": "controlled" }}
-      />
+      <div>
+        <img src={america} />
+        <Switch
+          checked={checked}
+          onChange={handleChange}
+          inputProps={{ "aria-label": "controlled" }}
+        />
+        <img src={japan} />
+      </div>
     </nav>
   );
 };
