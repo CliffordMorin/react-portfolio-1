@@ -1,8 +1,8 @@
 import "./Header.css";
-import Switch from "@mui/material/Switch";
 import React from "react";
 import america from "../../images/america.png";
 import japan from "../../images/japan.png";
+import { connect } from "react-redux";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -31,15 +31,16 @@ const scrollToContact = () => {
 };
 
 const Header = (props) => {
-  const changeLanguage = (language) => {
-    props.handleSetLanguage(language);
+  const handleChangeLanguageToJapanese = (evt) => {
+    props.dispatch({
+      type: "CHANGE_LANGUAGE_TO_JAPANESE",
+    });
   };
 
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-    changeLanguage(props.language === "English" ? "Japanese" : "English");
+  const handleChangeLanguageToEnglish = (evt) => {
+    props.dispatch({
+      type: "CHANGE_LANGUAGE_TO_ENGLISH",
+    });
   };
 
   return (
@@ -60,16 +61,34 @@ const Header = (props) => {
         {props.language === "English" ? "Contact" : "お問い合わせ"}
       </button>
       <div className="flag-div">
-        <img src={america} alt="america" />
-        <Switch
-          checked={checked}
-          onChange={handleChange}
-          inputProps={{ "aria-label": "controlled" }}
-        />
-        <img src={japan} alt="japan" />
+        {props.language === "English" ? (
+          <div className="flag-div">
+            <span> JP </span>
+            <img
+              className="flag"
+              src={japan}
+              alt="Japan Flag"
+              onClick={() => handleChangeLanguageToJapanese()}
+            />
+          </div>
+        ) : (
+          <div className="Japanese">
+            <span> EN </span>
+            <img
+              className="flag"
+              src={america}
+              alt="America Flag"
+              onClick={() => handleChangeLanguageToEnglish()}
+            />
+          </div>
+        )}
       </div>
     </nav>
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => ({
+  language: state.language,
+});
+
+export default connect(mapStateToProps)(Header);

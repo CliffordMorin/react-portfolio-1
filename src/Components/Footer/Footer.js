@@ -1,6 +1,5 @@
 import "../Footer/Footer.css";
 import SocialLinks from "../UI/SocialLinks";
-import { GiPartyPopper } from "react-icons/gi";
 
 const Footer = (props) => {
   let content = {
@@ -19,13 +18,7 @@ const Footer = (props) => {
   return (
     <footer>
       <div class="footer-text">
-        <span>
-          {content.description}{" "}
-          <button>
-            {" "}
-            <GiPartyPopper />
-          </button>
-        </span>
+        <span>{content.description} </span>
       </div>
       <SocialLinks />
     </footer>

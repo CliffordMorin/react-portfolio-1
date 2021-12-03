@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+
 import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
 import About from "./Components/About/About";
@@ -7,34 +7,26 @@ import Projects from "./Components/Projects/Projects";
 import Work from "./Components/Work/Work";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import { connect } from "react-redux";
 
-function App() {
-  let languageStoredInLocalStorage = localStorage.getItem("language");
-
-  let [language, setLanguage] = useState(
-    languageStoredInLocalStorage ? languageStoredInLocalStorage : "English"
-  );
-
+function App(props) {
   return (
     <div className="App">
-      <Header
-        language={language}
-        handleSetLanguage={(language) => {
-          setLanguage(language);
-          storeLanguageInLocalStorage(language);
-        }}
-      />
-      <Landing language={language} />
-      <About language={language} />
-      <Projects language={language} />
-      <Work language={language} />
-      <Contact language={language} />
-      <Footer language={language} />
+      <Header language={props.language} />
+      <Landing language={props.language} />
+      <About language={props.language} />
+      <Projects language={props.language} />
+      <Work language={props.language} />
+      <Contact language={props.language} />
+      <Footer language={props.language} />
     </div>
   );
 }
-function storeLanguageInLocalStorage(language) {
-  localStorage.setItem("language", language);
-}
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    language: state.language,
+  };
+};
+
+export default connect(mapStateToProps)(App);
