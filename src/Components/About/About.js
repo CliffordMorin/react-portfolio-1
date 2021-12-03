@@ -27,7 +27,7 @@ const About = (props) => {
   return (
     <div className="about" id="About">
       <div className="about-left">
-        <img className="zach-img" src={zach} />
+        <img className="zach-img" src={zach} alt="zach" />
       </div>
       <div className="about-right">
         <h1>{content.title}</h1>

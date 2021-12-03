@@ -44,29 +44,29 @@ const Header = (props) => {
 
   return (
     <nav className="header">
-      <a onClick={scrollToTop}>
+      <button onClick={scrollToTop}>
         {props.language === "English" ? "Home" : "ホーム"}
-      </a>
-      <a onClick={scrollToAbout}>
+      </button>
+      <button onClick={scrollToAbout}>
         {props.language === "English" ? "About" : "私について"}
-      </a>
-      <a onClick={scrollToProjects}>
+      </button>
+      <button onClick={scrollToProjects}>
         {props.language === "English" ? "Projects" : "プロジェクト"}
-      </a>
-      <a onClick={scrollToWork}>
+      </button>
+      <button Click={scrollToWork}>
         {props.language === "English" ? "Work" : "仕事"}
-      </a>
-      <a onClick={scrollToContact}>
+      </button>
+      <button onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}
-      </a>
+      </button>
       <div className="flag-div">
-        <img src={america} />
+        <img src={america} alt="america" />
         <Switch
           checked={checked}
           onChange={handleChange}
           inputProps={{ "aria-label": "controlled" }}
         />
-        <img src={japan} />
+        <img src={japan} alt="japan" />
       </div>
     </nav>
   );

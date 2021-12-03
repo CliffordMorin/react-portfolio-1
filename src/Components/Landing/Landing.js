@@ -35,10 +35,10 @@ const Landing = (props) => {
           <h3 className="landing-description">{content.description}</h3>
           <SocialLinks />
         </div>
-        <a className="contact-button" onClick={scrollToAbout}>
+        <button className="contact-button" onClick={scrollToAbout}>
           {" "}
           <MdKeyboardArrowDown />
-        </a>
+        </button>
       </div>
     </IconContext.Provider>
   );

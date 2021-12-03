@@ -41,7 +41,6 @@ const Contact = (props) => {
           <ReCAPTCHA
             className="g-recaptcha"
             data-theme="light"
-            className="g-recaptcha"
             onChange={handleContactButton}
             sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
           ></ReCAPTCHA>

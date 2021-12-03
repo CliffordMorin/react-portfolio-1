@@ -21,37 +21,13 @@ const Work = (props) => {
     Japanese: {
       projects: [
         {
-          title: "Project 1",
+          title: "Castles In The Sky",
           description:
             "A website for a professional rock band located in New Jersey,America.",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
-        },
-        {
-          title: "Project 2",
-          description: "project 2 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
-        },
-        {
-          title: "Project 3",
-          description: "project 3 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
-        },
-        {
-          title: "Project 4",
-          description: "project 4 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          image: castles,
+          link: "https://castlesinthesky.netlify.app",
+          github: "",
+          tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
         },
       ],
     },
