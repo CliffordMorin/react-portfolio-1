@@ -59,7 +59,7 @@ const Projects = (props) => {
         {
           title: "_C32F's Comedy Show",
           description:
-            "This is a static webpage using 2 APIs. The first is a joke api which fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by chaning the topics, playing background music, and changing the name of the robot.",
+            "A joke api fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by changing the topics, playing background music, and changing the robot's name.",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           github: "https://github.com/zachinjapan/comedy_show",
