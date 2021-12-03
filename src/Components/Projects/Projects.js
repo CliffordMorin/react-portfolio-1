@@ -1,77 +1,108 @@
 import "./Projects.css";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import quote from "../../images/projects/quote.png";
+import blog from "../../images/projects/blog.png";
+import weather from "../../images/projects/weather.png";
+import nokatakana from "../../images/projects/nokatakana.png";
+import comedyshow from "../../images/projects/comedyshow.png";
 
 const Projects = (props) => {
   let content = {
     English: {
       projects: [
         {
-          title: "Project 1",
-          description: "project 1 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "Quote Quiz",
+          description:
+            "A React app using a famous quotes api and React Redux to create an interactive game for the user.",
+          image: quote,
+          link: "https://quotequiz.netlify.app",
+          github: "https://github.com/zachinjapan/quotes",
+          tags: ["React", "Redux", "API", "Netlify"],
         },
         {
-          title: "Project 2",
-          description: "project 2 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "Do I Need A Jacket?",
+          description:
+            "An application to view the current live weather based on zipcode and determines If the user needs to wear a jacket based on data by the Washington Post.",
+          image: weather,
+          link: "https://doineedajackettoday.herokuapp.com",
+          github: "https://github.com/zachinjapan/do_i_need_a_jacket",
+          tags: ["API", "Node/Express", "Heroku"],
         },
         {
-          title: "Project 3",
-          description: "project 3 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "No Katakana Game",
+          description:
+            "A game where the goal is to explain the word without using any foreign loan words.",
+          image: nokatakana,
+          link: "https://github.com/zachinjapan/no-katakana-game",
+          github: "https://zachinjapan.github.io/no-katakana-game/",
+          tags: ["React", "JavaScript", "Github Pages"],
         },
         {
-          title: "Project 4",
-          description: "project 4 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "My Blog",
+          description:
+            "A personal blog where I write about my life and projects.",
+          image: blog,
+          link: "https://zstoneblog.gatsbyjs.io",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
+        },
+        {
+          title: "_C32F's Comedy Show",
+          description:
+            "This is a static webpage using 2 APIs. The first is a joke api which fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by chaning the topics, playing background music, and changing the name of the robot.",
+          image: comedyshow,
+          link: "https://zachinjapan.github.io/comedy_show/",
+          github: "https://github.com/zachinjapan/comedy_show",
+          tags: ["Sass", "JavaScript", "API", "Github Pages"],
         },
       ],
     },
     Japanese: {
       projects: [
         {
-          title: "Project 1",
-          description: "project 1 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "Quote Quiz",
+          description:
+            "A React app using a famous quotes api and React Redux to create an interactive game for the user.",
+          image: quote,
+          link: "https://quotequiz.netlify.app",
+          github: "https://github.com/zachinjapan/quotes",
+          tags: ["React", "Redux", "API", "Netlify"],
         },
         {
-          title: "Project 2",
-          description: "project 2 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "Do I Need A Jacket?",
+          description:
+            "An application to view the current live weather based on zipcode and determines If the user needs to wear a jacket based on data by the Washington Post.",
+          image: weather,
+          link: "https://doineedajackettoday.herokuapp.com",
+          github: "https://github.com/zachinjapan/do_i_need_a_jacket",
+          tags: ["API", "Node/Express", "Heroku"],
         },
         {
-          title: "Project 3",
-          description: "project 3 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "No Katakana Game",
+          description:
+            "A game where the goal is to explain the word without using any foreign loan words.",
+          image: nokatakana,
+          link: "https://github.com/zachinjapan/no-katakana-game",
+          github: "https://zachinjapan.github.io/no-katakana-game/",
+          tags: ["React", "JavaScript", "Github Pages"],
         },
         {
-          title: "Project 4",
-          description: "project 4 description",
-          image: "https://via.placeholder.com/300x200",
-          link: "https://www.google.com",
-          github: "https://www.google.com",
-          tags: ["tag1", "tag2", "tag3"],
+          title: "My Blog",
+          description:
+            "A personal blog where I write about my life and projects.",
+          image: blog,
+          link: "https://zstoneblog.gatsbyjs.io",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
+        },
+        {
+          title: "_C32F's Comedy Show",
+          description:
+            "This is a static webpage using 2 APIs. The first is a joke api which fetches the joke text. The second text-to-speech API plays that joke text. The user is able to interact with the page by chaning the topics, playing background music, and changing the name of the robot.",
+          image: comedyshow,
+          link: "https://zachinjapan.github.io/comedy_show/",
+          github: "https://github.com/zachinjapan/comedy_show",
+          tags: ["Sass", "JavaScript", "API", "Github Pages"],
         },
       ],
     },
@@ -82,7 +113,7 @@ const Projects = (props) => {
     : (content = content.English);
 
   return (
-    <div className="Projects">
+    <div className="Projects" id="Projects">
       <h1>Projects</h1>
       <div className="projects-container">
         <ProjectCard
@@ -116,6 +147,14 @@ const Projects = (props) => {
           link={content.projects[3].link}
           github={content.projects[3].github}
           tags={content.projects[3].tags}
+        />
+        <ProjectCard
+          title={content.projects[4].title}
+          description={content.projects[4].description}
+          image={content.projects[4].image}
+          link={content.projects[4].link}
+          github={content.projects[4].github}
+          tags={content.projects[4].tags}
         />
       </div>
     </div>

@@ -1,20 +1,44 @@
 import "./ProjectCard.css";
+import Button from "@mui/material/Button";
 
 const ProjectCard = (props) => {
   return (
     <div className="project-card">
-      <div className="project-card-image">
-        <img src={props.image} alt="project" />
-      </div>
+      <img className="project-card-img" src={props.image} alt="project" />
       <div className="project-card-info">
         <h3>{props.title}</h3>
-        <p>{props.description}</p>
+        <div className="project-description">
+          <p>{props.description}</p>
+        </div>
+        <div className="project-tag-div">
+          <span className="tech-text"> {props.tags[0]} ,</span>
+          <span className="tech-text"> {props.tags[1]}, </span>
+          <span className="tech-text"> {props.tags[2]} </span>
+          <span className="tech-text"> {props.tags[3]} </span>
+        </div>
         <div className="project-card-links">
-          <a href={props.github} target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-          <a href={props.deployed} target="_blank" rel="noopener noreferrer">
-            Deployed
+          {" "}
+          {props.github ? (
+            <a
+              href={props.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card-link"
+            >
+              <Button variant="contained" color="success">
+                Github
+              </Button>
+            </a>
+          ) : null}
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card-link"
+          >
+            <Button variant="contained" color="success">
+              Live
+            </Button>
           </a>
         </div>
       </div>

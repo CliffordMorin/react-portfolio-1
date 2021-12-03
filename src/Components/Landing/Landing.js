@@ -3,15 +3,21 @@ import SocialLinks from "../UI/SocialLinks";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
 
+const scrollToAbout = () => {
+  document
+    .getElementById("About")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+};
+
 const Landing = (props) => {
   let content = {
     English: {
       title: "Zach Stone",
-      description: "// Software Engineer",
+      description: "// Web Developer //",
     },
     Japanese: {
       title: "ザック・ストーン",
-      description: "// ソフトエンジニア",
+      description: "// ウエブ開発者 //",
     },
   };
 
@@ -29,7 +35,7 @@ const Landing = (props) => {
           <h3 className="landing-description">{content.description}</h3>
           <SocialLinks />
         </div>
-        <a className="contact-button">
+        <a className="contact-button" onClick={scrollToAbout}>
           {" "}
           <MdKeyboardArrowDown />
         </a>

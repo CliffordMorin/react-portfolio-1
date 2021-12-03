@@ -1,40 +1,68 @@
 import "./Header.css";
-import HeaderLink from "./HeaderLink/HeaderLink";
+import Switch from "@mui/material/Switch";
+import React from "react";
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+const scrollToAbout = () => {
+  document
+    .getElementById("About")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+};
+
+const scrollToProjects = () => {
+  document.getElementById("Projects").scrollIntoView({ behavior: "smooth" });
+};
+
+const scrollToWork = () => {
+  document
+    .getElementById("Work")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+};
+
+const scrollToContact = () => {
+  document
+    .getElementById("Contact")
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+};
 
 const Header = (props) => {
+  const changeLanguage = (language) => {
+    props.handleSetLanguage(language);
+  };
+
+  const [checked, setChecked] = React.useState(false);
+
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+    changeLanguage(props.language === "English" ? "Japanese" : "English");
+  };
+
   return (
-    <header className="header">
-      <HeaderLink
-        text={props.language === "English" ? "Home" : "ホーム"}
-        link="/home"
+    <nav className="header">
+      <a onClick={scrollToTop}>
+        {props.language === "English" ? "Home" : "ホーム"}
+      </a>
+      <a onClick={scrollToAbout}>
+        {props.language === "English" ? "About" : "私について"}
+      </a>
+      <a onClick={scrollToProjects}>
+        {props.language === "English" ? "Projects" : "プロジェクト"}
+      </a>
+      <a onClick={scrollToWork}>
+        {props.language === "English" ? "Work" : "仕事"}
+      </a>
+      <a onClick={scrollToContact}>
+        {props.language === "English" ? "Contact" : "お問い合わせ"}
+      </a>
+      <Switch
+        checked={checked}
+        onChange={handleChange}
+        inputProps={{ "aria-label": "controlled" }}
       />
-      <HeaderLink
-        text={props.language === "English" ? "About" : "アバウト"}
-        link="/about"
-      />
-      <HeaderLink
-        text={props.language === "English" ? "Projects" : "プロジェクト"}
-        link="/projects"
-      />
-      <HeaderLink
-        text={props.language === "English" ? "Work" : "仕事"}
-        link="/work"
-      />
-      <HeaderLink
-        text={props.language === "English" ? "Contact" : "コンタクト"}
-        link="/contact"
-      />
-      <div className="language-select">
-        <select
-          className="custom-select"
-          value={props.language}
-          onChange={(e) => props.handleSetLanguage(e.target.value)}
-        >
-          <option value="English">English</option>
-          <option value="Japanese">日本語</option>
-        </select>
-      </div>
-    </header>
+    </nav>
   );
 };
 

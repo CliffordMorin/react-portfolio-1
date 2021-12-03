@@ -7,6 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import Work from "./Components/Work/Work";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+
 function App() {
   let languageStoredInLocalStorage = localStorage.getItem("language");
 
