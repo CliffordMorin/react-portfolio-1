@@ -59,7 +59,7 @@ const Header = (props) => {
       <a onClick={scrollToContact}>
         {props.language === "English" ? "Contact" : "お問い合わせ"}
       </a>
-      <div>
+      <div className="flag-div">
         <img src={america} />
         <Switch
           checked={checked}
