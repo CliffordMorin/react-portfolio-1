@@ -56,6 +56,7 @@ const Contact = (props) => {
             required
           />
           <TextField
+            size="medium"
             name="message"
             placeholder={content.message}
             required
