@@ -8,7 +8,7 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "I'm a webd eveloper focusing on the MERN tech stack. I have experience building pages using vanila Javascript as well as React frameworks such as create-react-app or Gatsby.js. ",
+        "I'm a web developer focusing on the MERN tech stack. I have experience building pages using vanila Javascript as well as React frameworks such as create-react-app or Gatsby.js. ",
       diesciption2:
         "Have a look at my projects and contact me using the contact form below.",
       resume: "Resume",
