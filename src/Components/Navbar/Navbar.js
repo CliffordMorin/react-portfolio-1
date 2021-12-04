@@ -58,27 +58,27 @@ const Navbar = (props) => {
           {" "}
           {content.menu[3][0]}{" "}
         </a>
-      </div>
-      <div className="flag-div nav-button">
-        {props.language === "English" ? (
-          <div className="flag-div">
-            <img
-              className="flag"
-              src={japan}
-              alt="Japan Flag"
-              onClick={() => handleChangeLanguageToJapanese()}
-            />
-          </div>
-        ) : (
-          <div className="Japanese">
-            <img
-              className="flag"
-              src={america}
-              alt="America Flag"
-              onClick={() => handleChangeLanguageToEnglish()}
-            />
-          </div>
-        )}
+        <div className="flag-div nav-button">
+          {props.language === "English" ? (
+            <div className="flag-div">
+              <img
+                className="flag"
+                src={japan}
+                alt="Japan Flag"
+                onClick={() => handleChangeLanguageToJapanese()}
+              />
+            </div>
+          ) : (
+            <div className="Japanese">
+              <img
+                className="flag"
+                src={america}
+                alt="America Flag"
+                onClick={() => handleChangeLanguageToEnglish()}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );

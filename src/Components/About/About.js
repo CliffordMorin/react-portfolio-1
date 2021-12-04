@@ -33,7 +33,13 @@ const About = (props) => {
         <img className="zach-img" src={zach} alt="zach" loading="lazy" />
       </div>
       <div className="about-right">
-        <h1>{content.title}</h1>
+        <h1
+          style={{
+            textAlign: "center",
+          }}
+        >
+          {content.title}
+        </h1>
         <p>{content.description}</p>
         <p>{content.diesciption2}</p>
         <div className="resume-div">
