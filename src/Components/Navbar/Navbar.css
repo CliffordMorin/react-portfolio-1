@@ -6,8 +6,9 @@ nav {
   align-items: center;
   flex-direction: row;
   background-color: green;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1000;
+  opacity: 0.9;
 }
 
 .navbar-container {
@@ -21,6 +22,7 @@ nav {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -35,6 +37,7 @@ nav {
 }
 
 .nav-item {
+  opacity: 1;
   width: fit-content;
   height: fit-content;
   text-decoration: none;
