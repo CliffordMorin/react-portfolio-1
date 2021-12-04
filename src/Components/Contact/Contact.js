@@ -1,18 +1,9 @@
 import "./Contact.css";
-// import { useState } from "react";
-// import ReCAPTCHA from "react-google-recaptcha";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 
 const Contact = (props) => {
-  // const [disabled, setDisabled] = useState(false);
-
-  // const handleContactButton = () => {
-  //   setDisabled(false);
-  //   console.log("contact button clicked");
-  // };
-
   let content = {
     English: {
       title: "Contact",
@@ -62,23 +53,14 @@ const Contact = (props) => {
             placeholder={content.message}
             required
           ></TextField>
-          {/* <ReCAPTCHA
-            loading="lazy"
-            className="g-recaptcha"
-            data-theme="light"
-            onChange={handleContactButton}
-            sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
-          ></ReCAPTCHA> */}
+
           <Button
             color="success"
             variant="outlined"
             endIcon={<SendIcon />}
             id="submitBtn"
             type="submit"
-            // disabled={disabled}
             disabled={false}
-            variant="outlined"
-            color="primary"
           >
             Send
           </Button>
