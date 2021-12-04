@@ -3,6 +3,7 @@ import "./Contact.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 
 const Contact = (props) => {
   // const [disabled, setDisabled] = useState(false);
@@ -69,6 +70,9 @@ const Contact = (props) => {
             sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
           ></ReCAPTCHA> */}
           <Button
+            color="success"
+            variant="outlined"
+            endIcon={<SendIcon />}
             id="submitBtn"
             type="submit"
             // disabled={disabled}
