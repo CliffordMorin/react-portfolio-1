@@ -1,5 +1,5 @@
 nav {
-  width: 100%;
+  min-width: 100vw;
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -43,4 +43,14 @@ nav {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
+}
+
+@media (max-width: 320px) {
+  .flag-div {
+    text-align: center;
+    width: 100%;
+  }
+  .flag {
+    margin-top: 5px;
+  }
 }
