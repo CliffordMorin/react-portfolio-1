@@ -36,7 +36,7 @@ const Skills = (props) => {
           <h1 className="skills-title">{content.title}</h1>
           <span className="skills-container">
             {content.skills.map((skill) => (
-              <div className="skill-icon">
+              <div key={skill[1]} className="skill-icon">
                 <div>{skill[1]}</div>
                 <span>{skill[0]}</span>
               </div>

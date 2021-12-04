@@ -1,16 +1,16 @@
 import "./Contact.css";
-import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+// import { useState } from "react";
+// import ReCAPTCHA from "react-google-recaptcha";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 const Contact = (props) => {
-  const [disabled, setDisabled] = useState(true);
+  // const [disabled, setDisabled] = useState(false);
 
-  const handleContactButton = () => {
-    setDisabled(false);
-    console.log("contact button clicked");
-  };
+  // const handleContactButton = () => {
+  //   setDisabled(false);
+  //   console.log("contact button clicked");
+  // };
 
   let content = {
     English: {
@@ -61,16 +61,18 @@ const Contact = (props) => {
             placeholder={content.message}
             required
           ></TextField>
-          <ReCAPTCHA
+          {/* <ReCAPTCHA
+            loading="lazy"
             className="g-recaptcha"
             data-theme="light"
             onChange={handleContactButton}
             sitekey="6Lcy0b8cAAAAAJGHWWpU6LDWMITe62X1FzbTvedo"
-          ></ReCAPTCHA>
+          ></ReCAPTCHA> */}
           <Button
             id="submitBtn"
             type="submit"
-            disabled={disabled}
+            // disabled={disabled}
+            disabled={false}
             variant="outlined"
             color="primary"
           >

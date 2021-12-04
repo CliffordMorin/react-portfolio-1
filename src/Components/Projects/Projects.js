@@ -9,8 +9,8 @@ import castles from "../../images/work/castles.png";
 
 const Projects = (props) => {
   let content = {
-    mainTitle: "Projects",
     English: {
+      mainTitle: "Projects",
       projects: [
         {
           title: "Quote Quiz",

@@ -10,7 +10,6 @@ import Navbar from "./Components/Navbar/Navbar";
 function App(props) {
   return (
     <div className="App">
-      {/* <Header language={props.language} /> */}
       <Navbar language={props.language} />
       <Landing language={props.language} />
       <About language={props.language} />
