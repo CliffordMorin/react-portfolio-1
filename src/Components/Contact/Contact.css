@@ -38,22 +38,22 @@
 }
 
 @media (max-width: 700px) {
-  .g-recaptcha {
+  /* .g-recaptcha {
     transform: scale(0.5);
     transform-origin: 0 0;
-  }
+  } */
   .contact-form {
     width: 75%;
   }
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .g-recaptcha {
     transform: scale(0.4);
     transform-origin: 0 0;
-  }
-}
+  } */
 
 #submitBtn {
   margin: auto;
   width: 20%;
+  margin-top: 10px;
 }
