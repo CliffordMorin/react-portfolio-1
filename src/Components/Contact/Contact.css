@@ -54,7 +54,7 @@
 
 #submitBtn {
   margin: auto;
-  width: 20%;
+  width: 100px;
   margin-top: 10px;
   color: green;
   border: solid 1px green;
