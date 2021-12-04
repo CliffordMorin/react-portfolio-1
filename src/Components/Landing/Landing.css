@@ -43,8 +43,7 @@
 }
 
 .contact-button {
-  position: absolute;
-  top: 80vh;
+  margin-top: 30%;
   width: fit-content;
   text-align: center;
   justify-self: end;
