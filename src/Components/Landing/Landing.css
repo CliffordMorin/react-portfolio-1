@@ -44,8 +44,14 @@
 
 .contact-button {
   position: absolute;
-  margin-top: 30%;
+  top: 80%;
   width: fit-content;
   text-align: center;
   justify-self: end;
+}
+
+@media (max-width: 425px) {
+  .contact-button {
+    top: 90%;
+  }
 }

@@ -3,12 +3,6 @@ import SocialLinksVertical from "../UI/SocialLinksVertical";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
 
-const scrollToAbout = () => {
-  document
-    .getElementById("About")
-    .scrollIntoView({ behavior: "smooth", block: "center" });
-};
-
 const Landing = (props) => {
   let content = {
     English: {
@@ -36,9 +30,12 @@ const Landing = (props) => {
           <SocialLinksVertical />
         </div>
         <div className="contact-button">
-          <MdKeyboardArrowDown onClick={scrollToAbout} />
+          <a href="#About">
+            <MdKeyboardArrowDown />
+          </a>
         </div>
       </div>
+      <div id="About" />
     </IconContext.Provider>
   );
 };

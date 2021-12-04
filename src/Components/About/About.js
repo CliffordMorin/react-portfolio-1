@@ -28,7 +28,7 @@ const About = (props) => {
     : (content = content.English);
 
   return (
-    <div className="about" id="About">
+    <div className="about">
       <div className="about-left">
         <img className="zach-img" src={zach} alt="zach" loading="lazy" />
       </div>
@@ -67,6 +67,7 @@ const About = (props) => {
         </div>
         <Skills language={props.language} />
       </div>
+      <div id="Projects" />
     </div>
   );
 };

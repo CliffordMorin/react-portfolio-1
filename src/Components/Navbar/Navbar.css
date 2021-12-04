@@ -6,7 +6,7 @@ nav {
   align-items: center;
   flex-direction: row;
   background-color: green;
-  /* position: fixed; */
+  position: fixed;
   z-index: 1000;
   opacity: 0.9;
 }

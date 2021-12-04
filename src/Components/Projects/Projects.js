@@ -173,7 +173,7 @@ const Projects = (props) => {
     : (content = content.English);
 
   return (
-    <div className="Projects" id="Projects">
+    <div className="Projects">
       <h1>{content.mainTitle}</h1>
       <div className="projects-container">
         <MUIProjectCard
