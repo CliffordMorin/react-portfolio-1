@@ -12,6 +12,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
+import "../ProjectCard/ProjectCard.css";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
