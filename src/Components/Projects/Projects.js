@@ -23,7 +23,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Redux", "API", "Netlify"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "My first project using redux and my only group project.  My friend Clifford Morin coded the styling and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
         },
         {
           title: "Do I Need A Jacket?",
@@ -105,7 +105,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
           tags: ["React", "Redux", "API", "Netlify"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "reduxを使うのは初めてでした。 ポートフォリオでの私の唯一のグループプロジェクトです。 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
         },
         {
           title: "ジャケットが必要ですか？",
