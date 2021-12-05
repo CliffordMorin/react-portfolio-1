@@ -8,6 +8,7 @@ import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 
 const Skills = (props) => {
   let content = {
@@ -17,6 +18,7 @@ const Skills = (props) => {
       [<DiCss3Full />, "CSS3"],
       [<DiSass />, "SASS"],
       [<FaBootstrap />, "Bootstrap"],
+      [<SiTypescript />, "Typescript"],
       [<FaNodeJs />, "NodeJS"],
       [<FaReact />, "ReactJS"],
       [<RiGatsbyFill />, "GatsbyJS"],
@@ -30,6 +32,7 @@ const Skills = (props) => {
           color: "green",
           className: "global-class-name",
           size: "40px",
+          className: "skill-img",
         }}
       >
         <div className="Skills">

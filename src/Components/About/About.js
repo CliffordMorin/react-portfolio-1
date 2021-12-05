@@ -40,8 +40,8 @@ const About = (props) => {
         >
           {content.title}
         </h1>
-        <p>{content.description}</p>
-        <p>{content.diesciption2}</p>
+        <p className="about-description">{content.description}</p>
+        <p className="about-description">{content.diesciption2}</p>
         <div className="resume-div">
           <Button
             variant="contained"

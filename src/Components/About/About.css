@@ -34,7 +34,7 @@
   width: 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .about {
     width: 90%;
     padding: 10px;
@@ -42,4 +42,8 @@
   .about-right {
     width: 100%;
   }
+}
+
+.about-description {
+  font-size: 1.2rem;
 }

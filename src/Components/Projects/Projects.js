@@ -24,6 +24,7 @@ const Projects = (props) => {
           tags: ["React", "Redux", "API", "Netlify"],
           tech_description:
             "My first project using redux and my only group project.  My friend Clifford Morin coded the styling and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+          callToAction: "More Info",
         },
         {
           title: "Do I Need A Jacket?",
@@ -37,19 +38,21 @@ const Projects = (props) => {
           tags: ["API", "Node/Express", "Heroku"],
           tech_description:
             "This is where I will explain the tech stack and other more technical details.",
+          callToAction: "More Info",
         },
         {
           title: "No Katakana Game",
           description:
             "A game where the goal is to explain the word without using any foreign loan words.",
           image: nokatakana,
-          link: "https://github.com/zachinjapan/no-katakana-game",
+          link: "https://zachinjapan.github.io/no-katakana-game/",
           linkText: "Live Demo",
-          github: "https://zachinjapan.github.io/no-katakana-game/",
+          github: "https://github.com/zachinjapan/nokatakana",
           tech: "Tech",
-          tags: ["React", "JavaScript", "Github Pages"],
+          tags: ["React", "Typescript", "Github Pages"],
           tech_description:
             "This is where I will explain the tech stack and other more technical details.",
+          callToAction: "More Info",
         },
         {
           title: "Castles In The Sky",
@@ -63,6 +66,7 @@ const Projects = (props) => {
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description:
             "This is where I will explain the tech stack and other more technical details.",
+          callToAction: "More Info",
         },
         {
           title: "My Blog",
@@ -76,6 +80,7 @@ const Projects = (props) => {
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
           tech_description:
             "This is where I will explain the tech stack and other more technical details.",
+          callToAction: "More Info",
         },
         {
           title: "_C32F's Comedy Show",
@@ -89,6 +94,7 @@ const Projects = (props) => {
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
           tech_description:
             "This is where I will explain the tech stack and other more technical details.",
+          callToAction: "More Info",
         },
       ],
     },
@@ -107,6 +113,7 @@ const Projects = (props) => {
           tags: ["React", "Redux", "API", "Netlify"],
           tech_description:
             "reduxを使うのは初めてでした。 ポートフォリオでの私の唯一のグループプロジェクトです。 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
+          callToAction: "詳しい情報",
         },
         {
           title: "ジャケットが必要ですか？",
@@ -119,6 +126,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["API", "Node/Express", "Heroku"],
           tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          callToAction: "詳しい情報",
         },
         {
           title: "ノカタカナゲーム",
@@ -128,8 +136,9 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://zachinjapan.github.io/no-katakana-game/",
           tech: "技術",
-          tags: ["React", "JavaScript", "Github Pages"],
+          tags: ["React", "Typescript", "Github Pages"],
           tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          callToAction: "詳しい情報",
         },
         {
           title: "カーサルズ・イン・ザー・スカイ",
@@ -141,6 +150,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          callToAction: "詳しい情報",
         },
         {
           title: "マイブログ",
@@ -152,6 +162,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
           tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          callToAction: "詳しい情報",
         },
         {
           title: "_C32Fのコメディショー",
@@ -164,6 +175,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
           tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          callToAction: "詳しい情報",
         },
       ],
     },
@@ -187,6 +199,7 @@ const Projects = (props) => {
           tags={content.projects[0].tags}
           tech={content.projects[0].tech}
           tech_description={content.projects[0].tech_description}
+          callToAction={content.projects[0].callToAction}
         />
         <MUIProjectCard
           title={content.projects[1].title}
@@ -198,6 +211,7 @@ const Projects = (props) => {
           tags={content.projects[1].tags}
           tech={content.projects[1].tech}
           tech_description={content.projects[1].tech_description}
+          callToAction={content.projects[1].callToAction}
         />
         <MUIProjectCard
           title={content.projects[2].title}
@@ -209,6 +223,7 @@ const Projects = (props) => {
           tags={content.projects[2].tags}
           tech={content.projects[2].tech}
           tech_description={content.projects[2].tech_description}
+          callToAction={content.projects[2].callToAction}
         />
         <MUIProjectCard
           title={content.projects[3].title}
@@ -220,6 +235,7 @@ const Projects = (props) => {
           tags={content.projects[3].tags}
           tech={content.projects[3].tech}
           tech_description={content.projects[3].tech_description}
+          callToAction={content.projects[3].callToAction}
         />
         <MUIProjectCard
           title={content.projects[4].title}
@@ -231,6 +247,7 @@ const Projects = (props) => {
           tags={content.projects[4].tags}
           tech={content.projects[4].tech}
           tech_description={content.projects[4].tech_description}
+          callToAction={content.projects[4].callToAction}
         />
         <MUIProjectCard
           title={content.projects[5].title}
@@ -242,6 +259,7 @@ const Projects = (props) => {
           tags={content.projects[5].tags}
           tech={content.projects[5].tech}
           tech_description={content.projects[5].tech_description}
+          callToAction={content.projects[5].callToAction}
         />
       </div>
     </div>

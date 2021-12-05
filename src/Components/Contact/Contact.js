@@ -36,18 +36,21 @@ const Contact = (props) => {
           method="POST"
         >
           <TextField
+            className="text-form"
             type="text"
             name="name"
             placeholder={content.name}
             required
           />
           <TextField
+            className="text-form"
             type="email"
             name="email"
             placeholder={content.email}
             required
           />
           <TextField
+            className="text-form"
             size="medium"
             name="message"
             placeholder={content.message}

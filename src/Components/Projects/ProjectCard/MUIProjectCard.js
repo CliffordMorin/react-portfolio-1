@@ -63,14 +63,39 @@ export default function MUIProjectCard(props) {
             </a>
           </div>
         </IconButton>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            width: "100%",
+            justifyContent: "flex-end",
+          }}
         >
-          <ExpandMoreIcon />
-        </ExpandMore>
+          <div
+            style={{
+              display: "flex",
+              width: "fit-content",
+              justifyContent: "end",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "0.8rem",
+              }}
+            >
+              {props.callToAction}
+            </div>
+            <ExpandMore
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </ExpandMore>
+          </div>
+        </div>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
