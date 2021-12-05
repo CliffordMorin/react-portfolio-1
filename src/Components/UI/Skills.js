@@ -30,9 +30,8 @@ const Skills = (props) => {
       <IconContext.Provider
         value={{
           color: "green",
-          className: "global-class-name",
+          className: "global-class-name sill-img",
           size: "40px",
-          className: "skill-img",
         }}
       >
         <div className="Skills">
