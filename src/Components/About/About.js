@@ -8,7 +8,7 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm a web developer, focusing on the MERN tech stack. I have experience building pages using vanilla Javascript as well as React frameworks, such as create-react-app or Gatsby.js. ",
+        "Hi, I'm Zach Stone, a web developer focusing on the MERN tech stack. I have experience building pages using vanilla Javascript as well as React frameworks, such as create-react-app or Gatsby.js. ",
       diesciption2:
         "Have a look at my projects and feel free to contact me using the form below.",
       resume: "Resume",
@@ -16,7 +16,7 @@ const About = (props) => {
     Japanese: {
       title: "自己紹介",
       description:
-        "こんにちは、ウエブデベロッパーです。MERN技術でページを作成します。JavascriptやReactフレームワークを使用してページ作成できます。",
+        "こんにちは、ストーン・ザックです。MERN技術でウェブサイトを作成します。JavascriptやReactフレームワークを使用してウェブサイトを作成できます。",
       diesciption2:
         "是非プロジェクトを見てみてください。連絡を取りたいなら、以下の連絡フォームを使用してください",
       resume: "履歴書",
