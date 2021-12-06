@@ -102,7 +102,7 @@ export default function MUIProjectCard(props) {
           <CardHeader title={props.tech} />
           <Typography paragraph>
             {props.tags.map((tag) => (
-              <Button disabled={false} key={tag}>
+              <Button color="success" disabled={false} key={tag}>
                 {tag},
               </Button>
             ))}

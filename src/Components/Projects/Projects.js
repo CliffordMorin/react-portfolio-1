@@ -29,7 +29,7 @@ const Projects = (props) => {
         {
           title: "Do I Need A Jacket?",
           description:
-            "View the current live weather and determine if need to  wear a jacket and more",
+            "View the current live weather and determine if need to  wear a jacket and more.",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           linkText: "Live Demo",
@@ -57,7 +57,7 @@ const Projects = (props) => {
         {
           title: "Castles In The Sky",
           description:
-            "A website for a professional rock band located in New Jersey,America.",
+            "Have a big event coming up? Book this professional rock band located in New Jersey,America.",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
           linkText: "Live Demo",
@@ -70,8 +70,7 @@ const Projects = (props) => {
         },
         {
           title: "My Blog",
-          description:
-            "My personal blog where I write about my life and projects.",
+          description: "Tead about about my life and projects.",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
           linkText: "Live Demo",
@@ -93,7 +92,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
           tech_description:
-            "It's a joke app. At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
+            "At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
           callToAction: "More Info",
         },
       ],
