@@ -29,7 +29,7 @@ const Projects = (props) => {
         {
           title: "Do I Need A Jacket?",
           description:
-            "An application to view the current live weather based on zipcode and determines If the user needs to wear a jacket",
+            "View the current live weather and determine if need to  wear a jacket and more",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           linkText: "Live Demo",
@@ -37,13 +37,13 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["API", "Node/Express", "Heroku"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "This project has a backend as a server.js file. The data is pulled from an open weather api and sent to the backend and then retrived back from the front end. The Washngton Post did a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
         },
         {
           title: "No Katakana Game",
           description:
-            "A game where the goal is to explain the word without using any foreign loan words.",
+            "Explain the word on the screen without using any katakana (foreign loan words)",
           image: nokatakana,
           link: "https://zachinjapan.github.io/no-katakana-game/",
           linkText: "Live Demo",
@@ -51,7 +51,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Typescript", "Github Pages"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "I used Typescript and React for the first time. This app is a simple two-player game where the user sees the word and explains it without using foreign words like coffee.",
           callToAction: "More Info",
         },
         {
@@ -65,13 +65,13 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "A vanilla Javascript website using sass for styling and a lot of bootstrap.",
           callToAction: "More Info",
         },
         {
           title: "My Blog",
           description:
-            "A personal blog where I write about my life and projects.",
+            "My personal blog where I write about my life and projects.",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
           linkText: "Live Demo",
@@ -79,13 +79,13 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "I use this blog to learn how to use Gatsby and practice using markdown.",
           callToAction: "More Info",
         },
         {
           title: "_C32F's Comedy Show",
           description:
-            "A joke app. The user is able to interact with the page by changing the topics, playing background music, and changing the robot's name.",
+            "Need a good laugh? Come check out this new up and coming robot comedian.",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           linkText: "Live Demo",
@@ -93,7 +93,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
           tech_description:
-            "This is where I will explain the tech stack and other more technical details.",
+            "It's a joke app. At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
           callToAction: "More Info",
         },
       ],
@@ -125,7 +125,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "技術",
           tags: ["API", "Node/Express", "Heroku"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 それは、それぞれのタイプの服のために使用される気温を使用します。",
           callToAction: "詳しい情報",
         },
         {
@@ -137,7 +138,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/no-katakana-game",
           tech: "技術",
           tags: ["React", "Typescript", "Github Pages"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "初めてTypescriptとReactを使用しました。 このアプリは、ユーザーに単語が表示され、コーヒーのような外来語を使用せずに説明するの単純な2人用ゲームです。",
           callToAction: "詳しい情報",
         },
         {
@@ -149,7 +151,8 @@ const Projects = (props) => {
           github: "",
           tech: "技術",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "スタイリングにsassを使用し、多くのブートストラップを使用するバニラJavascriptのサイトです。",
           callToAction: "詳しい情報",
         },
         {
@@ -161,20 +164,21 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "技術",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "このブログを使用して、Gatsby.jsの使用方法を学び、マークダウンを書き方を練習しています。",
           callToAction: "詳しい情報",
         },
         {
           title: "_C32Fのコメディショー",
-          description:
-            "ジョックアプリです。ユーザーがページを変更することで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
+          description: "_C32Fくんのコメディショーです。",
           image: comedyshow,
           link: "https://zachinjapan.github.io/comedy_show/",
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/comedy_show",
           tech: "技術",
           tags: ["Sass", "JavaScript", "API", "Github Pages"],
-          tech_description: "ここでは技術スタックとその他の詳細を説明します。",
+          tech_description:
+            "ジョークアプリです。ユーザーがボタンを押すことで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
           callToAction: "詳しい情報",
         },
       ],
