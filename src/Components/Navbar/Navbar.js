@@ -28,7 +28,7 @@ const Navbar = (props) => {
     Japanese: {
       menu: [
         ["ホーム", "/"],
-        ["事項紹介", "/#About"],
+        ["自己紹介", "/#About"],
         ["プロジェクト", "/#Projects"],
         ["お問い合わせ", "/#Contact"],
       ],
