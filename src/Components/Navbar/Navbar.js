@@ -1,7 +1,7 @@
 import america from "../../images/america.png";
 import japan from "../../images/japan.png";
 import { connect } from "react-redux";
-import "./Navbar.css";
+// import "./Navbar.css";
 
 const Navbar = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {

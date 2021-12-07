@@ -5,12 +5,13 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { connect } from "react-redux";
-import Navbar from "./Components/Navbar/Navbar";
+import MUINav from "./Components/Navbar/MUINav";
 
 function App(props) {
   return (
     <div className="App">
-      <Navbar language={props.language} />
+      {/* <Navbar language={props.language} /> */}
+      <MUINav />
       <Landing language={props.language} />
       <About language={props.language} />
       <Projects language={props.language} />
