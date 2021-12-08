@@ -69,7 +69,7 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "My Blog",
+          title: "Becoming a web developer in Japan",
           description: "Tead about about my life and projects.",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
@@ -155,7 +155,7 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "マイブログ",
+          title: "日本でウェブ開発者になるの旅",
           description: "私の日常生活やプロジェクトについてブログです。",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
