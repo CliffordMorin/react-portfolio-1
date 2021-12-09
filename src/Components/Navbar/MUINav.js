@@ -61,6 +61,9 @@ const MUINav = (props) => {
 
   return (
     <AppBar
+      disableScrollLock={true}
+      overflow="visible"
+      disablePortal={true}
       position="static"
       className="nav"
       color="success"
@@ -82,6 +85,7 @@ const MUINav = (props) => {
               <MenuIcon />
             </IconButton>
             <Menu
+              disableScrollLock={true}
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -119,7 +123,10 @@ const MUINav = (props) => {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            overflow="visible"
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+          >
             {content.menu.map((item) => (
               <a href={item[1]} style={{ textDecoration: "none" }}>
                 <Button
