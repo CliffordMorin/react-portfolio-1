@@ -52,14 +52,22 @@ export default function MUIProjectCard(props) {
         <IconButton aria-label="github link">
           <div>
             <a href={props.github}>
-              <AiFillGithub />
+              <AiFillGithub
+                style={{
+                  color: "green",
+                }}
+              />
             </a>
           </div>
         </IconButton>
         <IconButton aria-label="live-demo">
           <div>
             <a href={props.link}>
-              <RiComputerLine />
+              <RiComputerLine
+                style={{
+                  color: "green",
+                }}
+              />
             </a>
           </div>
         </IconButton>
