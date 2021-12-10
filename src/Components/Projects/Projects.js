@@ -70,7 +70,7 @@ const Projects = (props) => {
         },
         {
           title: "My Tech Blog",
-          description: "Talk about about my life and projects.",
+          description: "Learn about about my life and projects.",
           image: blog,
           link: "https://zstoneblog.gatsbyjs.io",
           linkText: "Live Demo",
