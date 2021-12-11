@@ -7,7 +7,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { RiGatsbyFill } from "react-icons/ri";
+// import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 
 const Skills = (props) => {
@@ -21,7 +21,7 @@ const Skills = (props) => {
       [<SiTypescript />, "Typescript"],
       [<FaNodeJs />, "NodeJS"],
       [<FaReact />, "ReactJS"],
-      [<RiGatsbyFill />, "GatsbyJS"],
+      // [<RiGatsbyFill />, "GatsbyJS"],
     ],
   };
 
