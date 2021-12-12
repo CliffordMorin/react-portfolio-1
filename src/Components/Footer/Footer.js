@@ -5,11 +5,11 @@ const Footer = (props) => {
   let content = {
     English: {
       description:
-        "I made this portfolio from using React, npx create-react-app, Redux, and Material-UI.",
+        "I made this portfolio from scratch using npx create-react-app, Redux, and Material-UI.",
     },
     Japanese: {
       description:
-        "このポートフォリオはReact, npx create-react-app,  Redux,  Material-UIを使用して作成されました。",
+        "このポートフォリオは npx create-react-app,  Redux,  Material-UIを使用して作成されました。",
     },
   };
 

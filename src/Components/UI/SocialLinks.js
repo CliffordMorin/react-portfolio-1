@@ -16,29 +16,33 @@ const SocialLinks = () => {
           href="https://www.linkedin.com/in/zachinjapan888/"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-link"
         >
-          <BsLinkedin />
+          <BsLinkedin className="social-link-img" />
         </a>
         <a
           href="https://github.com/zachinjapan"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-link"
         >
-          <AiOutlineGithub />
+          <AiOutlineGithub className="social-link-img" />
         </a>
         <a
           href="https://twitter.com/zachinjapan888"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-link"
         >
-          <AiFillTwitterCircle />
+          <AiFillTwitterCircle className="social-link-img" />
         </a>
         <a
           href="https://zstoneblog.gatsbyjs.io/"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-link"
         >
-          <MdOutlineComputer />
+          <MdOutlineComputer className="social-link-img" />
         </a>
       </div>
     </IconContext.Provider>

@@ -9,16 +9,17 @@ const About = (props) => {
       title: "About Me",
       description:
         "Hi, I'm Zach, a web developer focusing on the MERN tech stack. I have experience building pages using vanilla Javascript as well as React frameworks, such as create-react-app or Gatsby.js. ",
-      diesciption2:
-        "Have a look at my projects and feel free to contact me using the form below.",
+
+      description2:
+        "I am currently looking for a front end developer position in Japan. If you are interested in working with me, please contact me using the form below.",
       resume: "Resume",
     },
     Japanese: {
       title: "自己紹介",
       description:
         "こんにちは、ストーン・ザックです。MERN技術でウェブサイトを作成します。JavascriptやReactフレームワークを使用してウェブサイトを作成できます。",
-      diesciption2:
-        "是非プロジェクトを見てみてください。連絡を取りたいなら、以下の連絡フォームを使用してください",
+      description2:
+        "日本でフロントエンドエンジニアの仕事を探しています。ご興味がある方は、以下のフォームから連絡を取ってください。",
       resume: "履歴書",
     },
   };
@@ -41,7 +42,7 @@ const About = (props) => {
           {content.title}
         </h1>
         <p className="about-description">{content.description}</p>
-        <p className="about-description">{content.diesciption2}</p>
+        <p className="about-description">{content.description2}</p>
         <div className="resume-div">
           <Button
             variant="contained"

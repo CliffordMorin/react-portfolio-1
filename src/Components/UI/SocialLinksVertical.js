@@ -6,7 +6,6 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdOutlineComputer } from "react-icons/md";
 import { IconContext } from "react-icons";
 
-
 const SocialLinksVertical = () => {
   return (
     <IconContext.Provider
@@ -18,28 +17,28 @@ const SocialLinksVertical = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsLinkedin />
+          <BsLinkedin className="social-link-img" />
         </a>
         <a
           href="https://github.com/zachinjapan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiOutlineGithub />
+          <AiOutlineGithub className="social-link-img" />
         </a>
         <a
           href="https://twitter.com/zachinjapan888"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillTwitterCircle />
+          <AiFillTwitterCircle className="social-link-img" />
         </a>
         <a
           href="https://zstoneblog.gatsbyjs.io/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <MdOutlineComputer />
+          <MdOutlineComputer className="social-link-img" />
         </a>
       </div>
     </IconContext.Provider>

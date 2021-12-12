@@ -21,9 +21,9 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["React", "Redux", "API", "Netlify"],
+          tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
-            "My first project using redux and my only group project.  My friend Clifford Morin coded the styling and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+            "My first project using redux and my only group project.  My friend Clifford Morin coded the styling (css) and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         {
@@ -37,7 +37,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["API", "Node/Express", "Heroku"],
           tech_description:
-            "This project has a backend as a server.js file. The data is pulled from an open weather api and sent to the backend and then retrived back from the front end. The Washngton Post did a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
+            "This project has a backend as a server.js file. The data is pulled from an open weather api and sent to the backend and then requested back from the front end. The Washngton Post did a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
         },
         {
@@ -51,7 +51,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Typescript", "Github Pages"],
           tech_description:
-            "I used Typescript and React for the first time. This app is a simple two-player game where the user sees the word and explains it without using foreign words like coffee.",
+            "I used Typescript and React for the first time. This app is a simple two-player game where the user explains the word on screen in Japanese without using foreign words like coffee, or table",
           callToAction: "More Info",
         },
         {
@@ -109,7 +109,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
-          tags: ["React", "Redux", "API", "Netlify"],
+          tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
             "reduxを使うのは初めてでした。 ポートフォリオでの私の唯一のグループプロジェクトです。 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
           callToAction: "詳しい情報",

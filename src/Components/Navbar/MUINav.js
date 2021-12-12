@@ -61,9 +61,7 @@ const MUINav = (props) => {
 
   return (
     <AppBar
-      disableScrollLock={true}
       overflow="visible"
-      disablePortal={true}
       position="static"
       className="nav"
       color="success"
@@ -104,11 +102,15 @@ const MUINav = (props) => {
               }}
             >
               {content.menu.map((item) => (
-                <a href={item[1]} style={{ textDecoration: "none" }}>
+                <a
+                  href={item[1]}
+                  style={{ textDecoration: "none" }}
+                  key={Math.random()}
+                >
                   <MenuItem
                     onClick={handleCloseNavMenu}
                     color="inherit"
-                    key={item}
+                    key={Math.random()}
                     sx={{ my: 1, color: "green", display: "block" }}
                     style={{
                       display: "flex",
@@ -128,10 +130,13 @@ const MUINav = (props) => {
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           >
             {content.menu.map((item) => (
-              <a href={item[1]} style={{ textDecoration: "none" }}>
+              <a
+                key={Math.random()}
+                href={item[1]}
+                style={{ textDecoration: "none" }}
+              >
                 <Button
                   color="inherit"
-                  key={item}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 1, color: "white", display: "block" }}
                   style={{

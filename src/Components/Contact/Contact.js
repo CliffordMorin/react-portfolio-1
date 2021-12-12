@@ -32,7 +32,7 @@ const Contact = (props) => {
         <form
           className="contact-form"
           name="contact-form"
-          action="https://getform.io/f/17aa9ac3-5398-4d30-9798-3d17b1813f83"
+          action={process.env.REACT_APP_CONTACT_FORM_URL}
           method="POST"
         >
           <TextField
