@@ -116,7 +116,6 @@ export default function MUIProjectCard(props) {
             ))}
           </Typography>
           <Typography paragraph>{props.tech_description}</Typography>
-          {/* <Typography paragraph>{props.tech_challenges}</Typography> */}
         </CardContent>
       </Collapse>
     </Card>

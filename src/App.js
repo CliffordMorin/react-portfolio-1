@@ -8,10 +8,8 @@ import { connect } from "react-redux";
 import MUINav from "./Components/Navbar/MUINav";
 
 function App(props) {
-  require("dotenv").config();
   return (
     <div className="App">
-      {/* <Navbar language={props.language} /> */}
       <MUINav />
       <Landing language={props.language} />
       <About language={props.language} />

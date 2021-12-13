@@ -42,6 +42,10 @@
   .about-right {
     width: 100%;
   }
+  .about-description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .about-description {

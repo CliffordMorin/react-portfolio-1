@@ -37,7 +37,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["API", "Node/Express", "Heroku"],
           tech_description:
-            "This project has a backend as a server.js file. The data is pulled from an open weather api and sent to the backend and then requested back from the front end. The Washngton Post did a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
+            "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
         },
         {
@@ -51,7 +51,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Typescript", "Github Pages"],
           tech_description:
-            "I used Typescript and React for the first time. This app is a simple two-player game where the user explains the word on screen in Japanese without using foreign words like coffee, or table",
+            "I used Typescript and React for the first time. A simple two-player game where the user explains the word on screen to a friend in Japanese without using foreign words like coffee, or table",
           callToAction: "More Info",
         },
         {

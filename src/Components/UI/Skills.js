@@ -39,7 +39,7 @@ const Skills = (props) => {
           <span className="skills-container">
             {content.skills.map((skill) => (
               <div key={skill[1]} className="skill-icon">
-                <div>{skill[1]}</div>
+                <div className="skill-icon-text">{skill[1]}</div>
                 <span>{skill[0]}</span>
               </div>
             ))}
