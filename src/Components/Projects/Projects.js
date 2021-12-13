@@ -1,10 +1,10 @@
 import "./Projects.css";
-import quote from "../../images/projects/quote.png";
-import blog from "../../images/projects/blog.png";
-import weather from "../../images/projects/weather.png";
-import nokatakana from "../../images/projects/nokatakana.png";
-import comedyshow from "../../images/projects/comedyshow.png";
-import castles from "../../images/work/castles.png";
+import quote from "../../images/projects/quote.webp";
+import blog from "../../images/projects/blog.webp";
+import weather from "../../images/projects/weather.webp";
+import nokatakana from "../../images/projects/nokatakana.webp";
+import comedyshow from "../../images/projects/comedyshow.webp";
+import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "./ProjectCard/MUIProjectCard";
 
 const Projects = (props) => {
@@ -61,7 +61,7 @@ const Projects = (props) => {
           image: castles,
           link: "https://castlesinthesky.netlify.app",
           linkText: "Live Demo",
-          github: "",
+          github: "https://github.com/zachinjapan/castles",
           tech: "Tech",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description:

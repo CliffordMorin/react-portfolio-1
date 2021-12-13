@@ -1,5 +1,5 @@
 import "../About/About.css";
-import zach from "../../images/zach.jpg";
+import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
 
