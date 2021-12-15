@@ -49,6 +49,7 @@ const About = (props) => {
             color="success"
             style={{
               margin: "10px",
+              textDecoration: "none",
             }}
           >
             {" "}
@@ -58,8 +59,7 @@ const About = (props) => {
               rel="noopener noreferrer"
               style={{
                 color: "white",
-                decoration: "none",
-                underline: "none",
+                textDecoration: "none",
               }}
             >
               {content.resume}
