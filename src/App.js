@@ -7,7 +7,6 @@ import Footer from "./Components/Footer/Footer";
 import { connect } from "react-redux";
 import MUINav from "./Components/Navbar/MUINav";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 function App(props) {
   return (
@@ -17,9 +16,9 @@ function App(props) {
       <Fade big>
         <About language={props.language} />
       </Fade>
-      <Zoom>
+      <Fade small>
         <Projects language={props.language} />
-      </Zoom>
+      </Fade>
       <Fade big>
         <Contact language={props.language} />
       </Fade>

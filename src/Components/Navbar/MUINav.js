@@ -69,7 +69,7 @@ const MUINav = (props) => {
         opacity: 0.9,
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="100%">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
