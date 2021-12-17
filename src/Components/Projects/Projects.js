@@ -43,7 +43,7 @@ const Projects = (props) => {
         {
           title: "No Katakana Game",
           description:
-            "Explain the word on the screen without using any katakana (foreign loan words)",
+            "Explain the word on the screen without using the Katakana Japanese alphabet. A game for Japnese speakers.",
           image: nokatakana,
           link: "https://zachinjapan.github.io/no-katakana-game/",
           linkText: "Live Demo",
@@ -65,7 +65,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description:
-            "A vanilla Javascript website using sass for styling and a lot of bootstrap.",
+            "A vanilla Javascript website using sass for styling and bootstrap.",
           callToAction: "More Info",
         },
         {
@@ -151,7 +151,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
           tech_description:
-            "スタイリングにsassを使用し、多くのブートストラップを使用するバニラJavascriptのサイトです。",
+            "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
           callToAction: "詳しい情報",
         },
         {
