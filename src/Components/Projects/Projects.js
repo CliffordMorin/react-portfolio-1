@@ -240,7 +240,7 @@ const Projects = (props) => {
           tech_description={content.projects[3].tech_description}
           callToAction={content.projects[3].callToAction}
         />
-        <MUIProjectCard
+        {/* <MUIProjectCard
           title={content.projects[4].title}
           description={content.projects[4].description}
           image={content.projects[4].image}
@@ -251,7 +251,7 @@ const Projects = (props) => {
           tech={content.projects[4].tech}
           tech_description={content.projects[4].tech_description}
           callToAction={content.projects[4].callToAction}
-        />
+        /> */}
         <MUIProjectCard
           title={content.projects[5].title}
           description={content.projects[5].description}
