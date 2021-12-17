@@ -30,7 +30,7 @@ const Projects = (props) => {
         {
           title: "Do I Need A Jacket?",
           description:
-            "View the current live weather and determine if need to  wear a jacket and more.",
+            "View the current live weather, determine if need to  wear a jacket, and more.",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           linkText: "Live Demo",
