@@ -11,8 +11,8 @@ import MenuItem from "@mui/material/MenuItem";
 import america from "../../images/america.webp";
 import japan from "../../images/japan.webp";
 import { connect } from "react-redux";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import "./Navbar.css";
+import Tada from "react-reveal/Tada";
 
 const MUINav = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -156,13 +156,15 @@ const MUINav = (props) => {
             <div className="flag-div nav-button">
               {props.language === "English" ? (
                 <div className="flag-div">
-                  <span> 日本語を話せますか?{<AiOutlineArrowRight />} </span>
-                  <img
-                    className="flag"
-                    src={japan}
-                    alt="Japan Flag"
-                    onClick={() => handleChangeLanguageToJapanese()}
-                  />
+                  <span> 日本語を話せますか? &nbsp;&nbsp;</span>
+                  <Tada>
+                    <img
+                      className="flag"
+                      src={japan}
+                      alt="Japan Flag"
+                      onClick={() => handleChangeLanguageToJapanese()}
+                    />
+                  </Tada>
                 </div>
               ) : (
                 <div className="Japanese">
