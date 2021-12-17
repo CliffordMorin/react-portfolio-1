@@ -155,6 +155,7 @@ const MUINav = (props) => {
             <div className="flag-div nav-button">
               {props.language === "English" ? (
                 <div className="flag-div">
+                  <span> 日本語を話せますか？</span>
                   <img
                     className="flag"
                     src={japan}

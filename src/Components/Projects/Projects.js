@@ -11,6 +11,7 @@ const Projects = (props) => {
   let content = {
     English: {
       mainTitle: "Projects",
+      // subTitle: "More of my work",
       projects: [
         {
           title: "Quote Quiz",
@@ -23,7 +24,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
-            "My first group project.  My friend Clifford Morin coded the styling (css) and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+            "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         {
@@ -99,6 +100,7 @@ const Projects = (props) => {
     },
     Japanese: {
       mainTitle: "プロジェクト",
+      // subTitle: "もっと色々なプロジェクト",
       projects: [
         {
           title: "引用クイズ",
@@ -111,7 +113,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
-            " 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
+            " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
           callToAction: "詳しい情報",
         },
         {
@@ -189,34 +191,35 @@ const Projects = (props) => {
     : (content = content.English);
 
   return (
-    <div className="Projects">
-      <h1>{content.mainTitle}</h1>
-      <div className="projects-container">
-        <MUIProjectCard
-          title={content.projects[0].title}
-          description={content.projects[0].description}
-          image={content.projects[0].image}
-          link={content.projects[0].link}
-          linkText={content.projects[0].linkText}
-          github={content.projects[0].github}
-          tags={content.projects[0].tags}
-          tech={content.projects[0].tech}
-          tech_description={content.projects[0].tech_description}
-          callToAction={content.projects[0].callToAction}
-        />
-        <MUIProjectCard
-          title={content.projects[1].title}
-          description={content.projects[1].description}
-          image={content.projects[1].image}
-          link={content.projects[1].link}
-          linkText={content.projects[1].linkText}
-          github={content.projects[1].github}
-          tags={content.projects[1].tags}
-          tech={content.projects[1].tech}
-          tech_description={content.projects[1].tech_description}
-          callToAction={content.projects[1].callToAction}
-        />
-        <MUIProjectCard
+    <>
+      <div className="Projects">
+        <h1>{content.mainTitle}</h1>
+        <div className="projects-container">
+          <MUIProjectCard
+            title={content.projects[0].title}
+            description={content.projects[0].description}
+            image={content.projects[0].image}
+            link={content.projects[0].link}
+            linkText={content.projects[0].linkText}
+            github={content.projects[0].github}
+            tags={content.projects[0].tags}
+            tech={content.projects[0].tech}
+            tech_description={content.projects[0].tech_description}
+            callToAction={content.projects[0].callToAction}
+          />
+          <MUIProjectCard
+            title={content.projects[1].title}
+            description={content.projects[1].description}
+            image={content.projects[1].image}
+            link={content.projects[1].link}
+            linkText={content.projects[1].linkText}
+            github={content.projects[1].github}
+            tags={content.projects[1].tags}
+            tech={content.projects[1].tech}
+            tech_description={content.projects[1].tech_description}
+            callToAction={content.projects[1].callToAction}
+          />
+          {/* <MUIProjectCard
           title={content.projects[2].title}
           description={content.projects[2].description}
           image={content.projects[2].image}
@@ -227,45 +230,22 @@ const Projects = (props) => {
           tech={content.projects[2].tech}
           tech_description={content.projects[2].tech_description}
           callToAction={content.projects[2].callToAction}
-        />
-        <MUIProjectCard
-          title={content.projects[3].title}
-          description={content.projects[3].description}
-          image={content.projects[3].image}
-          link={content.projects[3].link}
-          linkText={content.projects[3].linkText}
-          github={content.projects[3].github}
-          tags={content.projects[3].tags}
-          tech={content.projects[3].tech}
-          tech_description={content.projects[3].tech_description}
-          callToAction={content.projects[3].callToAction}
-        />
-        {/* <MUIProjectCard
-          title={content.projects[4].title}
-          description={content.projects[4].description}
-          image={content.projects[4].image}
-          link={content.projects[4].link}
-          linkText={content.projects[4].linkText}
-          github={content.projects[4].github}
-          tags={content.projects[4].tags}
-          tech={content.projects[4].tech}
-          tech_description={content.projects[4].tech_description}
-          callToAction={content.projects[4].callToAction}
         /> */}
-        <MUIProjectCard
-          title={content.projects[5].title}
-          description={content.projects[5].description}
-          image={content.projects[5].image}
-          link={content.projects[5].link}
-          linkText={content.projects[5].linkText}
-          github={content.projects[5].github}
-          tags={content.projects[5].tags}
-          tech={content.projects[5].tech}
-          tech_description={content.projects[5].tech_description}
-          callToAction={content.projects[5].callToAction}
-        />
+          <MUIProjectCard
+            title={content.projects[3].title}
+            description={content.projects[3].description}
+            image={content.projects[3].image}
+            link={content.projects[3].link}
+            linkText={content.projects[3].linkText}
+            github={content.projects[3].github}
+            tags={content.projects[3].tags}
+            tech={content.projects[3].tech}
+            tech_description={content.projects[3].tech_description}
+            callToAction={content.projects[3].callToAction}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
