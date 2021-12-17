@@ -6,12 +6,18 @@ import nokatakana from "../../images/projects/nokatakana.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "./ProjectCard/MUIProjectCard";
+import React, { useState } from "react";
+import Button from "@mui/material/Button";
 
 const Projects = (props) => {
+  const [expanded, setExpanded] = useState(false);
+
   let content = {
     English: {
       mainTitle: "Projects",
-      // subTitle: "More of my work",
+      subTitle: "Side Projects",
+      subTitleButton: "See more of my work",
+
       projects: [
         {
           title: "Quote Quiz",
@@ -100,7 +106,8 @@ const Projects = (props) => {
     },
     Japanese: {
       mainTitle: "プロジェクト",
-      // subTitle: "もっと色々なプロジェクト",
+      subTitle: "サイドプロジェクト",
+      subTitleButton: "サイドプロジェクトを見る",
       projects: [
         {
           title: "引用クイズ",
@@ -219,18 +226,7 @@ const Projects = (props) => {
             tech_description={content.projects[1].tech_description}
             callToAction={content.projects[1].callToAction}
           />
-          {/* <MUIProjectCard
-          title={content.projects[2].title}
-          description={content.projects[2].description}
-          image={content.projects[2].image}
-          link={content.projects[2].link}
-          linkText={content.projects[2].linkText}
-          github={content.projects[2].github}
-          tags={content.projects[2].tags}
-          tech={content.projects[2].tech}
-          tech_description={content.projects[2].tech_description}
-          callToAction={content.projects[2].callToAction}
-        /> */}
+
           <MUIProjectCard
             title={content.projects[3].title}
             description={content.projects[3].description}
@@ -244,6 +240,63 @@ const Projects = (props) => {
             callToAction={content.projects[3].callToAction}
           />
         </div>
+        {expanded ? (
+          <>
+            <h1>{content.subTitle}</h1>
+            <div className="projects-container">
+              <MUIProjectCard
+                title={content.projects[2].title}
+                description={content.projects[2].description}
+                image={content.projects[2].image}
+                link={content.projects[2].link}
+                linkText={content.projects[2].linkText}
+                github={content.projects[2].github}
+                tags={content.projects[2].tags}
+                tech={content.projects[2].tech}
+                tech_description={content.projects[2].tech_description}
+                callToAction={content.projects[2].callToAction}
+              />
+              <MUIProjectCard
+                title={content.projects[4].title}
+                description={content.projects[4].description}
+                image={content.projects[4].image}
+                link={content.projects[4].link}
+                linkText={content.projects[4].linkText}
+                github={content.projects[4].github}
+                tags={content.projects[4].tags}
+                tech={content.projects[4].tech}
+                tech_description={content.projects[4].tech_description}
+                callToAction={content.projects[4].callToAction}
+              />
+              <MUIProjectCard
+                title={content.projects[5].title}
+                description={content.projects[5].description}
+                image={content.projects[5].image}
+                link={content.projects[5].link}
+                linkText={content.projects[5].linkText}
+                github={content.projects[5].github}
+                tags={content.projects[5].tags}
+                tech={content.projects[5].tech}
+                tech_description={content.projects[5].tech_description}
+                callToAction={content.projects[5].callToAction}
+              />
+            </div>
+          </>
+        ) : (
+          <Button
+            variant="contained"
+            color="success"
+            style={{
+              margin: "10px",
+              textDecoration: "none",
+            }}
+            onClick={() => {
+              setExpanded(!expanded);
+            }}
+          >
+            {content.subTitleButton}
+          </Button>
+        )}
       </div>
     </>
   );
