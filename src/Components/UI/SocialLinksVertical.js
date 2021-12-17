@@ -34,7 +34,7 @@ const SocialLinksVertical = () => {
           <AiFillTwitterCircle className="social-link-img" />
         </a>
         <a
-          href="https://zstoneblog.gatsbyjs.io/"
+          href="https://zachinjapan.gatsbyjs.io"
           target="_blank"
           rel="noopener noreferrer"
         >
