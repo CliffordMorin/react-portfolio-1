@@ -23,7 +23,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
-            "My first project using redux and my only group project.  My friend Clifford Morin coded the styling (css) and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+            "My first group project.  My friend Clifford Morin coded the styling (css) and I did the functionality.  A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         {
@@ -51,7 +51,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Typescript", "Github Pages"],
           tech_description:
-            "I used Typescript and React for the first time. A simple two-player game where the user explains the word on screen to a friend in Japanese without using foreign words like coffee, or table",
+            "A simple two-player game where the user explains the word on screen to a friend in Japanese without using foreign words like coffee, or table",
           callToAction: "More Info",
         },
         {
@@ -111,7 +111,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
-            "reduxを使うのは初めてでした。 ポートフォリオでの私の唯一のグループプロジェクトです。 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
+            " 友人のクリフォード・モーリンさんが外観をコーディングし、私が機能を実行しました。 ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
           callToAction: "詳しい情報",
         },
         {
@@ -138,7 +138,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "Typescript", "Github Pages"],
           tech_description:
-            "初めてTypescriptとReactを使用しました。 このアプリは、ユーザーに単語が表示され、コーヒーのような外来語を使用せずに説明するの単純な2人用ゲームです。",
+            "このアプリは、ユーザーに単語が表示され、コーヒーのような外来語を使用せずに説明するの単純な2人用ゲームです。",
           callToAction: "詳しい情報",
         },
         {
