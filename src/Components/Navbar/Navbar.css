@@ -1,6 +1,7 @@
 .nav {
   position: "static" !important;
   z-index: 100 !important;
+  background-color: #2e7d32 !important;
 }
 
 @media (max-width: 768px) {
@@ -13,4 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-span {
+  background-color: #2e7d32;
 }

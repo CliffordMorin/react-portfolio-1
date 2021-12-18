@@ -156,7 +156,10 @@ const MUINav = (props) => {
             <div className="flag-div nav-button">
               {props.language === "English" ? (
                 <div className="flag-div">
-                  <span> 日本語を話せますか?&nbsp;&nbsp; </span>
+                  <span className="nav-span">
+                    {" "}
+                    日本語を話せますか?&nbsp;&nbsp;{" "}
+                  </span>
                   <Tada>
                     <img
                       className="flag"
