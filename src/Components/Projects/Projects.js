@@ -49,8 +49,7 @@ const Projects = (props) => {
         },
         {
           title: "No Katakana Game",
-          description:
-            "Explain the word on the screen without using the Katakana Japanese alphabet. A game for Japnese speakers.",
+          description: "A game for Japanese speakers.",
           image: nokatakana,
           link: "https://zachinjapan.github.io/no-katakana-game/",
           linkText: "Live Demo",
@@ -64,7 +63,7 @@ const Projects = (props) => {
         {
           title: "Castles In The Sky",
           description:
-            "Have a big event coming up? Book this professional rock band located in New Jersey,America.",
+            "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
           linkText: "Live Demo",
