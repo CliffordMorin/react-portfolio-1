@@ -12,7 +12,6 @@ import america from "../../images/america.webp";
 import japan from "../../images/japan.webp";
 import { connect } from "react-redux";
 import "./Navbar.css";
-import Tada from "react-reveal/Tada";
 
 const MUINav = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -66,14 +65,12 @@ const MUINav = (props) => {
       position="static"
       className="nav"
       color="success"
-      style={{
-        opacity: 0.9,
-      }}
     >
-      <Container maxWidth="100%">
+      <Container maxWidth="100%" color="sucess">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
+              color="success"
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -84,6 +81,7 @@ const MUINav = (props) => {
               <MenuIcon />
             </IconButton>
             <Menu
+              color="success"
               disableScrollLock={true}
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -109,6 +107,7 @@ const MUINav = (props) => {
                   key={Math.random()}
                 >
                   <MenuItem
+                    color="success"
                     onClick={handleCloseNavMenu}
                     color="inherit"
                     key={Math.random()}
@@ -127,6 +126,7 @@ const MUINav = (props) => {
           </Box>
 
           <Box
+            color="success"
             overflow="visible"
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           >
@@ -160,25 +160,21 @@ const MUINav = (props) => {
                     {" "}
                     日本語を話せますか?&nbsp;&nbsp;{" "}
                   </span>
-                  <Tada>
-                    <img
-                      className="flag"
-                      src={japan}
-                      alt="Japan Flag"
-                      onClick={() => handleChangeLanguageToJapanese()}
-                    />
-                  </Tada>
+                  <img
+                    className="flag"
+                    src={japan}
+                    alt="Japan Flag"
+                    onClick={() => handleChangeLanguageToJapanese()}
+                  />
                 </div>
               ) : (
                 <div className="Japanese">
-                  <Tada>
-                    <img
-                      className="flag"
-                      src={america}
-                      alt="America Flag"
-                      onClick={() => handleChangeLanguageToEnglish()}
-                    />
-                  </Tada>
+                  <img
+                    className="flag"
+                    src={america}
+                    alt="America Flag"
+                    onClick={() => handleChangeLanguageToEnglish()}
+                  />
                 </div>
               )}
             </div>
