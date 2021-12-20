@@ -70,7 +70,6 @@ const MUINav = (props) => {
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
-              color="success"
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -109,7 +108,6 @@ const MUINav = (props) => {
                   <MenuItem
                     color="success"
                     onClick={handleCloseNavMenu}
-                    color="inherit"
                     key={Math.random()}
                     sx={{ my: 1, color: "green", display: "block" }}
                     style={{
