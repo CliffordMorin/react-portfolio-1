@@ -158,21 +158,25 @@ const MUINav = (props) => {
                     {" "}
                     日本語を話せますか?&nbsp;&nbsp;{" "}
                   </span>
-                  <img
-                    className="flag"
-                    src={japan}
-                    alt="Japan Flag"
-                    onClick={() => handleChangeLanguageToJapanese()}
-                  />
+                  <div className="flag-div-holder">
+                    <img
+                      className="flag"
+                      src={japan}
+                      alt="Japan Flag"
+                      onClick={() => handleChangeLanguageToJapanese()}
+                    />
+                  </div>
                 </div>
               ) : (
                 <div className="Japanese">
-                  <img
-                    className="flag"
-                    src={america}
-                    alt="America Flag"
-                    onClick={() => handleChangeLanguageToEnglish()}
-                  />
+                  <div className="flag-div-holder">
+                    <img
+                      className="flag"
+                      src={america}
+                      alt="America Flag"
+                      onClick={() => handleChangeLanguageToEnglish()}
+                    />
+                  </div>
                 </div>
               )}
             </div>

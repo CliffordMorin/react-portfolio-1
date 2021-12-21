@@ -25,3 +25,10 @@
   background-color: #2e7d32;
   opacity: 0.9;
 }
+
+.flag-div-holder :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
