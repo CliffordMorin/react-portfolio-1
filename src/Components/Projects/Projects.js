@@ -36,7 +36,7 @@ const Projects = (props) => {
         {
           title: "Do I Need A Jacket?",
           description:
-            "View the current live weather, determine if need to  wear a jacket, and more.",
+            "View the current live weather in America, determine if need to  wear a jacket, and more.",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           linkText: "Live Demo",
@@ -125,7 +125,7 @@ const Projects = (props) => {
         {
           title: "ジャケットが必要ですか？",
           description:
-            "郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
+            "アメリカの郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
           image: weather,
           link: "https://doineedajackettoday.herokuapp.com",
           linkText: "ウエブサイト",
