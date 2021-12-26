@@ -56,6 +56,6 @@ Fork, request, or contact me.
 [![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/zachinjapan)
 [![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/zach-stone-45b649211/)
 
-このプロジェクトに関するご質問は、zachinjapan888@gmail.comまでお気軽にご連絡ください。
+このプロジェクトに関するご質問は、Zach.Stone.Developer@gmail.com までお気軽にご連絡ください。
 
-Feel free to reach me at zachinjapan888@gmail.com with any question regarding this project!
+Feel free to reach me at Zach.Stone.Developer@gmail.com with any question regarding this project!
