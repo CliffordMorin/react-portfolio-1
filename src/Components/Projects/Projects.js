@@ -78,7 +78,7 @@ const Projects = (props) => {
           title: "Zach in Japan",
           description: "My tech blog.",
           image: blog,
-          link: "https://zachinjapan.gatsbyjs.io",
+          link: "https://zachinjapan.com",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "Tech",
