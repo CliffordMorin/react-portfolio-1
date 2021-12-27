@@ -202,18 +202,6 @@ const Projects = (props) => {
         <h1>{content.mainTitle}</h1>
         <div className="projects-container">
           <MUIProjectCard
-            title={content.projects[0].title}
-            description={content.projects[0].description}
-            image={content.projects[0].image}
-            link={content.projects[0].link}
-            linkText={content.projects[0].linkText}
-            github={content.projects[0].github}
-            tags={content.projects[0].tags}
-            tech={content.projects[0].tech}
-            tech_description={content.projects[0].tech_description}
-            callToAction={content.projects[0].callToAction}
-          />
-          <MUIProjectCard
             title={content.projects[1].title}
             description={content.projects[1].description}
             image={content.projects[1].image}
@@ -224,6 +212,18 @@ const Projects = (props) => {
             tech={content.projects[1].tech}
             tech_description={content.projects[1].tech_description}
             callToAction={content.projects[1].callToAction}
+          />
+          <MUIProjectCard
+            title={content.projects[0].title}
+            description={content.projects[0].description}
+            image={content.projects[0].image}
+            link={content.projects[0].link}
+            linkText={content.projects[0].linkText}
+            github={content.projects[0].github}
+            tags={content.projects[0].tags}
+            tech={content.projects[0].tech}
+            tech_description={content.projects[0].tech_description}
+            callToAction={content.projects[0].callToAction}
           />
 
           <MUIProjectCard
