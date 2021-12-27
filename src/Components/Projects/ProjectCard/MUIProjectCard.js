@@ -37,7 +37,7 @@ export default function MUIProjectCard(props) {
     // 194
     <Card sx={{ maxWidth: 405 }} id="MUI-Card">
       <CardHeader title={props.title} />
-      <a href={props.link}>
+      <a href={props.link} target={"_blank"} rel="noreferrer">
         <CardMedia
           component="img"
           height="254"

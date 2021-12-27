@@ -241,7 +241,7 @@ const Projects = (props) => {
         </div>
         {expanded ? (
           <>
-            <h1>{content.subTitle}</h1>
+            {/* <h1>{content.subTitle}</h1> */}
             <div className="projects-container">
               <MUIProjectCard
                 title={content.projects[2].title}
