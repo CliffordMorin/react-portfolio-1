@@ -2,7 +2,7 @@ import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
 import blog from "../../images/projects/blog.webp";
 import weather from "../../images/projects/weather.webp";
-import nokatakana from "../../images/projects/nokatakana.webp";
+import prefecture from "../../images/projects/prefecture.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "./ProjectCard/MUIProjectCard";
@@ -48,16 +48,17 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "No Katakana Game",
-          description: "A game for Japanese speakers.",
-          image: nokatakana,
-          link: "https://zachinjapan.github.io/no-katakana-game/",
+          title: "Prefecture Match",
+          description:
+            "Learn the Japanese Prefectures using this fun matching game",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
           linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/nokatakana",
+          github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
-          tags: ["React", "Typescript", "Github Pages"],
+          tags: ["React", "Heroku"],
           tech_description:
-            "A simple two-player game where the user explains the word on screen to a friend in Japanese without using foreign words like coffee, or table",
+            "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
           callToAction: "More Info",
         },
         {
@@ -137,16 +138,16 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "ノカタカナゲーム",
-          description: "外来語を使用せずに、言葉を接目するのゲーム。",
-          image: nokatakana,
-          link: "https://zachinjapan.github.io/no-katakana-game/",
+          title: "都道府県マッチング",
+          description:
+            "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
           linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/no-katakana-game",
+          github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
-          tags: ["React", "Typescript", "Github Pages"],
-          tech_description:
-            "このアプリは、ユーザーに単語が表示され、コーヒーのような外来語を使用せずに説明するの単純な2人用ゲームです。",
+          tags: ["React", "Heroku"],
+          tech_description: " useEffectとuseStateを使用しています",
           callToAction: "詳しい情報",
         },
         {
