@@ -8,18 +8,21 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach, a web developer focusing on the MERN tech stack. I have experience building pages using vanilla Javascript as well as React frameworks, such as create-react-app or Gatsby.js. ",
-
+        "Hi, I'm Zach, a self-taught web developer focusing on the MERN tech stack. I have experience building pages using vanilla Javascript as well as React frameworks, such as create-react-app or Gatsby.js. ",
       description2:
-        "I am currently looking for a front end developer position in Japan. If you are interested in working with me, please contact me using the form below.",
+        "I am currently learning authentication and database management and will study at a coding bootcamp in Japan in 2022.",
+      description3:
+        "If you are interested in working with me, please contact me using the form below.",
       resume: "Resume",
     },
     Japanese: {
       title: "自己紹介",
       description:
-        "こんにちは、ストーン・ザックです。MERN技術でウェブサイトを作成します。JavascriptやReactフレームワークを使用してウェブサイトを作成できます。",
+        "こんにちは、ストーン・ザックです。独学のWeb開発者です。 JavascriptやReactフレームワークを使用してウェブサイトを作成できます。",
       description2:
-        "日本でフロントエンドエンジニアの仕事を探しています。ご興味がある方は、以下のフォームから連絡を取ってください。",
+        "最近、認証やデータベース管理を学んでいます。日本でコーディング学校を入学予定があります。",
+      description3:
+        "ご興味がある方は、以下のフォームから連絡を取ってください。",
       resume: "履歴書",
     },
   };
