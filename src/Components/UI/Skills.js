@@ -7,8 +7,9 @@ import { FaBootstrap } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
-// import { RiGatsbyFill } from "react-icons/ri";
+import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
 
 const Skills = (props) => {
   let content = {
@@ -21,7 +22,8 @@ const Skills = (props) => {
       [<SiTypescript />, "Typescript"],
       [<FaNodeJs />, "NodeJS"],
       [<FaReact />, "ReactJS"],
-      // [<RiGatsbyFill />, "GatsbyJS"],
+      [<RiGatsbyFill />, "GatsbyJS"],
+      [<GrGraphQl />, "GraphQL"],
     ],
   };
 
