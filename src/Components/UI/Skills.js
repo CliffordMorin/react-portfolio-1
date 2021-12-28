@@ -15,14 +15,14 @@ const Skills = (props) => {
   let content = {
     title: "Skills",
     skills: [
-      [<AiFillHtml5 />, "HTML5"],
-      [<DiCss3Full />, "CSS3"],
+      [<AiFillHtml5 />, "HTML"],
+      [<DiCss3Full />, "CSS"],
       [<DiSass />, "SASS"],
       [<FaBootstrap />, "Bootstrap"],
       [<SiTypescript />, "Typescript"],
-      [<FaNodeJs />, "NodeJS"],
-      [<FaReact />, "ReactJS"],
-      [<RiGatsbyFill />, "GatsbyJS"],
+      [<FaNodeJs />, "Node"],
+      [<FaReact />, "React"],
+      [<RiGatsbyFill />, "Gatsby"],
       [<GrGraphQl />, "GraphQL"],
     ],
   };
