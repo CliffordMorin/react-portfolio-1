@@ -2,6 +2,7 @@ import "../About/About.css";
 import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
+import { BsLink45Deg } from "react-icons/bs";
 
 const About = (props) => {
   let content = {
@@ -12,7 +13,7 @@ const About = (props) => {
       description2:
         "I am currently learning authentication and database management and will study at a coding bootcamp in Japan in 2022.",
       description3:
-        "If you are interested in working with me, please contact me using the form below.",
+        "If you are interested in working with me, please contact me using the form below or through any of my links below.",
       resume: "Resume",
     },
     Japanese: {
@@ -22,7 +23,7 @@ const About = (props) => {
       description2:
         "最近、認証やデータベース管理を学んでいます。日本でコーディング学校を入学予定があります。",
       description3:
-        "ご興味がある方は、以下のフォームから連絡を取ってください。",
+        "下記のフォームからお問い合わせください。また、このリンクでもお問い合わせください。",
       resume: "履歴書",
     },
   };
@@ -46,6 +47,20 @@ const About = (props) => {
         </h1>
         <p className="about-description">{content.description}</p>
         <p className="about-description">{content.description2}</p>
+        <p className="about-description">{content.description3}</p>
+        <p>
+          <a
+            href="https://linktr.ee/zachinjapan"
+            target={"_blank"}
+            style={{
+              textDecoration: "underline",
+              color: "green",
+              cursor: "pointer",
+            }}
+          >
+            <span> Zach Stone's Link Tree</span>
+          </a>
+        </p>
         <div className="resume-div">
           <Button
             variant="contained"
