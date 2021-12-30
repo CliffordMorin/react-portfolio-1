@@ -10,6 +10,7 @@ import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
+import { SiRedux } from "react-icons/si";
 
 const Skills = (props) => {
   let content = {
@@ -22,6 +23,7 @@ const Skills = (props) => {
       [<SiTypescript />, "Typescript"],
       [<FaNodeJs />, "Node"],
       [<FaReact />, "React"],
+      [<SiRedux />, "Redux"],
       [<RiGatsbyFill />, "Gatsby"],
       [<GrGraphQl />, "GraphQL"],
     ],
