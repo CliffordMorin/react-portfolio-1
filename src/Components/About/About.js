@@ -2,7 +2,6 @@ import "../About/About.css";
 import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
-import { BsLink45Deg } from "react-icons/bs";
 
 const About = (props) => {
   let content = {
