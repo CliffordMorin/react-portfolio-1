@@ -50,6 +50,7 @@ const About = (props) => {
         <p>
           <a
             href="https://linktr.ee/zachinjapan"
+            rel="noopener noreferrer"
             target={"_blank"}
             style={{
               textDecoration: "underline",
