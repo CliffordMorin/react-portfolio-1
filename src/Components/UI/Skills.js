@@ -25,7 +25,7 @@ const Skills = (props) => {
       [<FaReact />, "React"],
       [<SiRedux />, "Redux"],
       [<RiGatsbyFill />, "Gatsby"],
-      [<GrGraphQl />, "GraphQL"],
+      // [<GrGraphQl />, "GraphQL"],
     ],
   };
 
