@@ -9,7 +9,6 @@
   .nav {
     position: fixed !important;
     opacity: 0.9;
-    /* background-color: #2e7d32; */
   }
 }
 
@@ -17,13 +16,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 0.9; */
-  /* background-color: #2e7d32; */
 }
 
 .nav-span {
   background-color: #2e7d32;
-  opacity: 0.9;
 }
 
 .flag-div-holder {

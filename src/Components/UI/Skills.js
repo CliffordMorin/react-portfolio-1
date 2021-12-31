@@ -9,7 +9,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
+// import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 
 const Skills = (props) => {
@@ -33,7 +33,7 @@ const Skills = (props) => {
     <>
       <IconContext.Provider
         value={{
-          color: "green",
+          color: "#2e7d32",
           className: "global-class-name sill-img",
           size: "40px",
         }}

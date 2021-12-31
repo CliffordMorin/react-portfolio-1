@@ -54,7 +54,7 @@ const About = (props) => {
             target={"_blank"}
             style={{
               textDecoration: "underline",
-              color: "green",
+              color: "#2e7d32",
               cursor: "pointer",
             }}
           >

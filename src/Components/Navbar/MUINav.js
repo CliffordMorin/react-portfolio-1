@@ -104,12 +104,13 @@ const MUINav = (props) => {
                   href={item[1]}
                   style={{ textDecoration: "none" }}
                   key={Math.random()}
+                  className="nav-menu-item"
                 >
                   <MenuItem
                     color="success"
                     onClick={handleCloseNavMenu}
                     key={Math.random()}
-                    sx={{ my: 1, color: "green", display: "block" }}
+                    sx={{ my: 1, color: "#2e7d32", display: "block" }}
                     style={{
                       display: "flex",
                       justifyContent: "center",

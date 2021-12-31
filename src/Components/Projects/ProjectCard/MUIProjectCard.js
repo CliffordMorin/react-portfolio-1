@@ -55,8 +55,9 @@ export default function MUIProjectCard(props) {
           <div>
             <a href={props.github}>
               <AiFillGithub
+                className="MUI-icon"
                 style={{
-                  color: "green",
+                  color: "#2e7d32",
                 }}
               />
             </a>
@@ -66,8 +67,9 @@ export default function MUIProjectCard(props) {
           <div>
             <a href={props.link}>
               <RiComputerLine
+                className="MUI-icon"
                 style={{
-                  color: "green",
+                  color: "#2e7d32",
                 }}
               />
             </a>
@@ -92,6 +94,7 @@ export default function MUIProjectCard(props) {
             <div
               style={{
                 fontSize: "0.8rem",
+                color: "#E62776",
               }}
             >
               {props.callToAction}
@@ -101,6 +104,9 @@ export default function MUIProjectCard(props) {
               onClick={handleExpandClick}
               aria-expanded={expanded}
               aria-label="show more"
+              style={{
+                color: "#E62776",
+              }}
             >
               <ExpandMoreIcon />
             </ExpandMore>

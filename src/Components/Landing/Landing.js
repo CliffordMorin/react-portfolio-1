@@ -21,7 +21,7 @@ const Landing = (props) => {
 
   return (
     <IconContext.Provider
-      value={{ color: "green", className: "global-class-name", size: "50px" }}
+      value={{ color: "#2e7d32", className: "global-class-name", size: "50px" }}
     >
       <div className="Landing">
         <div className="landing-content">
@@ -31,7 +31,7 @@ const Landing = (props) => {
         </div>
         <div className="contact-button">
           <a href="#About">
-            <MdKeyboardArrowDown />
+            <MdKeyboardArrowDown color="#E62776" className="down-arrow" />
           </a>
         </div>
       </div>
