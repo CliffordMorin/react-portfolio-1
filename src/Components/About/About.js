@@ -61,7 +61,9 @@ const About = (props) => {
               cursor: "pointer",
             }}
           >
-            <span> Zach Stone's Link Tree</span>
+            <p className="about-description">
+              <span> Zach Stone's Link Tree</span>
+            </p>
           </a>
         </p>
         <div className="resume-div">

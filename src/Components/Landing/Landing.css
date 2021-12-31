@@ -55,3 +55,9 @@
     top: 90%;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .landing-title {
+    font-size: 3.5rem;
+  }
+}
