@@ -20,7 +20,13 @@ const Footer = (props) => {
   return (
     <footer>
       <div className="footer-text">
-        <span>{content.description} </span>
+        <span
+          style={{
+            color: "#2e7d32",
+          }}
+        >
+          {content.description}{" "}
+        </span>
       </div>
       <SocialLinks />
     </footer>
