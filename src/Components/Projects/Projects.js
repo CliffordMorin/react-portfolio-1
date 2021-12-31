@@ -86,7 +86,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
           tech_description:
-            "I use this blog to learn how to use Gatsby and practice using markdown.",
+            "I use this blog to learn Gatsby, graphql, and markdown.",
           callToAction: "More Info",
         },
         {
@@ -174,7 +174,7 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
           tech_description:
-            "このブログを使用して、Gatsby.jsの使用方法を学び、マークダウンを書き方を練習しています。",
+            "このブログでは、Gatsby、graphql、markdownを学んでいます。",
           callToAction: "詳しい情報",
         },
         {
@@ -204,18 +204,6 @@ const Projects = (props) => {
         <h1>{content.mainTitle}</h1>
         <div className="projects-container">
           <MUIProjectCard
-            title={content.projects[1].title}
-            description={content.projects[1].description}
-            image={content.projects[1].image}
-            link={content.projects[1].link}
-            linkText={content.projects[1].linkText}
-            github={content.projects[1].github}
-            tags={content.projects[1].tags}
-            tech={content.projects[1].tech}
-            tech_description={content.projects[1].tech_description}
-            callToAction={content.projects[1].callToAction}
-          />
-          <MUIProjectCard
             title={content.projects[0].title}
             description={content.projects[0].description}
             image={content.projects[0].image}
@@ -226,6 +214,19 @@ const Projects = (props) => {
             tech={content.projects[0].tech}
             tech_description={content.projects[0].tech_description}
             callToAction={content.projects[0].callToAction}
+          />
+
+          <MUIProjectCard
+            title={content.projects[4].title}
+            description={content.projects[4].description}
+            image={content.projects[4].image}
+            link={content.projects[4].link}
+            linkText={content.projects[4].linkText}
+            github={content.projects[4].github}
+            tags={content.projects[4].tags}
+            tech={content.projects[4].tech}
+            tech_description={content.projects[4].tech_description}
+            callToAction={content.projects[4].callToAction}
           />
 
           <MUIProjectCard
@@ -247,6 +248,18 @@ const Projects = (props) => {
               {/* <h1>{content.subTitle}</h1> */}
               <div className="projects-container">
                 <MUIProjectCard
+                  title={content.projects[1].title}
+                  description={content.projects[1].description}
+                  image={content.projects[1].image}
+                  link={content.projects[1].link}
+                  linkText={content.projects[1].linkText}
+                  github={content.projects[1].github}
+                  tags={content.projects[1].tags}
+                  tech={content.projects[1].tech}
+                  tech_description={content.projects[1].tech_description}
+                  callToAction={content.projects[1].callToAction}
+                />
+                <MUIProjectCard
                   title={content.projects[2].title}
                   description={content.projects[2].description}
                   image={content.projects[2].image}
@@ -258,18 +271,7 @@ const Projects = (props) => {
                   tech_description={content.projects[2].tech_description}
                   callToAction={content.projects[2].callToAction}
                 />
-                <MUIProjectCard
-                  title={content.projects[4].title}
-                  description={content.projects[4].description}
-                  image={content.projects[4].image}
-                  link={content.projects[4].link}
-                  linkText={content.projects[4].linkText}
-                  github={content.projects[4].github}
-                  tags={content.projects[4].tags}
-                  tech={content.projects[4].tech}
-                  tech_description={content.projects[4].tech_description}
-                  callToAction={content.projects[4].callToAction}
-                />
+
                 <MUIProjectCard
                   title={content.projects[5].title}
                   description={content.projects[5].description}
