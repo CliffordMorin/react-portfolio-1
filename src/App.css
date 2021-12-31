@@ -1,3 +1,11 @@
 h1 {
   color: rgb(73, 70, 72);
 }
+
+a :hover {
+  color: #e62776 !important;
+}
+
+svg:hover {
+  color: #e62776 !important;
+}

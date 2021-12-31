@@ -36,6 +36,8 @@ const Contact = (props) => {
           method="POST"
         >
           <TextField
+            color="success"
+            margin="normal"
             className="text-form"
             type="text"
             name="name"
@@ -43,6 +45,8 @@ const Contact = (props) => {
             required
           />
           <TextField
+            color="success"
+            margin="normal"
             className="text-form"
             type="email"
             name="email"
@@ -50,6 +54,9 @@ const Contact = (props) => {
             required
           />
           <TextField
+            color="success"
+            margin="normal"
+            multiline
             className="text-form"
             size="medium"
             name="message"

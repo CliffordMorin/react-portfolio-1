@@ -2,6 +2,7 @@ import "../About/About.css";
 import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
+import Slide from "react-reveal/Slide";
 
 const About = (props) => {
   let content = {
@@ -33,9 +34,11 @@ const About = (props) => {
 
   return (
     <div className="about">
-      <div className="about-left">
-        <img className="zach-img" src={zach} alt="zach" loading="lazy" />
-      </div>
+      <Slide left>
+        <div className="about-left">
+          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+        </div>
+      </Slide>
       <div className="about-right">
         <h1
           style={{

@@ -12,6 +12,7 @@ import america from "../../images/america.webp";
 import japan from "../../images/japan.webp";
 import { connect } from "react-redux";
 import "./Navbar.css";
+import Slide from "react-reveal/Slide";
 
 const MUINav = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -150,38 +151,39 @@ const MUINav = (props) => {
               </a>
             ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <div className="flag-div nav-button">
-              {props.language === "English" ? (
-                <div className="flag-div">
-                  <span className="nav-span">
-                    {" "}
-                    日本語を話せますか?&nbsp;&nbsp;{" "}
-                  </span>
-                  <div className="flag-div-holder">
-                    <img
-                      className="flag"
-                      src={japan}
-                      alt="Japan Flag"
-                      onClick={() => handleChangeLanguageToJapanese()}
-                    />
+          <Slide right>
+            <Box sx={{ flexGrow: 0 }}>
+              <div className="flag-div nav-button">
+                {props.language === "English" ? (
+                  <div className="flag-div">
+                    <span className="nav-span">
+                      {" "}
+                      日本語を話せますか?&nbsp;&nbsp;{" "}
+                    </span>
+                    <div className="flag-div-holder">
+                      <img
+                        className="flag"
+                        src={japan}
+                        alt="Japan Flag"
+                        onClick={() => handleChangeLanguageToJapanese()}
+                      />
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <div className="Japanese">
-                  <div className="flag-div-holder">
-                    <img
-                      className="flag"
-                      src={america}
-                      alt="America Flag"
-                      onClick={() => handleChangeLanguageToEnglish()}
-                    />
+                ) : (
+                  <div className="Japanese">
+                    <div className="flag-div-holder">
+                      <img
+                        className="flag"
+                        src={america}
+                        alt="America Flag"
+                        onClick={() => handleChangeLanguageToEnglish()}
+                      />
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          </Box>
+                )}
+              </div>
+            </Box>
+          </Slide>
         </Toolbar>
       </Container>
     </AppBar>
