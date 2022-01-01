@@ -11,7 +11,7 @@ const Landing = (props) => {
       description: "// Web Developer //",
     },
     Japanese: {
-      title: "ザック・ストーン",
+      title: "Zach Stone",
       description: "// ウエブデベロッパー //",
     },
   };
@@ -32,7 +32,7 @@ const Landing = (props) => {
           </Flip>
           <SocialLinksVertical />
         </div>
-     
+
         <div className="contact-button">
           <a href="#About">
             <MdKeyboardArrowDown color="#E62776" className="down-arrow" />
