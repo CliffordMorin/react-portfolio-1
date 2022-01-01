@@ -1,5 +1,5 @@
 h1 {
-  color: rgb(73, 70, 72);
+  color: #e62776;
 }
 
 a :hover {
@@ -9,4 +9,3 @@ a :hover {
 svg:hover {
   color: #e62776 !important;
 }
-
