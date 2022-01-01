@@ -13,7 +13,7 @@ const About = (props) => {
       description2:
         "I am currently learning authentication and database management and will study at a coding bootcamp in Japan in 2022.",
       description3:
-        "If you are interested in working with me, please contact me using the form below or through any of my links below.",
+        "If you are interested in working with me, please contact me using the form below or through any of my social links.",
       resume: "Resume",
     },
     Japanese: {
