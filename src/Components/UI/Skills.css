@@ -34,8 +34,17 @@
 
 .skill-icon-text {
   margin-bottom: 10px;
+  color: #2e7d32;
 }
 
 .skill-img {
   margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a span {
+  color: green;
 }

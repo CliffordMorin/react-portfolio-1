@@ -9,3 +9,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 1440px) {
+  #MUI-Card {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

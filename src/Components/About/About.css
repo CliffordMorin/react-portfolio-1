@@ -25,9 +25,21 @@
   flex-wrap: wrap;
 }
 
+.picture {
+  display: block;
+  margin: 0 auto;
+
+  width: 80%;
+  max-width: 300px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  border: 5px solid #e62776;
+}
 .zach-img {
-  height: 300px;
-  width: 300px;
+  /* height: 300px; */
+  /* width: 300px; */
+  max-width: 100%;
+  transform: rotate(-45deg) scale(1.42);
 }
 
 .about-right {
@@ -46,6 +58,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  .picture {
+    width: 45%;
+    margin-bottom: 20px;
+  }
 }
 
 .about-description {
@@ -55,5 +71,11 @@
 @media screen and (max-width: 800px) {
   .about-left {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  .picture {
+    width: 60%;
   }
 }

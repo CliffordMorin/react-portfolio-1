@@ -60,3 +60,14 @@
     font-size: 3.5rem;
   }
 }
+
+/* landing text for 4k monitors */
+@media screen and (min-width: 1440px) {
+  .landing-title {
+    font-size: 7rem;
+  }
+
+  h3 {
+    font-size: 2rem !important;
+  }
+}

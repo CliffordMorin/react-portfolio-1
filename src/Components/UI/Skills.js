@@ -16,16 +16,24 @@ const Skills = (props) => {
   let content = {
     title: "Skills",
     skills: [
-      [<AiFillHtml5 />, "HTML"],
-      [<DiCss3Full />, "CSS"],
-      [<DiSass />, "SASS"],
-      [<FaBootstrap />, "Bootstrap"],
-      [<SiTypescript />, "Typescript"],
-      [<FaNodeJs />, "Node"],
-      [<FaReact />, "React"],
-      [<SiRedux />, "Redux"],
-      [<RiGatsbyFill />, "Gatsby"],
-      // [<GrGraphQl />, "GraphQL"],
+      [
+        <AiFillHtml5 />,
+        "HTML",
+        "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      ],
+      [
+        <DiCss3Full />,
+        "CSS",
+        "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      ],
+      [<DiSass />, "SASS", "https://sass-lang.com/"],
+      [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+      [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
+      [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+      [<FaReact />, "React", "https://reactjs.org/"],
+      [<SiRedux />, "Redux", "https://redux.js.org/"],
+      [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
+      // [<GrGraphQl />, "GraphQL" , "https://graphql.org/"],
     ],
   };
 
@@ -44,7 +52,12 @@ const Skills = (props) => {
             {content.skills.map((skill) => (
               <div key={skill[1]} className="skill-icon">
                 <div className="skill-icon-text">{skill[1]}</div>
-                <span>{skill[0]}</span>
+                <span>
+                  {" "}
+                  <a href={skill[2]} target="_blank" rel="noopener noreferrer">
+                    {skill[0]}
+                  </a>
+                </span>
               </div>
             ))}
           </span>

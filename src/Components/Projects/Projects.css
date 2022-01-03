@@ -1,5 +1,6 @@
 .Projects {
   text-align: center;
+  width: 100%;
 }
 
 .projects-container {
@@ -12,4 +13,18 @@
   align-items: center;
   align-content: center;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1440px) {
+  .projects-container {
+    width: 90%;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }

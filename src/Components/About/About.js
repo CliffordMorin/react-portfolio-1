@@ -36,7 +36,9 @@ const About = (props) => {
     <div className="about">
       <Slide left>
         <div className="about-left">
-          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+          <div className="picture">
+            <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+          </div>
         </div>
       </Slide>
       <div className="about-right">
