@@ -10,6 +10,11 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
 function App(props) {
+  console.log(
+    "%cHi! Thanks for checking out my code ☺ \n\nThe repo is on my github as 'React Portfolio'. \n\nFind a bug? Feel free to send me a message using my contact form.\n\n",
+    "color:green;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold"
+  );
+
   return (
     <div className="App">
       <MUINav />
