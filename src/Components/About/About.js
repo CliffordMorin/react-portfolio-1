@@ -3,6 +3,7 @@ import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
 import Slide from "react-reveal/Slide";
+import { AiOutlineIdcard } from "react-icons/ai";
 
 const About = (props) => {
   let content = {
@@ -13,7 +14,7 @@ const About = (props) => {
       description2:
         "I am currently learning authentication and database management and will study at a coding bootcamp in Japan in 2022.",
       description3:
-        "If you are interested in working with me, please contact me using the form below or through my digital business card.",
+        "If you are interested in working with me, you can contact me using the form below or through my digital business card links.",
       resume: "Resume",
     },
     Japanese: {
@@ -64,7 +65,10 @@ const About = (props) => {
             }}
           >
             <p className="about-description">
-              <span> My digital business card.</span>
+              <span>
+                {" "}
+                <AiOutlineIdcard /> digital business card
+              </span>
             </p>
           </a>
         </p>

@@ -72,10 +72,15 @@
   .about-left {
     margin-top: 20px;
   }
+
+  .picture {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 800px) {
   .picture {
     width: 60%;
+    margin-top: 40px;
   }
 }
