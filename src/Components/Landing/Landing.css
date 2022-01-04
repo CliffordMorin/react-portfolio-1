@@ -64,7 +64,7 @@
 /* landing text for 4k monitors */
 @media screen and (min-width: 1440px) {
   .landing-title {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   h3 {
