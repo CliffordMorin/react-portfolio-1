@@ -33,7 +33,8 @@
   max-width: 300px;
   transform: rotate(45deg);
   overflow: hidden;
-  border: 5px solid #d8216d93;
+  border: 2px solid #d8216d93;
+  background-color: #d8216d93;
 }
 .zach-img {
   /* height: 300px; */
