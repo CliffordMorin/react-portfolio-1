@@ -1,5 +1,5 @@
 import "../Projects/Projects.css";
-import Fib from "../../images/coding/Fib.png";
+import Fib from "../../images/coding/Fib.webp";
 import MUIProjectCard from "../Projects/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
