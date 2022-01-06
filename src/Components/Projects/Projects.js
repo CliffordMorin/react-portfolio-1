@@ -6,14 +6,10 @@ import prefecture from "../../images/projects/prefecture.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "./ProjectCard/MUIProjectCard";
-import React, { useState } from "react";
-import Button from "@mui/material/Button";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
 const Projects = (props) => {
-  const [expanded, setExpanded] = useState(false);
-
   let content = {
     English: {
       mainTitle: "Projects",
@@ -247,66 +243,50 @@ const Projects = (props) => {
             />
           </div>
         </Slide>
-        {expanded ? (
-          <Slide left>
-            <>
-              {/* <h1>{content.subTitle}</h1> */}
-              <div className="projects-container">
-                <MUIProjectCard
-                  title={content.projects[1].title}
-                  description={content.projects[1].description}
-                  image={content.projects[1].image}
-                  link={content.projects[1].link}
-                  linkText={content.projects[1].linkText}
-                  github={content.projects[1].github}
-                  tags={content.projects[1].tags}
-                  tech={content.projects[1].tech}
-                  tech_description={content.projects[1].tech_description}
-                  callToAction={content.projects[1].callToAction}
-                />
-                <MUIProjectCard
-                  title={content.projects[2].title}
-                  description={content.projects[2].description}
-                  image={content.projects[2].image}
-                  link={content.projects[2].link}
-                  linkText={content.projects[2].linkText}
-                  github={content.projects[2].github}
-                  tags={content.projects[2].tags}
-                  tech={content.projects[2].tech}
-                  tech_description={content.projects[2].tech_description}
-                  callToAction={content.projects[2].callToAction}
-                />
+        <Slide left>
+          <>
+            {/* <h1>{content.subTitle}</h1> */}
+            <div className="projects-container">
+              <MUIProjectCard
+                title={content.projects[1].title}
+                description={content.projects[1].description}
+                image={content.projects[1].image}
+                link={content.projects[1].link}
+                linkText={content.projects[1].linkText}
+                github={content.projects[1].github}
+                tags={content.projects[1].tags}
+                tech={content.projects[1].tech}
+                tech_description={content.projects[1].tech_description}
+                callToAction={content.projects[1].callToAction}
+              />
+              <MUIProjectCard
+                title={content.projects[2].title}
+                description={content.projects[2].description}
+                image={content.projects[2].image}
+                link={content.projects[2].link}
+                linkText={content.projects[2].linkText}
+                github={content.projects[2].github}
+                tags={content.projects[2].tags}
+                tech={content.projects[2].tech}
+                tech_description={content.projects[2].tech_description}
+                callToAction={content.projects[2].callToAction}
+              />
 
-                <MUIProjectCard
-                  title={content.projects[5].title}
-                  description={content.projects[5].description}
-                  image={content.projects[5].image}
-                  link={content.projects[5].link}
-                  linkText={content.projects[5].linkText}
-                  github={content.projects[5].github}
-                  tags={content.projects[5].tags}
-                  tech={content.projects[5].tech}
-                  tech_description={content.projects[5].tech_description}
-                  callToAction={content.projects[5].callToAction}
-                />
-              </div>
-            </>
-          </Slide>
-        ) : (
-          <Button
-            variant="contained"
-            color="success"
-            style={{
-              margin: "10px",
-              textDecoration: "none",
-            }}
-            onClick={() => {
-              setExpanded(!expanded);
-            }}
-          >
-            {content.subTitleButton}
-          </Button>
-        )}
+              <MUIProjectCard
+                title={content.projects[5].title}
+                description={content.projects[5].description}
+                image={content.projects[5].image}
+                link={content.projects[5].link}
+                linkText={content.projects[5].linkText}
+                github={content.projects[5].github}
+                tags={content.projects[5].tags}
+                tech={content.projects[5].tech}
+                tech_description={content.projects[5].tech_description}
+                callToAction={content.projects[5].callToAction}
+              />
+            </div>
+          </>
+        </Slide>
       </div>
     </>
   );
