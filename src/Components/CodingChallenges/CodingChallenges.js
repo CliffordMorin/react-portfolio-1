@@ -1,6 +1,8 @@
 import "../Projects/Projects.css";
 import Fib from "../../images/coding/Fib.png";
 import MUIProjectCard from "../Projects/ProjectCard/MUIProjectCard";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 const CodingChallenges = (props) => {
   let content = {
@@ -53,21 +55,26 @@ const CodingChallenges = (props) => {
   return (
     <>
       <div className="CodingChallenges Projects">
-        <h1>{content.mainTitle}</h1>
-        <div className="projects-container">
-          <MUIProjectCard
-            title={content.projects[0].title}
-            description={content.projects[0].description}
-            image={content.projects[0].image}
-            link={content.projects[0].link}
-            linkText={content.projects[0].linkText}
-            github={content.projects[0].github}
-            tags={content.projects[0].tags}
-            tech={content.projects[0].tech}
-            tech_description={content.projects[0].tech_description}
-            callToAction={content.projects[0].callToAction}
-          />
-        </div>
+        <Fade>
+          <h1>{content.mainTitle}</h1>
+        </Fade>
+
+        <Slide bottom>
+          <div className="projects-container">
+            <MUIProjectCard
+              title={content.projects[0].title}
+              description={content.projects[0].description}
+              image={content.projects[0].image}
+              link={content.projects[0].link}
+              linkText={content.projects[0].linkText}
+              github={content.projects[0].github}
+              tags={content.projects[0].tags}
+              tech={content.projects[0].tech}
+              tech_description={content.projects[0].tech_description}
+              callToAction={content.projects[0].callToAction}
+            />
+          </div>
+        </Slide>
       </div>
     </>
   );

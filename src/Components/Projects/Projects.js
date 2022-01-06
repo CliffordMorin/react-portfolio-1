@@ -9,6 +9,7 @@ import MUIProjectCard from "./ProjectCard/MUIProjectCard";
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 const Projects = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -201,47 +202,51 @@ const Projects = (props) => {
   return (
     <>
       <div className="Projects">
-        <h1>{content.mainTitle}</h1>
-        <div className="projects-container">
-          <MUIProjectCard
-            title={content.projects[0].title}
-            description={content.projects[0].description}
-            image={content.projects[0].image}
-            link={content.projects[0].link}
-            linkText={content.projects[0].linkText}
-            github={content.projects[0].github}
-            tags={content.projects[0].tags}
-            tech={content.projects[0].tech}
-            tech_description={content.projects[0].tech_description}
-            callToAction={content.projects[0].callToAction}
-          />
+        <Fade>
+          <h1>{content.mainTitle}</h1>
+        </Fade>
+        <Slide right>
+          <div className="projects-container">
+            <MUIProjectCard
+              title={content.projects[0].title}
+              description={content.projects[0].description}
+              image={content.projects[0].image}
+              link={content.projects[0].link}
+              linkText={content.projects[0].linkText}
+              github={content.projects[0].github}
+              tags={content.projects[0].tags}
+              tech={content.projects[0].tech}
+              tech_description={content.projects[0].tech_description}
+              callToAction={content.projects[0].callToAction}
+            />
 
-          <MUIProjectCard
-            title={content.projects[4].title}
-            description={content.projects[4].description}
-            image={content.projects[4].image}
-            link={content.projects[4].link}
-            linkText={content.projects[4].linkText}
-            github={content.projects[4].github}
-            tags={content.projects[4].tags}
-            tech={content.projects[4].tech}
-            tech_description={content.projects[4].tech_description}
-            callToAction={content.projects[4].callToAction}
-          />
+            <MUIProjectCard
+              title={content.projects[4].title}
+              description={content.projects[4].description}
+              image={content.projects[4].image}
+              link={content.projects[4].link}
+              linkText={content.projects[4].linkText}
+              github={content.projects[4].github}
+              tags={content.projects[4].tags}
+              tech={content.projects[4].tech}
+              tech_description={content.projects[4].tech_description}
+              callToAction={content.projects[4].callToAction}
+            />
 
-          <MUIProjectCard
-            title={content.projects[3].title}
-            description={content.projects[3].description}
-            image={content.projects[3].image}
-            link={content.projects[3].link}
-            linkText={content.projects[3].linkText}
-            github={content.projects[3].github}
-            tags={content.projects[3].tags}
-            tech={content.projects[3].tech}
-            tech_description={content.projects[3].tech_description}
-            callToAction={content.projects[3].callToAction}
-          />
-        </div>
+            <MUIProjectCard
+              title={content.projects[3].title}
+              description={content.projects[3].description}
+              image={content.projects[3].image}
+              link={content.projects[3].link}
+              linkText={content.projects[3].linkText}
+              github={content.projects[3].github}
+              tags={content.projects[3].tags}
+              tech={content.projects[3].tech}
+              tech_description={content.projects[3].tech_description}
+              callToAction={content.projects[3].callToAction}
+            />
+          </div>
+        </Slide>
         {expanded ? (
           <Slide left>
             <>
