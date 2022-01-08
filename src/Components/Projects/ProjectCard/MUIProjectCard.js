@@ -36,7 +36,7 @@ export default function MUIProjectCard(props) {
     // was 345
     // 194
     //405
-    <Card sx={{ width: props.cardWidth }} id="MUI-Card">
+    <Card sx={{ width: props.cardWidth, minWidth: 405 }} id="MUI-Card">
       <CardHeader
         title={props.title}
         style={{
