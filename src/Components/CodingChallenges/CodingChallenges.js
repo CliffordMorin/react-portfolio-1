@@ -54,7 +54,7 @@ const CodingChallenges = (props) => {
 
   return (
     <>
-      <div className="CodingChallenges Projects">
+      <div className="CodingChallenges Projects" id="CodingChallenges">
         <Fade>
           <h1>{content.mainTitle}</h1>
         </Fade>
