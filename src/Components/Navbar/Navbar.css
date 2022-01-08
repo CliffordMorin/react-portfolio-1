@@ -1,7 +1,7 @@
 .nav {
   z-index: 100 !important;
   /* background-color: #2e7d32 !important; */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
