@@ -8,4 +8,5 @@ a :hover {
 
 svg:hover {
   color: #e62776 !important;
+  transform: scale(1.1);
 }

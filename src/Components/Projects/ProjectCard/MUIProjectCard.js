@@ -36,11 +36,14 @@ export default function MUIProjectCard(props) {
     // was 345
     // 194
     //405
-    <Card sx={{ width: props.cardWidth, minWidth: 405 }} id="MUI-Card">
+    <Card
+      sx={{ width: props.cardWidth, minWidth: 405, minHeight: 576 }}
+      id="MUI-Card"
+    >
       <CardHeader
         title={props.title}
         style={{
-          color: "#2e7d32",
+          color: "#E62776",
         }}
       />
       <a href={props.link} target={"_blank"} rel="noreferrer">
@@ -54,6 +57,20 @@ export default function MUIProjectCard(props) {
       <CardContent>
         <Typography variant="body2" color="text.primary" id="MUI-description">
           {props.description}
+        </Typography>
+        <Typography paragraph align="left" minHeight="73px">
+          {props.tags.map((tag) => (
+            <Button
+              color="success"
+              disabled={false}
+              key={tag}
+              style={{
+                cursor: "default",
+              }}
+            >
+              {tag},
+            </Button>
+          ))}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -121,21 +138,6 @@ export default function MUIProjectCard(props) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <CardHeader title={props.tech} />
-          <Typography paragraph>
-            {props.tags.map((tag) => (
-              <Button
-                color="success"
-                disabled={false}
-                key={tag}
-                style={{
-                  cursor: "default",
-                }}
-              >
-                {tag},
-              </Button>
-            ))}
-          </Typography>
           <Typography paragraph>{props.tech_description}</Typography>
         </CardContent>
       </Collapse>
