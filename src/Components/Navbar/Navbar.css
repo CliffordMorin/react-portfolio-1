@@ -1,5 +1,4 @@
 .nav {
-  position: "static" !important;
   z-index: 100 !important;
   /* background-color: #2e7d32 !important; */
   opacity: 0.9;

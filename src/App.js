@@ -4,6 +4,8 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+
+import CTA from "./Components/CTA/CTA";
 import { connect } from "react-redux";
 import MUINav from "./Components/Navbar/MUINav";
 import Fade from "react-reveal/Fade";
@@ -23,6 +25,9 @@ function App(props) {
         <About language={props.language} />
       </Fade>
       <CodingChallenges language={props.language} />
+      <Fade big>
+        <CTA />
+      </Fade>
       <Projects language={props.language} />
       <Fade big>
         <Contact language={props.language} />

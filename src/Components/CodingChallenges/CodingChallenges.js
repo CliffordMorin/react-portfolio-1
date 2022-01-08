@@ -53,30 +53,31 @@ const CodingChallenges = (props) => {
     : (content = content.English);
 
   return (
-    <>
-      <div className="CodingChallenges Projects" id="CodingChallenges">
-        <Fade>
-          <h1>{content.mainTitle}</h1>
-        </Fade>
+    <div className="CodingChallenges Projects" id="CodingChallenges">
+      <Fade>
+        <h1>{content.mainTitle}</h1>
+      </Fade>
 
-        <Slide bottom>
-          <div className="projects-container">
-            <MUIProjectCard
-              title={content.projects[0].title}
-              description={content.projects[0].description}
-              image={content.projects[0].image}
-              link={content.projects[0].link}
-              linkText={content.projects[0].linkText}
-              github={content.projects[0].github}
-              tags={content.projects[0].tags}
-              tech={content.projects[0].tech}
-              tech_description={content.projects[0].tech_description}
-              callToAction={content.projects[0].callToAction}
-            />
-          </div>
-        </Slide>
-      </div>
-    </>
+      <Slide bottom>
+        <div className="projects-container">
+          <MUIProjectCard
+            cardWidth="50%"
+            className="code-challenge"
+            title={content.projects[0].title}
+            description={content.projects[0].description}
+            image={content.projects[0].image}
+            link={content.projects[0].link}
+            linkText={content.projects[0].linkText}
+            github={content.projects[0].github}
+            tags={content.projects[0].tags}
+            tech={content.projects[0].tech}
+            tech_description={content.projects[0].tech_description}
+            callToAction={content.projects[0].callToAction}
+          />
+        </div>
+      </Slide>
+      <div id="Projects" />
+    </div>
   );
 };
 

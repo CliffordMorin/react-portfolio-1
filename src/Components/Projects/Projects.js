@@ -208,6 +208,7 @@ const Projects = (props) => {
         <Slide right>
           <div className="projects-container">
             <MUIProjectCard
+              cardWidth="405px"
               title={content.projects[0].title}
               description={content.projects[0].description}
               image={content.projects[0].image}
@@ -221,6 +222,7 @@ const Projects = (props) => {
             />
 
             <MUIProjectCard
+              cardWidth="405px"
               title={content.projects[4].title}
               description={content.projects[4].description}
               image={content.projects[4].image}
@@ -234,6 +236,7 @@ const Projects = (props) => {
             />
 
             <MUIProjectCard
+              cardWidth="405px"
               title={content.projects[3].title}
               description={content.projects[3].description}
               image={content.projects[3].image}
@@ -264,6 +267,7 @@ const Projects = (props) => {
             {/* <h1>{content.subTitle}</h1> */}
             <div className="projects-container">
               <MUIProjectCard
+                cardWidth="405px"
                 title={content.projects[1].title}
                 description={content.projects[1].description}
                 image={content.projects[1].image}
@@ -276,6 +280,7 @@ const Projects = (props) => {
                 callToAction={content.projects[1].callToAction}
               />
               <MUIProjectCard
+                cardWidth="405px"
                 title={content.projects[2].title}
                 description={content.projects[2].description}
                 image={content.projects[2].image}
@@ -289,6 +294,7 @@ const Projects = (props) => {
               />
 
               <MUIProjectCard
+                cardWidth="405px"
                 title={content.projects[5].title}
                 description={content.projects[5].description}
                 image={content.projects[5].image}

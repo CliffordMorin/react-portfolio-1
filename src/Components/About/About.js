@@ -10,12 +10,12 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach.  I'm a self-taught web developer who can speak Japanese.",
+        "Hi, I'm Zach.  I'm a self-taught web developer located in the US.",
       description2:
-        "I am currently learning authentication and database management and will study at a coding bootcamp in Japan in 2022.",
-      description3:
-        "If you are interested in working with me, you can contact me using my contact form or any of my social links",
+        "I am looking for a full-time web developer position in Japan. I am also available for freelance work.",
+      description3: "Feel free to contact me using the form below.",
       resume: "Resume",
+      contact: "Contact",
     },
     Japanese: {
       title: "自己紹介",
@@ -25,6 +25,7 @@ const About = (props) => {
         "最近、認証やデータベース管理を学んでいます。日本でコーディング学校を入学予定があります。",
       description3: "下記のフォームからお問い合わせください。",
       resume: "履歴書",
+      contact: "お問い合わせ",
     },
   };
 
@@ -93,10 +94,21 @@ const About = (props) => {
               {content.resume}
             </a>
           </Button>
+          <Button color="success" variant="contained" style={{}}>
+            {" "}
+            <a
+              href="#Contact"
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              {content.contact}
+            </a>
+          </Button>
         </div>
         <Skills language={props.language} />
       </div>
-      <div id="Projects" />
     </div>
   );
 };
