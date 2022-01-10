@@ -9,7 +9,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-// import { GrGraphQl } from "react-icons/gr";
+import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
 import { Button } from "@mui/material";
@@ -36,7 +36,7 @@ const Skills = (props) => {
         [<FaReact />, "React", "https://reactjs.org/"],
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
-        // [<GrGraphQl />, "GraphQL" , "https://graphql.org/"],
+        [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
       ],
       resume: "Resume",
       cta0: "Front End Skills",
