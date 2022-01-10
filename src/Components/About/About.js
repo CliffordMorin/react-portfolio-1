@@ -71,29 +71,8 @@ const About = (props) => {
               </span>
             </p>
           </a>
-        </p> */}
+        </p> */}{" "}
         <div className="resume-div">
-          <Button
-            variant="contained"
-            color="success"
-            style={{
-              margin: "10px",
-              textDecoration: "none",
-            }}
-          >
-            {" "}
-            <a
-              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              {content.resume}
-            </a>
-          </Button>
           <Button color="success" variant="contained" style={{}}>
             {" "}
             <a

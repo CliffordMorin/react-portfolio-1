@@ -44,7 +44,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "Tech",
-          tags: ["API", "Node/Express", "Heroku"],
+          tags: ["API", "Node/Express", "REST API", "Heroku"],
           tech_description:
             "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
