@@ -85,6 +85,27 @@ const About = (props) => {
               {content.contact}
             </a>
           </Button>
+          <Button
+            variant="contained"
+            color="success"
+            style={{
+              margin: "10px",
+              textDecoration: "none",
+            }}
+          >
+            {" "}
+            <a
+              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              {content.resume}
+            </a>
+          </Button>
         </div>
         <Skills language={props.language} />
       </div>

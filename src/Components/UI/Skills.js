@@ -39,10 +39,14 @@ const Skills = (props) => {
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
       ],
       resume: "Resume",
-      cta0: "Front End Skills",
-      cta1: "Back End Skills",
+      cta0: "Front End",
+      cta1: "Back End",
+      cta2: "Mobile",
+      cta3: "VR/AR",
       title0: "Front End Skills",
       title1: "Back End Skills",
+      title2: "Mobile Skills",
+      title3: "VR/AR Skills",
       description0: [
         [
           "Create website layouts with HTML/CSS Understand basic design principles.",
@@ -67,6 +71,19 @@ const Skills = (props) => {
         ["Know how to use Node, Express, to create back end applications."],
         ["Know how to create RESTful APIs."],
         ["Know how to deploy projects and work with servers."],
+        ["And more..."],
+      ],
+      description2: [
+        [
+          "Know how to create very simple mobile applications with React Native.",
+        ],
+        ["Know how to test mobile applications with Expo."],
+      ],
+      description3: [
+        [
+          "I am currently learning how to create VR/AR applications with Unity on the Oculus Quest 2 headset.",
+        ],
+        ["I am currently learning C#"],
       ],
     },
     Japanese: {
@@ -93,10 +110,14 @@ const Skills = (props) => {
         // [<GrGraphQl />, "GraphQL" , "https://graphql.org/"],
       ],
       resume: "履歴書",
-      cta0: "フロントエンドスキル",
-      cta1: "バックエンドスキル",
+      cta0: "フロントエンド",
+      cta1: "バックエンド",
+      cta2: "モバイル",
+      cta3: "VR/AR",
       title0: "フロントエンドスキル",
       title1: "バックエンドスキル",
+      title2: "モバイルスキル",
+      title3: "VR/ARスキル",
       description0: [
         ["HTML/CSSを使ってレイアウトを作成できます。"],
         ["JavaScriptを使ってDOMを操作できます。"],
@@ -115,6 +136,18 @@ const Skills = (props) => {
         ["Node, Expressを使ってバックエンドアプリケーションを作成できます。"],
         ["RESTfulなAPIを作成できます。"],
         ["プロジェクトをデプロイしてサーバーに接続できます。"],
+      ],
+      description2: [
+        [
+          "React Nativeを使って単純なモバイルアプリを作成できます。",
+          "EXPOを使ってモバイルアプリをテストできます。",
+        ],
+      ],
+      description3: [
+        [
+          "現在、Oculus Quest 2のヘッドセットでUnityを使ってVR/ARアプリを作成することを勉強しています。",
+          "現在、C#を勉強しています。",
+        ],
       ],
     },
   };
@@ -144,27 +177,16 @@ const Skills = (props) => {
               title={content.title1}
               description={content.description1}
             />
-            <Button
-              variant="contained"
-              color="success"
-              style={{
-                margin: "10px",
-                textDecoration: "none",
-              }}
-            >
-              {" "}
-              <a
-                href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                {content.resume}
-              </a>
-            </Button>
+            <BasicModal
+              cta={content.cta2}
+              title={content.title2}
+              description={content.description2}
+            />
+            <BasicModal
+              cta={content.cta3}
+              title={content.title3}
+              description={content.description3}
+            />
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
