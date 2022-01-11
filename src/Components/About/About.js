@@ -12,18 +12,21 @@ const About = (props) => {
       description:
         "Hi, I'm Zach.  I'm a self-taught software engineer located in the US.",
       description2:
+        "I have a passion for creating and learning new things. When I'm not coding I enjoy playing VR games, studying Japanese, and playing music.",
+      description3:
         "I am looking for a full-time web developer position in Japan.",
-      description3: "Feel free to contact me using the form below.",
+      description4: "Feel free to contact me using the form below.",
       resume: "Resume",
       contact: "Contact",
     },
     Japanese: {
       title: "自己紹介",
       description:
-        "こんにちは、ストーン・ザックです。日本語が話せるの独学のWeb開発者です。 JavascriptやReactフレームワークを使用してウェブサイトを作成できます。",
+        "こんにちは、ザックです。日本語が話せるの独学のソフトエンジニアです。",
       description2:
-        "最近、認証やデータベース管理を学んでいます。日本でコーディング学校を入学予定があります。",
-      description3: "下記のフォームからお問い合わせください。",
+        "ものを作るや学ぶことが好きです。暇な時に、VRゲームをやったり、日本語を勉強したり、音楽を演劇したりします。",
+      description3: "日本でフルタイムのWeb開発者を求めています。",
+      description4: "下記のフォームからお問い合わせください。",
       resume: "履歴書",
       contact: "お問い合わせ",
     },
@@ -53,6 +56,7 @@ const About = (props) => {
         <p className="about-description">{content.description}</p>
         <p className="about-description">{content.description2}</p>
         <p className="about-description">{content.description3}</p>
+        <p className="about-description">{content.description4}</p>
         {/* <p>
           <a
             href="https://linktr.ee/zachinjapan"

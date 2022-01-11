@@ -14,7 +14,7 @@ const style = {
   width: "fit-content",
   maxWidth: "95%",
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "2px solid #E62776",
   boxShadow: 24,
   fontSize: "1rem",
   p: 4,
