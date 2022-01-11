@@ -12,7 +12,6 @@ import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
-import { Button } from "@mui/material";
 
 const Skills = (props) => {
   let content = {
