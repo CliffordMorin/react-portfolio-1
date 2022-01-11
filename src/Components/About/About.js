@@ -10,9 +10,9 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach.  I'm a self-taught web developer located in the US.",
+        "Hi, I'm Zach.  I'm a self-taught software engineer located in the US.",
       description2:
-        "I am looking for a full-time web developer position in Japan. I am also available for freelance work.",
+        "I am looking for a full-time web developer position in Japan.",
       description3: "Feel free to contact me using the form below.",
       resume: "Resume",
       contact: "Contact",

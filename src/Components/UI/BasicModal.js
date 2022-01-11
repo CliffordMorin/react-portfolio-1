@@ -11,10 +11,12 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "fit-content",
+  maxWidth: "95%",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
+  fontSize: "1rem",
   p: 4,
 };
 
@@ -34,7 +36,13 @@ export default function BasicModal(props) {
 
   return (
     <div>
-      <ColorButton variant="outlined" onClick={handleOpen}>
+      <ColorButton
+        variant="outlined"
+        onClick={handleOpen}
+        sx={{
+          margin: "10px",
+        }}
+      >
         {props.cta}
       </ColorButton>
       <Modal
@@ -44,7 +52,12 @@ export default function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+          <Typography
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+            fontSize={"2rem"}
+          >
             {props.title}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
