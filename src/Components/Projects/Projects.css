@@ -18,7 +18,7 @@
 @media screen and (min-width: 1440px) {
   .projects-container {
     width: 90%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;

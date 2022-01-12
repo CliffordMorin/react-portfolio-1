@@ -6,13 +6,40 @@ import prefecture from "../../images/projects/prefecture.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "./ProjectCard/MUIProjectCard";
-import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
-// import { Button } from "@mui/material";
-// import React, { useState } from "react";
-
+import React, { useState } from "react";
+import { FaReact } from "react-icons/fa";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3Full } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
+import { DiSass } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { RiGatsbyFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
+import { SiRedux } from "react-icons/si";
+import { BiLoaderCircle } from "react-icons/bi";
 const Projects = (props) => {
-  // const [showMoreProjects, setShowMoreProjects] = useState(false);
+  const [filter, setFilter] = useState("All Projects");
+
+  const skills = [
+    [
+      <AiFillHtml5 />,
+      "HTML",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    ],
+    [<DiCss3Full />, "CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
+    [<DiSass />, "SASS", "https://sass-lang.com/"],
+    [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+    [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
+    [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+    [<FaReact />, "React"],
+    [<SiRedux />, "Redux"],
+    [<RiGatsbyFill />, "Gatsby"],
+    [<GrGraphQl />, "GraphQL"],
+    [<BiLoaderCircle />, "All Projects"],
+  ];
 
   let content = {
     English: {
@@ -30,7 +57,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["React", "Redux", "API", "Netlify", "Typescript"],
+          tags: ["CSS", "React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
             "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
           callToAction: "More Info",
@@ -44,7 +71,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "Tech",
-          tags: ["API", "Node/Express", "REST API", "Heroku"],
+          tags: ["HTML", "CSS", "API", "Node", "REST API", "Heroku"],
           tech_description:
             "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
@@ -58,7 +85,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
-          tags: ["React", "Heroku"],
+          tags: ["React", "CSS", "Heroku"],
           tech_description:
             "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
           callToAction: "More Info",
@@ -72,7 +99,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/castles",
           tech: "Tech",
-          tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
+          tags: ["HTML", "Javascript", "SASS", "Bootstrap", "Netlify"],
           tech_description:
             "A vanilla Javascript website using sass for styling and bootstrap.",
           callToAction: "More Info",
@@ -85,9 +112,16 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "Tech",
-          tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
+          ],
           tech_description:
-            "I use this blog to learn Gatsby, graphql, and markdown.",
+            "I use this blog to learn Gatsby, GraphQL, and markdown.",
           callToAction: "More Info",
         },
         {
@@ -99,7 +133,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/comedy_show",
           tech: "Tech",
-          tags: ["Sass", "JavaScript", "API", "Github Pages"],
+          tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
           tech_description:
             "At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
           callToAction: "More Info",
@@ -120,7 +154,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
-          tags: ["React", "Redux", "API", "Netlify", "Typescript"],
+          tags: ["CSS", "React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
             " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
           callToAction: "詳しい情報",
@@ -134,7 +168,7 @@ const Projects = (props) => {
           linkText: "ウエブサイト",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "技術",
-          tags: ["API", "Node/Express", "Heroku"],
+          tags: ["HTML", "CSS", "API", "Node", "REST API", "Heroku"],
           tech_description:
             "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
           callToAction: "詳しい情報",
@@ -148,7 +182,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
-          tags: ["React", "Heroku"],
+          tags: ["React", "CSS", "Heroku"],
           tech_description: " useEffectとuseStateを使用しています",
           callToAction: "詳しい情報",
         },
@@ -160,7 +194,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "",
           tech: "技術",
-          tags: ["Javascript", "Sass", "Bootstrap", "Netlify"],
+          tags: ["HTML", "Javascript", "SASS", "Bootstrap", "Netlify"],
           tech_description:
             "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
           callToAction: "詳しい情報",
@@ -173,7 +207,14 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "技術",
-          tags: ["React", "Markdown", "Gatsby", "Gatsby Cloud"],
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
+          ],
           tech_description:
             "このブログでは、Gatsby、graphql、markdownを学んでいます。",
           callToAction: "詳しい情報",
@@ -186,7 +227,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/comedy_show",
           tech: "技術",
-          tags: ["Sass", "JavaScript", "API", "Github Pages"],
+          tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
           tech_description:
             "ジョークアプリです。ユーザーがボタンを押すことで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
           callToAction: "詳しい情報",
@@ -205,111 +246,79 @@ const Projects = (props) => {
         <Fade>
           <h1>{content.mainTitle}</h1>
         </Fade>
-        <Slide right>
-          <div className="projects-container">
-            <MUIProjectCard
-              cardWidth="405px"
-              title={content.projects[0].title}
-              description={content.projects[0].description}
-              image={content.projects[0].image}
-              link={content.projects[0].link}
-              linkText={content.projects[0].linkText}
-              github={content.projects[0].github}
-              tags={content.projects[0].tags}
-              tech={content.projects[0].tech}
-              tech_description={content.projects[0].tech_description}
-              callToAction={content.projects[0].callToAction}
-            />
-
-            <MUIProjectCard
-              cardWidth="405px"
-              title={content.projects[4].title}
-              description={content.projects[4].description}
-              image={content.projects[4].image}
-              link={content.projects[4].link}
-              linkText={content.projects[4].linkText}
-              github={content.projects[4].github}
-              tags={content.projects[4].tags}
-              tech={content.projects[4].tech}
-              tech_description={content.projects[4].tech_description}
-              callToAction={content.projects[4].callToAction}
-            />
-
-            <MUIProjectCard
-              cardWidth="405px"
-              title={content.projects[3].title}
-              description={content.projects[3].description}
-              image={content.projects[3].image}
-              link={content.projects[3].link}
-              linkText={content.projects[3].linkText}
-              github={content.projects[3].github}
-              tags={content.projects[3].tags}
-              tech={content.projects[3].tech}
-              tech_description={content.projects[3].tech_description}
-              callToAction={content.projects[3].callToAction}
-            />
-          </div>
-        </Slide>
-        {/* {!showMoreProjects ? (
-          <Button
-            variant="contained"
-            color="success"
-            onClick={() => {
-              setShowMoreProjects(true);
+        <Fade>
+          <IconContext.Provider
+            value={{
+              className: "global-class-name sill-img",
+              size: "40px",
             }}
           >
-            {content.moreProjectsButton}
-          </Button>
-        ) : null} */}
-        {/* {showMoreProjects ? ( */}
-        <Slide left>
-          <>
-            {/* <h1>{content.subTitle}</h1> */}
-            <div className="projects-container">
-              <MUIProjectCard
-                cardWidth="405px"
-                title={content.projects[1].title}
-                description={content.projects[1].description}
-                image={content.projects[1].image}
-                link={content.projects[1].link}
-                linkText={content.projects[1].linkText}
-                github={content.projects[1].github}
-                tags={content.projects[1].tags}
-                tech={content.projects[1].tech}
-                tech_description={content.projects[1].tech_description}
-                callToAction={content.projects[1].callToAction}
-              />
-              <MUIProjectCard
-                cardWidth="405px"
-                title={content.projects[2].title}
-                description={content.projects[2].description}
-                image={content.projects[2].image}
-                link={content.projects[2].link}
-                linkText={content.projects[2].linkText}
-                github={content.projects[2].github}
-                tags={content.projects[2].tags}
-                tech={content.projects[2].tech}
-                tech_description={content.projects[2].tech_description}
-                callToAction={content.projects[2].callToAction}
-              />
-
-              <MUIProjectCard
-                cardWidth="405px"
-                title={content.projects[5].title}
-                description={content.projects[5].description}
-                image={content.projects[5].image}
-                link={content.projects[5].link}
-                linkText={content.projects[5].linkText}
-                github={content.projects[5].github}
-                tags={content.projects[5].tags}
-                tech={content.projects[5].tech}
-                tech_description={content.projects[5].tech_description}
-                callToAction={content.projects[5].callToAction}
-              />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                padding: "10px",
+                flexWrap: "wrap",
+                backgroundColor: "#f5f5f5",
+              }}
+            >
+              {skills.map((skill) => (
+                <div
+                  key={skill[1]}
+                  style={{
+                    color: filter === skill[1] ? "#E62776" : "green",
+                    margin: "10px",
+                    padding: "10px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setFilter(skill[1]);
+                  }}
+                >
+                  <div
+                    className="skill-icon-text"
+                    style={{
+                      color: filter === skill[1] ? "#E62776" : "green",
+                    }}
+                  >
+                    {skill[1]}
+                  </div>
+                  <div
+                    className="skill-icon-img"
+                    style={{
+                      color: filter === skill[1] ? "#E62776" : "green",
+                    }}
+                  >
+                    {skill[0]}
+                  </div>
+                </div>
+              ))}
             </div>
-          </>
-        </Slide>
-        {/* ) : null} */}
+          </IconContext.Provider>
+        </Fade>
+
+        <Fade big>
+          <div className="projects-container">
+            {content.projects.map((project, index) =>
+              filter === "All Projects" || project.tags.includes(filter) ? (
+                <MUIProjectCard
+                  cardWidth="405px"
+                  title={content.projects[index].title}
+                  description={content.projects[index].description}
+                  image={content.projects[index].image}
+                  link={content.projects[index].link}
+                  linkText={content.projects[index].linkText}
+                  github={content.projects[index].github}
+                  tags={content.projects[index].tags}
+                  tech={content.projects[index].tech}
+                  tech_description={content.projects[index].tech_description}
+                  callToAction={content.projects[index].callToAction}
+                />
+              ) : null
+            )}
+          </div>
+        </Fade>
       </div>
     </>
   );
