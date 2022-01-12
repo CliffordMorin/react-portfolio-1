@@ -246,79 +246,74 @@ const Projects = (props) => {
         <Fade>
           <h1>{content.mainTitle}</h1>
         </Fade>
-        <Fade>
-          <IconContext.Provider
-            value={{
-              className: "global-class-name sill-img",
-              size: "40px",
+        <IconContext.Provider
+          value={{
+            className: "global-class-name sill-img",
+            size: "40px",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              padding: "10px",
+              flexWrap: "wrap",
+              backgroundColor: "#f5f5f5",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                padding: "10px",
-                flexWrap: "wrap",
-                backgroundColor: "#f5f5f5",
-              }}
-            >
-              {skills.map((skill) => (
+            {skills.map((skill) => (
+              <div
+                key={skill[1]}
+                style={{
+                  color: filter === skill[1] ? "#E62776" : "green",
+                  margin: "10px",
+                  padding: "10px",
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  setFilter(skill[1]);
+                }}
+              >
                 <div
-                  key={skill[1]}
+                  className="skill-icon-text"
                   style={{
                     color: filter === skill[1] ? "#E62776" : "green",
-                    margin: "10px",
-                    padding: "10px",
-                    cursor: "pointer",
-                  }}
-                  onClick={() => {
-                    setFilter(skill[1]);
                   }}
                 >
-                  <div
-                    className="skill-icon-text"
-                    style={{
-                      color: filter === skill[1] ? "#E62776" : "green",
-                    }}
-                  >
-                    {skill[1]}
-                  </div>
-                  <div
-                    className="skill-icon-img"
-                    style={{
-                      color: filter === skill[1] ? "#E62776" : "green",
-                    }}
-                  >
-                    {skill[0]}
-                  </div>
+                  {skill[1]}
                 </div>
-              ))}
-            </div>
-          </IconContext.Provider>
-        </Fade>
-
-        <Fade big>
-          <div className="projects-container">
-            {content.projects.map((project, index) =>
-              filter === "All Projects" || project.tags.includes(filter) ? (
-                <MUIProjectCard
-                  cardWidth="405px"
-                  title={content.projects[index].title}
-                  description={content.projects[index].description}
-                  image={content.projects[index].image}
-                  link={content.projects[index].link}
-                  linkText={content.projects[index].linkText}
-                  github={content.projects[index].github}
-                  tags={content.projects[index].tags}
-                  tech={content.projects[index].tech}
-                  tech_description={content.projects[index].tech_description}
-                  callToAction={content.projects[index].callToAction}
-                />
-              ) : null
-            )}
+                <div
+                  className="skill-icon-img"
+                  style={{
+                    color: filter === skill[1] ? "#E62776" : "green",
+                  }}
+                >
+                  {skill[0]}
+                </div>
+              </div>
+            ))}
           </div>
-        </Fade>
+        </IconContext.Provider>
+        <div className="projects-container">
+          {content.projects.map((project, index) =>
+            filter === "All Projects" || project.tags.includes(filter) ? (
+              <MUIProjectCard
+                cardWidth="405px"
+                title={content.projects[index].title}
+                description={content.projects[index].description}
+                image={content.projects[index].image}
+                link={content.projects[index].link}
+                linkText={content.projects[index].linkText}
+                github={content.projects[index].github}
+                tags={content.projects[index].tags}
+                tech={content.projects[index].tech}
+                tech_description={content.projects[index].tech_description}
+                callToAction={content.projects[index].callToAction}
+              />
+            ) : null
+          )}
+        </div>
       </div>
     </>
   );

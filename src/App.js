@@ -24,9 +24,7 @@ function App(props) {
       <Fade big>
         <About language={props.language} />
       </Fade>
-      <Fade big>
-        <Projects language={props.language} />
-      </Fade>
+      <Projects language={props.language} />
       <Fade big>
         <CodingChallenges language={props.language} />
       </Fade>
