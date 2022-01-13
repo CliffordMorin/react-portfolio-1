@@ -9,13 +9,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "zach.jpg",
-      "type": "image/png",
+      "src": "zach.webp",
+      "type": "image/webp",
       "sizes": "192x192"
     },
     {
-      "src": "zach.jpg",
-      "type": "image/png",
+      "src": "zach.webp",
+      "type": "image/webp",
       "sizes": "512x512"
     }
   ],
@@ -23,7 +23,5 @@
   "display": "standalone",
   "theme_color": "#E62776",
   "background_color": "#ffffff",
-  "image": "zach.jpg",
-  "orientation": "portrait",
-  "og:image": "zach.jpg"
+  "image": "zach.jpg"
 }
