@@ -15,6 +15,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { IoLogoJavascript } from "react-icons/io";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
@@ -32,6 +33,11 @@ const Projects = (props) => {
     [<DiCss3Full />, "CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
     [<DiSass />, "SASS", "https://sass-lang.com/"],
     [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+    [
+      <IoLogoJavascript />,
+      "JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    ],
     [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
     [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
     [<FaReact />, "React"],
@@ -71,7 +77,15 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "Tech",
-          tags: ["HTML", "CSS", "API", "Node", "REST API", "Heroku"],
+          tags: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "API",
+            "Node",
+            "REST API",
+            "Heroku",
+          ],
           tech_description:
             "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
@@ -85,7 +99,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
-          tags: ["React", "CSS", "Heroku"],
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
           tech_description:
             "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
           callToAction: "More Info",
@@ -99,7 +113,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/castles",
           tech: "Tech",
-          tags: ["HTML", "Javascript", "SASS", "Bootstrap", "Netlify"],
+          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
           tech_description:
             "A vanilla Javascript website using sass for styling and bootstrap.",
           callToAction: "More Info",
@@ -168,7 +182,15 @@ const Projects = (props) => {
           linkText: "ウエブサイト",
           github: "https://github.com/zachinjapan/do_i_need_a_jacket",
           tech: "技術",
-          tags: ["HTML", "CSS", "API", "Node", "REST API", "Heroku"],
+          tags: [
+            "HTML",
+            "CSS",
+            "Javascrip",
+            "API",
+            "Node",
+            "REST API",
+            "Heroku",
+          ],
           tech_description:
             "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
           callToAction: "詳しい情報",
@@ -182,7 +204,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
-          tags: ["React", "CSS", "Heroku"],
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
           tech_description: " useEffectとuseStateを使用しています",
           callToAction: "詳しい情報",
         },
@@ -194,7 +216,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "",
           tech: "技術",
-          tags: ["HTML", "Javascript", "SASS", "Bootstrap", "Netlify"],
+          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
           tech_description:
             "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
           callToAction: "詳しい情報",

@@ -8,6 +8,7 @@ import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
@@ -30,6 +31,11 @@ const Skills = (props) => {
         ],
         [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+        [
+          <IoLogoJavascript />,
+          "JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        ],
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<FaReact />, "React", "https://reactjs.org/"],
@@ -101,6 +107,11 @@ const Skills = (props) => {
         ],
         [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+        [
+          <IoLogoJavascript />,
+          "JavaScript",
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        ],
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<FaReact />, "React", "https://reactjs.org/"],
