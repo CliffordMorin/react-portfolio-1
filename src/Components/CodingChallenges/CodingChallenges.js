@@ -58,7 +58,7 @@ const CodingChallenges = (props) => {
         <h1>{content.mainTitle}</h1>
       </Fade>
 
-      <Slide bottom>
+      <Fade>
         <div className="projects-container">
           <MUIProjectCard
             cardWidth="50%"
@@ -75,7 +75,7 @@ const CodingChallenges = (props) => {
             callToAction={content.projects[0].callToAction}
           />
         </div>
-      </Slide>
+      </Fade>
       <div id="Projects" />
     </div>
   );
