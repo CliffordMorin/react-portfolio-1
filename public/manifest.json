@@ -9,12 +9,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "zach.png",
+      "src": "zach.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "zach.png",
+      "src": "zach.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
