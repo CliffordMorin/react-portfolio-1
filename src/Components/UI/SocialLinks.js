@@ -29,7 +29,7 @@ const SocialLinks = () => {
           <AiOutlineGithub className="social-link-img" />
         </a>
         <a
-          href="https://twitter.com/zachinjapan888"
+          href="https://twitter.com/zachstonewebdev"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
