@@ -23,5 +23,7 @@
   "display": "standalone",
   "theme_color": "#E62776",
   "background_color": "#ffffff",
-  "image": "zach.webp"
+  "image": "zach.jpg",
+  "orientation": "portrait",
+  "og:image": "zach.jpg"
 }
