@@ -6,5 +6,5 @@
   "display": "standalone",
   "theme_color": "#E62776",
   "background_color": "#ffffff",
-  "image": "./images/zach.webp"
+  "image": "zach.webp"
 }
