@@ -14,6 +14,12 @@ export default function BlogCard(props) {
         border: "5px solid #E62776",
         margin: "10px",
         minHeight: "350px",
+        //make the card bigger on hover
+        "&:hover": {
+          transform: "scale(1.05)",
+          transition: "transform 0.5s ease-in-out",
+          boxShadow: "0px 0px 10px #E62776",
+        },
       }}
     >
       <CardActionArea href={props.link} target={"_blank"}>

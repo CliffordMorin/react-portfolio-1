@@ -12,7 +12,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
-import "../ProjectCard/ProjectCard.css";
+import "./ProjectCard.css";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -37,7 +37,15 @@ export default function MUIProjectCard(props) {
     // 194
     //405
     <Card
-      sx={{ width: props.cardWidth, minWidth: 405, minHeight: 576 }}
+      sx={{
+        width: props.cardWidth,
+        minWidth: 405,
+        minHeight: 576,
+        "&:hover": {
+          transform: "scale(1.05)",
+          transition: "transform 0.5s ease-in-out",
+        },
+      }}
       id="MUI-Card"
     >
       <CardHeader
