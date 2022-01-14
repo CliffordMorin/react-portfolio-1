@@ -23,6 +23,7 @@ export default function BlogCard(props) {
           width={200}
           image={props.image}
           alt="blog post image"
+          loading="lazy"
         />
         <CardContent>
           <Typography
