@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 import MUINav from "./Components/Navbar/MUINav";
 import Fade from "react-reveal/Fade";
 import CodingChallenges from "./Components/CodingChallenges/CodingChallenges";
+import Blog from "./Components/Blog/Blog";
 
 function App(props) {
   console.log(
@@ -24,10 +25,11 @@ function App(props) {
       <Fade big>
         <About language={props.language} />
       </Fade>
-      <Projects language={props.language} />
       <Fade big>
         <CodingChallenges language={props.language} />
       </Fade>
+      <Projects language={props.language} />
+      <Blog language={props.language} />
       <Fade big>
         <Contact language={props.language} />
       </Fade>

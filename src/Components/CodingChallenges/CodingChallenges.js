@@ -1,8 +1,7 @@
 import "../Projects/Projects.css";
 import Fib from "../../images/coding/Fib.webp";
-import MUIProjectCard from "../Projects/ProjectCard/MUIProjectCard";
+import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 
 const CodingChallenges = (props) => {
   let content = {

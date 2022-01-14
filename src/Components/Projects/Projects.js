@@ -5,7 +5,7 @@ import weather from "../../images/projects/weather.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
-import MUIProjectCard from "./ProjectCard/MUIProjectCard";
+import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
 import React, { useState } from "react";
 import { FaReact } from "react-icons/fa";
