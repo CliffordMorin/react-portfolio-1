@@ -1,5 +1,5 @@
 .Landing {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
   background-attachment: scroll;
   background-color: rgb(0, 0, 0);
 }
