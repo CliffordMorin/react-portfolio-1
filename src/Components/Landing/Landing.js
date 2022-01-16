@@ -3,6 +3,7 @@ import SocialLinksVertical from "../UI/SocialLinksVertical";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
 import Flip from "react-reveal/Flip";
+import Slide from "react-reveal/Slide";
 
 const Landing = (props) => {
   let content = {
@@ -34,16 +35,17 @@ const Landing = (props) => {
           </Flip>
           <SocialLinksVertical />
         </div>
-
-        <div className="contact-button">
-          <a href="#About">
-            <MdKeyboardArrowDown
-              color="#E62776"
-              className="down-arrow"
-              size="75px"
-            />
-          </a>
-        </div>
+        <Slide bottom>
+          <div className="contact-button">
+            <a href="#About">
+              <MdKeyboardArrowDown
+                color="#E62776"
+                className="down-arrow"
+                size="75px"
+              />
+            </a>
+          </div>
+        </Slide>
       </div>
       <div id="About" />
     </IconContext.Provider>
