@@ -264,7 +264,7 @@ const Projects = (props) => {
 
   return (
     <>
-      <div className="Projects">
+      <div className="Projects" id="Projects">
         <Fade>
           <h1>{content.mainTitle}</h1>
         </Fade>

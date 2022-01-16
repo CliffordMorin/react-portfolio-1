@@ -25,10 +25,10 @@ function App(props) {
       <Fade big>
         <About language={props.language} />
       </Fade>
+      <Projects language={props.language} />
       <Fade big>
         <CodingChallenges language={props.language} />
       </Fade>
-      <Projects language={props.language} />
       <Blog language={props.language} />
       <Fade big>
         <Contact language={props.language} />

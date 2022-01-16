@@ -74,7 +74,6 @@ const CodingChallenges = (props) => {
             callToAction={content.projects[0].callToAction}
           />
         </div>
-        <div id="Projects" />
       </Fade>
     </div>
   );
