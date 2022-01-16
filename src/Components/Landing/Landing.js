@@ -27,15 +27,21 @@ const Landing = (props) => {
       <div className="Landing">
         <div className="landing-content">
           <Flip top>
-            <h1 className="landing-title">{content.title}</h1>
-            <h3 className="landing-description">{content.description}</h3>
+            <div className="text-div">
+              <h1 className="landing-title">{content.title}</h1>
+              <h1 className="landing-description">{content.description}</h1>
+            </div>
           </Flip>
           <SocialLinksVertical />
         </div>
 
         <div className="contact-button">
           <a href="#About">
-            <MdKeyboardArrowDown color="#E62776" className="down-arrow" />
+            <MdKeyboardArrowDown
+              color="#E62776"
+              className="down-arrow"
+              size="75px"
+            />
           </a>
         </div>
       </div>

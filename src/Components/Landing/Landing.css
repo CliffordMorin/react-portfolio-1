@@ -9,23 +9,38 @@
   color: rgb(73, 70, 72);
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
+  background-image: url("../../images/aka1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .text-div {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    /* dark background */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
 }
 
 .landing-content {
   width: 100%;
   min-height: 280px;
-  /* max-height: fit-content; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(236, 238, 241);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px #2e7d32;
 }
 
 .landing-title {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
@@ -35,10 +50,20 @@
 .landing-description {
   font-size: 1.5rem;
   font-weight: bold;
-  /* color: black; */
+  color: green;
   text-align: center;
   margin-bottom: 2rem;
   text-align: left;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .contact-button {
@@ -49,25 +74,15 @@
   justify-self: end;
 }
 
-@media (max-width: 425px) {
-  .contact-button {
-    top: 90%;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1441px) {
   .landing-title {
-    font-size: 3.5rem;
+    font-size: 8rem;
   }
-}
-
-/* landing text for 4k monitors */
-@media screen and (min-width: 1440px) {
-  .landing-title {
-    font-size: 6rem;
+  .landing-description {
+    font-size: 2rem;
   }
 
-  h3 {
-    font-size: 2rem !important;
+  .text-div {
+    left: 70%;
   }
 }

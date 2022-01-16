@@ -1,13 +1,13 @@
 .nav {
   z-index: 100 !important;
-  /* background-color: #2e7d32 !important; */
-  opacity: 0.9;
+  background-color: #000000 !important;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .nav {
     position: fixed !important;
-    opacity: 0.9;
+    opacity: 0.5;
   }
 }
 
@@ -15,10 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.nav-span {
-  background-color: #2e7d32;
 }
 
 .flag-div-holder {

@@ -66,13 +66,8 @@ const MUINav = (props) => {
   };
 
   return (
-    <AppBar
-      overflow="visible"
-      position="static"
-      className="nav"
-      color="success"
-    >
-      <Container maxWidth="100%" color="sucess">
+    <AppBar overflow="visible" position="relative" className="nav">
+      <Container maxWidth="100%">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -86,7 +81,6 @@ const MUINav = (props) => {
               <MenuIcon />
             </IconButton>
             <Menu
-              color="success"
               disableScrollLock={true}
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -113,7 +107,6 @@ const MUINav = (props) => {
                   className="nav-menu-item"
                 >
                   <MenuItem
-                    color="success"
                     onClick={handleCloseNavMenu}
                     key={Math.random()}
                     sx={{ my: 1, color: "#2e7d32", display: "block" }}
@@ -131,7 +124,6 @@ const MUINav = (props) => {
           </Box>
 
           <Box
-            color="success"
             overflow="visible"
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           >
