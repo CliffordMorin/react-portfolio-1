@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import { Box } from "@mui/material/node_modules/@mui/system";
 import america from "../../images/america.webp";
 import japan from "../../images/japan.webp";
+import Fade from "react-reveal/Fade";
 
 const About = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -72,8 +73,8 @@ const About = (props) => {
         <p className="about-description">{content.description2}</p>
         <p className="about-description">{content.description3}</p>
         <p className="about-description">{content.description4}</p>
-        <Slide right>
-          <Box sx={{ flexGrow: 1 }}>
+        <Fade>
+          <Box sx={{ flexGrow: 1, marginBottom: 1 }}>
             <div className="flag-div nav-button" id="about-flag">
               {props.language === "English" ? (
                 <div className="flag-div">
@@ -104,7 +105,7 @@ const About = (props) => {
               )}
             </div>
           </Box>
-        </Slide>
+        </Fade>
         {/* <p>
           <a
             href="https://linktr.ee/zachinjapan"
