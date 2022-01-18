@@ -14,12 +14,12 @@ const Blog = (props) => {
         },
         {
           title: "Higher Order Functions",
-          image: "https://media.giphy.com/media/XR9Dp54ZC4dji/giphy.gif",
+          image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
         },
         {
-          title: "How I Studied For The Coding Bootcamp Technical Interview",
-          image: "https://media.giphy.com/media/IPbS5R4fSUl5S/giphy.gif",
+          title: "The Coding Bootcamp Technical Interview",
+          image: "https://media.giphy.com/media/MqcVPUx7cyL0Q/giphy.gif",
           link: "https://zachinjapan.com/bootcamp_coding_interview/",
         },
       ],
@@ -34,12 +34,12 @@ const Blog = (props) => {
         },
         {
           title: "Higher Order Functions",
-          image: "https://media.giphy.com/media/XR9Dp54ZC4dji/giphy.gif",
+          image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
         },
         {
-          title: "How I Studied For The Coding Bootcamp Technical Interview",
-          image: "https://media.giphy.com/media/IPbS5R4fSUl5S/giphy.gif",
+          title: "The Coding Bootcamp Technical Interview",
+          image: "https://media.giphy.com/media/MqcVPUx7cyL0Q/giphy.gif",
           link: "https://zachinjapan.com/bootcamp_coding_interview/",
         },
       ],
@@ -60,8 +60,8 @@ const Blog = (props) => {
         <div className="projects-container">
           {content.posts.map((post) => (
             <BlogCard
-              width={300}
-              height="max-content"
+              width={400}
+              height={400}
               title={post.title}
               description={post.description}
               image={post.image}

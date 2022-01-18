@@ -85,3 +85,7 @@
     margin-top: 40px;
   }
 }
+
+#about-flag {
+  justify-content: flex-start;
+}

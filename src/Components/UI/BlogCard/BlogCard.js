@@ -11,10 +11,8 @@ export default function BlogCard(props) {
       sx={{
         width: props.width,
         height: props.height,
-        border: "5px solid #E62776",
         margin: "10px",
-        minHeight: "350px",
-        //make the card bigger on hover
+        boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.1)",
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",
@@ -25,17 +23,19 @@ export default function BlogCard(props) {
       <CardActionArea href={props.link} target={"_blank"}>
         <CardMedia
           component="img"
-          height={200}
-          width={200}
+          height={300}
+          width={props.width}
           image={props.image}
           alt="blog post image"
           loading="lazy"
+          imagePosition="center"
         />
         <CardContent>
           <Typography
             gutterBottom
-            variant="h6"
+            variant="h5"
             component="div"
+            minHeight="65px"
             style={{
               color: "#E62776",
             }}

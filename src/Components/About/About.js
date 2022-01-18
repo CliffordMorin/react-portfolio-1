@@ -4,8 +4,24 @@ import Skills from "../UI/Skills";
 import Button from "@mui/material/Button";
 import Slide from "react-reveal/Slide";
 // import { AiOutlineIdcard } from "react-icons/ai";
+import { connect } from "react-redux";
+import { Box } from "@mui/material/node_modules/@mui/system";
+import america from "../../images/america.webp";
+import japan from "../../images/japan.webp";
 
 const About = (props) => {
+  const handleChangeLanguageToJapanese = (evt) => {
+    props.dispatch({
+      type: "CHANGE_LANGUAGE_TO_JAPANESE",
+    });
+  };
+
+  const handleChangeLanguageToEnglish = (evt) => {
+    props.dispatch({
+      type: "CHANGE_LANGUAGE_TO_ENGLISH",
+    });
+  };
+
   let content = {
     English: {
       title: "About Me",
@@ -56,6 +72,39 @@ const About = (props) => {
         <p className="about-description">{content.description2}</p>
         <p className="about-description">{content.description3}</p>
         <p className="about-description">{content.description4}</p>
+        <Slide right>
+          <Box sx={{ flexGrow: 1 }}>
+            <div className="flag-div nav-button" id="about-flag">
+              {props.language === "English" ? (
+                <div className="flag-div">
+                  <span className="nav-span">
+                    {" "}
+                    日本語を話せますか?&nbsp;&nbsp;{" "}
+                  </span>
+                  <div className="flag-div-holder">
+                    <img
+                      className="flag"
+                      src={japan}
+                      alt="Japan Flag"
+                      onClick={() => handleChangeLanguageToJapanese()}
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="Japanese">
+                  <div className="flag-div-holder">
+                    <img
+                      className="flag"
+                      src={america}
+                      alt="America Flag"
+                      onClick={() => handleChangeLanguageToEnglish()}
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+          </Box>
+        </Slide>
         {/* <p>
           <a
             href="https://linktr.ee/zachinjapan"
@@ -116,4 +165,7 @@ const About = (props) => {
   );
 };
 
-export default About;
+const mapStateToProps = (state) => ({
+  language: state.language,
+});
+export default connect(mapStateToProps)(About);
