@@ -120,7 +120,8 @@ const Projects = (props) => {
         },
         {
           title: "Zach in Japan",
-          description: "My tech blog.",
+          description:
+            "My blog using Gatsby and GraphQL. I write about coding concepts, japan, and more.",
           image: blog,
           link: "https://zachinjapan.com",
           linkText: "Live Demo",
