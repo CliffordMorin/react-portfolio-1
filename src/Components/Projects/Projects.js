@@ -121,7 +121,7 @@ const Projects = (props) => {
         {
           title: "Zach in Japan",
           description:
-            "My blog using Gatsby and GraphQL. I write about coding concepts, japan, and more.",
+            "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
           image: blog,
           link: "https://zachinjapan.com",
           linkText: "Live Demo",
