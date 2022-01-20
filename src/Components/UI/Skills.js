@@ -13,6 +13,7 @@ import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
+import Bounce from "react-reveal/Bounce";
 
 const Skills = (props) => {
   let content = {
@@ -177,26 +178,34 @@ const Skills = (props) => {
         <div className="Skills">
           <h1 className="skills-title">{content.title}</h1>
           <div className="resume-div">
-            <BasicModal
-              cta={content.cta0}
-              title={content.title0}
-              description={content.description0}
-            />
-            <BasicModal
-              cta={content.cta1}
-              title={content.title1}
-              description={content.description1}
-            />
-            <BasicModal
-              cta={content.cta2}
-              title={content.title2}
-              description={content.description2}
-            />
-            <BasicModal
-              cta={content.cta3}
-              title={content.title3}
-              description={content.description3}
-            />
+            <Bounce>
+              <BasicModal
+                cta={content.cta0}
+                title={content.title0}
+                description={content.description0}
+              />
+            </Bounce>
+            <Bounce>
+              <BasicModal
+                cta={content.cta1}
+                title={content.title1}
+                description={content.description1}
+              />
+            </Bounce>
+            <Bounce>
+              <BasicModal
+                cta={content.cta2}
+                title={content.title2}
+                description={content.description2}
+              />
+            </Bounce>
+            <Bounce>
+              <BasicModal
+                cta={content.cta3}
+                title={content.title3}
+                description={content.description3}
+              />
+            </Bounce>
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
