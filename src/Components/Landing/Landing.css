@@ -31,6 +31,11 @@
   .Landing {
     background-attachment: fixed !important;
   }
+
+  .contact-button {
+    position: absolute;
+    margin-top: 0px;
+  }
 }
 
 .landing-content {
@@ -71,11 +76,11 @@
 }
 
 .contact-button {
-  position: absolute;
   top: 80%;
   width: fit-content;
   text-align: center;
   justify-self: end;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1441px) {

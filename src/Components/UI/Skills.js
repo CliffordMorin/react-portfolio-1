@@ -69,7 +69,7 @@ const Skills = (props) => {
         ],
         ["Know how to use TypeScript to create reliable code."],
         [
-          "Work with GIT and use version control to deploy and manage small production projects",
+          "Work with GIT and use version control to deploy and manage small production projects using a feature branch workflow",
         ],
         ["And more..."],
       ],
