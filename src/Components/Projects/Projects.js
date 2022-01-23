@@ -1,6 +1,6 @@
 import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
-import blog from "../../images/projects/blog.webp";
+import blog from "../../images/projects/blog.png";
 import weather from "../../images/projects/weather.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import comedyshow from "../../images/projects/comedyshow.webp";
