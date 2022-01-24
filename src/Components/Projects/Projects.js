@@ -119,7 +119,7 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "Taco Cat",
+          title: "Zach In Japan",
           description:
             "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
           image: blog,
@@ -223,7 +223,7 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "タコ・キャット",
+          title: "ザック・イン・ジャパン",
           description: "私のテクノロジーブログです。",
           image: blog,
           link: "https://zachinjapan.gatsbyjs.io",
