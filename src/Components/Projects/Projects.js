@@ -21,6 +21,10 @@ import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import { BiLoaderCircle } from "react-icons/bi";
+import Fib from "../../images/coding/Fib.webp";
+import { SiMaterialui } from "react-icons/si";
+import ComingSoon from "../../images/comingSoon.gif";
+
 const Projects = (props) => {
   const [filter, setFilter] = useState("All Projects");
 
@@ -42,18 +46,43 @@ const Projects = (props) => {
     [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
     [<FaReact />, "React"],
     [<SiRedux />, "Redux"],
+    [<SiMaterialui />, "Material UI"],
     [<RiGatsbyFill />, "Gatsby"],
     [<GrGraphQl />, "GraphQL"],
     [<BiLoaderCircle />, "All Projects"],
   ];
 
+  // current date
+  let currentDay = new Date();
+  let releaseDate = new Date(2022, 1, 15);
+  let timeDiff = Math.abs(currentDay.getTime() - releaseDate.getTime());
+  let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
   let content = {
     English: {
       mainTitle: "Projects",
-      subTitle: "Side Projects",
-      moreProjectsButton: "...More Projects",
 
       projects: [
+        {
+          title: `Shukatsu (Available in ${diffDays} days)`,
+          description:
+            "Shukatsui pronounced as 'shoe - kat - su ' means job hunting in Japanese. Use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
+          image: ComingSoon,
+          link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          linkText: "Live Demo",
+          github: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          tech: "Tech",
+          tags: [
+            "React",
+            "Redux",
+            "React",
+            "Node",
+            "Authentication",
+            "MongoDB",
+          ],
+          tech_description: "Coming Soon",
+          callToAction: "More Info",
+        },
         {
           title: "Quote Quiz",
           description:
@@ -66,6 +95,41 @@ const Projects = (props) => {
           tags: ["CSS", "React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
             "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+          callToAction: "More Info",
+        },
+        {
+          title: "Fib Buzz",
+          description:
+            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "Tech",
+          tags: ["React", "JavaScript", "Material UI"],
+          tech_description:
+            "Please check the project page for more information on the code and technologies used.",
+          callToAction: "More Info",
+        },
+        {
+          title: "Zach In Japan",
+          description:
+            "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
+          image: blog,
+          link: "https://zachinjapan.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tech: "Tech",
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
+          ],
+          tech_description:
+            "I use this blog to learn Gatsby, GraphQL, and markdown.",
           callToAction: "More Info",
         },
         {
@@ -90,6 +154,7 @@ const Projects = (props) => {
             "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
           callToAction: "More Info",
         },
+
         {
           title: "Prefecture Match",
           description:
@@ -119,27 +184,6 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "Zach In Japan",
-          description:
-            "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
-          image: blog,
-          link: "https://zachinjapan.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/my-gatsby-blog",
-          tech: "Tech",
-          tags: [
-            "React",
-            "CSS",
-            "Markdown",
-            "Gatsby",
-            "GraphQL",
-            "Gatsby Cloud",
-          ],
-          tech_description:
-            "I use this blog to learn Gatsby, GraphQL, and markdown.",
-          callToAction: "More Info",
-        },
-        {
           title: "_C32F's Comedy Show",
           description:
             "Need a good laugh? Come check out this new up and coming robot comedian.",
@@ -157,9 +201,27 @@ const Projects = (props) => {
     },
     Japanese: {
       mainTitle: "プロジェクト",
-      subTitle: "サイドプロジェクト",
-      moreProjectsButton: "もっとプロジェクトを見る",
       projects: [
+        {
+          title: `就活 (後${diffDays}日)`,
+          description:
+            "このアプリは就活しているときに役に立ちます。リリース日は2022年2月15日です ",
+          image: ComingSoon,
+          link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          linkText: "ウェブサイト",
+          github: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          tech: "技術",
+          tags: [
+            "React",
+            "Redux",
+            "React",
+            "Node",
+            "Authentication",
+            "MongoDB",
+          ],
+          tech_description: "Coming Soon",
+          callToAction: "詳しい情報",
+        },
         {
           title: "引用クイズ",
           description:
@@ -172,6 +234,41 @@ const Projects = (props) => {
           tags: ["CSS", "React", "Redux", "API", "Netlify", "Typescript"],
           tech_description:
             " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
+          callToAction: "詳しい情報",
+        },
+        {
+          title: "Fib Buzz",
+          description:
+            "'Fib Buzz'!!  'Fizz Buzz'と'Fibonacci Sequence'の両方のコーディングチャレンジです。",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "技術",
+          tags: ["React", "JavaScript", "MaterialUI"],
+          tech_description: "ウェブサイトで詳細の情報を読んでください。",
+          callToAction: "詳しい情報",
+          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
+        },
+
+        {
+          title: "ザック・イン・ジャパン",
+          description: "私のテクノロジーブログです。",
+          image: blog,
+          link: "https://zachinjapan.gatsbyjs.io",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tech: "技術",
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
+          ],
+          tech_description:
+            "このブログでは、Gatsby、graphql、markdownを学んでいます。",
           callToAction: "詳しい情報",
         },
         {
@@ -220,26 +317,6 @@ const Projects = (props) => {
           tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
           tech_description:
             "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
-          callToAction: "詳しい情報",
-        },
-        {
-          title: "ザック・イン・ジャパン",
-          description: "私のテクノロジーブログです。",
-          image: blog,
-          link: "https://zachinjapan.gatsbyjs.io",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/my-gatsby-blog",
-          tech: "技術",
-          tags: [
-            "React",
-            "CSS",
-            "Markdown",
-            "Gatsby",
-            "GraphQL",
-            "Gatsby Cloud",
-          ],
-          tech_description:
-            "このブログでは、Gatsby、graphql、markdownを学んでいます。",
           callToAction: "詳しい情報",
         },
         {

@@ -33,7 +33,6 @@ const MUINav = (props) => {
         ["Home", "/#"],
         ["About", "/#About"],
         ["Projects", "/#Projects"],
-        ["Coding Challenges", "/#CodingChallenges"],
         ["Blog", "/#Blog"],
         ["Contact", "/#Contact"],
       ],
@@ -43,7 +42,6 @@ const MUINav = (props) => {
         ["ホーム", "/#"],
         ["自己紹介", "/#About"],
         ["プロジェクト", "/#Projects"],
-        ["コーディングチャレンジ", "/#CodingChallenges"],
         ["ブログ", "/#Blog"],
 
         ["お問い合わせ", "/#Contact"],
