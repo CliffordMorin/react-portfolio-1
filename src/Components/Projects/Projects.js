@@ -2,8 +2,8 @@ import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
 import blog from "../../images/projects/blog.webp";
 import weather from "../../images/projects/weather.webp";
-import prefecture from "../../images/projects/prefecture.webp";
-import comedyshow from "../../images/projects/comedyshow.webp";
+// import prefecture from "../../images/projects/prefecture.webp";
+// import comedyshow from "../../images/projects/comedyshow.webp";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
@@ -66,7 +66,7 @@ const Projects = (props) => {
         {
           title: `Shukatsu (Available in ${diffDays} days)`,
           description:
-            "Shukatsui pronounced as 'shoe - kat - su ' means job hunting in Japanese. Use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
+            "Shukatsu pronounced as 'shoe - kat - su ' means job hunting in Japanese. Use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
           image: ComingSoon,
           link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
           linkText: "Live Demo",
@@ -133,6 +133,20 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
+          title: "Castles In The Sky",
+          description:
+            "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
+          image: castles,
+          link: "https://castlesinthesky.netlify.app",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/castles",
+          tech: "Tech",
+          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
+          tech_description:
+            "A vanilla Javascript website using sass for styling and bootstrap.",
+          callToAction: "More Info",
+        },
+        {
           title: "Do I Need A Jacket?",
           description:
             "View the current live weather in America, determine if need to  wear a jacket, and more.",
@@ -155,48 +169,35 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
 
-        {
-          title: "Prefecture Match",
-          description:
-            "Learn the Japanese Prefectures using this fun matching game",
-          image: prefecture,
-          link: "https://prefecture-match.herokuapp.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/prefecture-match",
-          tech: "Tech",
-          tags: ["React", "CSS", "JavaScript", "Heroku"],
-          tech_description:
-            "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
-          callToAction: "More Info",
-        },
-        {
-          title: "Castles In The Sky",
-          description:
-            "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
-          image: castles,
-          link: "https://castlesinthesky.netlify.app",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/castles",
-          tech: "Tech",
-          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-          tech_description:
-            "A vanilla Javascript website using sass for styling and bootstrap.",
-          callToAction: "More Info",
-        },
-        {
-          title: "_C32F's Comedy Show",
-          description:
-            "Need a good laugh? Come check out this new up and coming robot comedian.",
-          image: comedyshow,
-          link: "https://zachinjapan.github.io/comedy_show/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/comedy_show",
-          tech: "Tech",
-          tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
-          tech_description:
-            "At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
-          callToAction: "More Info",
-        },
+        // {
+        //   title: "Prefecture Match",
+        //   description:
+        //     "Learn the Japanese Prefectures using this fun matching game",
+        //   image: prefecture,
+        //   link: "https://prefecture-match.herokuapp.com",
+        //   linkText: "Live Demo",
+        //   github: "https://github.com/zachinjapan/prefecture-match",
+        //   tech: "Tech",
+        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
+        //   tech_description:
+        //     "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
+        //   callToAction: "More Info",
+        // },
+
+        // {
+        //   title: "_C32F's Comedy Show",
+        //   description:
+        //     "Need a good laugh? Come check out this new up and coming robot comedian.",
+        //   image: comedyshow,
+        //   link: "https://zachinjapan.github.io/comedy_show/",
+        //   linkText: "Live Demo",
+        //   github: "https://github.com/zachinjapan/comedy_show",
+        //   tech: "Tech",
+        //   tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
+        //   tech_description:
+        //     "At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
+        //   callToAction: "More Info",
+        // },
       ],
     },
     Japanese: {
@@ -272,6 +273,19 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
+          title: "カーサルズ・イン・ザー・スカイ",
+          description: "アメリカのバンドのウェブサイトです。",
+          image: castles,
+          link: "https://castlesinthesky.netlify.app",
+          linkText: "ウェブサイト",
+          github: "",
+          tech: "技術",
+          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
+          tech_description:
+            "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
+          callToAction: "詳しい情報",
+        },
+        {
           title: "ジャケットが必要ですか？",
           description:
             "アメリカの郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
@@ -293,45 +307,32 @@ const Projects = (props) => {
             "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
           callToAction: "詳しい情報",
         },
-        {
-          title: "都道府県マッチング",
-          description:
-            "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
-          image: prefecture,
-          link: "https://prefecture-match.herokuapp.com",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/prefecture-match",
-          tech: "技術",
-          tags: ["React", "CSS", "JavaScript", "Heroku"],
-          tech_description: " useEffectとuseStateを使用しています",
-          callToAction: "詳しい情報",
-        },
-        {
-          title: "カーサルズ・イン・ザー・スカイ",
-          description: "アメリカのバンドのウェブサイトです。",
-          image: castles,
-          link: "https://castlesinthesky.netlify.app",
-          linkText: "ウェブサイト",
-          github: "",
-          tech: "技術",
-          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-          tech_description:
-            "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
-          callToAction: "詳しい情報",
-        },
-        {
-          title: "_C32Fのコメディショー",
-          description: "_C32Fくんのコメディショーです。",
-          image: comedyshow,
-          link: "https://zachinjapan.github.io/comedy_show/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/comedy_show",
-          tech: "技術",
-          tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
-          tech_description:
-            "ジョークアプリです。ユーザーがボタンを押すことで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
-          callToAction: "詳しい情報",
-        },
+        // {
+        //   title: "都道府県マッチング",
+        //   description:
+        //     "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
+        //   image: prefecture,
+        //   link: "https://prefecture-match.herokuapp.com",
+        //   linkText: "ウェブサイト",
+        //   github: "https://github.com/zachinjapan/prefecture-match",
+        //   tech: "技術",
+        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
+        //   tech_description: " useEffectとuseStateを使用しています",
+        //   callToAction: "詳しい情報",
+        // },
+        // {
+        //   title: "_C32Fのコメディショー",
+        //   description: "_C32Fくんのコメディショーです。",
+        //   image: comedyshow,
+        //   link: "https://zachinjapan.github.io/comedy_show/",
+        //   linkText: "ウェブサイト",
+        //   github: "https://github.com/zachinjapan/comedy_show",
+        //   tech: "技術",
+        //   tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
+        //   tech_description:
+        //     "ジョークアプリです。ユーザーがボタンを押すことで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
+        //   callToAction: "詳しい情報",
+        // },
       ],
     },
   };
