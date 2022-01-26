@@ -12,6 +12,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
 import Bounce from "react-reveal/Bounce";
 import { SiMaterialui } from "react-icons/si";
@@ -40,6 +41,7 @@ const Skills = (props) => {
         ],
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+        [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],

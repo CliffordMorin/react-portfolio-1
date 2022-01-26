@@ -23,6 +23,7 @@ import { SiRedux } from "react-icons/si";
 import { BiLoaderCircle } from "react-icons/bi";
 import Fib from "../../images/coding/Fib.webp";
 import { SiMaterialui } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import ComingSoon from "../../images/comingSoon.gif";
 
 const Projects = (props) => {
@@ -49,6 +50,7 @@ const Projects = (props) => {
     [<SiMaterialui />, "Material UI"],
     [<RiGatsbyFill />, "Gatsby"],
     [<GrGraphQl />, "GraphQL"],
+    [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
     [<BiLoaderCircle />, "All Projects"],
   ];
 
