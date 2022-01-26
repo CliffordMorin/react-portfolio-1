@@ -62,7 +62,7 @@ const Projects = (props) => {
 
   let content = {
     English: {
-      mainTitle: "Projects",
+      mainTitle: "Featured Projects",
 
       projects: [
         {
