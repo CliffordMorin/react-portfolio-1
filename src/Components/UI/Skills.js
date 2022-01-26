@@ -119,6 +119,7 @@ const Skills = (props) => {
         ],
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+        [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],

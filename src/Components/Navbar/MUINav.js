@@ -64,9 +64,12 @@ const MUINav = (props) => {
   };
 
   return (
-    <AppBar overflow="visible" position="relative" className="nav">
-      <Container maxWidth="100vw">
-        <Toolbar disableGutters>
+    <AppBar position="relative" className="nav" maxWidth="100vw">
+      <Container
+        maxWidth="100vw
+    "
+      >
+        <Toolbar disableGutters="true">
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
