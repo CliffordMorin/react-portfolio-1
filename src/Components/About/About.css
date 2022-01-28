@@ -63,6 +63,9 @@
     width: 45%;
     margin-bottom: 20px;
   }
+  #about-flag {
+    padding: 10px;
+  }
 }
 
 .about-description {

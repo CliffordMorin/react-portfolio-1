@@ -364,6 +364,7 @@ const Projects = (props) => {
               flexWrap: "wrap",
               backgroundColor: "#f5f5f5",
             }}
+            className="project-icons"
           >
             {skills.map((skill) => (
               <div
