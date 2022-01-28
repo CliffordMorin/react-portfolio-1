@@ -61,6 +61,7 @@ export default function MUIProjectCard(props) {
           height="254"
           image={props.image}
           alt={props.title}
+          loading="lazy"
         />
       </a>
       <CardContent>
