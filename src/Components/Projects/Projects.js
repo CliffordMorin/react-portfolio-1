@@ -66,9 +66,9 @@ const Projects = (props) => {
 
       projects: [
         {
-          title: `Shukatsu (Available in ${diffDays} days)`,
+          title: `HATARAKU (Available in ${diffDays} days)`,
           description:
-            "Shukatsu pronounced as 'shoe - kat - su ' means job hunting in Japanese. Use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
+            "Let's use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
           image: ComingSoon,
           link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
           linkText: "Live Demo",
@@ -206,7 +206,7 @@ const Projects = (props) => {
       mainTitle: "プロジェクト",
       projects: [
         {
-          title: `就活 (後${diffDays}日)`,
+          title: `HATARAKU (後${diffDays}日)`,
           description:
             "このアプリは就活しているときに役に立ちます。リリース日は2022年2月15日です ",
           image: ComingSoon,
