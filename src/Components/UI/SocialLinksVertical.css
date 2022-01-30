@@ -9,6 +9,7 @@
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  padding: 5px;
 }
 
 .social-links-vertical a {
