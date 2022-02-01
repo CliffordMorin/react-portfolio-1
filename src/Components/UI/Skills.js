@@ -11,7 +11,7 @@ import { RiGatsbyFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
-import { SiRedux } from "react-icons/si";
+// import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
 import Bounce from "react-reveal/Bounce";
@@ -43,7 +43,7 @@ const Skills = (props) => {
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
-        [<SiRedux />, "Redux", "https://redux.js.org/"],
+        // [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
@@ -121,7 +121,7 @@ const Skills = (props) => {
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
-        [<SiRedux />, "Redux", "https://redux.js.org/"],
+        // [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
       ],
