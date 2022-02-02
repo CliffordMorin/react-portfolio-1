@@ -90,9 +90,9 @@ const Skills = (props) => {
         ["Know how to test mobile applications with Expo."],
       ],
       description3: [
-        ["I am currently learning C#"],
+        ["I know basic C# sytax for functions, variables, etc..."],
         [
-          "I am currently learning how to create VR/AR applications with Unity.",
+          "In my free time, I am learning how to make VR/AR applications with Unity.",
         ],
       ],
     },
@@ -162,7 +162,7 @@ const Skills = (props) => {
       description3: [
         [
           "現在、Oculus Quest 2のヘッドセットでUnityを使ってVR/ARアプリを作成することを勉強しています。",
-          "現在、C#を勉強しています。",
+          "C#の基本的な関数、変数、その他...を知っています",
         ],
       ],
     },
