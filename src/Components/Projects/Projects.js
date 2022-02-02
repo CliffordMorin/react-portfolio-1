@@ -19,7 +19,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
-import { SiRedux } from "react-icons/si";
+// import { SiRedux } from "react-icons/si";
 import { BiLoaderCircle } from "react-icons/bi";
 import Fib from "../../images/coding/Fib.webp";
 import { SiMaterialui } from "react-icons/si";
