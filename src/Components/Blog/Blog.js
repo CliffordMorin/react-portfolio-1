@@ -22,6 +22,11 @@ const Blog = (props) => {
           image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
           link: "https://zachinjapan.com/This.Concept%20=%20important/",
         },
+        {
+          title: "count++ !== ++count",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
+        },
       ],
     },
     Japanese: {
@@ -41,6 +46,11 @@ const Blog = (props) => {
           title: "this.concept = important",
           image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
           link: "https://zachinjapan.com/This.Concept%20=%20important/",
+        },
+        {
+          title: "count++ !== ++count",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
         },
       ],
     },
