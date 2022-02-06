@@ -202,13 +202,13 @@ const Skills = (props) => {
                 description={content.description2}
               />
             </Bounce>
-            <Bounce>
+            {/* <Bounce>
               <BasicModal
                 cta={content.cta3}
                 title={content.title3}
                 description={content.description3}
               />
-            </Bounce>
+            </Bounce> */}
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (

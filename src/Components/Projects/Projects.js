@@ -79,34 +79,6 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "Quote Quiz",
-          description:
-            "Quiz your knowledge of famous quotes and share your favorite quotes on twitter.",
-          image: quote,
-          link: "https://quotequiz.netlify.app",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/quotes",
-          tech: "Tech",
-          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
-          tech_description:
-            "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
-          callToAction: "More Info",
-        },
-        {
-          title: "Fib Buzz",
-          description:
-            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "Tech",
-          tags: ["React", "JavaScript", "Material UI"],
-          tech_description:
-            "Please check the project page for more information on the code and technologies used.",
-          callToAction: "More Info",
-        },
-        {
           title: "Zach In Japan",
           description:
             "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
@@ -125,6 +97,34 @@ const Projects = (props) => {
           ],
           tech_description:
             "I use this blog to learn Gatsby, GraphQL, and markdown.",
+          callToAction: "More Info",
+        },
+        {
+          title: "Fib Buzz",
+          description:
+            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "Tech",
+          tags: ["React", "JavaScript", "Material UI"],
+          tech_description:
+            "Please check the project page for more information on the code and technologies used.",
+          callToAction: "More Info",
+        },
+        {
+          title: "Quote Quiz",
+          description:
+            "Quiz your knowledge of famous quotes and share your favorite quotes on twitter.",
+          image: quote,
+          link: "https://quotequiz.netlify.app",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/quotes",
+          tech: "Tech",
+          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
+          tech_description:
+            "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         {
@@ -212,35 +212,6 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "引用クイズ",
-          description:
-            "名家の引用を使用し、インタラクティブなゲームをやってみてください。",
-          image: quote,
-          link: "https://quotequiz.netlify.app",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/quotes",
-          tech: "技術",
-          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
-          tech_description:
-            " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
-          callToAction: "詳しい情報",
-        },
-        {
-          title: "Fib Buzz",
-          description:
-            "'Fib Buzz'!!  'Fizz Buzz'と'Fibonacci Sequence'の両方のコーディングチャレンジです。",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "技術",
-          tags: ["React", "JavaScript", "MaterialUI"],
-          tech_description: "ウェブサイトで詳細の情報を読んでください。",
-          callToAction: "詳しい情報",
-          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
-        },
-
-        {
           title: "ザック・イン・ジャパン",
           description: "私のテクノロジーブログです。",
           image: blog,
@@ -258,6 +229,34 @@ const Projects = (props) => {
           ],
           tech_description:
             "このブログでは、Gatsby、graphql、markdownを学んでいます。",
+          callToAction: "詳しい情報",
+        },
+        {
+          title: "Fib Buzz",
+          description:
+            "'Fib Buzz'!!  'Fizz Buzz'と'Fibonacci Sequence'の両方のコーディングチャレンジです。",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "技術",
+          tags: ["React", "JavaScript", "MaterialUI"],
+          tech_description: "ウェブサイトで詳細の情報を読んでください。",
+          callToAction: "詳しい情報",
+          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
+        },
+        {
+          title: "引用クイズ",
+          description:
+            "名家の引用を使用し、インタラクティブなゲームをやってみてください。",
+          image: quote,
+          link: "https://quotequiz.netlify.app",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/quotes",
+          tech: "技術",
+          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
+          tech_description:
+            " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
           callToAction: "詳しい情報",
         },
         {
