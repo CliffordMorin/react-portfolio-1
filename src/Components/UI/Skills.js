@@ -52,11 +52,11 @@ const Skills = (props) => {
       cta0: "Front End",
       cta1: "Back End",
       cta2: "Mobile",
-      cta3: "VR/AR",
+      cta3: "CS",
       title0: "Front End",
       title1: "Back End",
       title2: "Mobile",
-      title3: "VR/AR",
+      title3: "Computer Science",
       description0: [
         [
           "Create website layouts with HTML/CSS Understand basic design principles.",
@@ -90,8 +90,20 @@ const Skills = (props) => {
         ["Know how to test mobile applications with Expo."],
       ],
       description3: [
+        ["I have a strong grasp of object oriented programming."],
         [
-          "In my free time, I am learning how to make VR/AR applications with Unity.",
+          "I have a strong grasp of algorithms and can solve basic algorithmic problems.",
+        ],
+        ["I understand concepts like modularization"],
+        ["I am comfortable with higher-order functions and recursion."],
+        [
+          "I am able to create advanced data strctures like linked lists, stacks, queues, and trees.",
+        ],
+        [
+          <img
+            src="https://www.codewars.com/users/zachinjapan/badges/small"
+            alt="codewars"
+          />,
         ],
       ],
     },
@@ -128,11 +140,11 @@ const Skills = (props) => {
       cta0: "フロントエンド",
       cta1: "バックエンド",
       cta2: "モバイル",
-      cta3: "VR/AR",
+      cta3: "コンピューターサイエンス",
       title0: "フロントエンド",
       title1: "バックエンド",
       title2: "モバイル",
-      title3: "VR/AR",
+      title3: "コンピューターサイエンス",
       description0: [
         ["HTML/CSSを使ってレイアウトを作成できます。"],
         ["JavaScriptを使ってDOMを操作できます。"],
@@ -159,8 +171,19 @@ const Skills = (props) => {
         ],
       ],
       description3: [
+        ["オブジェクト指向プログラミングを熟知しています。"],
+        ["アルゴリズムを熟知しています。"],
+        ["モジュール化を熟知しています。"],
+        ["高階関数や再帰を熟知しています。"],
+
         [
-          "現在、Oculus Quest 2のヘッドセットでUnityを使ってVR/ARアプリを作成することを勉強しています。",
+          "リンクリストやスタック、キュー、木を使ってデータ構造を作成できます。",
+        ],
+        [
+          <img
+            src="https://www.codewars.com/users/zachinjapan/badges/small"
+            alt="codewars"
+          />,
         ],
       ],
     },
@@ -202,13 +225,13 @@ const Skills = (props) => {
                 description={content.description2}
               />
             </Bounce>
-            {/* <Bounce>
+            <Bounce>
               <BasicModal
                 cta={content.cta3}
                 title={content.title3}
                 description={content.description3}
               />
-            </Bounce> */}
+            </Bounce>
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
