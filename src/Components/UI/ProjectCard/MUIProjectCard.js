@@ -58,10 +58,12 @@ export default function MUIProjectCard(props) {
       <a href={props.link} target={"_blank"} rel="noreferrer">
         <CardMedia
           component="img"
-          height="254"
+          height="auto"
           image={props.image}
           alt={props.title}
           loading="lazy"
+          width="100%"
+          object-fit="contain"
         />
       </a>
       <CardContent>

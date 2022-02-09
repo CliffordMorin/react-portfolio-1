@@ -4,6 +4,7 @@ import blog from "../../images/projects/blog.webp";
 import weather from "../../images/projects/weather.webp";
 // import prefecture from "../../images/projects/prefecture.webp";
 // import comedyshow from "../../images/projects/comedyshow.webp";
+import haku from "../../images/projects/haku.png";
 import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
@@ -54,28 +55,23 @@ const Projects = (props) => {
     [<BiLoaderCircle />, "All Projects"],
   ];
 
-  // current date
-  let currentDay = new Date();
-  let releaseDate = new Date(2022, 1, 15);
-  let timeDiff = Math.abs(currentDay.getTime() - releaseDate.getTime());
-  let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-
   let content = {
     English: {
       mainTitle: "Featured Projects",
 
       projects: [
         {
-          title: `HATARAKU (Available in ${diffDays} days)`,
+          title: `HAKU`,
           description:
-            "Let's use this app to keep track of your interviews and land that dream job. (Release date is February 15, 2022)",
-          image: ComingSoon,
-          link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+            "Haku pronounced 'ha koo' is an application that let's you track, and compare jobs during the the interview process.",
+          image: haku,
+          link: "https://hakujobs.com",
           linkText: "Live Demo",
-          github: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
           tags: ["React", "React", "Node", "Authentication", "MongoDB"],
-          tech_description: "Coming Soon",
+          tech_description:
+            "A full stack application using manual authentication and MongoDB.",
           callToAction: "More Info",
         },
         {
@@ -199,16 +195,17 @@ const Projects = (props) => {
       mainTitle: "プロジェクト",
       projects: [
         {
-          title: `HATARAKU (後${diffDays}日)`,
+          title: `HAKU`,
           description:
-            "このアプリは就活しているときに役に立ちます。リリース日は2022年2月15日です ",
-          image: ComingSoon,
-          link: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+            "Haku pronounced 'ha koo' is an application that let's you track, and compare jobs during the the interview process.",
+          image: haku,
+          link: "https://hakujobs.com",
           linkText: "ウェブサイト",
-          github: "https://media.giphy.com/media/2oWWe3cwQE0snrfBz1/giphy.gif",
+          github: "github.com/zachinjapan/haku",
           tech: "技術",
           tags: ["React", "React", "Node", "Authentication", "MongoDB"],
-          tech_description: "Coming Soon",
+          tech_description: "Hakuは就職活動中に使うアプリです。",
+
           callToAction: "詳しい情報",
         },
         {
