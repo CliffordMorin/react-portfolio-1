@@ -137,28 +137,28 @@ const Projects = (props) => {
             "A vanilla Javascript website using sass for styling and bootstrap.",
           callToAction: "More Info",
         },
-        {
-          title: "Do I Need A Jacket?",
-          description:
-            "View the current live weather in America, determine if need to  wear a jacket, and more.",
-          image: weather,
-          link: "https://doineedajackettoday.herokuapp.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/do_i_need_a_jacket",
-          tech: "Tech",
-          tags: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "API",
-            "Node",
-            "REST API",
-            "Heroku",
-          ],
-          tech_description:
-            "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
-          callToAction: "More Info",
-        },
+        // {
+        //   title: "Do I Need A Jacket?",
+        //   description:
+        //     "View the current live weather in America, determine if need to  wear a jacket, and more.",
+        //   image: weather,
+        //   link: "https://doineedajackettoday.herokuapp.com",
+        //   linkText: "Live Demo",
+        //   github: "https://github.com/zachinjapan/do_i_need_a_jacket",
+        //   tech: "Tech",
+        //   tags: [
+        //     "HTML",
+        //     "CSS",
+        //     "JavaScript",
+        //     "API",
+        //     "Node",
+        //     "REST API",
+        //     "Heroku",
+        //   ],
+        //   tech_description:
+        //     "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
+        //   callToAction: "More Info",
+        // },
 
         // {
         //   title: "Prefecture Match",
@@ -269,28 +269,28 @@ const Projects = (props) => {
             "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
           callToAction: "詳しい情報",
         },
-        {
-          title: "ジャケットが必要ですか？",
-          description:
-            "アメリカの郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
-          image: weather,
-          link: "https://doineedajackettoday.herokuapp.com",
-          linkText: "ウエブサイト",
-          github: "https://github.com/zachinjapan/do_i_need_a_jacket",
-          tech: "技術",
-          tags: [
-            "HTML",
-            "CSS",
-            "Javascrip",
-            "API",
-            "Node",
-            "REST API",
-            "Heroku",
-          ],
-          tech_description:
-            "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
-          callToAction: "詳しい情報",
-        },
+        // {
+        //   title: "ジャケットが必要ですか？",
+        //   description:
+        //     "アメリカの郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
+        //   image: weather,
+        //   link: "https://doineedajackettoday.herokuapp.com",
+        //   linkText: "ウエブサイト",
+        //   github: "https://github.com/zachinjapan/do_i_need_a_jacket",
+        //   tech: "技術",
+        //   tags: [
+        //     "HTML",
+        //     "CSS",
+        //     "Javascrip",
+        //     "API",
+        //     "Node",
+        //     "REST API",
+        //     "Heroku",
+        //   ],
+        //   tech_description:
+        //     "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
+        //   callToAction: "詳しい情報",
+        // },
         // {
         //   title: "都道府県マッチング",
         //   description:
