@@ -1,7 +1,7 @@
 import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
 import blog from "../../images/projects/blog.webp";
-import weather from "../../images/projects/weather.webp";
+// import weather from "../../images/projects/weather.webp";
 // import prefecture from "../../images/projects/prefecture.webp";
 // import comedyshow from "../../images/projects/comedyshow.webp";
 import haku from "../../images/projects/haku.png";
@@ -25,7 +25,6 @@ import { BiLoaderCircle } from "react-icons/bi";
 import Fib from "../../images/coding/Fib.webp";
 import { SiMaterialui } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import ComingSoon from "../../images/comingSoon.gif";
 
 const Projects = (props) => {
   const [filter, setFilter] = useState("All Projects");
