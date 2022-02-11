@@ -59,17 +59,15 @@ const Skills = (props) => {
       title3: "Computer Science",
       description0: [
         [
-          "Create website layouts with HTML/CSS Understand basic design principles.",
+          "Can create website layouts with HTML/CSS Understand basic design principles.",
         ],
         ["Know JavaScript and how to work with the DOM."],
         [
           "Know how to use Bootstrap, SASS, and MaterialUI to create responsive layouts. ",
         ],
+        ["Know how to Connect to APIs and make requests via Fetch and Axios."],
         [
-          "Create basic interactive frontend applications Connect to APIs and make requests via Fetch and Axios.",
-        ],
-        [
-          "Know how to use React, Redux, and ReactDOM to create stateful applications.",
+          "Know how to use React, React-Context, and ReactDOM to create stateful applications.",
         ],
         ["Know how to use TypeScript to create reliable code."],
         [
@@ -91,14 +89,10 @@ const Skills = (props) => {
       ],
       description3: [
         ["I have a strong grasp of object oriented programming."],
-        [
-          "I have a strong grasp of algorithms and can solve basic algorithmic problems.",
-        ],
+        ["I understand the fundamentals of data structures and algorithms."],
         ["I understand concepts like modularization"],
         ["I am comfortable with higher-order functions and recursion."],
-        [
-          "I am able to create advanced data strctures like linked lists, stacks, queues, and trees.",
-        ],
+        ["I am have built linked lists, stacks, queues, and trees."],
         [
           <img
             src="https://www.codewars.com/users/zachinjapan/badges/small"
