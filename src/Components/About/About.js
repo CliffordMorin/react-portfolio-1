@@ -27,12 +27,13 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer who can speak Japanese",
+        "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer who is fluent in Japanese",
       description2:
-        "Every day I'm learning new things and improving my skills.",
-      description3: "I am seeking a full-time position in Japan.",
+        "Every day I'm improving my skills as a developer and as a speaker of Japanese.",
+      description3:
+        "I am seeking a full-time position in Japan as a web developer/software engineer.",
       description4:
-        "Feel free to contact me using the form below or at Zach.Stone.Developer@gmail.com",
+        "Thank you for taking the time to view my portfolio.  You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
       resume: "Resume",
       contact: "Contact",
     },
@@ -42,7 +43,8 @@ const About = (props) => {
         "こんにちは、ザックです。日本語が話せるの独学のソフトエンジニアです。",
       description2: "毎日新しいことを学び、スキルを向上させていきます。",
       description3: "ウェブ開発者としてのフルタイムの仕事を探しています",
-      description4: "下記のフォームからお問い合わせください。",
+      description4:
+        "ポートフォリオサイトをご覧いただきありがとうございます。 お問い合わせは、以下のフォームをご利用いただくか、Zach.Stone.Developerまでメールでお問い合わせください。",
       resume: "履歴書",
       contact: "お問い合わせ",
     },
