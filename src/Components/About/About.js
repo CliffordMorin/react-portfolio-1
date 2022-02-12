@@ -29,9 +29,10 @@ const About = (props) => {
       description:
         "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer who can speak Japanese",
       description2:
-        "I have a passion for creating and learning new things. When I'm not coding, I enjoy playing VR games, studying Japanese, and playing music.",
-      description3: "I am looking for a full-time position in Japan.",
-      description4: "Feel free to contact me using the form below.",
+        "Every day I'm learning new things and improving my skills.",
+      description3: "I am seeking a full-time position in Japan.",
+      description4:
+        "Feel free to contact me using the form below or at Zach.Stone.Developer@gmail.com",
       resume: "Resume",
       contact: "Contact",
     },
@@ -39,8 +40,7 @@ const About = (props) => {
       title: "自己紹介",
       description:
         "こんにちは、ザックです。日本語が話せるの独学のソフトエンジニアです。",
-      description2:
-        "ものを作るや学ぶことが好きです。暇な時に、VRゲームをやったり、日本語を勉強したり、音楽を演劇したりします。",
+      description2: "毎日新しいことを学び、スキルを向上させていきます。",
       description3: "ウェブ開発者としてのフルタイムの仕事を探しています",
       description4: "下記のフォームからお問い合わせください。",
       resume: "履歴書",
