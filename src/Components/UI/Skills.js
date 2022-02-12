@@ -92,7 +92,7 @@ const Skills = (props) => {
         ["I understand the fundamentals of data structures and algorithms."],
         ["I understand concepts like modularization"],
         ["I am comfortable with higher-order functions and recursion."],
-        ["I am have built linked lists, stacks, queues, and trees."],
+        ["I have built linked lists, stacks, queues, and trees."],
         [
           <img
             src="https://www.codewars.com/users/zachinjapan/badges/small"
