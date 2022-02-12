@@ -27,7 +27,7 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer currently located in the US.",
+        "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer who can speak Japanese",
       description2:
         "I have a passion for creating and learning new things. When I'm not coding, I enjoy playing VR games, studying Japanese, and playing music.",
       description3: "I am looking for a full-time position in Japan.",
