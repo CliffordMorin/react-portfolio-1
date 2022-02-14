@@ -194,9 +194,9 @@ const Projects = (props) => {
       mainTitle: "プロジェクト",
       projects: [
         {
-          title: `HAKU`,
+          title: `HAKU （ハク）`,
           description:
-            "Haku pronounced 'ha koo' is an application that let's you track, and compare jobs during the the interview process.",
+            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
           image: haku,
           link: "https://hakujobs.com",
           linkText: "ウェブサイト",
@@ -205,7 +205,8 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description: "Hakuは就職活動中に使うアプリです。",
 
-          callToAction: "詳しい情報",
+          callToAction:
+            "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
         },
         {
           title: "ザック・イン・ジャパン",
