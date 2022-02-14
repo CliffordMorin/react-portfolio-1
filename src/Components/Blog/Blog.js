@@ -27,6 +27,11 @@ const Blog = (props) => {
           image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
           link: "https://zachinjapan.com/count++%20!=%20++count/",
         },
+        {
+          title: "Using Recursion to Insert Values Into a Sorted Binary Tree",
+          image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
+          link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
+        },
       ],
     },
     Japanese: {
@@ -51,6 +56,11 @@ const Blog = (props) => {
           title: "count++ !== ++count",
           image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
           link: "https://zachinjapan.com/count++%20!=%20++count/",
+        },
+        {
+          title: "Using Recursion to Insert Values Into a Sorted Binary Tree",
+          image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
+          link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
         },
       ],
     },
