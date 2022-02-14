@@ -203,10 +203,9 @@ const Projects = (props) => {
           github: "github.com/zachinjapan/haku",
           tech: "技術",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description: "Hakuは就職活動中に使うアプリです。",
-
-          callToAction:
+          tech_description:
             "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
+          callToAction: "詳しい情報",
         },
         {
           title: "ザック・イン・ジャパン",
