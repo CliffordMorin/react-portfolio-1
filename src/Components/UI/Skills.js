@@ -78,6 +78,10 @@ const Skills = (props) => {
       description1: [
         ["Know how to use Node, Express, to create back end applications."],
         ["Know how to create RESTful APIs."],
+        [
+          "Know how to Authenticate users and create secure applications using hashed passwords, JWTs, and mongoDB.",
+        ],
+        ["Know how to use MongoDB to store and retreve data."],
         ["Know how to deploy projects and work with servers."],
         ["And more..."],
       ],
@@ -156,6 +160,10 @@ const Skills = (props) => {
       description1: [
         ["Node, Expressを使ってバックエンドアプリケーションを作成できます。"],
         ["RESTfulなAPIを作成できます。"],
+        [
+          "JWT, hashed passwords、MONGODB、を使って安全なアプリを作成できます。",
+        ],
+        ["MongoDBを使ってデータを保存・取得できます。"],
         ["プロジェクトをデプロイしてサーバーに接続できます。"],
       ],
       description2: [
