@@ -62,7 +62,7 @@ const Projects = (props) => {
         {
           title: `HAKU`,
           description:
-            "Haku pronounced 'ha koo' is an application that let's you track, and compare jobs during the the interview process.",
+            "Haku pronounced 'hah-koo' is an application that helps you track, and compare jobs during the the interview process.",
           image: haku,
           link: "https://hakujobs.com",
           linkText: "Live Demo",
