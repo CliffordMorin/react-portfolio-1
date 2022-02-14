@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
-import { DiSass } from "react-icons/di";
+// import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
