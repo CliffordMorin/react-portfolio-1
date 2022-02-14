@@ -68,7 +68,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
-          tags: ["React", "React", "Node", "Authentication", "MongoDB"],
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "A full stack application using manual authentication and MongoDB.",
           callToAction: "More Info",
@@ -103,7 +103,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "Tech",
-          tags: ["React", "JavaScript", "Material UI"],
+          tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description:
             "Please check the project page for more information on the code and technologies used.",
           callToAction: "More Info",
@@ -202,7 +202,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "github.com/zachinjapan/haku",
           tech: "技術",
-          tags: ["React", "React", "Node", "Authentication", "MongoDB"],
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description: "Hakuは就職活動中に使うアプリです。",
 
           callToAction: "詳しい情報",
@@ -236,7 +236,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "技術",
-          tags: ["React", "JavaScript", "MaterialUI"],
+          tags: ["React", "CSS", "JavaScript", "MaterialUI"],
           tech_description: "ウェブサイトで詳細の情報を読んでください。",
           callToAction: "詳しい情報",
           callToActionLink: "https://zachinjapan.github.io/fib_buzz/",

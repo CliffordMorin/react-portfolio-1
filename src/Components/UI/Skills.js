@@ -32,7 +32,7 @@ const Skills = (props) => {
           "CSS",
           "https://developer.mozilla.org/en-US/docs/Web/CSS",
         ],
-        [<DiSass />, "SASS", "https://sass-lang.com/"],
+        // [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
         [
           <IoLogoJavascript />,
@@ -115,7 +115,7 @@ const Skills = (props) => {
           "CSS",
           "https://developer.mozilla.org/en-US/docs/Web/CSS",
         ],
-        [<DiSass />, "SASS", "https://sass-lang.com/"],
+        // [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
         [
           <IoLogoJavascript />,
