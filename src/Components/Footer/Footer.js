@@ -9,7 +9,7 @@ const Footer = (props) => {
     },
     Japanese: {
       description:
-        "このポートフォリオは npx create-react-app,  Redux,  Material-UIを使用して作成されました。",
+        "このウェブサイトは npx create-react-app,  Redux,  Material-UIを使用して作成されました。",
     },
   };
 

@@ -119,7 +119,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
           tech_description:
-            "A joke api pulls the quotes which are then .map()'ed to buttons. The buttons themselves check if the user was correct and redux is used to tell when the round is over.",
+            "A API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         {
@@ -230,7 +230,7 @@ const Projects = (props) => {
         {
           title: "Fib Buzz",
           description:
-            "'Fib Buzz'!!  'Fizz Buzz'と'Fibonacci Sequence'の両方のコーディングチャレンジです。",
+            "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
           image: Fib,
           link: "https://fib-buzz.netlify.app/",
           linkText: "ウェブサイト",
@@ -242,9 +242,8 @@ const Projects = (props) => {
           callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
         },
         {
-          title: "引用クイズ",
-          description:
-            "名家の引用を使用し、インタラクティブなゲームをやってみてください。",
+          title: "名言クイズ",
+          description: "この名言を残した偉人の名前を選択してください。",
           image: quote,
           link: "https://quotequiz.netlify.app",
           linkText: "ウェブサイト",
@@ -252,11 +251,11 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
           tech_description:
-            " ジョークAPIは引用符をゲットして、引用符はボタンに.map（）されます。 ボタンがユーザーが正しいかどうかをチェックし、reduxを使用してラウンドが終了したことを通知します。",
+            "引用APIは引用符をゲットして、引用符はボタンに.map（）されます。 ユーザーが正しいボタンを選択したかどうかをチェックします。",
           callToAction: "詳しい情報",
         },
         {
-          title: "カーサルズ・イン・ザー・スカイ",
+          title: "カーサルズ・イン・ザ・スカイ",
           description: "アメリカのバンドのウェブサイトです。",
           image: castles,
           link: "https://castlesinthesky.netlify.app",
