@@ -69,7 +69,7 @@ const Skills = (props) => {
         [
           "Know how to use React, React-Context, and ReactDOM to create stateful applications.",
         ],
-        ["Know how to use TypeScript to create reliable code."],
+        ["Experience with TypeScript."],
         [
           "Work with GIT and use version control to deploy and manage small production projects using a feature branch workflow",
         ],
@@ -79,10 +79,13 @@ const Skills = (props) => {
         ["Know how to use Node, Express, to create back end applications."],
         ["Know how to create RESTful APIs."],
         [
-          "Know how to Authenticate users and create secure applications using hashed passwords, JWTs, and mongoDB.",
+          "Know how to Authenticate users and create secure applications using hashed passwords, JWTs, and MongoDB.",
         ],
         ["Know how to use MongoDB to store and retreve data."],
-        ["Know how to deploy projects and work with servers."],
+        [
+          "Know how to deploy projects and work with servers such as Heroku, Netfify, etc...",
+        ],
+        ["Experience with GraphQL."],
         ["And more..."],
       ],
       description2: [
@@ -96,12 +99,14 @@ const Skills = (props) => {
         ["I understand the fundamentals of data structures and algorithms."],
         ["I understand concepts like modularization"],
         ["I am comfortable with higher-order functions and recursion."],
-        ["I have built linked lists, stacks, queues, and trees."],
+        ["I have built linked lists, hash tables, and binary trees."],
         [
-          <img
-            src="https://www.codewars.com/users/zachinjapan/badges/small"
-            alt="codewars"
-          />,
+          <a href="https://www.codewars.com/" target={"_blank"}>
+            <img
+              src="https://www.codewars.com/users/zachinjapan/badges/small"
+              alt="codewars"
+            />
+          </a>,
         ],
       ],
     },
@@ -179,13 +184,15 @@ const Skills = (props) => {
         ["高階関数や再帰を熟知しています。"],
 
         [
-          "リンクリストやハッシュマップ、 キュー、木を使ってデータ構造を作成したことがあります。",
+          "リンクリストやハッシュマップ、 木を使ってデータ構造を作成したことがあります。",
         ],
         [
-          <img
-            src="https://www.codewars.com/users/zachinjapan/badges/small"
-            alt="codewars"
-          />,
+          <a href="https://www.codewars.com/" target={"_blank"}>
+            <img
+              src="https://www.codewars.com/users/zachinjapan/badges/small"
+              alt="codewars"
+            />
+          </a>,
         ],
       ],
     },
