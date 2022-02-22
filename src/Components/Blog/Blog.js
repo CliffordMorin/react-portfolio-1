@@ -14,7 +14,7 @@ const Blog = (props) => {
         },
         {
           title: "An Intro to Recursion",
-          image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
+          image: "https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif",
           link: "https://zachinjapan.com/recursion/",
         },
         {
@@ -34,7 +34,7 @@ const Blog = (props) => {
         },
         {
           title: "An Intro to Recursion",
-          image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
+          image: "https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif",
           link: "https://zachinjapan.com/recursion/",
         },
         {
