@@ -8,6 +8,11 @@ const Blog = (props) => {
       mainTitle: "Blog Posts",
       posts: [
         {
+          title: "Three Simple Tricks I Use To Make My Sites Load Faster",
+          image: "https://media.giphy.com/media/vLUhsxMfdVfS8/giphy.gif",
+          link: "https://zachinjapan.com/Three%20Simple%20Tricks%20I%20Use%20To%20Make%20My%20Sites%20Load%20Faster/",
+        },
+        {
           title: "An Intro to Recursion",
           image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
           link: "https://zachinjapan.com/recursion/",
@@ -37,6 +42,11 @@ const Blog = (props) => {
     Japanese: {
       mainTitle: "ブログ記事",
       posts: [
+        {
+          title: "Three Simple Tricks I Use To Make My Sites Load Faster",
+          image: "https://media.giphy.com/media/vLUhsxMfdVfS8/giphy.gif",
+          link: "https://zachinjapan.com/Three%20Simple%20Tricks%20I%20Use%20To%20Make%20My%20Sites%20Load%20Faster/",
+        },
         {
           title: "An Intro to Recursion",
           image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
