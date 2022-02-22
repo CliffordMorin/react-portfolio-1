@@ -101,7 +101,11 @@ const Skills = (props) => {
         ["I am comfortable with higher-order functions and recursion."],
         ["I have built linked lists, hash tables, and binary trees."],
         [
-          <a href="https://www.codewars.com/" target={"_blank"}>
+          <a
+            href="https://www.codewars.com/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <img
               src="https://www.codewars.com/users/zachinjapan/badges/small"
               alt="codewars"
@@ -187,7 +191,11 @@ const Skills = (props) => {
           "リンクリストやハッシュマップ、 木を使ってデータ構造を作成したことがあります。",
         ],
         [
-          <a href="https://www.codewars.com/" target={"_blank"}>
+          <a
+            href="https://www.codewars.com/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <img
               src="https://www.codewars.com/users/zachinjapan/badges/small"
               alt="codewars"
