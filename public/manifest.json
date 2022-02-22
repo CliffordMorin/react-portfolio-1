@@ -9,13 +9,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "zach.webp",
-      "type": "image/webp",
+      "src": "./thumb1.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "zach.webp",
-      "type": "image/webp",
+      "src": "/thumb1.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
