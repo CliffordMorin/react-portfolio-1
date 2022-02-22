@@ -5,7 +5,7 @@ import BlogCard from "../UI/BlogCard/BlogCard";
 const Blog = (props) => {
   let content = {
     English: {
-      mainTitle: "Blog Posts",
+      mainTitle: "Featured Blog Posts",
       posts: [
         {
           title: "Three Simple Tricks I Use To Make My Sites Load Faster",
@@ -21,21 +21,6 @@ const Blog = (props) => {
           title: "Higher Order Functions",
           image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
-        },
-        {
-          title: "this.concept = important",
-          image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
-          link: "https://zachinjapan.com/This.Concept%20=%20important/",
-        },
-        {
-          title: "count++ !== ++count",
-          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
-          link: "https://zachinjapan.com/count++%20!=%20++count/",
-        },
-        {
-          title: "Using Recursion to Insert Values Into a Sorted Binary Tree",
-          image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
-          link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
         },
       ],
     },
@@ -56,21 +41,6 @@ const Blog = (props) => {
           title: "Higher Order Functions",
           image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
-        },
-        {
-          title: "this.concept = important",
-          image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
-          link: "https://zachinjapan.com/This.Concept%20=%20important/",
-        },
-        {
-          title: "count++ !== ++count",
-          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
-          link: "https://zachinjapan.com/count++%20!=%20++count/",
-        },
-        {
-          title: "Using Recursion to Insert Values Into a Sorted Binary Tree",
-          image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
-          link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
         },
       ],
     },
@@ -95,6 +65,9 @@ const Blog = (props) => {
               title={post.title}
               description={post.description}
               image={post.image}
+              loopCount={1}
+              loop={false}
+              imageLoop={false}
               link={post.link}
             />
           ))}
