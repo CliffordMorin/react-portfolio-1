@@ -13,14 +13,14 @@ const Blog = (props) => {
           link: "https://zachinjapan.com/Three%20Simple%20Tricks%20I%20Use%20To%20Make%20My%20Sites%20Load%20Faster/",
         },
         {
-          title: "An Intro to Recursion",
-          image: "https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif",
-          link: "https://zachinjapan.com/recursion/",
-        },
-        {
           title: "Higher Order Functions",
           image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
+        },
+        {
+          title: "count++ !== ++count",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
         },
       ],
     },
@@ -33,14 +33,14 @@ const Blog = (props) => {
           link: "https://zachinjapan.com/Three%20Simple%20Tricks%20I%20Use%20To%20Make%20My%20Sites%20Load%20Faster/",
         },
         {
-          title: "An Intro to Recursion",
-          image: "https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif",
-          link: "https://zachinjapan.com/recursion/",
-        },
-        {
           title: "Higher Order Functions",
           image: "https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif",
           link: "https://zachinjapan.com/Higher%20Order%20Functions/",
+        },
+        {
+          title: "count++ !== ++count",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
         },
       ],
     },
