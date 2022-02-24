@@ -22,7 +22,7 @@ const Footer = (props) => {
       <div className="footer-text">
         <span
           style={{
-            color: "#2e7d32",
+            color: "var(--secondary-color)",
           }}
         >
           {content.description}{" "}

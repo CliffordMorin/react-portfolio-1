@@ -213,7 +213,7 @@ const Skills = (props) => {
     <>
       <IconContext.Provider
         value={{
-          color: "#2e7d32",
+          color: "var(--secondary-color)",
           className: "global-class-name sill-img",
           size: "40px",
         }}
@@ -223,6 +223,8 @@ const Skills = (props) => {
           <div className="resume-div">
             <Bounce>
               <BasicModal
+                color="var(--secondary-color)"
+                background="var(--primary-color)"
                 cta={content.cta0}
                 title={content.title0}
                 description={content.description0}

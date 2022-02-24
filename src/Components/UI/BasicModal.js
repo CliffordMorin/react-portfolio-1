@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { styled } from "@mui/material/styles";
-import { pink } from "@mui/material/colors";
 
 const style = {
   position: "absolute",
@@ -14,18 +13,18 @@ const style = {
   width: "fit-content",
   maxWidth: "90%",
   bgcolor: "background.paper",
-  border: "2px solid #E62776",
+
   boxShadow: 0,
   fontSize: "1rem",
   p: 4,
 };
 
 const ColorButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.getContrastText(pink[500]),
-  variant: "outlined",
-  backgroundColor: pink[500],
+  color: "white",
+  backgroundColor: "var(--primary-color)",
   "&:hover": {
-    backgroundColor: pink[700],
+    color: "white",
+    backgroundColor: "var(--primary-color)",
   },
 }));
 
@@ -57,6 +56,7 @@ export default function BasicModal(props) {
             variant="h6"
             component="h2"
             fontSize={"2rem"}
+            color={"var(--primary-color)"}
           >
             {props.title}
           </Typography>

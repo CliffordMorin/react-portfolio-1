@@ -1,7 +1,6 @@
 import "../About/About.css";
 import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
-import Button from "@mui/material/Button";
 import Slide from "react-reveal/Slide";
 // import { AiOutlineIdcard } from "react-icons/ai";
 import { connect } from "react-redux";
@@ -114,7 +113,7 @@ const About = (props) => {
             target={"_blank"}
             style={{
               textDecoration: "underline",
-              color: "#2e7d32",
+              color: "var(--primary-color)",
               cursor: "pointer",
             }}
           >
@@ -127,7 +126,7 @@ const About = (props) => {
           </a>
         </p> */}{" "}
         <div className="resume-div">
-          <Button color="success" variant="contained" style={{}}>
+          <button className="big-button secondary-button">
             {" "}
             <a
               href="#Contact"
@@ -138,15 +137,8 @@ const About = (props) => {
             >
               {content.contact}
             </a>
-          </Button>
-          <Button
-            variant="contained"
-            color="success"
-            style={{
-              margin: "10px",
-              textDecoration: "none",
-            }}
-          >
+          </button>
+          <button className="big-button secondary-button">
             {" "}
             <a
               href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
@@ -159,7 +151,7 @@ const About = (props) => {
             >
               {content.resume}
             </a>
-          </Button>
+          </button>
         </div>
         <Skills language={props.language} />
       </div>

@@ -110,7 +110,11 @@ const MUINav = (props) => {
                   <MenuItem
                     onClick={handleCloseNavMenu}
                     key={Math.random()}
-                    sx={{ my: 1, color: "#2e7d32", display: "block" }}
+                    sx={{
+                      my: 1,
+                      color: "var(--secondary-color)",
+                      display: "block",
+                    }}
                     style={{
                       display: "flex",
                       justifyContent: "center",

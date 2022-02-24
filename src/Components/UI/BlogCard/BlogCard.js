@@ -16,7 +16,7 @@ export default function BlogCard(props) {
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",
-          boxShadow: "0px 0px 10px #E62776",
+          boxShadow: "0px 0px 10px var(--primary-color)",
         },
       }}
     >
@@ -37,7 +37,7 @@ export default function BlogCard(props) {
             component="div"
             minHeight="65px"
             style={{
-              color: "#E62776",
+              color: "var(--primary-color)",
             }}
           >
             {props.title}

@@ -9,7 +9,11 @@ import { IconContext } from "react-icons";
 const SocialLinks = () => {
   return (
     <IconContext.Provider
-      value={{ color: "#2e7d32", className: "global-class-name", size: "40px" }}
+      value={{
+        color: "var(--secondary-color)",
+        className: "global-class-name",
+        size: "40px",
+      }}
     >
       <div className="social-links">
         <a

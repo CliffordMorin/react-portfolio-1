@@ -47,12 +47,12 @@
   margin: auto;
   width: 100px;
   margin-top: 10px;
-  color: #2e7d32;
-  border: solid 1px #2e7d32;
+  color: var(--secondary-color);
+  border: solid 1px var(--secondary-color);
 }
 
 #submitBtn:hover {
-  color: #e62776 !important;
+  color: var(--primary-color) !important;
 }
 
 .text-form {

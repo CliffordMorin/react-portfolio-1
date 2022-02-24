@@ -8,7 +8,7 @@
   align-items: center;
   /* background-color: black; */
   color: rgb(73, 70, 72);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Calibre", "sans-serif";
   font-size: 1.5rem;
   background-image: url("../../images/aka1.webp");
   background-size: cover;
@@ -60,7 +60,7 @@
 .landing-description {
   font-size: 1.5rem;
   font-weight: bold;
-  color: green;
+  color: var(--secondary-color);
   text-align: center;
   margin-bottom: 2rem;
   text-align: left;

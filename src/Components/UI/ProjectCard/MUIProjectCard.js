@@ -26,6 +26,15 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function MUIProjectCard(props) {
+  const TagButton = styled(Button)(({ theme }) => ({
+    color: "var(--secondary-color)",
+    backgroundColor: "white",
+    "&:hover": {
+      color: "var(--secondary-color)",
+      backgroundColor: "white",
+    },
+  }));
+
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -44,7 +53,7 @@ export default function MUIProjectCard(props) {
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",
-          boxShadow: "0px 0px 10px #E62776",
+          boxShadow: "0px 0px 10px var(--primary-color)",
         },
       }}
       id="MUI-Card"
@@ -52,7 +61,7 @@ export default function MUIProjectCard(props) {
       <CardHeader
         title={props.title}
         style={{
-          color: "#E62776",
+          color: "var(--primary-color)",
         }}
       />
       <a href={props.link} target={"_blank"} rel="noreferrer">
@@ -72,8 +81,7 @@ export default function MUIProjectCard(props) {
         </Typography>
         <Typography paragraph align="left" minHeight="73px">
           {props.tags.map((tag) => (
-            <Button
-              color="success"
+            <TagButton
               disabled={false}
               key={tag}
               style={{
@@ -81,7 +89,7 @@ export default function MUIProjectCard(props) {
               }}
             >
               {tag},
-            </Button>
+            </TagButton>
           ))}
         </Typography>
       </CardContent>
@@ -92,7 +100,7 @@ export default function MUIProjectCard(props) {
               <AiFillGithub
                 className="MUI-icon"
                 style={{
-                  color: "#2e7d32",
+                  color: "var(--secondary-color)",
                 }}
               />
             </a>
@@ -104,7 +112,7 @@ export default function MUIProjectCard(props) {
               <RiComputerLine
                 className="MUI-icon"
                 style={{
-                  color: "#2e7d32",
+                  color: "var(--secondary-color)",
                 }}
               />
             </a>
@@ -129,7 +137,7 @@ export default function MUIProjectCard(props) {
             <div
               style={{
                 fontSize: "0.8rem",
-                color: "#E62776",
+                color: "var(--primary-color)",
               }}
             >
               {props.callToAction}
@@ -140,7 +148,7 @@ export default function MUIProjectCard(props) {
               aria-expanded={expanded}
               aria-label="show more"
               style={{
-                color: "#E62776",
+                color: "var(--primary-color)",
               }}
             >
               <ExpandMoreIcon />

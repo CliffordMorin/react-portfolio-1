@@ -350,7 +350,10 @@ const Projects = (props) => {
               <div
                 key={skill[1]}
                 style={{
-                  color: filter === skill[1] ? "#E62776" : "green",
+                  color:
+                    filter === skill[1]
+                      ? "var(--primary-color)"
+                      : "var(--secondary-color)",
                   margin: "10px",
                   padding: "10px",
                   cursor: "pointer",
@@ -362,7 +365,10 @@ const Projects = (props) => {
                 <div
                   className="skill-icon-text"
                   style={{
-                    color: filter === skill[1] ? "#E62776" : "green",
+                    color:
+                      filter === skill[1]
+                        ? "var(--primary-color)"
+                        : "var(--secondary-color)",
                   }}
                 >
                   {skill[1]}
@@ -370,7 +376,10 @@ const Projects = (props) => {
                 <div
                   className="skill-icon-img"
                   style={{
-                    color: filter === skill[1] ? "#E62776" : "green",
+                    color:
+                      filter === skill[1]
+                        ? "var(--primary-color)"
+                        : "var(--secondary-color)",
                   }}
                 >
                   {skill[0]}
