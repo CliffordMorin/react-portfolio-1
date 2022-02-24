@@ -128,7 +128,6 @@ const Skills = (props) => {
           "CSS",
           "https://developer.mozilla.org/en-US/docs/Web/CSS",
         ],
-        // [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
         [
           <IoLogoJavascript />,
@@ -139,7 +138,6 @@ const Skills = (props) => {
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
-        // [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
       ],
@@ -220,7 +218,7 @@ const Skills = (props) => {
       >
         <div className="Skills">
           <h1 className="skills-title">{content.title}</h1>
-          <div className="resume-div">
+          <div className="modals">
             <Bounce>
               <BasicModal
                 color="var(--secondary-color)"

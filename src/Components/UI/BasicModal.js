@@ -1,3 +1,4 @@
+// important!
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -13,10 +14,8 @@ const style = {
   width: "fit-content",
   maxWidth: "90%",
   bgcolor: "background.paper",
-
-  boxShadow: 0,
   fontSize: "1rem",
-  p: 4,
+  p: 5,
 };
 
 const ColorButton = styled(Button)(({ theme }) => ({

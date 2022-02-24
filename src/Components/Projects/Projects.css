@@ -1,6 +1,7 @@
 .Projects {
   text-align: center;
   width: 100%;
+  user-select: none;
 }
 
 .projects-container {

@@ -14,18 +14,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
-.resume-div {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
 .picture {
   display: block;
   margin: 0 auto;
@@ -38,14 +26,16 @@
   background-color: var(--primary-color);
 }
 .zach-img {
-  /* height: 300px; */
-  /* width: 300px; */
   max-width: 100%;
   transform: rotate(-45deg) scale(1.42);
 }
 
 .about-right {
   width: 50%;
+}
+
+.about-description {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -67,13 +57,7 @@
   #about-flag {
     padding: 10px;
   }
-}
 
-.about-description {
-  font-size: 1.2rem;
-}
-
-@media screen and (max-width: 800px) {
   .about-left {
     margin-top: 20px;
   }

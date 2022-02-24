@@ -20,7 +20,6 @@ import { IoLogoJavascript } from "react-icons/io";
 import { RiGatsbyFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
-// import { SiRedux } from "react-icons/si";
 import { BiLoaderCircle } from "react-icons/bi";
 import Fib from "../../images/coding/Fib.webp";
 import { SiMaterialui } from "react-icons/si";
@@ -46,7 +45,6 @@ const Projects = (props) => {
     [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
     [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
     [<FaReact />, "React"],
-    // [<SiRedux />, "Redux"],
     [<SiMaterialui />, "Material UI"],
     [<RiGatsbyFill />, "Gatsby"],
     [<GrGraphQl />, "GraphQL"],
@@ -236,7 +234,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "技術",
-          tags: ["React", "CSS", "JavaScript", "MaterialUI"],
+          tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description: "ウェブサイトで詳細の情報を読んでください。",
           callToAction: "詳しい情報",
           callToActionLink: "https://zachinjapan.github.io/fib_buzz/",

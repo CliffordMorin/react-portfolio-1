@@ -45,15 +45,13 @@
   margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
-}
-
-a span {
-  color: var(--secondary-color);
-}
-
-button:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
+.modals {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
