@@ -27,10 +27,10 @@ const About = (props) => {
       title: "About Me",
       description:
         "Hi, I'm Zach.  I'm a self-taught, highly-motivated, web developer who can speak Japanese",
-      description2: "",
-      description3:
+      description2:
         "I am seeking a full-time position in Japan as a web developer/software engineer.",
-      description4:
+      description4: "My resume.",
+      description3:
         "You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
       resume: "Resume",
       contact: "Contact",
@@ -39,9 +39,9 @@ const About = (props) => {
       title: "自己紹介",
       description:
         "こんにちは、ザックです。日本語が話せる独学のウェブ開発者です。",
-      description2: "",
-      description3: "日本でウェブ開発者として正社員の仕事を探しています。",
-      description4:
+      description2: "日本でウェブ開発者として正社員の仕事を探しています。",
+      description4: "私の履歴書",
+      description3:
         "ウェブサイトをご覧いただきありがとうございます。 お問い合わせは、以下のフォームをご利用いただくか、Zach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
       resume: "履歴書",
       contact: "お問い合わせ",
@@ -72,7 +72,17 @@ const About = (props) => {
         <p className="about-description">{content.description}</p>
         <p className="about-description">{content.description2}</p>
         <p className="about-description">{content.description3}</p>
-        <p className="about-description">{content.description4}</p>
+        <a
+          href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "var(--color-primary)",
+            textDecoration: "underline",
+          }}
+        >
+          <p className="about-description">{content.description4}</p>
+        </a>
         <Fade>
           <Box sx={{ flexGrow: 1, marginBottom: 1 }}>
             <div className="flag-div nav-button" id="about-flag">
@@ -125,7 +135,7 @@ const About = (props) => {
             </p>
           </a>
         </p> */}{" "}
-        <div className="resume-div">
+        {/* <div className="resume-div">
           <button className="big-button secondary-button">
             {" "}
             <a
@@ -152,7 +162,7 @@ const About = (props) => {
               {content.resume}
             </a>
           </button>
-        </div>
+        </div> */}
         <Skills language={props.language} />
       </div>
     </div>
