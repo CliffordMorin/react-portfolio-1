@@ -64,7 +64,7 @@ const MUINav = (props) => {
   };
 
   return (
-    <AppBar position="relative" className="nav" maxWidth="100vw">
+    <AppBar position="relative" className="nav">
       <Container
         maxWidth="100vw
     "

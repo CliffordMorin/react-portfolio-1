@@ -1,8 +1,8 @@
 .nav {
   z-index: 100 !important;
   background-color: #000000 !important;
-  position: relative;
-  /* width: 100vw !important; */
+  /* position: relative; */
+  overflow: hidden;
 }
 
 .flag-div {
