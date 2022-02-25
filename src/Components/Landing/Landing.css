@@ -17,7 +17,10 @@
   overflow: hidden;
   /* scroll effect */
   background-attachment: scroll;
-  background-color: rgb(0, 0, 0);
+
+  /* darken background image */
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
   user-select: none;
 }
 
@@ -37,12 +40,13 @@
   text-align: center;
   margin-bottom: 1rem;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .landing-description {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--secondary-color);
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 2rem;
   text-align: left;
@@ -53,7 +57,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0); */
   padding: 20px;
   border-radius: 10px;
 }
@@ -99,4 +103,8 @@
   .text-div {
     left: 70%;
   }
+}
+
+.Landing {
+  background-attachment: fixed !important;
 }

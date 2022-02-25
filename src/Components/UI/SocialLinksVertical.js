@@ -11,7 +11,7 @@ const SocialLinksVertical = () => {
   return (
     <IconContext.Provider
       value={{
-        color: "var(--secondary-color)",
+        color: "white",
         className: "global-class-name",
         size: "50px",
       }}

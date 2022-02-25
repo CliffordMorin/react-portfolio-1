@@ -335,55 +335,65 @@ const Projects = (props) => {
         >
           <div
             style={{
+              width: "100%",
               display: "flex",
-              flexDirection: "row",
               justifyContent: "center",
-              padding: "10px",
-              flexWrap: "wrap",
-              backgroundColor: "#f5f5f5",
             }}
-            className="project-icons"
           >
-            {skills.map((skill) => (
-              <div
-                key={skill[1]}
-                style={{
-                  color:
-                    filter === skill[1]
-                      ? "var(--primary-color)"
-                      : "var(--secondary-color)",
-                  margin: "10px",
-                  padding: "10px",
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  setFilter(skill[1]);
-                }}
-              >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                padding: "10px",
+                flexWrap: "wrap",
+                backgroundColor: "#f5f5f5",
+                borderRadius: "25px",
+                width: "fit-content",
+              }}
+              className="project-icons"
+            >
+              {skills.map((skill) => (
                 <div
-                  className="skill-icon-text"
+                  key={skill[1]}
                   style={{
                     color:
                       filter === skill[1]
                         ? "var(--primary-color)"
                         : "var(--secondary-color)",
+                    margin: "10px",
+                    padding: "10px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setFilter(skill[1]);
                   }}
                 >
-                  {skill[1]}
+                  <div
+                    className="skill-icon-text"
+                    style={{
+                      color:
+                        filter === skill[1]
+                          ? "var(--primary-color)"
+                          : "var(--secondary-color)",
+                    }}
+                  >
+                    {skill[1]}
+                  </div>
+                  <div
+                    className="skill-icon-img"
+                    style={{
+                      color:
+                        filter === skill[1]
+                          ? "var(--primary-color)"
+                          : "var(--secondary-color)",
+                    }}
+                  >
+                    {skill[0]}
+                  </div>
                 </div>
-                <div
-                  className="skill-icon-img"
-                  style={{
-                    color:
-                      filter === skill[1]
-                        ? "var(--primary-color)"
-                        : "var(--secondary-color)",
-                  }}
-                >
-                  {skill[0]}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </IconContext.Provider>
         <div className="projects-container">

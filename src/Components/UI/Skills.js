@@ -145,7 +145,7 @@ const Skills = (props) => {
       cta0: "フロントエンド",
       cta1: "バックエンド",
       cta2: "モバイル",
-      cta3: "コンピューターサイエンス",
+      cta3: "CS",
       title0: "フロントエンド",
       title1: "バックエンド",
       title2: "モバイル",
@@ -211,7 +211,7 @@ const Skills = (props) => {
     <>
       <IconContext.Provider
         value={{
-          color: "var(--secondary-color)",
+          color: "var(--primary-color)",
           className: "global-class-name sill-img",
           size: "40px",
         }}

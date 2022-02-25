@@ -20,10 +20,10 @@ const style = {
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: "white",
-  backgroundColor: "var(--secondary-color)",
+  backgroundColor: "var(--primary-color)",
   "&:hover": {
     color: "white",
-    backgroundColor: "var(--secondary-color)",
+    backgroundColor: "var(--primary-color)",
   },
 }));
 
