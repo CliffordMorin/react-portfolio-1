@@ -92,5 +92,6 @@ button:hover {
   /* --primary-color: #525050;
   --secondary-color: #222222; */
   --primary-color: #303030;
-  --secondary-color: #525050;
+  /* --secondary-color: #525050; */
+  --secondary-color: rgb(196, 0, 0);
 }
