@@ -2,7 +2,7 @@ import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
 import blog from "../../images/projects/blog.webp";
 // import weather from "../../images/projects/weather.webp";
-// import prefecture from "../../images/projects/prefecture.webp";
+import prefecture from "../../images/projects/prefecture.webp";
 // import comedyshow from "../../images/projects/comedyshow.webp";
 import haku from "../../images/projects/haku.png";
 import castles from "../../images/work/castles.webp";
@@ -157,20 +157,20 @@ const Projects = (props) => {
         //   callToAction: "More Info",
         // },
 
-        // {
-        //   title: "Prefecture Match",
-        //   description:
-        //     "Learn the Japanese Prefectures using this fun matching game",
-        //   image: prefecture,
-        //   link: "https://prefecture-match.herokuapp.com",
-        //   linkText: "Live Demo",
-        //   github: "https://github.com/zachinjapan/prefecture-match",
-        //   tech: "Tech",
-        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
-        //   tech_description:
-        //     "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
-        //   callToAction: "More Info",
-        // },
+        {
+          title: "Prefecture Match",
+          description:
+            "Learn the Japanese Prefectures using this fun matching game",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/prefecture-match",
+          tech: "Tech",
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
+          tech_description:
+            "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
+          callToAction: "More Info",
+        },
 
         // {
         //   title: "_C32F's Comedy Show",
@@ -287,19 +287,19 @@ const Projects = (props) => {
         //     "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
         //   callToAction: "詳しい情報",
         // },
-        // {
-        //   title: "都道府県マッチング",
-        //   description:
-        //     "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
-        //   image: prefecture,
-        //   link: "https://prefecture-match.herokuapp.com",
-        //   linkText: "ウェブサイト",
-        //   github: "https://github.com/zachinjapan/prefecture-match",
-        //   tech: "技術",
-        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
-        //   tech_description: " useEffectとuseStateを使用しています",
-        //   callToAction: "詳しい情報",
-        // },
+        {
+          title: "都道府県マッチング",
+          description:
+            "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/prefecture-match",
+          tech: "技術",
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
+          tech_description: " useEffectとuseStateを使用しています",
+          callToAction: "詳しい情報",
+        },
         // {
         //   title: "_C32Fのコメディショー",
         //   description: "_C32Fくんのコメディショーです。",
