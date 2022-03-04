@@ -1,6 +1,7 @@
 import "./Skills.css";
 import * as React from "react";
 import { FaReact } from "react-icons/fa";
+import { SiCsharp } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
@@ -47,6 +48,7 @@ const Skills = (props) => {
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
+        [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
       resume: "Resume",
       cta0: "Front End",
@@ -140,6 +142,7 @@ const Skills = (props) => {
         [<FaReact />, "React", "https://reactjs.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
+        [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
       resume: "履歴書",
       cta0: "フロントエンド",
