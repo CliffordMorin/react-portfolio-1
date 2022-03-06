@@ -6,15 +6,15 @@ import blog from "../../images/projects/blog.webp";
 // import comedyshow from "../../images/projects/comedyshow.webp";
 import anime from "../../images/projects/anime.png";
 import haku from "../../images/projects/haku.png";
-import castles from "../../images/work/castles.webp";
+// import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
 import React, { useState } from "react";
 import { FaReact } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3Full } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
-import { DiSass } from "react-icons/di";
+// import { AiFillHtml5 } from "react-icons/ai";
+// import { DiCss3Full } from "react-icons/di";
+// import { FaBootstrap } from "react-icons/fa";
+// import { DiSass } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { IoLogoJavascript } from "react-icons/io";
@@ -30,14 +30,6 @@ const Projects = (props) => {
   const [filter, setFilter] = useState("All Projects");
 
   const skills = [
-    [
-      <AiFillHtml5 />,
-      "HTML",
-      "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    ],
-    [<DiCss3Full />, "CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
-    [<DiSass />, "SASS", "https://sass-lang.com/"],
-    [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
     [
       <IoLogoJavascript />,
       "JavaScript",
@@ -134,20 +126,20 @@ const Projects = (props) => {
             "A API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
-        {
-          title: "Castles In The Sky",
-          description:
-            "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
-          image: castles,
-          link: "https://castlesinthesky.netlify.app",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/castles",
-          tech: "Tech",
-          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-          tech_description:
-            "A vanilla Javascript website using sass for styling and bootstrap.",
-          callToAction: "More Info",
-        },
+        // {
+        //   title: "Castles In The Sky",
+        //   description:
+        //     "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
+        //   image: castles,
+        //   link: "https://castlesinthesky.netlify.app",
+        //   linkText: "Live Demo",
+        //   github: "https://github.com/zachinjapan/castles",
+        //   tech: "Tech",
+        //   tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
+        //   tech_description:
+        //     "A vanilla Javascript website using sass for styling and bootstrap.",
+        //   callToAction: "More Info",
+        // },
 
         // {
         //   title: "Do I Need A Jacket?",
@@ -280,19 +272,19 @@ const Projects = (props) => {
             "引用APIは引用符をゲットして、引用符はボタンに.map（）されます。 ユーザーが正しいボタンを選択したかどうかをチェックします。",
           callToAction: "詳しい情報",
         },
-        {
-          title: "カーサルズ・イン・ザ・スカイ",
-          description: "アメリカのバンドのウェブサイトです。",
-          image: castles,
-          link: "https://castlesinthesky.netlify.app",
-          linkText: "ウェブサイト",
-          github: "",
-          tech: "技術",
-          tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-          tech_description:
-            "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
-          callToAction: "詳しい情報",
-        },
+        // {
+        //   title: "カーサルズ・イン・ザ・スカイ",
+        //   description: "アメリカのバンドのウェブサイトです。",
+        //   image: castles,
+        //   link: "https://castlesinthesky.netlify.app",
+        //   linkText: "ウェブサイト",
+        //   github: "",
+        //   tech: "技術",
+        //   tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
+        //   tech_description:
+        //     "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
+        //   callToAction: "詳しい情報",
+        // },
         // {
         //   title: "ジャケットが必要ですか？",
         //   description:
