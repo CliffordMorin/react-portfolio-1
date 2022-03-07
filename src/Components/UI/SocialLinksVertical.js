@@ -7,7 +7,7 @@ import { MdOutlineComputer } from "react-icons/md";
 import { IconContext } from "react-icons";
 import Slide from "react-reveal/Slide";
 
-const SocialLinksVertical = () => {
+const SocialLinksVertical = (backgroundColor) => {
   return (
     <IconContext.Provider
       value={{
@@ -17,7 +17,7 @@ const SocialLinksVertical = () => {
       }}
     >
       <Slide left>
-        <div className="social-links-vertical">
+        <div className="social-links-vertical" id={`${backgroundColor}`}>
           <a
             href="https://www.linkedin.com/in/zachinjapan888/"
             target="_blank"
