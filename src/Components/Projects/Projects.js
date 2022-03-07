@@ -86,19 +86,6 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "My Anime Collection",
-          description: "An app to find and keep track of your favorite anime.",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/my-anime-collection",
-          tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "A full stack application using manual authentication and MongoDB.",
-          callToAction: "More Info",
-        },
-        {
           title: "Fib Buzz",
           description:
             "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
@@ -110,6 +97,19 @@ const Projects = (props) => {
           tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description:
             "Please check the project page for more information on the code and technologies used.",
+          callToAction: "More Info",
+        },
+        {
+          title: "My Anime Collection",
+          description: "An app to find and keep track of your favorite anime.",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/my-anime-collection",
+          tech: "Tech",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tech_description:
+            "A full stack application using manual authentication and MongoDB.",
           callToAction: "More Info",
         },
         {
@@ -233,19 +233,6 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "マイ・アニメ・コレクション",
-          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/my-anime-collection",
-          tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
-          callToAction: "詳しい情報",
-        },
-        {
           title: "Fib Buzz",
           description:
             "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
@@ -258,6 +245,19 @@ const Projects = (props) => {
           tech_description: "ウェブサイトで詳細の情報を読んでください。",
           callToAction: "詳しい情報",
           callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
+        },
+        {
+          title: "マイ・アニメ・コレクション",
+          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/my-anime-collection",
+          tech: "技術",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tech_description:
+            "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
+          callToAction: "詳しい情報",
         },
         {
           title: "名言クイズ",

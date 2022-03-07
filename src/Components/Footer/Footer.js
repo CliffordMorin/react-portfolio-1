@@ -1,6 +1,5 @@
 import "../Footer/Footer.css";
 import SocialLinks from "../UI/SocialLinks";
-import { FaRegSmileBeam } from "react-icons/fa";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const Footer = () => {
