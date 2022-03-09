@@ -67,7 +67,7 @@ const Projects = (props) => {
         {
           title: "Zach In Japan",
           description:
-            "My blog using Gatsby and GraphQL. I write about coding concepts, Japan, and more.",
+            "My Tech blog. I write about coding concepts, Japan, and all things related to being a web developer.",
           image: blog,
           link: "https://zachinjapan.com",
           linkText: "Live Demo",
@@ -179,21 +179,6 @@ const Projects = (props) => {
             "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
           callToAction: "More Info",
         },
-
-        // {
-        //   title: "_C32F's Comedy Show",
-        //   description:
-        //     "Need a good laugh? Come check out this new up and coming robot comedian.",
-        //   image: comedyshow,
-        //   link: "https://zachinjapan.github.io/comedy_show/",
-        //   linkText: "Live Demo",
-        //   github: "https://github.com/zachinjapan/comedy_show",
-        //   tech: "Tech",
-        //   tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
-        //   tech_description:
-        //     "At the push of a button, the user can change the topic, play background music and rename the robot.　The topic buttons change the api url call.",
-        //   callToAction: "More Info",
-        // },
       ],
     },
     Japanese: {
@@ -322,19 +307,6 @@ const Projects = (props) => {
           tech_description: " useEffectとuseStateを使用しています",
           callToAction: "詳しい情報",
         },
-        // {
-        //   title: "_C32Fのコメディショー",
-        //   description: "_C32Fくんのコメディショーです。",
-        //   image: comedyshow,
-        //   link: "https://zachinjapan.github.io/comedy_show/",
-        //   linkText: "ウェブサイト",
-        //   github: "https://github.com/zachinjapan/comedy_show",
-        //   tech: "技術",
-        //   tags: ["HTML", "SASS", "JavaScript", "API", "Github Pages"],
-        //   tech_description:
-        //     "ジョークアプリです。ユーザーがボタンを押すことで、トピックを変更し、背景音楽を再生し、ロボットの名前を変更することができます。",
-        //   callToAction: "詳しい情報",
-        // },
       ],
     },
   };
