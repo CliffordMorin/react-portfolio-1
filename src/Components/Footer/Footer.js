@@ -8,14 +8,14 @@ const Footer = () => {
       <div className="footer-text">
         <span
           style={{
-            fontSize: "1.2rem",
+            fontSize: "1rem",
             fontWeight: "bold",
           }}
         >
           Thanks for looking at my portfolio. Let's connect!
           {"  "}
         </span>
-        <BiRightArrowAlt size="30px" color="gray" />{" "}
+        <BiRightArrowAlt size="1.2rem" color="gray" />{" "}
       </div>
       <SocialLinks />
     </footer>

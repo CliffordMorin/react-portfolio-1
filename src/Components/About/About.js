@@ -8,6 +8,7 @@ import { Box } from "@mui/material/node_modules/@mui/system";
 import america from "../../images/america.webp";
 import japan from "../../images/japan.webp";
 import Fade from "react-reveal/Fade";
+import { FaArrowRight } from "react-icons/fa";
 
 const About = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -91,7 +92,8 @@ const About = (props) => {
                 <div className="flag-div">
                   <span className="nav-span">
                     {" "}
-                    日本語を話せますか?&nbsp;&nbsp;{" "}
+                    日本語を話せますか?&nbsp;&nbsp; <FaArrowRight />
+                    &nbsp;&nbsp;
                   </span>
                   <div className="flag-div-holder">
                     <img
