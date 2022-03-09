@@ -29,10 +29,8 @@ export default function MUIProjectCard(props) {
   const TagButton = styled(Button)(({ theme }) => ({
     color: "var(--secondary-color)",
     backgroundColor: "white",
-    "&:hover": {
-      color: "var(--secondary-color)",
-      backgroundColor: "white",
-    },
+    disabled: true,
+    ":hover": {},
   }));
 
   const [expanded, setExpanded] = React.useState(false);
@@ -82,10 +80,12 @@ export default function MUIProjectCard(props) {
         <Typography paragraph align="left" minHeight="73px">
           {props.tags.map((tag) => (
             <TagButton
-              disabled={false}
+              disabled={true}
               key={tag}
               style={{
                 cursor: "default",
+                color: "var(--secondary-color)",
+                backgroundColor: "white",
               }}
             >
               {tag},
@@ -96,7 +96,7 @@ export default function MUIProjectCard(props) {
       <CardActions disableSpacing>
         <IconButton aria-label="github link">
           <div>
-            <a href={props.github}>
+            <a href={props.github} target="_blank" rel="noreferrer">
               <AiFillGithub
                 className="MUI-icon"
                 style={{
@@ -108,7 +108,7 @@ export default function MUIProjectCard(props) {
         </IconButton>
         <IconButton aria-label="live-demo">
           <div>
-            <a href={props.link}>
+            <a href={props.link} target="_blank" rel="noreferrer">
               <RiComputerLine
                 className="MUI-icon"
                 style={{
