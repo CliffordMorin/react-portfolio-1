@@ -88,7 +88,7 @@ export default function MUIProjectCard(props) {
                 backgroundColor: "white",
               }}
             >
-              {tag},
+              {tag}
             </TagButton>
           ))}
         </Typography>

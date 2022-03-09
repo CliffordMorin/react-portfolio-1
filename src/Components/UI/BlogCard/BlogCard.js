@@ -18,6 +18,7 @@ export default function BlogCard(props) {
           transition: "transform 0.5s ease-in-out",
           boxShadow: "0px 0px 10px var(--primary-color)",
         },
+        overflow: "default",
       }}
     >
       <CardActionArea href={props.link} target={"_blank"}>
