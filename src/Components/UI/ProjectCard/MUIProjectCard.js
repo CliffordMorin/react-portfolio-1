@@ -134,25 +134,7 @@ export default function MUIProjectCard(props) {
               alignItems: "center",
             }}
           >
-            <div
-              style={{
-                fontSize: "0.8rem",
-                color: "var(--primary-color)",
-              }}
-            >
-              {props.callToAction}
-            </div>
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-              style={{
-                color: "var(--primary-color)",
-              }}
-            >
-              <ExpandMoreIcon />
-            </ExpandMore>
+            {/*placeholder for youtube icon*/}
           </div>
         </div>
       </CardActions>

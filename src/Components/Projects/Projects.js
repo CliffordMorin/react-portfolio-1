@@ -403,7 +403,6 @@ const Projects = (props) => {
                 github={content.projects[index].github}
                 tags={content.projects[index].tags}
                 tech={content.projects[index].tech}
-                tech_description={content.projects[index].tech_description}
                 callToAction={content.projects[index].callToAction}
               />
             ) : null
