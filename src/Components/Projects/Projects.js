@@ -86,7 +86,7 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "F I B  Buzz",
+          title: "F_I_B  Buzz",
           description:
             "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
           image: Fib,
@@ -233,7 +233,7 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "Fib Buzz",
+          title: "F_I_B Buzz",
           description:
             "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
           image: Fib,
