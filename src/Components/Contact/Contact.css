@@ -10,7 +10,7 @@
 .contact-title {
   font-size: 1.9rem;
   font-weight: bold;
-  margin: 30px;
+  margin: 40px;
 }
 
 .contact-container {
@@ -37,12 +37,6 @@
   flex-direction: column;
 }
 
-@media (max-width: 700px) {
-  .contact-form {
-    width: 75%;
-  }
-}
-
 #submitBtn {
   margin: auto;
   width: 100px;
@@ -59,4 +53,5 @@
 .text-form {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }

@@ -3,7 +3,7 @@ import "./SocialLinks.css";
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { MdOutlineComputer } from "react-icons/md";
+import { AiFillFacebook } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
 const SocialLinks = () => {
@@ -41,12 +41,12 @@ const SocialLinks = () => {
           <AiFillTwitterCircle className="social-link-img" />
         </a>
         <a
-          href="https://zachinjapan.com"
+          href="https://www.facebook.com/profile.php?id=100076178851804"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
         >
-          <MdOutlineComputer className="social-link-img" />
+          <AiFillFacebook className="social-link-img" />
         </a>
       </div>
     </IconContext.Provider>
