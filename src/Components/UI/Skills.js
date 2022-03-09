@@ -60,9 +60,7 @@ const Skills = (props) => {
       title2: "Mobile",
       title3: "Computer Science",
       description0: [
-        [
-          "Can create website layouts with HTML/CSS and understand basic design principles.",
-        ],
+        ["Can create website layouts with HTML/CSS."],
         ["Know JavaScript and how to work with the DOM."],
         [
           "Know how to use Bootstrap, SASS, and MaterialUI to create responsive layouts. ",
