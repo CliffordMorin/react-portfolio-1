@@ -86,20 +86,6 @@ const Projects = (props) => {
           callToAction: "More Info",
         },
         {
-          title: "F_I_B  Buzz",
-          description:
-            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "Tech",
-          tags: ["React", "CSS", "JavaScript", "Material UI"],
-          tech_description:
-            "Please check the project page for more information on the code and technologies used.",
-          callToAction: "More Info",
-        },
-        {
           title: `HAKU`,
           description:
             "Haku pronounced 'hah-koo' is an application that helps you track, and compare jobs during the the interview process.",
@@ -111,6 +97,20 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "A full stack application using manual authentication and MongoDB.",
+          callToAction: "More Info",
+        },
+        {
+          title: "F_I_B  Buzz",
+          description:
+            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "Tech",
+          tags: ["React", "CSS", "JavaScript", "Material UI"],
+          tech_description:
+            "Please check the project page for more information on the code and technologies used.",
           callToAction: "More Info",
         },
         {
@@ -218,20 +218,6 @@ const Projects = (props) => {
           callToAction: "詳しい情報",
         },
         {
-          title: "F_I_B Buzz",
-          description:
-            "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "技術",
-          tags: ["React", "CSS", "JavaScript", "Material UI"],
-          tech_description: "ウェブサイトで詳細の情報を読んでください。",
-          callToAction: "詳しい情報",
-          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
-        },
-        {
           title: `HAKU （ハク）`,
           description:
             "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
@@ -244,6 +230,20 @@ const Projects = (props) => {
           tech_description:
             "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
           callToAction: "詳しい情報",
+        },
+        {
+          title: "F_I_B Buzz",
+          description:
+            "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
+          image: Fib,
+          link: "https://fib-buzz.netlify.app/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/fib_buzz",
+          tech: "技術",
+          tags: ["React", "CSS", "JavaScript", "Material UI"],
+          tech_description: "ウェブサイトで詳細の情報を読んでください。",
+          callToAction: "詳しい情報",
+          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
         },
 
         {

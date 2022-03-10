@@ -12,7 +12,7 @@ import { RiGatsbyFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
-// import { SiRedux } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import BasicModal from "../UI/BasicModal";
 import Bounce from "react-reveal/Bounce";
@@ -33,7 +33,6 @@ const Skills = (props) => {
           "CSS",
           "https://developer.mozilla.org/en-US/docs/Web/CSS",
         ],
-        // [<DiSass />, "SASS", "https://sass-lang.com/"],
         [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
         [
           <IoLogoJavascript />,
@@ -44,7 +43,7 @@ const Skills = (props) => {
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
-        // [<SiRedux />, "Redux", "https://redux.js.org/"],
+        [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
@@ -73,11 +72,10 @@ const Skills = (props) => {
         [
           "Work with GIT and use version control to deploy and manage small production projects using a feature branch workflow",
         ],
-        ["And more..."],
       ],
       description1: [
         ["Know how to use Node, Express, to create back end applications."],
-        ["Know how to create RESTful APIs."],
+        ["Know how to use RESTful APIs."],
         [
           "Know how to Authenticate users and create secure applications using hashed passwords, JWTs, and MongoDB.",
         ],
@@ -86,7 +84,6 @@ const Skills = (props) => {
           "Know how to deploy projects and work with servers such as Heroku, Netfify, etc...",
         ],
         ["Experience with GraphQL."],
-        ["And more..."],
       ],
       description2: [
         [
@@ -100,6 +97,7 @@ const Skills = (props) => {
         ["I understand concepts like modularization"],
         ["I am comfortable with higher-order functions and recursion."],
         ["I have built linked lists, hash tables, and binary trees."],
+        ["I am currently learning C#."],
         [
           <a
             href="https://www.codewars.com/"
@@ -138,6 +136,7 @@ const Skills = (props) => {
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
         [<FaReact />, "React", "https://reactjs.org/"],
+        [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
         [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
@@ -163,7 +162,6 @@ const Skills = (props) => {
         ],
         ["TypeScriptを使ってコードを安全に作成できます。"],
         ["GITを使って小規模なプロジェクトをデプロイできます。"],
-        ["その他..."],
       ],
       description1: [
         ["Node, Expressを使ってバックエンドアプリケーションを作成できます。"],
@@ -189,6 +187,7 @@ const Skills = (props) => {
         [
           "リンクリストやハッシュマップ、 木を使ってデータ構造を作成したことがあります。",
         ],
+        ["C#を勉強しています。"],
         [
           <a
             href="https://www.codewars.com/"
