@@ -60,7 +60,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
-            "A full stack application using manual authentication and MongoDB.",
+            "Like 'Haku' it uses Express and Node.js with a series of routers to send, change, and delete data on the database. The front end uses the Kitsu.io API to get data about anime.",
           callToAction: "More Info",
         },
 
@@ -88,7 +88,7 @@ const Projects = (props) => {
         {
           title: `HAKU`,
           description:
-            "Haku pronounced 'hah-koo' is an application that helps you track, and compare jobs during the the interview process.",
+            "An application that helps you track and compare jobs during the interview process.",
           image: haku,
           link: "https://hakujobs.com",
           linkText: "Live Demo",
@@ -96,7 +96,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
-            "A full stack application using manual authentication and MongoDB.",
+            "My first project using MongoDB and Node.js. I took a project I made through an Udemy course and added a custom landing page, demo login, delete user functionality, dark theme, new custom job, user fields, and a tools page.",
           callToAction: "More Info",
         },
         {
@@ -110,7 +110,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description:
-            "Please check the project page for more information on the code and technologies used.",
+            "Please check the project page on the live application for more information on the code and technologies used.",
           callToAction: "More Info",
         },
         {
@@ -124,7 +124,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
           tech_description:
-            "A API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
+            "An API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
           callToAction: "More Info",
         },
         // {
@@ -176,7 +176,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
           tech_description:
-            "I learned how to use the useEffect and useState hooks in a complex way. I also learned how to import and play audio in react.",
+            "I learned how to use the useEffect and useState hooks in a complex way and how to import and play audio in react.",
           callToAction: "More Info",
         },
       ],
@@ -397,6 +397,7 @@ const Projects = (props) => {
                 cardWidth="405px"
                 title={content.projects[index].title}
                 description={content.projects[index].description}
+                tech_description={content.projects[index].tech_description}
                 image={content.projects[index].image}
                 link={content.projects[index].link}
                 linkText={content.projects[index].linkText}

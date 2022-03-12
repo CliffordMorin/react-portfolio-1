@@ -1,7 +1,8 @@
 #MUI-description {
   margin-top: 20px;
-  height: 120px;
+  min-height: 200px;
   font-size: 1rem;
+  text-align: left;
 }
 
 #MUI-Card {

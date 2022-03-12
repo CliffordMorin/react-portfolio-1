@@ -40,13 +40,13 @@ export default function MUIProjectCard(props) {
       <CardHeader
         title={props.title}
         style={{
-          color: "var(--primary-color)",
+          color: "var(--secondary-color)",
         }}
       />
       <a href={props.link} target={"_blank"} rel="noreferrer">
         <CardMedia
           component="img"
-          height="auto"
+          height="200"
           image={props.image}
           alt={props.title}
           loading="lazy"
@@ -56,7 +56,7 @@ export default function MUIProjectCard(props) {
       </a>
       <CardContent>
         <Typography variant="body2" color="text.primary" id="MUI-description">
-          {props.description}
+          <span>{props.description}</span> {props.tech_description}
         </Typography>
         <Typography paragraph align="left" minHeight="73px">
           {props.tags.map((tag) => (
