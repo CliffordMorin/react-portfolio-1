@@ -28,8 +28,7 @@ const Blog = (props) => {
       mainTitle: "ブログ記事",
       posts: [
         {
-          title:
-            "サイトの読み込みを高速化するために使用する3つの簡単なコツ（英語）",
+          title: "サイトの読み込みを高速化するため3つの簡単なコツ（英語）",
           image: "https://media.giphy.com/media/vLUhsxMfdVfS8/giphy.gif",
           link: "https://zachinjapan.com/Three%20Simple%20Tricks%20I%20Use%20To%20Make%20My%20Sites%20Load%20Faster/",
         },
