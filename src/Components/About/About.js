@@ -119,53 +119,6 @@ const About = (props) => {
             </div>
           </Box>
         </Fade>
-        {/* <p>
-          <a
-            href="https://linktr.ee/zachinjapan"
-            rel="noopener noreferrer"
-            target={"_blank"}
-            style={{
-              textDecoration: "underline",
-              color: "var(--primary-color)",
-              cursor: "pointer",
-            }}
-          >
-            <p className="about-description">
-              <span>
-                {" "}
-                <AiOutlineIdcard /> digital business card
-              </span>
-            </p>
-          </a>
-        </p> */}{" "}
-        {/* <div className="resume-div">
-          <button className="big-button secondary-button">
-            {" "}
-            <a
-              href="#Contact"
-              style={{
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              {content.contact}
-            </a>
-          </button>
-          <button className="big-button secondary-button">
-            {" "}
-            <a
-              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              {content.resume}
-            </a>
-          </button>
-        </div> */}
         <Skills language={props.language} />
       </div>
     </div>
