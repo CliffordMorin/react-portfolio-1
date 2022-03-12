@@ -163,7 +163,7 @@ const Projects = (props) => {
         {
           title: "Prefecture Match",
           description:
-            "Learn the Japanese Prefectures using this fun matching game",
+            "Learn the Japanese prefectures using this fun matching game",
           image: prefecture,
           link: "https://prefecture-match.herokuapp.com",
           linkText: "Live Demo",
