@@ -61,7 +61,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "Like 'Haku' it uses Express and Node.js with a series of routers to send, change, and delete data on the database. The front end uses the Kitsu.io API to get data about anime.",
-          callToAction: "More Info",
         },
 
         {
@@ -83,7 +82,6 @@ const Projects = (props) => {
           ],
           tech_description:
             "I use this blog to learn Gatsby, GraphQL, and markdown.",
-          callToAction: "More Info",
         },
         {
           title: `HAKU`,
@@ -97,7 +95,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "To learn Authentication and database management, I took a project I made through a paid course and added a custom landing page, demo login, delete user functionality, dark theme, new custom job, user fields, and a tools page.",
-          callToAction: "More Info",
         },
         {
           title: "F_I_B  Buzz",
@@ -111,7 +108,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description:
             "Please check the project page on the live application for more information on the code and technologies used.",
-          callToAction: "More Info",
         },
         {
           title: "Quote Quiz",
@@ -125,7 +121,6 @@ const Projects = (props) => {
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
           tech_description:
             "An API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
-          callToAction: "More Info",
         },
         // {
         //   title: "Castles In The Sky",
@@ -177,7 +172,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "JavaScript", "Heroku"],
           tech_description:
             "I learned how to use the useEffect and useState hooks in a complex way and how to import and play audio in react.",
-          callToAction: "More Info",
         },
       ],
     },
@@ -195,7 +189,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
-          callToAction: "詳しい情報",
         },
         {
           title: "ザック・イン・ジャパン",
@@ -215,7 +208,6 @@ const Projects = (props) => {
           ],
           tech_description:
             "このブログでは、Gatsby、graphql、markdownを学んでいます。",
-          callToAction: "詳しい情報",
         },
         {
           title: `HAKU （ハク）`,
@@ -229,7 +221,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
             "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
-          callToAction: "詳しい情報",
         },
         {
           title: "F_I_B Buzz",
@@ -242,8 +233,6 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Material UI"],
           tech_description: "ウェブサイトで詳細の情報を読んでください。",
-          callToAction: "詳しい情報",
-          callToActionLink: "https://zachinjapan.github.io/fib_buzz/",
         },
 
         {
@@ -257,7 +246,6 @@ const Projects = (props) => {
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
           tech_description:
             "引用APIは引用符をゲットして、引用符はボタンに.map（）されます。 ユーザーが正しいボタンを選択したかどうかをチェックします。",
-          callToAction: "詳しい情報",
         },
         // {
         //   title: "カーサルズ・イン・ザ・スカイ",
@@ -305,7 +293,6 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
           tech_description: " useEffectとuseStateを使用しています",
-          callToAction: "詳しい情報",
         },
       ],
     },
