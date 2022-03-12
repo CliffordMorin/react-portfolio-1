@@ -96,7 +96,7 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
           tech_description:
-            "My first project using MongoDB and Node.js. I took a project I made through an Udemy course and added a custom landing page, demo login, delete user functionality, dark theme, new custom job, user fields, and a tools page.",
+            "To learn Authentication and database management, I took a project I made through a paid course and added a custom landing page, demo login, delete user functionality, dark theme, new custom job, user fields, and a tools page.",
           callToAction: "More Info",
         },
         {
