@@ -52,21 +52,19 @@ const Projects = (props) => {
       projects: [
         {
           title: "My Anime Collection",
-          description: "An app to find and keep track of your favorite anime.",
+          description: "Find and keep track of your favorite anime.",
           image: anime,
           link: "https://my-anime-collection.herokuapp.com/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "Like 'Haku' it uses Express and Node.js with a series of routers to send, change, and delete data on the database. The front end uses the Kitsu.io API to get data about anime.",
         },
 
         {
           title: "Zach In Japan",
           description:
-            "My Tech blog. I write about coding concepts, Japan, and all things related to being a web developer.",
+            "Read about coding concepts, Japan, and all things related to being a web developer.",
           image: blog,
           link: "https://zachinjapan.com",
           linkText: "Live Demo",
@@ -80,34 +78,27 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-          tech_description:
-            "I use this blog to learn Gatsby, GraphQL, and markdown.",
         },
         {
           title: `HAKU`,
-          description:
-            "An application that helps you track and compare jobs during the interview process.",
+          description: "Track and compare jobs during the interview process.",
           image: haku,
           link: "https://hakujobs.com",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "To learn Authentication and database management, I took a project I made through a paid course and added custom features. For example, I added a new landing page, demo login, delete user functionality, dark theme, custom job and user fields, and a tools page.",
         },
         {
           title: "F_I_B  Buzz",
           description:
-            "'Fib Buzz'!!  A union of the infamous 'Fizz Buzz' coding question and the  'Fibonacci Sequence'",
+            "Calculate 'Fizz Buzz' using the 'Fibonacci Sequence' up to 2000 iterations.",
           image: Fib,
           link: "https://fib-buzz.netlify.app/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Material UI"],
-          tech_description:
-            "Please check the project page on the live application for more information on the code and technologies used.",
         },
         {
           title: "Quote Quiz",
@@ -119,8 +110,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
-          tech_description:
-            "An API pulls the quotes which are then .map()'ed to buttons. Each individual button checks if the user was correct.  Redux is used to tell when the round is over.",
         },
         // {
         //   title: "Castles In The Sky",
@@ -170,8 +159,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
-          tech_description:
-            "I learned how to use the useEffect and useState hooks in a complex way and how to import and play audio in react.",
         },
       ],
     },
@@ -187,8 +174,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "技術",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
         },
         {
           title: "ザック・イン・ジャパン",
@@ -206,8 +191,6 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-          tech_description:
-            "このブログでは、Gatsby、graphql、markdownを学んでいます。",
         },
         {
           title: `HAKU （ハク）`,
@@ -219,8 +202,6 @@ const Projects = (props) => {
           github: "github.com/zachinjapan/haku",
           tech: "技術",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-          tech_description:
-            "フルスタックアプリケーションです。ログイン機能とMongoDBを使用しています。",
         },
         {
           title: "F_I_B Buzz",
@@ -232,7 +213,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Material UI"],
-          tech_description: "ウェブサイトで詳細の情報を読んでください。",
         },
 
         {
@@ -244,8 +224,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
-          tech_description:
-            "引用APIは引用符をゲットして、引用符はボタンに.map（）されます。 ユーザーが正しいボタンを選択したかどうかをチェックします。",
         },
         // {
         //   title: "カーサルズ・イン・ザ・スカイ",
@@ -292,7 +270,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
-          tech_description: " useEffectとuseStateを使用しています",
         },
       ],
     },

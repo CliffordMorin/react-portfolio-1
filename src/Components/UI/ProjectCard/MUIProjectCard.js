@@ -28,7 +28,7 @@ export default function MUIProjectCard(props) {
       sx={{
         width: props.cardWidth,
         minWidth: 345,
-        minHeight: 620,
+        minHeight: 520,
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",
@@ -56,7 +56,7 @@ export default function MUIProjectCard(props) {
       </a>
       <CardContent>
         <Typography variant="body2" color="text.primary" id="MUI-description">
-          <span>{props.description}</span> {props.tech_description}
+          <span>{props.description}</span>
         </Typography>
         <Typography paragraph align="left" minHeight="73px">
           {props.tags.map((tag) => (

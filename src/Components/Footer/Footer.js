@@ -1,6 +1,5 @@
 import "../Footer/Footer.css";
 import SocialLinks from "../UI/SocialLinks";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -15,7 +14,6 @@ const Footer = () => {
           Thanks for looking at my portfolio. Let's connect!
           {"  "}
         </span>
-        <BiRightArrowAlt size="1.2rem" color="gray" />{" "}
       </div>
       <SocialLinks />
     </footer>
