@@ -51,6 +51,16 @@ const Projects = (props) => {
 
       projects: [
         {
+          title: "My Anime Collection",
+          description: "Find and keep track of your favorite anime.",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/my-anime-collection",
+          tech: "Tech",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+        },
+        {
           title: `HAKU`,
           description: "Track and compare jobs during the interview process.",
           image: haku,
@@ -77,16 +87,6 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-        },
-        {
-          title: "My Anime Collection",
-          description: "Find and keep track of your favorite anime.",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/my-anime-collection",
-          tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
           title: "F_I_B  Buzz",
@@ -165,6 +165,16 @@ const Projects = (props) => {
       mainTitle: "プロジェクト",
       projects: [
         {
+          title: "マイ・アニメ・コレクション",
+          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/my-anime-collection",
+          tech: "技術",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+        },
+        {
           title: `HAKU （ハク）`,
           description:
             "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
@@ -191,16 +201,6 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-        },
-        {
-          title: "マイ・アニメ・コレクション",
-          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/my-anime-collection",
-          tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
           title: "F_I_B Buzz",
