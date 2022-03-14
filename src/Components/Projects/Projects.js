@@ -51,16 +51,15 @@ const Projects = (props) => {
 
       projects: [
         {
-          title: "My Anime Collection",
-          description: "Find and keep track of your favorite anime.",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
+          title: `HAKU`,
+          description: "Track and compare jobs during the interview process.",
+          image: haku,
+          link: "https://hakujobs.com",
           linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/my-anime-collection",
+          github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
-
         {
           title: "Zach In Japan",
           description:
@@ -80,12 +79,12 @@ const Projects = (props) => {
           ],
         },
         {
-          title: `HAKU`,
-          description: "Track and compare jobs during the interview process.",
-          image: haku,
-          link: "https://hakujobs.com",
+          title: "My Anime Collection",
+          description: "Find and keep track of your favorite anime.",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
           linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/haku",
+          github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
@@ -166,12 +165,13 @@ const Projects = (props) => {
       mainTitle: "プロジェクト",
       projects: [
         {
-          title: "マイ・アニメ・コレクション",
-          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
-          image: anime,
-          link: "https://my-anime-collection.herokuapp.com/",
+          title: `HAKU （ハク）`,
+          description:
+            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
+          image: haku,
+          link: "https://hakujobs.com",
           linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/my-anime-collection",
+          github: "github.com/zachinjapan/haku",
           tech: "技術",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
@@ -193,13 +193,12 @@ const Projects = (props) => {
           ],
         },
         {
-          title: `HAKU （ハク）`,
-          description:
-            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
-          image: haku,
-          link: "https://hakujobs.com",
+          title: "マイ・アニメ・コレクション",
+          description: "アニメの詳細を簡単に検索できるアプリケーションです。",
+          image: anime,
+          link: "https://my-anime-collection.herokuapp.com/",
           linkText: "ウェブサイト",
-          github: "github.com/zachinjapan/haku",
+          github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "技術",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
