@@ -1,7 +1,7 @@
 import "../About/About.css";
 import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 // import { AiOutlineIdcard } from "react-icons/ai";
 import { connect } from "react-redux";
 import { Box } from "@mui/material/node_modules/@mui/system";
@@ -56,13 +56,13 @@ const About = (props) => {
 
   return (
     <div className="about">
-      <Slide left>
+      <Fade>
         <div className="about-left">
           <div className="picture">
             <img className="zach-img" src={zach} alt="zach" loading="lazy" />
           </div>
         </div>
-      </Slide>
+      </Fade>
       <div className="about-right">
         <h1
           style={{

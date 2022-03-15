@@ -9,41 +9,41 @@ import haku from "../../images/projects/haku.png";
 // import castles from "../../images/work/castles.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
-import React, { useState } from "react";
-import { FaReact } from "react-icons/fa";
+// import React, { useState } from "react";
+// import { FaReact } from "react-icons/fa";
 // import { AiFillHtml5 } from "react-icons/ai";
 // import { DiCss3Full } from "react-icons/di";
 // import { FaBootstrap } from "react-icons/fa";
 // import { DiSass } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { IoLogoJavascript } from "react-icons/io";
-import { RiGatsbyFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
-import { BiLoaderCircle } from "react-icons/bi";
+// import { FaNodeJs } from "react-icons/fa";
+// import { IconContext } from "react-icons";
+// import { IoLogoJavascript } from "react-icons/io";
+// import { RiGatsbyFill } from "react-icons/ri";
+// import { SiTypescript } from "react-icons/si";
+// import { GrGraphQl } from "react-icons/gr";
+// import { BiLoaderCircle } from "react-icons/bi";
 import Fib from "../../images/coding/Fib.webp";
-import { SiMaterialui } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
+// import { SiMaterialui } from "react-icons/si";
+// import { SiMongodb } from "react-icons/si";
 
 const Projects = (props) => {
-  const [filter, setFilter] = useState("All Projects");
+  // const [filter, setFilter] = useState("All Projects");
 
-  const skills = [
-    [
-      <IoLogoJavascript />,
-      "JavaScript",
-      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    ],
-    [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-    [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
-    [<FaReact />, "React"],
-    [<SiMaterialui />, "Material UI"],
-    [<RiGatsbyFill />, "Gatsby"],
-    [<GrGraphQl />, "GraphQL"],
-    [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
-    [<BiLoaderCircle />, "All Projects"],
-  ];
+  // const skills = [
+  //   [
+  //     <IoLogoJavascript />,
+  //     "JavaScript",
+  //     "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  //   ],
+  //   [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
+  //   [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+  //   [<FaReact />, "React"],
+  //   [<SiMaterialui />, "Material UI"],
+  //   [<RiGatsbyFill />, "Gatsby"],
+  //   [<GrGraphQl />, "GraphQL"],
+  //   [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+  //   [<BiLoaderCircle />, "All Projects"],
+  // ];
 
   let content = {
     English: {
@@ -57,16 +57,6 @@ const Projects = (props) => {
           link: "https://my-anime-collection.herokuapp.com/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-anime-collection",
-          tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-        },
-        {
-          title: `HAKU`,
-          description: "Track and compare jobs during the interview process.",
-          image: haku,
-          link: "https://hakujobs.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
@@ -89,7 +79,17 @@ const Projects = (props) => {
           ],
         },
         {
-          title: "F_I_B  Buzz",
+          title: `HAKU`,
+          description: "Track and compare jobs during the interview process.",
+          image: haku,
+          link: "https://hakujobs.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/haku",
+          tech: "Tech",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+        },
+        {
+          title: "F_I_B Buzz",
           description:
             "Calculate 'Fizz Buzz' using the 'Fibonacci Sequence' up to 2000 iterations.",
           image: Fib,
@@ -110,43 +110,6 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
         },
-        // {
-        //   title: "Castles In The Sky",
-        //   description:
-        //     "Have a big event coming up? Book this professional rock band located in New Jersey, America.",
-        //   image: castles,
-        //   link: "https://castlesinthesky.netlify.app",
-        //   linkText: "Live Demo",
-        //   github: "https://github.com/zachinjapan/castles",
-        //   tech: "Tech",
-        //   tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-        //   tech_description:
-        //     "A vanilla Javascript website using sass for styling and bootstrap.",
-        //   callToAction: "More Info",
-        // },
-
-        // {
-        //   title: "Do I Need A Jacket?",
-        //   description:
-        //     "View the current live weather in America, determine if need to  wear a jacket, and more.",
-        //   image: weather,
-        //   link: "https://doineedajackettoday.herokuapp.com",
-        //   linkText: "Live Demo",
-        //   github: "https://github.com/zachinjapan/do_i_need_a_jacket",
-        //   tech: "Tech",
-        //   tags: [
-        //     "HTML",
-        //     "CSS",
-        //     "JavaScript",
-        //     "API",
-        //     "Node",
-        //     "REST API",
-        //     "Heroku",
-        //   ],
-        //   tech_description:
-        //     "This project has a backend as a server.js file. The data is pulled from the open weather api and sent to the backend and then requested back from the front end. The Washngton Post posted a study on what the average temperature is for each type of clothing. That data is then used to determine if you need a jacket or not.",
-        //   callToAction: "More Info",
-        // },
 
         {
           title: "Prefecture Match",
@@ -175,17 +138,6 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
-          title: `HAKU （ハク）`,
-          description:
-            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
-          image: haku,
-          link: "https://hakujobs.com",
-          linkText: "ウェブサイト",
-          github: "github.com/zachinjapan/haku",
-          tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
-        },
-        {
           title: "ザック・イン・ジャパン",
           description: "私のテクノロジーブログです。",
           image: blog,
@@ -201,6 +153,17 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
+        },
+        {
+          title: `HAKU （ハク）`,
+          description:
+            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
+          image: haku,
+          link: "https://hakujobs.com",
+          linkText: "ウェブサイト",
+          github: "github.com/zachinjapan/haku",
+          tech: "技術",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
           title: "F_I_B Buzz",
@@ -224,41 +187,6 @@ const Projects = (props) => {
           tech: "技術",
           tags: ["CSS", "React", "API", "Netlify", "Typescript"],
         },
-        // {
-        //   title: "カーサルズ・イン・ザ・スカイ",
-        //   description: "アメリカのバンドのウェブサイトです。",
-        //   image: castles,
-        //   link: "https://castlesinthesky.netlify.app",
-        //   linkText: "ウェブサイト",
-        //   github: "",
-        //   tech: "技術",
-        //   tags: ["HTML", "JavaScript", "SASS", "Bootstrap", "Netlify"],
-        //   tech_description:
-        //     "スタイリングにsassを使用し、ブートストラップを使用するバニラJavascriptのサイトです。",
-        //   callToAction: "詳しい情報",
-        // },
-        // {
-        //   title: "ジャケットが必要ですか？",
-        //   description:
-        //     "アメリカの郵便番号を使用して、現在の天気を表示し、ユーザーさんがジャケットを必要とするかどうかを判断します。",
-        //   image: weather,
-        //   link: "https://doineedajackettoday.herokuapp.com",
-        //   linkText: "ウエブサイト",
-        //   github: "https://github.com/zachinjapan/do_i_need_a_jacket",
-        //   tech: "技術",
-        //   tags: [
-        //     "HTML",
-        //     "CSS",
-        //     "Javascrip",
-        //     "API",
-        //     "Node",
-        //     "REST API",
-        //     "Heroku",
-        //   ],
-        //   tech_description:
-        //     "このプロジェクトはサーバーのバックエンドもあります。データはオープンウェアAPIから取得し、バックエンドからフロントエンドに戻ってきます。 Washington Post というサイトはジャケット　に必要な平均気温を研究しました。 その情報を使って、どんなアウターが必要かをお勧めします",
-        //   callToAction: "詳しい情報",
-        // },
         {
           title: "都道府県マッチング",
           description:
@@ -284,7 +212,7 @@ const Projects = (props) => {
         <Fade>
           <h1>{content.mainTitle}</h1>
         </Fade>
-        <IconContext.Provider
+        {/* <IconContext.Provider
           value={{
             className: "global-class-name sill-img",
             size: "40px",
@@ -352,25 +280,24 @@ const Projects = (props) => {
               ))}
             </div>
           </div>
-        </IconContext.Provider>
+        </IconContext.Provider> */}
         <div className="projects-container">
-          {content.projects.map((project, index) =>
-            filter === "All Projects" || project.tags.includes(filter) ? (
-              <MUIProjectCard
-                cardWidth="405px"
-                title={content.projects[index].title}
-                description={content.projects[index].description}
-                tech_description={content.projects[index].tech_description}
-                image={content.projects[index].image}
-                link={content.projects[index].link}
-                linkText={content.projects[index].linkText}
-                github={content.projects[index].github}
-                tags={content.projects[index].tags}
-                tech={content.projects[index].tech}
-                callToAction={content.projects[index].callToAction}
-              />
-            ) : null
-          )}
+          {content.projects.map((project, index) => (
+            // filter === "All Projects" || project.tags.includes(filter) ? (
+            <MUIProjectCard
+              cardWidth="405px"
+              title={content.projects[index].title}
+              description={content.projects[index].description}
+              tech_description={content.projects[index].tech_description}
+              image={content.projects[index].image}
+              link={content.projects[index].link}
+              linkText={content.projects[index].linkText}
+              github={content.projects[index].github}
+              tags={content.projects[index].tags}
+              tech={content.projects[index].tech}
+              callToAction={content.projects[index].callToAction}
+            />
+          ))}
         </div>
       </div>
     </>

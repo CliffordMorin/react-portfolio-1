@@ -28,6 +28,10 @@
 .zach-img {
   max-width: 100%;
   transform: rotate(-45deg) scale(1.42);
+  /* move image to the left */
+  margin-left: -10px;
+  margin-top: 0px;
+  margin-right: 10px;
 }
 
 .about-right {

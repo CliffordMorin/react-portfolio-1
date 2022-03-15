@@ -41,6 +41,7 @@
   margin-bottom: 1rem;
   text-align: center;
   color: rgb(255, 255, 255);
+  min-width: fit-content;
 }
 
 .landing-description {
@@ -76,14 +77,10 @@
     position: absolute;
     top: 15%;
     left: 60%;
-    /* dark background */
-    /* background-color: rgba(0, 0, 0, 0.5); */
+
     padding: 20px;
     border-radius: 10px;
   }
-  /* .Landing {
-    background-attachment: fixed !important;
-  } */
 
   .contact-button {
     position: absolute;
@@ -92,10 +89,7 @@
 }
 
 /*4k */
-@media screen and (min-width: 1441px) {
-  .landing-title {
-    font-size: 9rem;
-  }
+@media (min-width: 1441px) {
   .landing-description {
     font-size: 3rem;
   }
