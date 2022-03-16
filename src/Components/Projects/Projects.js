@@ -89,7 +89,7 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
-          title: "FIB Buzz (Not Fizz Buzz)",
+          title: "F_I_B Buzz",
           description:
             "Calculate 'Fizz Buzz' using the 'Fibonacci Sequence' up to 2000 iterations.",
           image: Fib,
