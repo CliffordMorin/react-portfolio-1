@@ -1,5 +1,5 @@
 import "../About/About.css";
-import zach from "../../images/zach.webp";
+import zach from "../../images/zach.png";
 import Skills from "../UI/Skills";
 // import Slide from "react-reveal/Slide";
 // import { AiOutlineIdcard } from "react-icons/ai";
