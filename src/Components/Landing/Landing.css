@@ -35,7 +35,7 @@
 }
 
 .landing-title {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
@@ -61,6 +61,7 @@
   /* background-color: rgba(0, 0, 0); */
   padding: 20px;
   border-radius: 10px;
+  width: max-content;
 }
 
 .contact-button {
@@ -76,10 +77,15 @@
   .text-div {
     position: absolute;
     top: 15%;
-    left: 60%;
+    left: 55%;
+    min-width: 476px;
 
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
+  }
+
+  .landing-title {
+    font-size: 6rem;
   }
 
   .contact-button {
@@ -88,14 +94,9 @@
   }
 }
 
-/*4k */
-@media (min-width: 1441px) {
-  .landing-description {
-    font-size: 3rem;
-  }
-
-  .text-div {
-    left: 70%;
+@media (min-width: 1440px) {
+  .landing-title {
+    font-size: 7rem;
   }
 }
 
