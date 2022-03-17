@@ -26,12 +26,13 @@ const About = (props) => {
   let content = {
     English: {
       title: "About Me",
-      description: "Hi, I'm Zach.  I'm a web developer who can speak Japanese.",
+      description:
+        "Hi, I'm Zach. I'm a passionate web developer with business-level Japanese.",
       description2:
-        "I fell in love with coding while I was an English teacher in Japan. I spent every day after school studying at the local Dotour coffee shop. My interest in coding has only grown since that time. ",
+        "I fell in love with coding while I was an English teacher in Japan. I now have the technical skills and Japanese ability needed for a professional role.",
       description4: "My resume.",
       description3:
-        "I am now seeking a full-time position as a web developer/software engineer in Japan. You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
+        "I am seeking a full-time position as a web developer/software engineer in Japan. You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
       resume: "Resume",
       contact: "Contact",
     },
@@ -39,7 +40,7 @@ const About = (props) => {
       title: "自己紹介",
       description: "こんにちは、ザックです。日本語が話せるウェブ開発者です。",
       description2:
-        "日本で英語を教えている間、コーディングに夢中になりました。 仕事が終わってから、地元のドトールで毎日勉強しました。 私のコーディングへの関心は、それ以来成長してきました。",
+        "日本で英語を教えている間、コーディングに夢中になりました。 その時から積極的に学びました。今は必要な技術的スキルと日本語能力を持っています。",
       description4: "私の履歴書",
       description3:
         "日本でウェブ開発者として正社員の仕事を探しています。ウェブサイトをご覧いただきありがとうございます。 お問い合わせは、以下のフォームをご利用いただくか、Zach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
@@ -82,7 +83,7 @@ const About = (props) => {
             textDecoration: "underline",
           }}
         >
-          <p className="about-description">{content.description4}</p>
+          <span className="about-description">{content.description4}</span>
         </a>
         <Fade>
           <Box sx={{ flexGrow: 1, marginBottom: 1 }}>
@@ -94,6 +95,7 @@ const About = (props) => {
                     日本語を話せますか?&nbsp;&nbsp; <FaArrowRight />
                     &nbsp;&nbsp;
                   </span>
+
                   <div className="flag-div-holder">
                     <img
                       className="flag"

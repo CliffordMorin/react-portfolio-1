@@ -96,6 +96,38 @@ const Skills = (props) => {
       >
         <div className="Skills">
           <h1 className="skills-title">{content.title}</h1>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              margin: "0 auto",
+              width: "100%",
+              alignItems: "center",
+            }}
+          >
+            <a
+              href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "var(--color-primary)",
+                textDecoration: "underline",
+              }}
+            >
+              <span className="about-description">My Certifications</span>
+            </a>
+            <a
+              href="https://www.codewars.com/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <img
+                src="https://www.codewars.com/users/zachinjapan/badges/small"
+                alt="codewars"
+              />
+            </a>
+          </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
               <div key={skill[1]} className="skill-icon">
