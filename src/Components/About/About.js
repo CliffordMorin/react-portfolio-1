@@ -68,6 +68,7 @@ const About = (props) => {
           style={{
             textAlign: "center",
           }}
+          className="about-title"
         >
           {content.title}
         </h1>
