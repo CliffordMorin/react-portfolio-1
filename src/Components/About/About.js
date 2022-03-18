@@ -32,7 +32,7 @@ const About = (props) => {
         "I fell in love with coding while I was an English teacher in Japan. I now have the technical skills and Japanese ability needed for a professional role.",
       description4: "My resume.",
       description3:
-        "I am seeking a full-time position as a web developer/software engineer in Japan. You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
+        "I am seeking a full-time position as a web developer/software engineer. You can reach me using the contact form below or at Zach.Stone.Developer@gmail.com",
       resume: "Resume",
       contact: "Contact",
     },
@@ -43,7 +43,7 @@ const About = (props) => {
         "日本で英語を教えている間、コーディングに夢中になりました。 その時から積極的に学びました。今は必要な技術的スキルと日本語能力を持っています。",
       description4: "私の履歴書",
       description3:
-        "日本でウェブ開発者として正社員の仕事を探しています。ウェブサイトをご覧いただきありがとうございます。 お問い合わせは、以下のフォームをご利用いただくか、Zach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
+        "ウェブ開発者として正社員の仕事を探しています。ウェブサイトをご覧いただきありがとうございます。 お問い合わせは、以下のフォームをご利用いただくか、Zach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
       resume: "履歴書",
       contact: "お問い合わせ",
     },
