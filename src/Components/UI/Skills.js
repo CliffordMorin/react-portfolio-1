@@ -13,6 +13,8 @@ import { SiTypescript } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { BsUiChecks } from "react-icons/bs";
+import { IoMdPaper } from "react-icons/io";
 
 import { SiMaterialui } from "react-icons/si";
 
@@ -48,6 +50,7 @@ const Skills = (props) => {
         // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
       resume: "Resume",
+      certifications: "Certifications",
     },
     Japanese: {
       title: "スキル",
@@ -79,6 +82,7 @@ const Skills = (props) => {
         // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
       resume: "履歴書",
+      certifications: "資格",
     },
   };
 
@@ -107,15 +111,43 @@ const Skills = (props) => {
             }}
           >
             <a
+              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "var(--primary-color)",
+                textDecoration: "none",
+              }}
+            >
+              {" "}
+              <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
+              <span
+                className="about-description"
+                style={{
+                  marginLeft: "5px",
+                }}
+              >
+                {content.resume}
+              </span>
+            </a>
+            <a
               href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "var(--color-primary)",
-                textDecoration: "underline",
+                color: "var(--primary-color)",
+                textDecoration: "none",
               }}
             >
-              <span className="about-description">My Certifications</span>
+              <BsUiChecks color="var(--secondary-color)" size={"1.25rem"} />
+              <span
+                className="about-description"
+                style={{
+                  marginLeft: "0.5rem",
+                }}
+              >
+                {content.certifications}
+              </span>
             </a>
             <a
               href="https://www.codewars.com/"
@@ -125,6 +157,9 @@ const Skills = (props) => {
               <img
                 src="https://www.codewars.com/users/zachinjapan/badges/small"
                 alt="codewars"
+                style={{
+                  marginTop: "10px",
+                }}
               />
             </a>
           </div>
