@@ -60,6 +60,17 @@ const Projects = (props) => {
           tech: "Tech",
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
+
+        {
+          title: `HAKU`,
+          description: "Track and compare jobs during the interview process.",
+          image: haku,
+          link: "https://hakujobs.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/haku",
+          tech: "Tech",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+        },
         {
           title: "Zach In Japan",
           description:
@@ -77,16 +88,6 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-        },
-        {
-          title: `HAKU`,
-          description: "Track and compare jobs during the interview process.",
-          image: haku,
-          link: "https://hakujobs.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/haku",
-          tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
           title: "F_I_B Buzz",
@@ -138,6 +139,17 @@ const Projects = (props) => {
           tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
+          title: `HAKU （ハク）`,
+          description:
+            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
+          image: haku,
+          link: "https://hakujobs.com",
+          linkText: "ウェブサイト",
+          github: "github.com/zachinjapan/haku",
+          tech: "技術",
+          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+        },
+        {
           title: "ザック・イン・ジャパン",
           description: "私のテクノロジーブログです。",
           image: blog,
@@ -153,17 +165,6 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-        },
-        {
-          title: `HAKU （ハク）`,
-          description:
-            "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
-          image: haku,
-          link: "https://hakujobs.com",
-          linkText: "ウェブサイト",
-          github: "github.com/zachinjapan/haku",
-          tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
         },
         {
           title: "F_I_B Buzz",
