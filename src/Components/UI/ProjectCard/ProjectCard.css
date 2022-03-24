@@ -82,7 +82,7 @@
     transform: scale(1);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1300px) {
     .MuiCardHeader-title {
       text-align: left;
     }
