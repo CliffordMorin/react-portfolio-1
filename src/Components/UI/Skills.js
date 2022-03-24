@@ -1,7 +1,6 @@
 import "./Skills.css";
 import * as React from "react";
 import { FaReact } from "react-icons/fa";
-// import { SiCsharp } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
@@ -93,7 +92,7 @@ const Skills = (props) => {
     <>
       <IconContext.Provider
         value={{
-          color: "var(--primary-color)",
+          color: "white",
           className: "global-class-name sill-img",
           size: "40px",
         }}
@@ -125,6 +124,7 @@ const Skills = (props) => {
                 className="about-description"
                 style={{
                   marginLeft: "5px",
+                  color: "white",
                 }}
               >
                 {content.resume}
@@ -135,8 +135,8 @@ const Skills = (props) => {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "var(--primary-color)",
                 textDecoration: "none",
+                color: "white",
               }}
             >
               <BsUiChecks color="var(--secondary-color)" size={"1.25rem"} />
@@ -144,6 +144,7 @@ const Skills = (props) => {
                 className="about-description"
                 style={{
                   marginLeft: "0.5rem",
+                  color: "white",
                 }}
               >
                 {content.certifications}

@@ -69,6 +69,7 @@ const Blog = (props) => {
               loop={false}
               imageLoop={false}
               link={post.link}
+              key={post.title}
             />
           ))}
         </div>

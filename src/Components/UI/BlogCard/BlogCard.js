@@ -9,6 +9,8 @@ export default function BlogCard(props) {
   return (
     <Card
       sx={{
+        backgroundColor: "var(--primary-color)",
+        color: "white",
         width: props.width,
         height: props.height,
         margin: "10px",
@@ -29,6 +31,9 @@ export default function BlogCard(props) {
           alt="blog post image"
           loading="lazy"
           imagePosition="center"
+          style={{
+            filter: "brightness(0.85)",
+          }}
         />
         <CardContent>
           <Typography
@@ -37,7 +42,7 @@ export default function BlogCard(props) {
             component="div"
             minHeight="65px"
             style={{
-              color: "var(--primary-color)",
+              color: "var(--off-white)",
             }}
           >
             {props.title}

@@ -1,5 +1,6 @@
 footer {
-  background-color: #f5f5f5;
+  background-color: black;
+  color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -10,5 +11,5 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #666;
+  color: rgb(191, 191, 191);
 }

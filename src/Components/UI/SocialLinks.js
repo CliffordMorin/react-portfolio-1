@@ -3,14 +3,14 @@ import "./SocialLinks.css";
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiTwotoneMail } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
 const SocialLinks = () => {
   return (
     <IconContext.Provider
       value={{
-        color: "var(--secondary-color)",
+        color: "white",
         className: "global-class-name",
         size: "40px",
       }}
@@ -41,12 +41,12 @@ const SocialLinks = () => {
           <AiFillTwitterCircle className="social-link-img" />
         </a>
         <a
-          href="https://www.facebook.com/profile.php?id=100076178851804"
+          href="mailto:Zach.Stone.Developer@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
         >
-          <AiFillFacebook className="social-link-img" />
+          <AiTwotoneMail className="social-link-img" />
         </a>
       </div>
     </IconContext.Provider>

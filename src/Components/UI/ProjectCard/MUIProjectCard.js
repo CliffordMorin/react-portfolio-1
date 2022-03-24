@@ -21,14 +21,9 @@ export default function MUIProjectCard(props) {
   }));
 
   return (
-    // was 345
-    // 194
-    //405
     <Card
       sx={{
         width: props.cardWidth,
-        minWidth: 345,
-        minHeight: 520,
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",
@@ -38,87 +33,103 @@ export default function MUIProjectCard(props) {
       id="MUI-Card"
     >
       <CardHeader
-        title={props.title}
+        title={props.index + ". " + props.title}
+        className="card-header"
         style={{
-          color: "var(--secondary-color)",
+          color: "white",
+          backgroundColor: "var(--primary-color)",
         }}
       />
-      <a href={props.link} target={"_blank"} rel="noreferrer">
-        <CardMedia
-          component="img"
-          height="200"
-          image={props.image}
-          alt={props.title}
-          loading="lazy"
-          width="100%"
-          object-fit="contain"
-        />
-      </a>
-      <CardContent>
-        <Typography variant="body2" color="text.primary" id="MUI-description">
-          <span>{props.description}</span>
-        </Typography>
-        <Typography paragraph align="left" minHeight="73px">
-          {props.tags.map((tag) => (
-            <TagButton
-              disabled={true}
-              key={tag}
-              style={{
-                cursor: "default",
-                color: "var(--secondary-color)",
-                backgroundColor: "white",
-              }}
-            >
-              {tag}
-            </TagButton>
-          ))}
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="github link">
-          <div>
-            <a href={props.github} target="_blank" rel="noreferrer">
-              <AiFillGithub
-                className="MUI-icon"
-                style={{
-                  color: "var(--secondary-color)",
-                }}
-              />
-            </a>
-          </div>
-        </IconButton>
-        <IconButton aria-label="live-demo">
-          <div>
-            <a href={props.link} target="_blank" rel="noreferrer">
-              <RiComputerLine
-                className="MUI-icon"
-                style={{
-                  color: "var(--secondary-color)",
-                }}
-              />
-            </a>
-          </div>
-        </IconButton>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "100%",
-            justifyContent: "flex-end",
-          }}
-        >
-          <div
+
+      <div className="card-content">
+        <a href={props.link} target={"_blank"} rel="noreferrer">
+          <CardMedia
+            component={"img"}
+            id="card-media"
+            image={props.image}
+            alt={props.title}
+            loading="lazy"
+            object-fit="contain"
             style={{
-              display: "flex",
-              width: "fit-content",
-              justifyContent: "end",
-              alignItems: "center",
+              //darken
+              filter: "brightness(0.85)",
             }}
-          >
-            {/*placeholder for youtube icon*/}
+          />
+        </a>
+        <CardContent>
+          <div className="card-content-text">
+            <Typography
+              variant="body2"
+              color="var(--off-white)"
+              id="MUI-description"
+            >
+              <span className="project-description">{props.description}</span>
+            </Typography>
+            <Typography paragraph align="left" minHeight="73px">
+              {props.tags.map((tag) => (
+                <TagButton
+                  disabled={true}
+                  key={tag}
+                  style={{
+                    background: "var(--primary-color)",
+                    cursor: "default",
+                    color: "var(--off-white)",
+                    marginRight: "10px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {tag}
+                </TagButton>
+              ))}
+            </Typography>
+            <CardActions disableSpacing className="icon-div">
+              <IconButton aria-label="github link">
+                <div>
+                  <a href={props.github} target="_blank" rel="noreferrer">
+                    <AiFillGithub
+                      className="MUI-icon"
+                      style={{
+                        color: "white",
+                      }}
+                    />
+                  </a>
+                </div>
+              </IconButton>
+              <IconButton aria-label="live-demo">
+                <div>
+                  <a href={props.link} target="_blank" rel="noreferrer">
+                    <RiComputerLine
+                      className="MUI-icon"
+                      style={{
+                        color: "white",
+                      }}
+                    />
+                  </a>
+                </div>
+              </IconButton>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: "100%",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    width: "fit-content",
+                    justifyContent: "end",
+                    alignItems: "center",
+                  }}
+                >
+                  {/*placeholder for youtube icon*/}
+                </div>
+              </div>
+            </CardActions>
           </div>
-        </div>
-      </CardActions>
+        </CardContent>
+      </div>
     </Card>
   );
 }
