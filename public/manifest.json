@@ -9,13 +9,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./thumb1.png",
-      "type": "image/png",
+      "src": "./meta.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "/thumb1.png",
-      "type": "image/png",
+      "src": "/meta.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
