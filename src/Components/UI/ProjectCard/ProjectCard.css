@@ -86,5 +86,11 @@
     .MuiCardHeader-title {
       text-align: left;
     }
+
+    #card-media {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 1200px !important;
+    }
   }
 }
