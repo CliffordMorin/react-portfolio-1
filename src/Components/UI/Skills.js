@@ -116,6 +116,8 @@ const Skills = (props) => {
               style={{
                 color: "var(--primary-color)",
                 textDecoration: "none",
+                marginTop: "20px",
+                marginBottom: "20px",
               }}
             >
               {" "}
@@ -137,11 +139,13 @@ const Skills = (props) => {
               style={{
                 textDecoration: "none",
                 color: "white",
+                marginTop: "20px",
+                marginBottom: "20px",
               }}
             >
               <BsUiChecks color="var(--secondary-color)" size={"1.25rem"} />
               <span
-                className="about-description"
+                className="about-description "
                 style={{
                   marginLeft: "0.5rem",
                   color: "white",
@@ -159,7 +163,7 @@ const Skills = (props) => {
                 src="https://www.codewars.com/users/zachinjapan/badges/small"
                 alt="codewars"
                 style={{
-                  marginTop: "10px",
+                  marginTop: "0px",
                 }}
               />
             </a>
