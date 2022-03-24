@@ -7,7 +7,6 @@ import haku from "../../images/projects/haku.png";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
 import Fib from "../../images/coding/Fib.jpg";
-
 const Projects = (props) => {
   let content = {
     English: {
@@ -180,20 +179,22 @@ const Projects = (props) => {
 
         <div className="projects-container">
           {content.projects.map((project, index) => (
-            <MUIProjectCard
-              cardWidth="405px"
-              index={index + 1}
-              title={content.projects[index].title}
-              description={content.projects[index].description}
-              tech_description={content.projects[index].tech_description}
-              image={content.projects[index].image}
-              link={content.projects[index].link}
-              linkText={content.projects[index].linkText}
-              github={content.projects[index].github}
-              tags={content.projects[index].tags}
-              tech={content.projects[index].tech}
-              callToAction={content.projects[index].callToAction}
-            />
+            <Fade>
+              <MUIProjectCard
+                cardWidth="405px"
+                index={index + 1}
+                title={project.title}
+                description={project.description}
+                tech_description={project.tech_description}
+                image={project.image}
+                link={project.link}
+                linkText={project.linkText}
+                github={project.github}
+                tags={project.tags}
+                tech={project.tech}
+                callToAction={project.callToAction}
+              />
+            </Fade>
           ))}
         </div>
       </div>
