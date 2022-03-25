@@ -26,16 +26,17 @@ const About = (props) => {
     English: {
       title: "About Me",
       description:
-        "Hi, I'm Zach. I'm a web developer with business-level Japanese.",
+        "Hi, I'm Zach. I'm a self taught web developer with business-level Japanese.",
       description2:
         "I fell in love with coding while I was an English teacher in Japan. I now have the technical skills and Japanese ability needed for a professional role.",
       description3:
-        "I am seeking a full-time position as a web developer/software engineer in Japan or America. You can reach me at Zach.Stone.Developer@gmail.com",
+        "I am seeking a full-time position as a web developer/software engineer. You can reach me at Zach.Stone.Developer@gmail.com",
       contact: "Contact",
     },
     Japanese: {
       title: "自己紹介",
-      description: "こんにちは、ザックです。日本語が話せるウェブ開発者です。",
+      description:
+        "こんにちは、ザックです。日本語が話せる独学のウェブ開発者です。",
       description2:
         "日本で英語を教えている間、コーディングに夢中になりました。 その時から積極的に学びました。今は必要な技術的スキルと日本語能力を持っています。",
       description3:
