@@ -21,7 +21,15 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tags: [
+            "React",
+            "CSS",
+            "Node",
+            "API",
+            "Authentication",
+            "MongoDB",
+            "Heroku",
+          ],
         },
 
         {
@@ -32,7 +40,15 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/haku",
           tech: "Tech",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tags: [
+            "React",
+            "CSS",
+            "Node",
+            "API",
+            "Authentication",
+            "MongoDB",
+            "Heroku",
+          ],
         },
         {
           title: "Zach In Japan",
@@ -61,7 +77,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "Tech",
-          tags: ["React", "CSS", "JavaScript", "Material UI"],
+          tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
         },
         {
           title: "Quote Quiz",
@@ -72,7 +88,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
+          tags: ["CSS", "React", "API", "Netlify", "Typescript", "Netlify"],
         },
 
         {
@@ -99,7 +115,15 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/my-anime-collection",
           tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tags: [
+            "React",
+            "CSS",
+            "Node",
+            "API",
+            "Authentication",
+            "MongoDB",
+            "Heroku",
+          ],
         },
         {
           title: `HAKU （ハク）`,
@@ -110,7 +134,15 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "github.com/zachinjapan/haku",
           tech: "技術",
-          tags: ["React", "CSS", "Node", "Authentication", "MongoDB"],
+          tags: [
+            "React",
+            "CSS",
+            "Node",
+            "API",
+            "Authentication",
+            "MongoDB",
+            "Heroku",
+          ],
         },
         {
           title: "ザック・イン・ジャパン",
@@ -138,7 +170,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "技術",
-          tags: ["React", "CSS", "JavaScript", "Material UI"],
+          tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
         },
 
         {
@@ -149,7 +181,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
-          tags: ["CSS", "React", "API", "Netlify", "Typescript"],
+          tags: ["CSS", "React", "API", "Typescript", "Netlify"],
         },
         {
           title: "都道府県マッチング",
