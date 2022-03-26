@@ -1,6 +1,6 @@
 import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
-import blog from "../../images/projects/blog.jpg";
+import blog from "../../images/projects/blog.png";
 import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.png";
 import haku from "../../images/projects/haku.png";
