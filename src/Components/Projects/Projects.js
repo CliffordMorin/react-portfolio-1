@@ -32,24 +32,6 @@ const Projects = (props) => {
           ],
         },
         {
-          title: "Zach In Japan",
-          description:
-            "Read about coding concepts, Japan, and all things related to being a web developer.",
-          image: blog,
-          link: "https://zachinjapan.com",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/my-gatsby-blog",
-          tech: "Tech",
-          tags: [
-            "React",
-            "CSS",
-            "Markdown",
-            "Gatsby",
-            "GraphQL",
-            "Gatsby Cloud",
-          ],
-        },
-        {
           title: `HAKU`,
           description: "Track and compare jobs during the interview process.",
           image: haku,
@@ -65,6 +47,24 @@ const Projects = (props) => {
             "Authentication",
             "MongoDB",
             "Heroku",
+          ],
+        },
+        {
+          title: "Zach In Japan",
+          description:
+            "Read about coding concepts, Japan, and all things related to being a web developer.",
+          image: blog,
+          link: "https://zachinjapan.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tech: "Tech",
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
           ],
         },
         {
@@ -125,23 +125,6 @@ const Projects = (props) => {
           ],
         },
         {
-          title: "ザック・イン・ジャパン",
-          description: "私のテクノロジーブログです。",
-          image: blog,
-          link: "https://zachinjapan.gatsbyjs.io",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/my-gatsby-blog",
-          tech: "技術",
-          tags: [
-            "React",
-            "CSS",
-            "Markdown",
-            "Gatsby",
-            "GraphQL",
-            "Gatsby Cloud",
-          ],
-        },
-        {
           title: `HAKU （ハク）`,
           description:
             "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
@@ -158,6 +141,23 @@ const Projects = (props) => {
             "Authentication",
             "MongoDB",
             "Heroku",
+          ],
+        },
+        {
+          title: "ザック・イン・ジャパン",
+          description: "私のテクノロジーブログです。",
+          image: blog,
+          link: "https://zachinjapan.gatsbyjs.io",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/my-gatsby-blog",
+          tech: "技術",
+          tags: [
+            "React",
+            "CSS",
+            "Markdown",
+            "Gatsby",
+            "GraphQL",
+            "Gatsby Cloud",
           ],
         },
         {
