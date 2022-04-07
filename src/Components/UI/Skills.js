@@ -170,15 +170,15 @@ const Skills = (props) => {
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
-              <div key={skill[1]} className="skill-icon">
-                <div className="skill-icon-text">{skill[1]}</div>
-                <span>
-                  {" "}
-                  <a href={skill[2]} target="_blank" rel="noopener noreferrer">
-                    {skill[0]}
-                  </a>
-                </span>
-              </div>
+              <a href={skill[2]} target="_blank" rel="noopener noreferrer">
+                <div key={skill[1]} className="skill-icon">
+                  <h4 className="skill-icon-text">{skill[1]}</h4>
+                  <span>
+                    {" "}
+                    <span>{skill[0]}</span>
+                  </span>
+                </div>
+              </a>
             ))}
           </span>
         </div>

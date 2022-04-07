@@ -75,7 +75,14 @@
   }
 
   .MUI-icon {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  .MUI-icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
+    color: var(--secondary-color);
+    transform: translateY(-5px);
   }
 
   #MUI-Card:hover {
