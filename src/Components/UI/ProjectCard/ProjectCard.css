@@ -28,6 +28,10 @@
   box-shadow: 0px 0px 10px var(--primary-color);
 }
 
+.MUI-icon {
+  font-size: 3rem;
+}
+
 @media (min-width: 1440px) {
   #MUI-Card {
     margin-left: 0px !important;

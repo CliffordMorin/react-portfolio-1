@@ -170,7 +170,14 @@ const Skills = (props) => {
           </div>
           <span className="skills-container">
             {content.skills.map((skill) => (
-              <a href={skill[2]} target="_blank" rel="noopener noreferrer">
+              <a
+                href={skill[2]}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
                 <div key={skill[1]} className="skill-icon">
                   <h4 className="skill-icon-text">{skill[1]}</h4>
                   <span>
