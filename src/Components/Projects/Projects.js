@@ -30,6 +30,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
+          youtube: "https://youtu.be/L_BcbOyHGzs",
         },
         {
           title: `HAKU`,
@@ -48,6 +49,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
+          youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
           title: "Zach In Japan",
@@ -66,6 +68,7 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
+          youtube: "https://youtu.be/I96IPEaj4qA",
         },
         {
           title: "F_I_B Buzz",
@@ -77,6 +80,7 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
+          youtube: "https://youtu.be/Q6tO9q8PoNg",
         },
         {
           title: "Quote Quiz",
@@ -123,6 +127,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
+          youtube: "https://youtu.be/L_BcbOyHGzs",
         },
         {
           title: `HAKU （ハク）`,
@@ -142,6 +147,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
+          youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
           title: "ザック・イン・ジャパン",
@@ -159,6 +165,7 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
+          youtube: "https://youtu.be/I96IPEaj4qA",
         },
         {
           title: "F_I_B Buzz",
@@ -170,6 +177,7 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/fib_buzz",
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
+          youtube: "https://youtu.be/Q6tO9q8PoNg",
         },
 
         {
@@ -224,6 +232,7 @@ const Projects = (props) => {
                 tags={project.tags}
                 tech={project.tech}
                 callToAction={project.callToAction}
+                youtube={project.youtube}
               />
             </Fade>
           ))}

@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
+import { AiFillYoutube } from "react-icons/ai";
 import "./ProjectCard.css";
 
 export default function MUIProjectCard(props) {
@@ -123,7 +124,24 @@ export default function MUIProjectCard(props) {
                     alignItems: "center",
                   }}
                 >
-                  {/*placeholder for youtube icon*/}
+                  {props.youtube && (
+                    <IconButton aria-label="youtube link">
+                      <div>
+                        <a
+                          href={props.youtube}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <AiFillYoutube
+                            className="MUI-icon"
+                            style={{
+                              color: "white",
+                            }}
+                          />
+                        </a>
+                      </div>
+                    </IconButton>
+                  )}
                 </div>
               </div>
             </CardActions>
