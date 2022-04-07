@@ -40,10 +40,10 @@
 
 .skill-icon:hover {
   cursor: pointer;
-  transform: translateY(-5px);
   transform: scale(1.5);
   transition: transform 0.5s ease-in-out;
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
+  transform: translateY(-5px);
 }
 
 .skill-icon-text {
