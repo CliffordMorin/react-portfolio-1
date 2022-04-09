@@ -1,9 +1,9 @@
 import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
-import blog from "../../images/projects/blog.png";
+import blog from "../../images/projects/blog.webp";
 import prefecture from "../../images/projects/prefecture.webp";
-import anime from "../../images/projects/anime.png";
-import haku from "../../images/projects/haku.png";
+import anime from "../../images/projects/anime.webp";
+import haku from "../../images/projects/haku.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
 import Fib from "../../images/coding/Fib.jpg";

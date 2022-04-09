@@ -1,5 +1,5 @@
 import "../About/About.css";
-import zach from "../../images/zach.png";
+import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Slide from "react-reveal/Slide";
 import { connect } from "react-redux";
