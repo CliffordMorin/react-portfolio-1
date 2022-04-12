@@ -6,6 +6,11 @@
   height: auto;
 }
 
+@media (max-width: 455px) {
+  .social-link {
+    margin: 10px;
+  }
+}
 @media (max-width: 600px) {
   .social-links {
     width: 100%;

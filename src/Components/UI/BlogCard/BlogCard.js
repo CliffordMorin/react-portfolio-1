@@ -40,7 +40,7 @@ export default function BlogCard(props) {
             gutterBottom
             variant="h5"
             component="div"
-            minHeight="65px"
+            minHeight="fit-content"
             style={{
               color: "var(--off-white)",
             }}

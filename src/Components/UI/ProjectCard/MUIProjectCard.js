@@ -24,7 +24,6 @@ export default function MUIProjectCard(props) {
   return (
     <Card
       sx={{
-        width: props.cardWidth,
         "&:hover": {
           transform: "scale(1.05)",
           transition: "transform 0.5s ease-in-out",

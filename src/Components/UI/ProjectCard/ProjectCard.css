@@ -6,7 +6,8 @@
 }
 
 #MUI-Card {
-  min-width: 345;
+  width: 425px;
+  min-width: 325;
   min-height: 520;
   margin-left: 15px !important;
   margin-right: 15px !important;
@@ -30,6 +31,12 @@
 
 .MUI-icon {
   font-size: 3rem;
+}
+
+@media (max-width: 455px) {
+  #MUI-Card {
+    width: 320px !important;
+  }
 }
 
 @media (min-width: 1440px) {

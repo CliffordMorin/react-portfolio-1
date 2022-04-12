@@ -13,3 +13,8 @@ footer {
   align-items: center;
   color: rgb(191, 191, 191);
 }
+@media (max-width: 455px) {
+  .footer-text {
+    display: none;
+  }
+}

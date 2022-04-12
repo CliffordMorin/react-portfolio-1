@@ -61,7 +61,7 @@ const Blog = (props) => {
           {content.posts.map((post) => (
             <BlogCard
               width={400}
-              height={400}
+              height={410}
               title={post.title}
               description={post.description}
               image={post.image}

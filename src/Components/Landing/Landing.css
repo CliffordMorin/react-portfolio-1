@@ -74,7 +74,7 @@
 @media (min-width: 1024px) {
   .text-div {
     position: absolute;
-    top: 10%;
+    top: 10vh;
     left: 55%;
     /* min-width: 476px; */
 
