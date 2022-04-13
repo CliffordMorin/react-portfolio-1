@@ -19,7 +19,6 @@
 @media (max-width: 768px) {
   .social-links-vertical {
     display: flex;
-    justify-content: space-around;
     position: relative;
     flex-direction: row;
     align-items: center;

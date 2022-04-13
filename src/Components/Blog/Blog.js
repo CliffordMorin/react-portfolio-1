@@ -1,8 +1,13 @@
 import "../Projects/Projects.css";
 import Fade from "react-reveal/Fade";
 import BlogCard from "../UI/BlogCard/BlogCard";
-
+import Carousel from "react-simply-carousel";
+import React, { useState } from "react";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaArrowCircleRight } from "react-icons/fa";
 const Blog = (props) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   let content = {
     English: {
       mainTitle: "Featured Blog Posts",
@@ -21,6 +26,21 @@ const Blog = (props) => {
           title: "Using Recursion to Insert Values Into a Sorted Binary Tree",
           image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
           link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
+        },
+        {
+          title: "An Intro to Recursion",
+          image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
+          link: "https://zachinjapan.com/recursion/",
+        },
+        {
+          title: "this.concept = important",
+          image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
+          link: "https://zachinjapan.com/This.Concept%20=%20important/",
+        },
+        {
+          title: "count++ !== ++count",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
         },
       ],
     },
@@ -42,6 +62,21 @@ const Blog = (props) => {
           image: "https://media.giphy.com/media/qcy6cSzrtP7ybXvZvn/giphy.gif",
           link: "https://zachinjapan.com/Using%20Recursion%20to%20Insert%20Values%20Into%20a%20Sorted%20Binary%20Tree/",
         },
+        {
+          title: "再帰 (英語）",
+          image: "https://media.giphy.com/media/xThuWu82QD3pj4wvEQ/giphy.gif",
+          link: "https://zachinjapan.com/recursion/",
+        },
+        {
+          title: "this.concept = important （英語）",
+          image: "https://media.giphy.com/media/26FLgGTPUDH6UGAbm/giphy.gif",
+          link: "https://zachinjapan.com/This.Concept%20=%20important/",
+        },
+        {
+          title: "count++ !== ++count （英語）",
+          image: "https://media.giphy.com/media/3o6nV5TdYIA48G7VYI/giphy.gif",
+          link: "https://zachinjapan.com/count++%20!=%20++count/",
+        },
       ],
     },
   };
@@ -51,29 +86,84 @@ const Blog = (props) => {
     : (content = content.English);
 
   return (
-    <div className="CodingChallenges Projects" id="Blog">
+    <div
+      className="CodingChallenges Projects"
+      id="Blog"
+      style={{
+        marginBottom: "50px",
+      }}
+    >
       <Fade>
         <h1>{content.mainTitle}</h1>
       </Fade>
 
-      <Fade>
-        <div className="projects-container">
-          {content.posts.map((post) => (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
+        <Carousel
+          updateOnItemClick
+          containerProps={{
+            style: {
+              width: "90%",
+              justifyContent: "space-around",
+            },
+          }}
+          activeSlideIndex={activeSlide}
+          activeSlideProps={{
+            style: {
+              border: "40px solid black",
+            },
+          }}
+          onRequestChange={setActiveSlide}
+          forwardBtnProps={{
+            children: <FaArrowCircleRight size={50} />,
+            style: {
+              width: 60,
+              height: 60,
+              minWidth: 60,
+              alignSelf: "center",
+              display: "flex",
+              justifyContent: "center",
+              justifySelf: "center",
+              backgroundColor: "black",
+              borderRadius: "50%",
+              color: "white",
+              margin: "10px",
+            },
+          }}
+          backwardBtnProps={{
+            children: <FaArrowCircleLeft size={50} color="white" />,
+            style: {
+              width: 60,
+              height: 60,
+              minWidth: 60,
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "center",
+              justifyContent: "center",
+              backgroundColor: "black",
+              borderRadius: "50%",
+              color: "white",
+              margin: "10px",
+            },
+          }}
+          itemsToShow={0}
+          speed={2000}
+        >
+          {content.posts.map((post, index) => (
             <BlogCard
-              width={400}
-              height={410}
+              key={index}
               title={post.title}
-              description={post.description}
               image={post.image}
-              loopCount={1}
-              loop={false}
-              imageLoop={false}
               link={post.link}
-              key={post.title}
             />
           ))}
-        </div>
-      </Fade>
+        </Carousel>
+      </div>
       <div id="Projects" />
     </div>
   );

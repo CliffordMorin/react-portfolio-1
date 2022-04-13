@@ -11,36 +11,30 @@ export default function BlogCard(props) {
       sx={{
         backgroundColor: "var(--primary-color)",
         color: "white",
-        width: props.width,
-        height: props.height,
+        width: "100%",
+        minWidth: "350px",
+
+        height: "fit-content",
         margin: "10px",
         boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.1)",
-        "&:hover": {
-          transform: "scale(1.05)",
-          transition: "transform 0.5s ease-in-out",
-        },
-        overflow: "default",
+        userSelect: "none",
       }}
     >
       <CardActionArea href={props.link} target={"_blank"}>
         <CardMedia
           component="img"
           height={300}
-          width={props.width}
           image={props.image}
           alt="blog post image"
           loading="lazy"
-          imagePosition="center"
           style={{
-            filter: "brightness(0.85)",
+            filter: "brightness(0.75)",
           }}
         />
         <CardContent>
           <Typography
-            gutterBottom
             variant="h5"
             component="div"
-            minHeight="fit-content"
             style={{
               color: "var(--off-white)",
             }}

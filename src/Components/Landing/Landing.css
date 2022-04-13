@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(73, 70, 72);
   font-family: serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -19,13 +18,11 @@
   /* darken background image */
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.1);
-  user-select: none;
+  background-attachment: fixed !important;
 }
 
 .landing-content {
   width: 100vw;
-  min-height: 280px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,21 +31,15 @@
 
 .landing-title {
   font-size: 4rem;
-  text-align: center;
   margin-bottom: 1rem;
   font-weight: 500;
-  text-align: center;
-  color: rgb(255, 255, 255);
   min-width: fit-content;
 }
 
 .landing-description {
   font-size: 2rem;
   font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-align: center;
   margin-bottom: 2rem;
-  text-align: left;
 }
 
 .text-div {
@@ -65,8 +56,6 @@
 .contact-button {
   top: 80%;
   width: fit-content;
-  text-align: center;
-  justify-self: end;
   margin-top: 10px;
 }
 
@@ -75,7 +64,7 @@
   .text-div {
     position: absolute;
     top: 15vh;
-    right: 10vw;
+    right: 5vw;
     border-radius: 10px;
   }
 
@@ -90,6 +79,9 @@
 }
 
 @media (min-width: 1440px) {
+  .text-div {
+    top: 10vh;
+  }
   .landing-title {
     font-size: 7rem;
   }
@@ -103,8 +95,4 @@
   .landing-description {
     font-size: 3rem;
   }
-}
-
-.Landing {
-  background-attachment: fixed !important;
 }
