@@ -109,9 +109,9 @@ const Blog = (props) => {
           updateOnItemClick
           containerProps={{
             style: {
-              width: "90%",
+              width: "100%",
               maxWidth: "100vw",
-              justifyContent: "space-around",
+              justifyContent: "space-evenly",
             },
           }}
           activeSlideIndex={activeSlide}

@@ -12,12 +12,9 @@ export default function BlogCard(props) {
         backgroundColor: "var(--primary-color)",
         color: "white",
         width: "100%",
-        minWidth: "350px",
-
+        minWidth: "300px",
         height: "fit-content",
         margin: "10px",
-        boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.1)",
-        userSelect: "none",
       }}
     >
       <CardActionArea href={props.link} target={"_blank"}>
@@ -30,7 +27,7 @@ export default function BlogCard(props) {
           style={{
             filter: "brightness(0.75)",
           }}
-          draggable="false"
+          // draggable="false"
         />
         <CardContent>
           <Typography
