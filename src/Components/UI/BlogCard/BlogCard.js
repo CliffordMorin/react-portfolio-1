@@ -30,6 +30,7 @@ export default function BlogCard(props) {
           style={{
             filter: "brightness(0.75)",
           }}
+          draggable="false"
         />
         <CardContent>
           <Typography

@@ -1,0 +1,26 @@
+.direction-btn {
+  /* display: none; */
+  height: 100%;
+  border-radius: 0%;
+  background-color: var(--secondary-color);
+  color: var(--off-white);
+}
+
+.direction-icon {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .direction-btn {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .direction-icon {
+    display: block;
+  }
+}

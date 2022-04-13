@@ -5,6 +5,7 @@ import Carousel from "react-simply-carousel";
 import React, { useState } from "react";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
+import "./Blog.css";
 const Blog = (props) => {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -109,6 +110,7 @@ const Blog = (props) => {
           containerProps={{
             style: {
               width: "90%",
+              maxWidth: "100vw",
               justifyContent: "space-around",
             },
           }}
@@ -120,35 +122,37 @@ const Blog = (props) => {
           }}
           onRequestChange={setActiveSlide}
           forwardBtnProps={{
-            children: <FaArrowCircleRight size={50} />,
+            children: (
+              <FaArrowCircleRight size={50} className="direction-icon" />
+            ),
+            className: "direction-btn",
             style: {
-              width: 60,
-              height: 60,
-              minWidth: 60,
               alignSelf: "center",
               display: "flex",
               justifyContent: "center",
+              alignItems: "center",
               justifySelf: "center",
-              backgroundColor: "black",
-              borderRadius: "50%",
               color: "white",
-              margin: "10px",
+              // margin: "10px",
             },
           }}
           backwardBtnProps={{
-            children: <FaArrowCircleLeft size={50} color="white" />,
+            children: (
+              <FaArrowCircleLeft
+                size={50}
+                color="white"
+                className="direction-icon"
+              />
+            ),
+            className: "direction-btn",
             style: {
-              width: 60,
-              height: 60,
-              minWidth: 60,
               display: "flex",
               alignSelf: "center",
               justifySelf: "center",
               justifyContent: "center",
-              backgroundColor: "black",
-              borderRadius: "50%",
-              color: "white",
-              margin: "10px",
+              alignItems: "center",
+
+              // margin: "10px",
             },
           }}
           itemsToShow={0}
