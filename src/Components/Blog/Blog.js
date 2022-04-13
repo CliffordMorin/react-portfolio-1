@@ -110,10 +110,11 @@ const Blog = (props) => {
           containerProps={{
             style: {
               width: "100%",
-              maxWidth: "100vw",
+              maxWidth: "2000px",
               justifyContent: "space-evenly",
             },
           }}
+          className="Carousel"
           activeSlideIndex={activeSlide}
           onRequestChange={(index) => setActiveSlide(index)}
           activeSlideProps={{

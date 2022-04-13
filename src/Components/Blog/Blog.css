@@ -25,3 +25,9 @@
     display: block;
   }
 }
+
+@media (min-width: 2000px) {
+  .direction-btn {
+    margin: 20px;
+  }
+}
