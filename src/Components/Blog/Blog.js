@@ -115,12 +115,12 @@ const Blog = (props) => {
             },
           }}
           activeSlideIndex={activeSlide}
+          onRequestChange={(index) => setActiveSlide(index)}
           activeSlideProps={{
             style: {
               border: "40px solid black",
             },
           }}
-          onRequestChange={setActiveSlide}
           forwardBtnProps={{
             children: (
               <FaArrowCircleRight size={50} className="direction-icon" />
@@ -156,7 +156,7 @@ const Blog = (props) => {
             },
           }}
           itemsToShow={0}
-          speed={2000}
+          speed={300}
         >
           {content.posts.map((post, index) => (
             <BlogCard
