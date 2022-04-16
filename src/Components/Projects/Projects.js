@@ -26,6 +26,7 @@ const Projects = (props) => {
             "CSS",
             "Node",
             "API",
+            "TypeScript",
             "Authentication",
             "MongoDB",
             "Heroku",
@@ -91,7 +92,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["CSS", "React", "API", "Netlify", "Typescript", "Netlify"],
+          tags: ["CSS", "React", "API", "Netlify", "TypeScript", "Netlify"],
         },
 
         {
@@ -123,6 +124,7 @@ const Projects = (props) => {
             "CSS",
             "Node",
             "API",
+            "TypeScript",
             "Authentication",
             "MongoDB",
             "Heroku",
