@@ -11,8 +11,12 @@
   align-items: center;
 }
 
-.flag-div-holder {
-  animation: grow 1s ease-in-out infinite alternate;
+.full-flag-div {
+  position: fixed;
+  right: 0.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .flag-div-holder :hover {
@@ -20,16 +24,6 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.3);
-    transition-duration: 4s;
-  }
 }
 
 /*  mobile */
