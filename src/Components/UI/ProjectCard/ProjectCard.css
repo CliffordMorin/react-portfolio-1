@@ -47,8 +47,9 @@
   }
 
   #card-media {
-    width: 800px;
+    width: 100%;
     height: fit-content;
+    image-rendering: pixelated;
   }
 
   .MuiCardHeader-title {
