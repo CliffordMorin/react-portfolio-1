@@ -134,7 +134,8 @@ const Blog = (props) => {
               alignItems: "center",
               justifySelf: "center",
               color: "white",
-              // margin: "10px",
+              marginLeft: "10px",
+              marginRight: "10px",
             },
           }}
           backwardBtnProps={{
@@ -152,8 +153,8 @@ const Blog = (props) => {
               justifySelf: "center",
               justifyContent: "center",
               alignItems: "center",
-
-              // margin: "10px",
+              marginLeft: "10px",
+              marginRight: "10px",
             },
           }}
           itemsToShow={0}

@@ -1,10 +1,5 @@
 .direction-btn {
-  /* display: none; */
-  height: 100%;
-  border-radius: 0%;
-  background-color: var(--secondary-color);
-  color: var(--off-white);
-  align-self: center;
+  display: none !important;
 }
 
 .direction-icon {
@@ -13,6 +8,7 @@
 
 @media (min-width: 600px) {
   .direction-btn {
+    display: flex !important;
     width: 60px;
     height: 60px;
     min-width: 60px;
