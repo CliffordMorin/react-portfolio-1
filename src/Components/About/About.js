@@ -11,7 +11,7 @@ const About = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 9000);
+    }, 10000);
   }, []);
 
   let content = {
@@ -57,7 +57,7 @@ const About = (props) => {
               }}
             >
               {loading
-                ? "Loading 3D image. Please wait..."
+                ? "Loading 3D image. Page will refresh..."
                 : "scroll to zoom in + click and drag to move"}
             </h3>
           </div>
