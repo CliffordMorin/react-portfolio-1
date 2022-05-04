@@ -56,7 +56,7 @@ const About = (props) => {
                 textAlign: "center",
               }}
             >
-              {loading ? "Loading 3D image. Page will refresh..." : ""}
+              {loading ? "Loading 3D image. Page may refresh..." : ""}
             </h3>
           </div>
           <div className={loading ? "picture" : "picture hidden "}>
