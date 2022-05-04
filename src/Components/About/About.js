@@ -11,7 +11,7 @@ const About = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 9000);
   }, []);
 
   let content = {
@@ -45,13 +45,22 @@ const About = (props) => {
     <div className="about">
       <Slide left>
         <div className="about-left">
-          <h3
+          <div
             style={{
-              textAlign: "center",
+              zIndex: 1000,
+              marginBottom: "2.8rem",
             }}
           >
-            {loading ? "" : "scroll to zoom in + click and drag to move"}
-          </h3>
+            <h3
+              style={{
+                textAlign: "center",
+              }}
+            >
+              {loading
+                ? "Loading 3D image. Please wait..."
+                : "scroll to zoom in + click and drag to move"}
+            </h3>
+          </div>
           <div className={loading ? "picture" : "picture hidden "}>
             <img className="zach-img" src={zach} alt="zach" loading="lazy" />
           </div>
