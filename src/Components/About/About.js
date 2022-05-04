@@ -3,8 +3,17 @@ import zach from "../../images/zach.webp";
 import Skills from "../UI/Skills";
 import Slide from "react-reveal/Slide";
 import { connect } from "react-redux";
+import React, { useState, useEffect } from "react";
 
 const About = (props) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
+  }, []);
+
   let content = {
     English: {
       title: "About Me",
@@ -36,8 +45,31 @@ const About = (props) => {
     <div className="about">
       <Slide left>
         <div className="about-left">
-          <div className="picture">
+          <h3
+            style={{
+              textAlign: "center",
+            }}
+          >
+            {loading ? "" : "scroll to zoom in + click and drag to move"}
+          </h3>
+          <div className={loading ? "picture" : "picture hidden "}>
             <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+          </div>
+          <div
+            style={{
+              overflow: "hidden",
+              maxHeight: "100%",
+              maxWidth: "100%",
+            }}
+          >
+            <iframe
+              loading="lazy"
+              title="zach"
+              className={loading ? "hidden iframe" : "iframe"}
+              src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
+              overflow="hidden"
+              frameBorder={0}
+            />
           </div>
         </div>
       </Slide>
