@@ -7,7 +7,6 @@ import zach from "../../images/zach.webp";
 
 const About = (props) => {
   const isTabletOrBigger = useMediaQuery({ query: "(min-width: 768px)" });
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
