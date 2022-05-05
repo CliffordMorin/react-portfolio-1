@@ -43,43 +43,42 @@ const About = (props) => {
 
   return (
     <div className="about">
-      <Slide left>
-        <div className="about-left">
-          <div
+      <div className="about-left">
+        <div
+          style={{
+            zIndex: 1000,
+            marginBottom: "2.8rem",
+          }}
+        >
+          <h3
             style={{
-              zIndex: 1000,
-              marginBottom: "2.8rem",
+              textAlign: "center",
             }}
           >
-            <h3
-              style={{
-                textAlign: "center",
-              }}
-            >
-              {loading ? "Loading 3D image. Page may refresh..." : ""}
-            </h3>
-          </div>
-          <div className={loading ? "picture" : "picture hidden "}>
-            <img className="zach-img" src={zach} alt="zach" loading="lazy" />
-          </div>
-          <div
-            style={{
-              overflow: "hidden",
-              maxHeight: "100%",
-              maxWidth: "100%",
-            }}
-          >
-            <iframe
-              loading="lazy"
-              title="zach"
-              className={loading ? "hidden iframe" : "iframe"}
-              src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
-              overflow="hidden"
-              frameBorder={0}
-            />
-          </div>
+            {loading ? "Loading 3D image. Page may refresh..." : ""}
+          </h3>
         </div>
-      </Slide>
+        <div className={loading ? "picture" : "picture hidden "}>
+          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+        </div>
+        <div
+          style={{
+            overflow: "hidden",
+            maxHeight: "100%",
+            maxWidth: "100%",
+          }}
+        >
+          <iframe
+            loading="lazy"
+            title="zach"
+            className={loading ? "hidden iframe" : "iframe"}
+            src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
+            overflow="hidden"
+            frameBorder={0}
+          />
+        </div>
+      </div>
+
       <div className="about-right">
         <h1
           style={{
