@@ -15,6 +15,7 @@ export default function BlogCard(props) {
         minWidth: "300px",
         height: "fit-content",
         margin: "10px",
+        borderRadius: "20px",
       }}
     >
       <CardActionArea href={props.link} target={"_blank"}>
