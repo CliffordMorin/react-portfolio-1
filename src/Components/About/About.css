@@ -38,7 +38,7 @@
 .picture {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   max-width: 350px;
   transform: rotate(45deg);
   overflow: hidden;

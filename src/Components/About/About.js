@@ -3,9 +3,11 @@ import Skills from "../UI/Skills";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import zach from "../../images/zach.webp";
 
 const About = (props) => {
   const isTabletOrBigger = useMediaQuery({ query: "(min-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -56,24 +58,21 @@ const About = (props) => {
               : ""}
           </h3>
         </div>
-        <div
-          style={{
-            overflow: "hidden",
-            maxHeight: "100%",
-            maxWidth: "100%",
-          }}
-        >
-          {isTabletOrBigger ? (
-            <iframe
-              loading="lazy"
-              title="zach"
-              className={"iframe"}
-              src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
-              overflow="hidden"
-              frameBorder={0}
-            />
-          ) : null}
-        </div>
+
+        {isTabletOrBigger ? (
+          <iframe
+            loading="lazy"
+            title="zach"
+            className={"iframe"}
+            src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
+            overflow="hidden"
+            frameBorder={0}
+          />
+        ) : (
+          <div className="picture">
+            <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+          </div>
+        )}
       </div>
 
       <div className="about-right">
