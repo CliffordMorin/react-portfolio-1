@@ -44,22 +44,14 @@ const About = (props) => {
   return (
     <div className="about">
       <div className="about-left">
-        <div
-          style={{
-            zIndex: 1000,
-            marginBottom: "2.8rem",
-          }}
-        >
+        <div>
           <h3
             style={{
               textAlign: "center",
             }}
           >
-            {loading ? "Loading 3D image. Page may refresh..." : ""}
+            {loading ? "Loading 3D model. Please be patient." : ""}
           </h3>
-        </div>
-        <div className={loading ? "picture" : "picture hidden "}>
-          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
         </div>
         <div
           style={{
@@ -71,7 +63,7 @@ const About = (props) => {
           <iframe
             loading="lazy"
             title="zach"
-            className={loading ? "hidden iframe" : "iframe"}
+            className={"iframe"}
             src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
             overflow="hidden"
             frameBorder={0}
