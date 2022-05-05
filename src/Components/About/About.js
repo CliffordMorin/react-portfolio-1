@@ -61,7 +61,6 @@ const About = (props) => {
           }}
         >
           <iframe
-            loading="lazy"
             title="zach"
             className={"iframe"}
             src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
