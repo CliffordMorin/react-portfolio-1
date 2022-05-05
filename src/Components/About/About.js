@@ -2,8 +2,10 @@ import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const About = (props) => {
+  const isTabletOrBigger = useMediaQuery({ query: "(min-width: 768px)" });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,11 +46,14 @@ const About = (props) => {
       <div className="about-left">
         <div>
           <h3
+            className="iframe-text"
             style={{
               textAlign: "center",
             }}
           >
-            {loading ? "Loading 3D model. Please be patient." : ""}
+            {loading && isTabletOrBigger
+              ? "Loading 3D model. Please be patient."
+              : ""}
           </h3>
         </div>
         <div
@@ -58,13 +63,16 @@ const About = (props) => {
             maxWidth: "100%",
           }}
         >
-          <iframe
-            title="zach"
-            className={"iframe"}
-            src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
-            overflow="hidden"
-            frameBorder={0}
-          />
+          {isTabletOrBigger ? (
+            <iframe
+              loading="lazy"
+              title="zach"
+              className={"iframe"}
+              src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
+              overflow="hidden"
+              frameBorder={0}
+            />
+          ) : null}
         </div>
       </div>
 
