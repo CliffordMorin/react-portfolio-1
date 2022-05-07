@@ -26,7 +26,7 @@ const About = (props) => {
       description2:
         "I fell in love with coding while I was an English teacher in Japan. I now have the technical skills and Japanese ability needed for a professional role.",
       description3:
-        "I am seeking a full-time position as a web developer/software engineer. You can reach me at Zach.Stone.Developer@gmail.com",
+        "I am seeking a full-time position as a web developer/software engineer in Japan. You can reach me at Zach.Stone.Developer@gmail.com",
       contact: "Contact",
     },
     Japanese: {
@@ -36,7 +36,7 @@ const About = (props) => {
       description2:
         "日本で英語を教えている間、コーディングに夢中になりました。 その時から積極的に学びました。今は必要な技術的スキルと日本語能力を持っています。",
       description3:
-        "ウェブ開発者として正社員の仕事を探しています。ウェブサイトをご覧いただきありがとうございます。 お問い合わせはZach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
+        "日本でウェブ開発者として正社員の仕事を探しています。ウェブサイトをご覧いただきありがとうございます。 お問い合わせはZach.Stone.Developer@gmail.comまでメールでお問い合わせください。",
       contact: "お問い合わせ",
     },
   };

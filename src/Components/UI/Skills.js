@@ -49,6 +49,8 @@ const Skills = (props) => {
         // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
       resume: "Resume",
+      japaneseResume: "Japanese Resume",
+      japaneseWorkHistory: "Japanese Work History",
       certifications: "Certifications",
     },
     Japanese: {
@@ -80,7 +82,10 @@ const Skills = (props) => {
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
         // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
       ],
-      resume: "履歴書",
+      resume: "履歴書(英語)",
+      japaneseResume: "履歴書(日本語)",
+      japaneseWorkHistory: "職務経歴書(日本語)",
+
       certifications: "資格",
     },
   };
@@ -105,33 +110,97 @@ const Skills = (props) => {
               justifyContent: "space-between",
               flexWrap: "wrap",
               margin: "0 auto",
-              width: "100%",
+              minWidth: "100%",
               alignItems: "center",
             }}
           >
-            <a
-              href="https://docs.google.com/document/d/1nrzaPLysy7FtlaRnXNdffBs2JTjeJqODBiay_gAlERg/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               style={{
-                color: "var(--primary-color)",
-                textDecoration: "none",
-                marginTop: "20px",
-                marginBottom: "20px",
+                display: "flex",
+                justifyContent: "flex-start",
+                flexWrap: "wrap",
+                width: "fit-content",
               }}
             >
-              {" "}
-              <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
-              <span
-                className="about-description"
-                style={{
-                  marginLeft: "5px",
-                  color: "white",
-                }}
-              >
-                {content.resume}
-              </span>
-            </a>
+              <>
+                <a
+                  href="https://docs.google.com/document/d/1r5U9UF6FJc0zr_L98dpIwj9Xe0-0CtoVfoux4nxD-g8/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "var(--primary-color)",
+                    textDecoration: "none",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                    marginRight: "20px",
+                  }}
+                >
+                  {" "}
+                  <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
+                  <span
+                    className="about-description"
+                    style={{
+                      marginLeft: "10px",
+                      color: "white",
+                    }}
+                  >
+                    {content.resume}
+                  </span>
+                </a>
+              </>
+              <>
+                <a
+                  href="https://docs.google.com/document/d/11O216h5jTIj0ln6_Gx0yDqBL9GHCv-rJ/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "var(--primary-color)",
+                    textDecoration: "none",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                    marginRight: "20px",
+                  }}
+                >
+                  {" "}
+                  <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
+                  <span
+                    className="about-description"
+                    style={{
+                      marginLeft: "10px",
+                      color: "white",
+                    }}
+                  >
+                    {content.japaneseResume}
+                  </span>
+                </a>
+              </>
+              <>
+                <a
+                  href="https://docs.google.com/document/d/1wwbJUsLuv55qcojnKzQ48qSYR2eNR1FG/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "var(--primary-color)",
+                    textDecoration: "none",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                    marginRight: "20px",
+                  }}
+                >
+                  {" "}
+                  <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
+                  <span
+                    className="about-description"
+                    style={{
+                      marginLeft: "10px",
+                      color: "white",
+                    }}
+                  >
+                    {content.japaneseWorkHistory}
+                  </span>
+                </a>
+              </>
+            </div>
             <a
               href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
               target="_blank"
