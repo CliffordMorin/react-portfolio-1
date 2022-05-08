@@ -126,6 +126,7 @@ const Skills = (props) => {
                 <a
                   href="https://docs.google.com/document/d/1r5U9UF6FJc0zr_L98dpIwj9Xe0-0CtoVfoux4nxD-g8/edit?usp=sharing"
                   target="_blank"
+                  id="resume-link"
                   rel="noopener noreferrer"
                   style={{
                     color: "var(--primary-color)",
@@ -138,7 +139,7 @@ const Skills = (props) => {
                   {" "}
                   <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
                   <span
-                    className="about-description"
+                    className="about-description resume-link-text"
                     style={{
                       marginLeft: "10px",
                       color: "white",
@@ -153,6 +154,7 @@ const Skills = (props) => {
                   href="https://docs.google.com/document/d/11O216h5jTIj0ln6_Gx0yDqBL9GHCv-rJ/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="resume-link"
                   style={{
                     color: "var(--primary-color)",
                     textDecoration: "none",
@@ -164,7 +166,7 @@ const Skills = (props) => {
                   {" "}
                   <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
                   <span
-                    className="about-description"
+                    className="about-description resume-link-text"
                     style={{
                       marginLeft: "10px",
                       color: "white",
@@ -179,6 +181,7 @@ const Skills = (props) => {
                   href="https://docs.google.com/document/d/1wwbJUsLuv55qcojnKzQ48qSYR2eNR1FG/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
                   target="_blank"
                   rel="noopener noreferrer"
+                  id="resume-link"
                   style={{
                     color: "var(--primary-color)",
                     textDecoration: "none",
@@ -190,7 +193,7 @@ const Skills = (props) => {
                   {" "}
                   <IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
                   <span
-                    className="about-description"
+                    className="about-description resume-link-text"
                     style={{
                       marginLeft: "10px",
                       color: "white",
@@ -205,6 +208,7 @@ const Skills = (props) => {
               href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              id="resume-link"
               style={{
                 textDecoration: "none",
                 color: "white",
@@ -214,7 +218,7 @@ const Skills = (props) => {
             >
               <BsUiChecks color="var(--secondary-color)" size={"1.25rem"} />
               <span
-                className="about-description "
+                className="about-description resume-link-text"
                 style={{
                   marginLeft: "0.5rem",
                   color: "white",

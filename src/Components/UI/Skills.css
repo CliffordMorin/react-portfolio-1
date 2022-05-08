@@ -67,3 +67,8 @@
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
+.resume-link-text:hover {
+  cursor: pointer;
+  color: var(--secondary-color) !important;
+}
