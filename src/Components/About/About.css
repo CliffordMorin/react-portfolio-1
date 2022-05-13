@@ -16,14 +16,14 @@
 }
 
 .iframe {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1600px) {
   .iframe {
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
   }
 }
 
