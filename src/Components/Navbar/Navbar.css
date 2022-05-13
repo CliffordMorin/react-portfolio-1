@@ -33,3 +33,10 @@
     opacity: 0.8;
   }
 }
+
+@media (min-width: 1600px) {
+  .flag {
+    width: 45px;
+    height: 35px;
+  }
+}
