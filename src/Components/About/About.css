@@ -66,7 +66,7 @@
   font-size: 1.3rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .about {
     width: 90%;
     padding: 10px;
@@ -95,12 +95,11 @@
   }
 }
 
-@media (max-width: 1024px) and (min-width: 800px) {
+/* @media (max-width: 1024px) and (min-width: 800px) {
   .picture {
     width: 60%;
     margin-top: 40px;
-  }
-}
+  } */
 
 #about-flag {
   justify-content: flex-start;
