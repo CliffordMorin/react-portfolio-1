@@ -9,7 +9,9 @@ import rightClick from "../../images/UI/right-click.png";
 import scroll from "../../images/UI/scroll.png";
 
 const About = (props) => {
-  const isTabletOrBigger = useMediaQuery({ query: "(min-width: 768px)" });
+  const isLaptopOrBigger = useMediaQuery({
+    query: "(min-device-width: 1000px)",
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -55,13 +57,13 @@ const About = (props) => {
               textAlign: "center",
             }}
           >
-            {loading && isTabletOrBigger
+            {loading && isLaptopOrBigger
               ? "Loading 3D model. Please be patient."
               : ""}
           </h3>
         </div>
 
-        {isTabletOrBigger ? (
+        {isLaptopOrBigger ? (
           <>
             <iframe
               loading="lazy"
