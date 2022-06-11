@@ -17,7 +17,7 @@ const About = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 20000);
   }, []);
 
   let content = {
