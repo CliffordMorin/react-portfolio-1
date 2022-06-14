@@ -58,6 +58,10 @@
   -o-filter: grayscale(30%);
 }
 
+.about-left {
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
 .about-right {
   width: 50%;
 }

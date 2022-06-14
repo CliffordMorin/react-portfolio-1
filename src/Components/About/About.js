@@ -1,7 +1,6 @@
 import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
-import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import zach from "../../images/zach.webp";
 import leftClick from "../../images/UI/left-click.png";
@@ -12,13 +11,6 @@ const About = (props) => {
   const isLaptopOrBigger = useMediaQuery({
     query: "(min-device-width: 1000px)",
   });
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 10000);
-  }, []);
 
   let content = {
     English: {
@@ -50,19 +42,6 @@ const About = (props) => {
   return (
     <div className="about">
       <div className="about-left">
-        <div>
-          <h3
-            className="iframe-text"
-            style={{
-              textAlign: "center",
-            }}
-          >
-            {loading && isLaptopOrBigger
-              ? "Loading 3D model. Please be patient."
-              : ""}
-          </h3>
-        </div>
-
         {isLaptopOrBigger ? (
           <>
             <iframe
