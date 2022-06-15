@@ -20,6 +20,14 @@
   height: 500px;
 }
 
+@media (min-width: 768px) {
+  .about-left {
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 0px #000000;
+    overflow: hidden;
+  }
+}
+
 @media (min-width: 1600px) {
   .iframe {
     width: 800px;
@@ -58,11 +66,6 @@
   -o-filter: grayscale(30%);
 }
 
-.about-left {
-  border-radius: 50px;
-  box-shadow: 0px 0px 5px 0px #000000;
-  overflow: hidden;
-}
 .about-right {
   width: 50%;
 }
@@ -99,12 +102,6 @@
     margin-top: 20px;
   }
 }
-
-/* @media (max-width: 1024px) and (min-width: 800px) {
-  .picture {
-    width: 60%;
-    margin-top: 40px;
-  } */
 
 #about-flag {
   justify-content: flex-start;
