@@ -14,8 +14,8 @@ import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { BsUiChecks } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
-
 import { SiMaterialui } from "react-icons/si";
+import { RiVuejsFill } from "react-icons/ri";
 
 const Skills = (props) => {
   let content = {
@@ -46,7 +46,7 @@ const Skills = (props) => {
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
-        // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
+        [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
       ],
       resume: "Resume",
       japaneseResume: "Japanese Resume",
@@ -80,7 +80,7 @@ const Skills = (props) => {
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
-        // [<SiCsharp />, "C#", "https://docs.microsoft.com/en-us/dotnet/csharp/"],
+        [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
       ],
       resume: "履歴書(英語)",
       japaneseResume: "履歴書(日本語)",
