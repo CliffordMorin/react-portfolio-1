@@ -7,7 +7,6 @@
   font-family: serif;
   font-size: 1.5rem;
   font-weight: 500;
-  background-image: url("../../images/aka1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,8 +16,28 @@
 
   /* darken background image */
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.1);
+
   background-attachment: fixed !important;
+}
+
+@media (max-width: 1000px) {
+  .Landing {
+    background-image: url("../../images/aka2.jpg");
+    background-color: rgba(34, 33, 33, 0.5);
+  }
+}
+
+@media (min-width: 1000px) {
+  .Landing {
+    background-image: url("../../images/aka1.webp");
+    background-color: rgba(65, 65, 65, 0.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Landing {
+    background-size: contain;
+  }
 }
 
 .landing-content {
@@ -48,7 +67,7 @@
   justify-content: center;
   align-items: center;
   /* background-color: rgba(0, 0, 0); */
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   width: max-content;
 }

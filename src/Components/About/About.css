@@ -20,7 +20,7 @@
   height: 500px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .about-left {
     border-radius: 50px;
     box-shadow: 0px 0px 5px 0px #000000;
