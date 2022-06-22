@@ -71,9 +71,9 @@ const Projects = (props) => {
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
-          title: "Nice Riff",
+          title: "Riffs!",
           description:
-            "Share your musical ideas or songs with others and get feedback.",
+            "Share your musical ideas, songs, or musical covers and get feedback.",
           image: niceRiff,
           link: "https://nice-riff.netlify.app/",
           linkText: "Live Demo",
@@ -167,9 +167,9 @@ const Projects = (props) => {
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
-          title: "ナイス・リフ",
+          title: "リフス",
           description:
-            "音楽のアイデアと作成した曲をみんなに共有し、フィードバックをもらいましょう。",
+            "音楽のアイデアや作成した曲や曲のカバーをみんなに共有し、フィードバックをもらいましょう。",
           image: niceRiff,
           link: "https://nice-riff.netlify.app/",
           linkText: "ウェブサイト",
