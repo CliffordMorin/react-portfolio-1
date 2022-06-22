@@ -6,7 +6,7 @@ import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import Fade from "react-reveal/Fade";
-import Fib from "../../images/coding/Fib.jpg";
+import niceRiff from "../../images/projects/niceRiff.jpeg";
 const Projects = (props) => {
   let content = {
     English: {
@@ -71,6 +71,16 @@ const Projects = (props) => {
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
+          title: "Nice Riff",
+          description: "Share your musical ideas with others and get feedback.",
+          image: niceRiff,
+          link: "https://nice-riff.netlify.app/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/vue-music-app",
+          tech: "Tech",
+          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+        },
+        {
           title: "Quote Quiz",
           description:
             "Quiz your knowledge of famous quotes and share your favorite quotes on twitter.",
@@ -92,18 +102,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
-        },
-        {
-          title: "F_I_B Buzz",
-          description:
-            "Calculate 'Fizz Buzz' using the 'Fibonacci Sequence' up to 2000 iterations.",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "Tech",
-          tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
-          youtube: "https://youtu.be/Q6tO9q8PoNg",
         },
       ],
     },
@@ -168,6 +166,17 @@ const Projects = (props) => {
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
         },
         {
+          title: "ナイス・リフ",
+          description:
+            "音楽のアイデアを他の人と共有し、フィードバックをもらいましょう。",
+          image: niceRiff,
+          link: "https://nice-riff.netlify.app/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/vue-music-app",
+          tech: "技術",
+          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+        },
+        {
           title: "名言クイズ",
           description: "この名言を残した偉人の名前を選択してください。",
           image: quote,
@@ -187,18 +196,6 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
-        },
-        {
-          title: "F_I_B Buzz",
-          description:
-            "'Fib Buzz'!!  'Fizz Buzz'と'フィボナッチ数列'の両方のコーディングチャレンジです。",
-          image: Fib,
-          link: "https://fib-buzz.netlify.app/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/fib_buzz",
-          tech: "技術",
-          tags: ["React", "CSS", "JavaScript", "Material UI", "Netlify"],
-          youtube: "https://youtu.be/Q6tO9q8PoNg",
         },
       ],
     },
