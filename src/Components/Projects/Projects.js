@@ -72,7 +72,8 @@ const Projects = (props) => {
         },
         {
           title: "Nice Riff",
-          description: "Share your musical ideas with others and get feedback.",
+          description:
+            "Share your musical ideas or songs with others and get feedback.",
           image: niceRiff,
           link: "https://nice-riff.netlify.app/",
           linkText: "Live Demo",
@@ -168,7 +169,7 @@ const Projects = (props) => {
         {
           title: "ナイス・リフ",
           description:
-            "音楽のアイデアをみんなに共有し、フィードバックをもらいましょう。",
+            "音楽のアイデアと作成した曲をみんなに共有し、フィードバックをもらいましょう。",
           image: niceRiff,
           link: "https://nice-riff.netlify.app/",
           linkText: "ウェブサイト",
