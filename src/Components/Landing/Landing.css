@@ -25,6 +25,7 @@
 @media (max-width: 1000px) {
   .Landing {
     background-size: contain !important;
+    background-attachment: fixed !important;
   }
 }
 
