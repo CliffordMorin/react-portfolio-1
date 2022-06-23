@@ -5,7 +5,7 @@ import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
-import Fade from "react-reveal/Fade";
+
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 const Projects = (props) => {
   let content = {
@@ -209,29 +209,25 @@ const Projects = (props) => {
   return (
     <>
       <div className="Projects" id="Projects">
-        <Fade>
-          <h1>{content.mainTitle}</h1>
-        </Fade>
+        <h1>{content.mainTitle}</h1>
 
         <div className="projects-container">
           {content.projects.map((project, index) => (
-            <Fade>
-              <MUIProjectCard
-                cardWidth="405px"
-                index={index + 1}
-                title={project.title}
-                description={project.description}
-                tech_description={project.tech_description}
-                image={project.image}
-                link={project.link}
-                linkText={project.linkText}
-                github={project.github}
-                tags={project.tags}
-                tech={project.tech}
-                callToAction={project.callToAction}
-                youtube={project.youtube}
-              />
-            </Fade>
+            <MUIProjectCard
+              cardWidth="405px"
+              index={index + 1}
+              title={project.title}
+              description={project.description}
+              tech_description={project.tech_description}
+              image={project.image}
+              link={project.link}
+              linkText={project.linkText}
+              github={project.github}
+              tags={project.tags}
+              tech={project.tech}
+              callToAction={project.callToAction}
+              youtube={project.youtube}
+            />
           ))}
         </div>
       </div>

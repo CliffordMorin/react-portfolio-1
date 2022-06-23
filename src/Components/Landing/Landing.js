@@ -2,8 +2,6 @@ import "../Landing/Landing.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
-import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 
 const Landing = (props) => {
   let content = {
@@ -31,25 +29,23 @@ const Landing = (props) => {
     >
       <div className="Landing">
         <div className="landing-content">
-          <Fade>
-            <div className="text-div">
-              <h1 className="landing-title">{content.title}</h1>
-              <h1 className="landing-description">{content.description}</h1>
-            </div>
-          </Fade>
+          <div className="text-div">
+            <h1 className="landing-title">{content.title}</h1>
+            <h1 className="landing-description">{content.description}</h1>
+          </div>
+
           <SocialLinksVertical />
         </div>
-        <Slide bottom>
-          <div className="contact-button">
-            <a href="#About">
-              <MdKeyboardArrowDown
-                color="white"
-                className="down-arrow"
-                size="75px"
-              />
-            </a>
-          </div>
-        </Slide>
+
+        <div className="contact-button">
+          <a href="#About">
+            <MdKeyboardArrowDown
+              color="white"
+              className="down-arrow"
+              size="75px"
+            />
+          </a>
+        </div>
       </div>
       <div id="About" />
     </IconContext.Provider>

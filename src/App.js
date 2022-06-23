@@ -1,6 +1,6 @@
 import "./App.css";
 import { connect } from "react-redux";
-import Fade from "react-reveal/Fade";
+
 import {
   Landing,
   About,
@@ -20,9 +20,7 @@ function App(props) {
     <div className="App">
       <MUINav />
       <Landing language={props.language} />
-      <Fade big>
-        <About language={props.language} />
-      </Fade>
+      <About language={props.language} />
       <Projects language={props.language} />
       <Blog language={props.language} />
       <Footer language={props.language} />

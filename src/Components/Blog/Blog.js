@@ -1,5 +1,5 @@
 import "../Projects/Projects.css";
-import Fade from "react-reveal/Fade";
+
 import BlogCard from "../UI/BlogCard/BlogCard";
 import Carousel from "react-simply-carousel";
 import React, { useState } from "react";
@@ -94,9 +94,7 @@ const Blog = (props) => {
         marginBottom: "50px",
       }}
     >
-      <Fade>
-        <h1>{content.mainTitle}</h1>
-      </Fade>
+      <h1>{content.mainTitle}</h1>
 
       <div
         style={{
