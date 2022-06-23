@@ -11,9 +11,12 @@ import Button from "@mui/material/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
 import { AiFillYoutube } from "react-icons/ai";
+import america from "../../../images/america.webp";
+import japan from "../../../images/japan.webp";
 import "./ProjectCard.css";
 
 export default function MUIProjectCard(props) {
+  console.log(props);
   const TagButton = styled(Button)(({ theme }) => ({
     color: "var(--secondary-color)",
     backgroundColor: "white",
@@ -63,6 +66,42 @@ export default function MUIProjectCard(props) {
               color="var(--off-white)"
               id="MUI-description"
             >
+              <div
+                className="flag-div"
+                style={{
+                  display: "flex",
+                  justifyContent: "initial",
+                }}
+              >
+                {props.japanese ? (
+                  <div>
+                    <img
+                      className="flag"
+                      src={japan}
+                      alt="Japan Flag"
+                      style={{
+                        filter: "brightness(0.85)",
+                        marginRight: "10px",
+                        marginBottom: "10px",
+                      }}
+                    ></img>
+                  </div>
+                ) : null}
+                {props.english ? (
+                  <div>
+                    <img
+                      className="flag"
+                      src={america}
+                      alt="America Flag"
+                      style={{
+                        filter: "brightness(0.85)",
+                        marginRight: "10px",
+                        marginBottom: "10px",
+                      }}
+                    ></img>
+                  </div>
+                ) : null}
+              </div>
               <span className="project-description">{props.description}</span>
             </Typography>
             <Typography paragraph align="left" minHeight="73px">

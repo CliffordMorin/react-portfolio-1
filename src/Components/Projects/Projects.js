@@ -31,6 +31,8 @@ const Projects = (props) => {
             "Heroku",
           ],
           youtube: "https://youtu.be/L_BcbOyHGzs",
+          english: true,
+          japanese: true,
         },
         {
           title: "Zach In Japan",
@@ -50,6 +52,8 @@ const Projects = (props) => {
             "Gatsby Cloud",
           ],
           youtube: "https://youtu.be/I96IPEaj4qA",
+          english: true,
+          japanese: false,
         },
         {
           title: `HAKU`,
@@ -69,6 +73,8 @@ const Projects = (props) => {
             "Heroku",
           ],
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
+          english: true,
+          japanese: false,
         },
         {
           title: "Riffs!",
@@ -80,6 +86,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "Tech",
           tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+          english: true,
+          japanese: true,
         },
         {
           title: "Quote Quiz",
@@ -91,6 +99,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
           tags: ["CSS", "React", "API", "Netlify", "TypeScript", "Netlify"],
+          english: true,
+          japanese: false,
         },
 
         {
@@ -103,6 +113,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
+          english: true,
+          japanese: false,
         },
       ],
     },
@@ -127,6 +139,8 @@ const Projects = (props) => {
             "Heroku",
           ],
           youtube: "https://youtu.be/L_BcbOyHGzs",
+          english: true,
+          japanese: true,
         },
         {
           title: "ザック・イン・ジャパン",
@@ -145,6 +159,8 @@ const Projects = (props) => {
             "Gatsby Cloud",
           ],
           youtube: "https://youtu.be/I96IPEaj4qA",
+          english: true,
+          japanese: false,
         },
         {
           title: `HAKU （ハク）`,
@@ -165,6 +181,8 @@ const Projects = (props) => {
             "Heroku",
           ],
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
+          english: true,
+          japanese: false,
         },
         {
           title: "リフス",
@@ -176,6 +194,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "技術",
           tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+          english: true,
+          japanese: true,
         },
         {
           title: "名言クイズ",
@@ -186,6 +206,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
           tags: ["CSS", "React", "API", "Typescript", "Netlify"],
+          english: true,
+          japanese: false,
         },
         {
           title: "都道府県マッチング",
@@ -197,6 +219,8 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
           tags: ["React", "CSS", "JavaScript", "Heroku"],
+          english: true,
+          japanese: false,
         },
       ],
     },
@@ -227,6 +251,8 @@ const Projects = (props) => {
               tech={project.tech}
               callToAction={project.callToAction}
               youtube={project.youtube}
+              english={project.english}
+              japanese={project.japanese}
             />
           ))}
         </div>
