@@ -1,16 +1,16 @@
 import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import zach from "../../images/zach.webp";
-import leftClick from "../../images/UI/left-click.png";
-import rightClick from "../../images/UI/right-click.png";
-import scroll from "../../images/UI/scroll.png";
+// import leftClick from "../../images/UI/left-click.png";
+// import rightClick from "../../images/UI/right-click.png";
+// import scroll from "../../images/UI/scroll.png";
 
 const About = (props) => {
-  const isLaptopOrBigger = useMediaQuery({
-    query: "(min-device-width: 1000px)",
-  });
+  // const isLaptopOrBigger = useMediaQuery({
+  //   query: "(min-device-width: 1000px)",
+  // });
 
   let content = {
     English: {
@@ -42,7 +42,7 @@ const About = (props) => {
   return (
     <div className="about">
       <div className="about-left">
-        {isLaptopOrBigger ? (
+        {/* {isLaptopOrBigger ? (
           <>
             <iframe
               loading="lazy"
@@ -70,12 +70,11 @@ const About = (props) => {
                 <h3>zoom</h3>
               </div>
             </div>
-          </>
-        ) : (
-          <div className="picture">
-            <img className="zach-img" src={zach} alt="zach" loading="lazy" />
-          </div>
-        )}
+          </> */}
+
+        <div className="picture">
+          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+        </div>
       </div>
 
       <div className="about-right">

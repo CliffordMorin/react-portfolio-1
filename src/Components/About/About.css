@@ -20,20 +20,20 @@
   height: 500px;
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .about-left {
     border-radius: 50px;
     box-shadow: 0px 0px 5px 0px #000000;
     overflow: hidden;
   }
-}
+} */
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .iframe {
     width: 800px;
     height: 800px;
   }
-}
+} */
 
 .about h1 {
   color: var(--off-white);
