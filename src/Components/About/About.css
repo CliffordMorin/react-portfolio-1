@@ -108,24 +108,24 @@
   margin-top: 10px;
 }
 
-.iframe-text {
+/* .iframe-text {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-}
+} */
 
-.iframe-movement-text {
+/* .iframe-movement-text {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
+} */
 
-.mouse-image {
+/* .mouse-image {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
+} */
