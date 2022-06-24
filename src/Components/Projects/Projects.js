@@ -35,6 +35,19 @@ const Projects = (props) => {
           japanese: true,
         },
         {
+          title: "Riffs!",
+          description:
+            "Share your musical ideas, songs, and musical covers with others.",
+          image: niceRiff,
+          link: "https://nice-riff.netlify.app/",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/vue-music-app",
+          tech: "Tech",
+          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+          english: true,
+          japanese: true,
+        },
+        {
           title: "Zach In Japan",
           description:
             "Read about coding concepts, Japan, and all things related to being a web developer.",
@@ -75,19 +88,6 @@ const Projects = (props) => {
           youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
           english: true,
           japanese: false,
-        },
-        {
-          title: "Riffs!",
-          description:
-            "Share your musical ideas, songs, and musical covers with others.",
-          image: niceRiff,
-          link: "https://nice-riff.netlify.app/",
-          linkText: "Live Demo",
-          github: "https://github.com/zachinjapan/vue-music-app",
-          tech: "Tech",
-          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
-          english: true,
-          japanese: true,
         },
         {
           title: "Quote Quiz",
@@ -143,6 +143,19 @@ const Projects = (props) => {
           japanese: true,
         },
         {
+          title: "リフス",
+          description:
+            "音楽のアイデアや作成した曲や曲のカバーをアップしてみんなに聞かせましょう。",
+          image: niceRiff,
+          link: "https://nice-riff.netlify.app/",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/vue-music-app",
+          tech: "技術",
+          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+          english: true,
+          japanese: true,
+        },
+        {
           title: "ザック・イン・ジャパン",
           description: "私のテクノロジーブログです。",
           image: blog,
@@ -184,19 +197,7 @@ const Projects = (props) => {
           english: true,
           japanese: false,
         },
-        {
-          title: "リフス",
-          description:
-            "音楽のアイデアや作成した曲や曲のカバーをアップしてみんなに聞かせましょう。",
-          image: niceRiff,
-          link: "https://nice-riff.netlify.app/",
-          linkText: "ウェブサイト",
-          github: "https://github.com/zachinjapan/vue-music-app",
-          tech: "技術",
-          tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
-          english: true,
-          japanese: true,
-        },
+
         {
           title: "名言クイズ",
           description: "この名言を残した偉人の名前を選択してください。",
