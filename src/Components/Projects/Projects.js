@@ -32,7 +32,7 @@ const Projects = (props) => {
           ],
           youtube: "https://youtu.be/L_BcbOyHGzs",
           english: true,
-          japanese: false,
+          japanese: true,
         },
         {
           title: "Zach In Japan",
@@ -140,7 +140,7 @@ const Projects = (props) => {
           ],
           youtube: "https://youtu.be/L_BcbOyHGzs",
           english: true,
-          japanese: false,
+          japanese: true,
         },
         {
           title: "ザック・イン・ジャパン",
