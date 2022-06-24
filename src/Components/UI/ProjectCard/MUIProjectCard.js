@@ -66,42 +66,6 @@ export default function MUIProjectCard(props) {
               color="var(--off-white)"
               id="MUI-description"
             >
-              <div
-                className="flag-div"
-                style={{
-                  display: "flex",
-                  justifyContent: "initial",
-                }}
-              >
-                {props.japanese ? (
-                  <div>
-                    <img
-                      className="flag"
-                      src={japan}
-                      alt="Japan Flag"
-                      style={{
-                        filter: "brightness(0.85)",
-                        marginRight: "10px",
-                        marginBottom: "10px",
-                      }}
-                    ></img>
-                  </div>
-                ) : null}
-                {props.english ? (
-                  <div>
-                    <img
-                      className="flag"
-                      src={america}
-                      alt="America Flag"
-                      style={{
-                        filter: "brightness(0.85)",
-                        marginRight: "10px",
-                        marginBottom: "10px",
-                      }}
-                    ></img>
-                  </div>
-                ) : null}
-              </div>
               <span className="project-description">{props.description}</span>
             </Typography>
             <Typography paragraph align="left" minHeight="73px">
@@ -120,7 +84,44 @@ export default function MUIProjectCard(props) {
                   {tag}
                 </TagButton>
               ))}
+              <div
+                className="flag-div"
+                style={{
+                  display: "flex",
+                  justifyContent: "initial",
+                }}
+              >
+                {props.japanese ? (
+                  <div>
+                    <img
+                      className="flag"
+                      src={japan}
+                      alt="Japan Flag"
+                      style={{
+                        filter: "brightness(0.85)",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
+                    ></img>
+                  </div>
+                ) : null}
+                {props.english ? (
+                  <div>
+                    <img
+                      className="flag"
+                      src={america}
+                      alt="America Flag"
+                      style={{
+                        filter: "brightness(0.85)",
+                        marginRight: "10px",
+                        marginTop: "10px",
+                      }}
+                    ></img>
+                  </div>
+                ) : null}
+              </div>
             </Typography>
+
             <CardActions disableSpacing className="icon-div">
               <IconButton aria-label="github link">
                 <div>
