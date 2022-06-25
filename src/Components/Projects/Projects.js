@@ -37,7 +37,7 @@ const Projects = (props) => {
         {
           title: "Riffs!",
           description:
-            "Share your musical ideas, songs, and musical covers with others.",
+            "Share your musical ideas, songs, and covers with the world",
           image: niceRiff,
           link: "https://riffs.netlify.app/",
           linkText: "Live Demo",
