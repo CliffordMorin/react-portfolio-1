@@ -39,7 +39,7 @@ const Projects = (props) => {
           description:
             "Share your musical ideas, songs, and musical covers with others.",
           image: niceRiff,
-          link: "https://nice-riff.netlify.app/",
+          link: "https://riffs.netlify.app/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "Tech",
@@ -147,7 +147,7 @@ const Projects = (props) => {
           description:
             "音楽のアイデアや作成した曲や曲のカバーをアップしてみんなに聞かせましょう。",
           image: niceRiff,
-          link: "https://nice-riff.netlify.app/",
+          link: "https://riffs.netlify.app/",
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "技術",
