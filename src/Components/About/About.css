@@ -51,8 +51,9 @@
   transform: rotate(45deg);
   overflow: hidden;
   border: 2px solid var(--primary-color);
-  background-color: rgb(201, 198, 198);
+  background-color: rgb(238, 235, 235);
   box-shadow: 0px 0px 10px 0px #000000;
+  filter: brightness(90%);
 }
 .zach-img {
   width: 100%;
@@ -60,10 +61,10 @@
   transform: rotate(-45deg) scale(1.35);
   margin-left: 5px;
   filter: brightness(90%);
-  -webkit-filter: grayscale(30%);
-  -moz-filter: grayscale(30%);
-  -ms-filter: grayscale(30%);
-  -o-filter: grayscale(30%);
+  -webkit-filter: grayscale(10%);
+  -moz-filter: grayscale(10%);
+  -ms-filter: grayscale(10%);
+  -o-filter: grayscale(10%);
 }
 
 .about-right {
