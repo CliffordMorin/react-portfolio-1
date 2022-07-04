@@ -1,6 +1,6 @@
 import "../Landing/Landing.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
-import { MdKeyboardArrowDown } from "react-icons/md";
+// import { MdKeyboardArrowDown } from "react-icons/md";
 import { IconContext } from "react-icons";
 
 const Landing = (props) => {
@@ -23,6 +23,7 @@ const Landing = (props) => {
     <IconContext.Provider
       value={{
         color: "var(--secondary-color)",
+
         className: "global-class-name",
         size: "50px",
       }}
@@ -37,15 +38,7 @@ const Landing = (props) => {
           <SocialLinksVertical />
         </div>
 
-        <div className="contact-button">
-          <a href="#About">
-            <MdKeyboardArrowDown
-              color="white"
-              className="down-arrow"
-              size="75px"
-            />
-          </a>
-        </div>
+        <div className="contact-button"></div>
       </div>
       <div id="About" />
     </IconContext.Provider>

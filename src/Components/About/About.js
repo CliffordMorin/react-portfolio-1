@@ -2,7 +2,7 @@ import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
 // import { useMediaQuery } from "react-responsive";
-import zach from "../../images/zach.png";
+import zach from "../../images/zach2.png";
 // import leftClick from "../../images/UI/left-click.png";
 // import rightClick from "../../images/UI/right-click.png";
 // import scroll from "../../images/UI/scroll.png";
@@ -40,58 +40,38 @@ const About = (props) => {
     : (content = content.English);
 
   return (
-    <div className="about">
-      <div className="about-left">
-        {/* {isLaptopOrBigger ? (
-          <>
-            <iframe
-              loading="lazy"
-              title="zach"
-              className={"iframe"}
-              src="https://my.spline.design/roomrelaxingcopy-da4e6136da4fac6e999bc7c5dda89e57/"
-              overflow="hidden"
-              frameBorder={0}
-            />
-            <div className="iframe-text">
-              <div className="iframe-movement-text">
-                <img src={leftClick} alt="left-click" className="mouse-image" />
-                <h3>pan</h3>
-              </div>
-              <div className="iframe-movement-text">
-                <img
-                  src={rightClick}
-                  alt="right-click"
-                  className="mouse-image"
-                />
-                <h3>move</h3>
-              </div>
-              <div className="iframe-movement-text">
-                <img src={scroll} alt="scroll" className="mouse-image" />
-                <h3>zoom</h3>
-              </div>
+    <>
+      <div className="up-arrow-special"></div>
+      <div
+        style={{
+          backgroundColor: "var(--primary-color)",
+        }}
+      >
+        <div className="about">
+          <div className="about-left">
+            <div className="picture">
+              <img className="zach-img" src={zach} alt="zach" loading="lazy" />
             </div>
-          </> */}
+          </div>
 
-        <div className="picture">
-          <img className="zach-img" src={zach} alt="zach" loading="lazy" />
+          <div className="about-right">
+            <h1
+              style={{
+                textAlign: "center",
+              }}
+              className="about-title"
+            >
+              {content.title}
+            </h1>
+            <p className="about-description">{content.description}</p>
+            <p className="about-description">{content.description2}</p>
+            <p className="about-description">{content.description3}</p>
+            <Skills language={props.language} />
+          </div>
         </div>
+        <div className="down-arrow-special" />
       </div>
-
-      <div className="about-right">
-        <h1
-          style={{
-            textAlign: "center",
-          }}
-          className="about-title"
-        >
-          {content.title}
-        </h1>
-        <p className="about-description">{content.description}</p>
-        <p className="about-description">{content.description2}</p>
-        <p className="about-description">{content.description3}</p>
-        <Skills language={props.language} />
-      </div>
-    </div>
+    </>
   );
 };
 

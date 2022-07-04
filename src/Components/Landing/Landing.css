@@ -1,5 +1,6 @@
 .Landing {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +13,7 @@
   background-position: center;
   overflow: hidden;
   background-image: url("../../images/aka1.webp");
-  background-color: rgba(65, 65, 65, 0.1);
+
   /* scroll effect */
   background-attachment: scroll;
 
@@ -26,6 +27,11 @@
   .Landing {
     /* background-size: contain !important; */
     background-attachment: scroll !important;
+    background-position: 20% -10px !important;
+  }
+
+  .landing-title {
+    margin-top: 50px;
   }
 }
 
