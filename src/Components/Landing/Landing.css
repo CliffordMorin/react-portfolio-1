@@ -15,7 +15,7 @@
   background-image: url("../../images/aka1.webp");
 
   /* scroll effect */
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
 
   /* darken background image */
   background-blend-mode: multiply;
@@ -26,7 +26,7 @@
 @media (max-width: 1000px) {
   .Landing {
     /* background-size: contain !important; */
-    background-attachment: scroll !important;
+    /* background-attachment: scroll !important; */
     background-position: 20% -10px !important;
   }
 
