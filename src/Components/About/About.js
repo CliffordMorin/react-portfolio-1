@@ -2,7 +2,7 @@ import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
 // import { useMediaQuery } from "react-responsive";
-import zach from "../../images/zach2.png";
+import zach from "../../images/zachFinal2.png";
 // import leftClick from "../../images/UI/left-click.png";
 // import rightClick from "../../images/UI/right-click.png";
 // import scroll from "../../images/UI/scroll.png";
