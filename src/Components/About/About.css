@@ -133,3 +133,10 @@
   transform: translateY(-100px);
   z-index: 99;
 }
+
+@media (min-width: 2000px) {
+  .picture {
+    height: 125%;
+    width: 125%;
+  }
+}
