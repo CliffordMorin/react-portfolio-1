@@ -33,7 +33,6 @@ const MUINav = (props) => {
         ["About", "/#About"],
         ["Projects", "/#Projects"],
         ["Blog", "/#Blog"],
-        ["Contact", "/#Contact"],
       ],
     },
     Japanese: {
@@ -42,8 +41,6 @@ const MUINav = (props) => {
         ["自己紹介", "/#About"],
         ["プロジェクト", "/#Projects"],
         ["ブログ", "/#Blog"],
-
-        ["お問い合わせ", "/#Contact"],
       ],
     },
   };

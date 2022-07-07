@@ -1,17 +1,11 @@
 import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
-// import { useMediaQuery } from "react-responsive";
+
 import zach from "../../images/zachFinal4.png";
-// import leftClick from "../../images/UI/left-click.png";
-// import rightClick from "../../images/UI/right-click.png";
-// import scroll from "../../images/UI/scroll.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const About = (props) => {
-  // const isLaptopOrBigger = useMediaQuery({
-  //   query: "(min-device-width: 1000px)",
-  // });
-
   let content = {
     English: {
       title: "About Me",
@@ -47,7 +41,7 @@ const About = (props) => {
           backgroundColor: "var(--primary-color)",
         }}
       >
-        <div className="about">
+        <div className="about" id="About">
           <div className="about-left">
             <div className="picture">
               <img className="zach-img" src={zach} alt="zach" loading="lazy" />
@@ -55,18 +49,32 @@ const About = (props) => {
           </div>
 
           <div className="about-right">
-            <h1
-              style={{
-                textAlign: "center",
-              }}
-              className="about-title"
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+              offset={200}
+              duration={2}
             >
-              {content.title}
-            </h1>
-            <p className="about-description">{content.description}</p>
-            <p className="about-description">{content.description2}</p>
-            <p className="about-description">{content.description3}</p>
-            <Skills language={props.language} />
+              <h1
+                style={{
+                  textAlign: "center",
+                }}
+                className="about-title"
+              >
+                {content.title}
+              </h1>
+              <p className="about-description">{content.description}</p>
+              <p className="about-description">{content.description2}</p>
+              <p className="about-description">{content.description3}</p>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce={true}
+              offset={250}
+              duration={2}
+            >
+              <Skills language={props.language} />
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="down-arrow-special" />

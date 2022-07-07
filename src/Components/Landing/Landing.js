@@ -1,6 +1,6 @@
 import "../Landing/Landing.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
-// import { MdKeyboardArrowDown } from "react-icons/md";
+
 import { IconContext } from "react-icons";
 
 const Landing = (props) => {
@@ -37,10 +37,7 @@ const Landing = (props) => {
 
           <SocialLinksVertical />
         </div>
-
-        <div className="contact-button"></div>
       </div>
-      <div id="About" />
     </IconContext.Provider>
   );
 };

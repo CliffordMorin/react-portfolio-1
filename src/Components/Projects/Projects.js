@@ -5,6 +5,7 @@ import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 const Projects = (props) => {
@@ -238,23 +239,29 @@ const Projects = (props) => {
 
         <div className="projects-container">
           {content.projects.map((project, index) => (
-            <MUIProjectCard
-              cardWidth="405px"
-              index={index + 1}
-              title={project.title}
-              description={project.description}
-              tech_description={project.tech_description}
-              image={project.image}
-              link={project.link}
-              linkText={project.linkText}
-              github={project.github}
-              tags={project.tags}
-              tech={project.tech}
-              callToAction={project.callToAction}
-              youtube={project.youtube}
-              english={project.english}
-              japanese={project.japanese}
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeIn"
+              animateOut="animate__fadeOut"
+              animateOnce={true}
+            >
+              <MUIProjectCard
+                cardWidth="405px"
+                index={index + 1}
+                title={project.title}
+                description={project.description}
+                tech_description={project.tech_description}
+                image={project.image}
+                link={project.link}
+                linkText={project.linkText}
+                github={project.github}
+                tags={project.tags}
+                tech={project.tech}
+                callToAction={project.callToAction}
+                youtube={project.youtube}
+                english={project.english}
+                japanese={project.japanese}
+              />
+            </AnimationOnScroll>
           ))}
         </div>
       </div>

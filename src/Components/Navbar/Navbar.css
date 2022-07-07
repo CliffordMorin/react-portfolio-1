@@ -26,6 +26,11 @@
   transform: scale(1.2);
 }
 
+.flag {
+  width: 35px;
+  height: 25px;
+}
+
 /*  mobile */
 @media (max-width: 768px) {
   .nav {

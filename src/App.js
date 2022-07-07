@@ -1,5 +1,6 @@
 import "./App.css";
 import { connect } from "react-redux";
+import "animate.css/animate.min.css";
 
 import {
   Landing,
