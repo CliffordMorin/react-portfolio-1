@@ -13,6 +13,7 @@
   background-position: center;
   overflow: hidden;
   background-image: url("../../images/aka1.webp");
+  max-width: 100vw !important;
 
   /* scroll effect */
   /* background-attachment: scroll; */
