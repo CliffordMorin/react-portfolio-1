@@ -9,3 +9,8 @@ p {
 svg:hover {
   color: var(--secondary-color) !important;
 }
+
+.App {
+  max-width: 100vw !important;
+  overflow: hidden;
+}

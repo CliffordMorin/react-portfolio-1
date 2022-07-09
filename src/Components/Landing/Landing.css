@@ -11,16 +11,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url("../../images/aka1.webp");
   max-width: 100vw !important;
-
-  /* scroll effect */
-  /* background-attachment: scroll; */
-
+  width: 100vw !important;
   /* darken background image */
   background-blend-mode: multiply;
-
   background-attachment: fixed !important;
 }
 
@@ -42,6 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0%;
 }
 
 .landing-title {
@@ -66,12 +63,6 @@
   padding: 10px;
   border-radius: 10px;
   width: max-content;
-}
-
-.contact-button {
-  top: 80%;
-  width: fit-content;
-  margin-top: 10px;
 }
 
 /* medium up */
