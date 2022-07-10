@@ -16,6 +16,7 @@ import { BsUiChecks } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
 import { SiMaterialui } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 
 const Skills = (props) => {
   let content = {
@@ -41,6 +42,8 @@ const Skills = (props) => {
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+
+        [<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
         [<FaReact />, "React", "https://reactjs.org/"],
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
@@ -48,6 +51,7 @@ const Skills = (props) => {
         [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
         [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
       ],
+
       resume: "Resume",
       japaneseResume: "Japanese Resume",
       japaneseWorkHistory: "Japanese Work History",
@@ -76,6 +80,10 @@ const Skills = (props) => {
         [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
         [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
         [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+        // sql
+
+        [<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
+
         [<FaReact />, "React", "https://reactjs.org/"],
         [<SiRedux />, "Redux", "https://redux.js.org/"],
         [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],

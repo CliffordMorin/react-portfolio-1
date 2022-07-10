@@ -146,7 +146,7 @@ const Projects = (props) => {
         {
           title: "ワァオ音楽",
           description:
-            "新しい曲、カバー、音楽のアイデアを世界と共有するための場所",
+            "新曲、カバー、音楽のアイデアを世界と共有するためのサイトです。",
           image: niceRiff,
           link: "https://wowongaku.netlify.app/",
           linkText: "ウェブサイト",
