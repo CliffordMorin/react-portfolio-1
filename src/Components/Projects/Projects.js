@@ -6,8 +6,9 @@ import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
 import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
+import RunningImg from "../UI/RunningImg";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
+import Naruto from "../../images/UI/narutoRun.gif";
 const Projects = (props) => {
   let content = {
     English: {
@@ -236,6 +237,7 @@ const Projects = (props) => {
     <>
       <div className="Projects" id="Projects">
         <h1>{content.mainTitle}</h1>
+        <RunningImg src={Naruto} />
 
         <div className="projects-container">
           {content.projects.map((project, index) => (
