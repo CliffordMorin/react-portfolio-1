@@ -24,7 +24,7 @@ const Wrapper = styled.div`
       width: 70px;
       position: relative;
       animation-name: run;
-      animation-duration: 4s;
+      animation-duration: 5s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       // move down
