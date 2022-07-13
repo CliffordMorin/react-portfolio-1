@@ -61,10 +61,7 @@ const MUINav = (props) => {
 
   return (
     <AppBar position="relative" className="nav">
-      <Container
-        maxWidth="100vw
-    "
-      >
+      <Container>
         <Toolbar disableGutters="true">
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
