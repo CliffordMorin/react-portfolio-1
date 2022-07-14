@@ -41,6 +41,8 @@ const MUINav = (props) => {
         ["自己紹介", "/#About"],
         ["プロジェクト", "/#Projects"],
         ["ブログ", "/#Blog"],
+
+        ["お問い合わせ", "/#Contact"],
       ],
     },
   };
@@ -61,7 +63,10 @@ const MUINav = (props) => {
 
   return (
     <AppBar position="relative" className="nav">
-      <Container>
+      <Container
+        maxWidth="100vw
+    "
+      >
         <Toolbar disableGutters="true">
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
