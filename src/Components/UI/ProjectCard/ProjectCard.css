@@ -110,3 +110,14 @@
     }
   }
 }
+
+/* highlight card based on github link */
+
+/* gold border */
+.my-anime-collection {
+  border: 2px solid gold !important;
+}
+/* silver border */
+/* .vue-music-app {
+  border: 2px solid silver !important;
+} */

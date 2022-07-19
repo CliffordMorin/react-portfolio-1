@@ -16,7 +16,6 @@ import japan from "../../../images/japan.webp";
 import "./ProjectCard.css";
 
 export default function MUIProjectCard(props) {
-  console.log(props);
   const TagButton = styled(Button)(({ theme }) => ({
     color: "var(--secondary-color)",
     backgroundColor: "white",
@@ -34,6 +33,8 @@ export default function MUIProjectCard(props) {
         },
       }}
       id="MUI-Card"
+      // slice the github to link to only have the github project name
+      className={props.github.slice(props.github.lastIndexOf("/") + 1)}
     >
       <CardHeader
         title={props.index + ". " + props.title}
