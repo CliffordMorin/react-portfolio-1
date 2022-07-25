@@ -12,7 +12,7 @@ const About = (props) => {
       description:
         "Hi, I'm Zach. I'm a self-taught web developer with business-level Japanese.",
       description2:
-        "I fell in love with coding while I was an English teacher in Japan. Starting with just HTML, CSS, and Javascript, I worked hard to improve my skills and now make complex, full-stack applications, with frameworks such as React, Vue, and Gatsby.",
+        "I fell in love with coding while I was an English teacher in Japan. Starting with HTML, CSS, and Javascript, I worked hard to improve my skills and now make complex full-stack applications with frameworks such as React, Vue, and Gatsby.",
       description3:
         "I am seeking a full-time position as a web developer/software engineer. You can reach me at Zach.Stone.Developer@gmail.com",
       contact: "Contact",
