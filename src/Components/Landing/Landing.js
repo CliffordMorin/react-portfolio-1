@@ -1,5 +1,6 @@
 import "../Landing/Landing.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
+import Tilt from "react-parallax-tilt";
 
 import { IconContext } from "react-icons";
 
@@ -31,8 +32,10 @@ const Landing = (props) => {
       <div className="Landing">
         <div className="landing-content">
           <div className="text-div">
-            <h1 className="landing-title">{content.title}</h1>
-            <h1 className="landing-description">{content.description}</h1>
+            <Tilt className="Tilt" options={{ max: 1000 }}>
+              <h1 className="landing-title">{content.title}</h1>
+              <h1 className="landing-description">{content.description}</h1>
+            </Tilt>
           </div>
 
           <SocialLinksVertical />

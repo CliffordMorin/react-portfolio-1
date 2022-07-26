@@ -12,6 +12,7 @@
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.0.2",
     "react-icons": "^4.3.1",
+    "react-parallax-tilt": "^1.7.46",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.0.2",
     "react-router-hash-link": "^2.4.3",
