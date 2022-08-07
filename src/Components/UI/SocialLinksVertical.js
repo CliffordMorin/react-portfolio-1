@@ -24,7 +24,7 @@ const SocialLinksVertical = (backgroundColor) => {
           <BsLinkedin className="social-link-img" />
         </a>
         <a
-          href="https://github.com/ZacharyStone-DEV"
+          href="https://github.com/ZacharyTStone"
           target="_blank"
           rel="noopener noreferrer"
         >

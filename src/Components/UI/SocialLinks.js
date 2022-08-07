@@ -25,7 +25,7 @@ const SocialLinks = () => {
           <BsLinkedin className="social-link-img" />
         </a>
         <a
-          href="https://github.com/Zachary-T-Stone"
+          href="https://github.com/ZacharyTStone"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
