@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 const Landing = (props) => {
   let content = {
     English: {
-      title: "Zach Stone",
+      title: "Zachary Stone",
       description: "Web Developer",
     },
     Japanese: {
