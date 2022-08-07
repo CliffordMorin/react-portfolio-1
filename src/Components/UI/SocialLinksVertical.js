@@ -17,14 +17,14 @@ const SocialLinksVertical = (backgroundColor) => {
     >
       <div className="social-links-vertical" id={`${backgroundColor}`}>
         <a
-          href="https://www.linkedin.com/in/zachinjapan888/"
+          href="https://www.linkedin.com/in/ZacharyStone42"
           target="_blank"
           rel="noopener noreferrer"
         >
           <BsLinkedin className="social-link-img" />
         </a>
         <a
-          href="https://github.com/zachinjapan"
+          href="https://github.com/Zachary-T-Stone"
           target="_blank"
           rel="noopener noreferrer"
         >
