@@ -1,74 +1,74 @@
 .Skills {
-  margin: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: var(--off-white);
+	margin: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: var(--off-white);
 }
 
 .skills-title {
-  text-align: center;
+	text-align: center;
 }
 
 .skills-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  margin-top: 20px;
-  margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .skill-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  margin-top: 10px;
-  color: var(--off-white);
-  text-decoration: none !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	margin-top: 10px;
+	color: var(--off-white);
+	text-decoration: none !important;
 }
 
 .skill-icon:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-  transition: transform 0.5s ease-in-out;
-  color: var(--secondary-color);
-  transform: translateY(-5px);
+	cursor: pointer;
+	transform: scale(1.5);
+	transition: transform 0.5s ease-in-out;
+	color: var(--secondary-color);
+	transform: translateY(-5px);
 }
 
 .skill-icon-text {
-  margin-bottom: 10px;
-  color: var(--off-white);
-  text-decoration: none;
+	margin-bottom: 10px;
+	color: var(--off-white);
+	text-decoration: none;
 }
 
 .skill-img {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .modals {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
 }
 
 .resume-link-text:hover {
-  cursor: pointer;
-  color: var(--secondary-color) !important;
+	cursor: pointer;
+	color: var(--secondary-color) !important;
 }

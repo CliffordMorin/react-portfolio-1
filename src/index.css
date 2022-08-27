@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
 
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--gray-background);
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--gray-background);
 }
 
 html {
-  scroll-behavior: smooth !important;
+	scroll-behavior: smooth !important;
 }
 
 :root {
-  --primary-color: #303030;
-  --secondary-color: rgb(196, 0, 0);
-  --off-white: #f5f5f5;
-  --gray-background: #3e3e3e;
+	--primary-color: #303030;
+	--secondary-color: rgb(196, 0, 0);
+	--off-white: #f5f5f5;
+	--gray-background: rgb(35, 35, 35);
 }
