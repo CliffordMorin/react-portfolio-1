@@ -1,121 +1,121 @@
 #MUI-description {
-  margin-top: 20px;
-  min-height: 100px;
-  font-size: 1.2rem;
-  text-align: left;
+	margin-top: 20px;
+	min-height: 100px;
+	font-size: 1.2rem;
+	text-align: left;
 }
 
 #MUI-Card {
-  width: 425px;
-  min-width: 325;
-  min-height: 520;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  background-color: #555555;
-  border-radius: 20px;
+	width: 425px;
+	min-width: 325;
+	min-height: 520;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	background-color: #555555;
+	border-radius: 20px;
 }
 
 #card-media {
-  width: 100%;
-  height: 250px;
-  border-radius: "10px";
+	width: 100%;
+	height: 250px;
+	border-radius: "10px";
 }
 
 #MUI-Card:hover {
-  transform: scale(1);
+	transform: scale(1);
 }
 
 .MUI-icon {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 @media (max-width: 455px) {
-  #MUI-Card {
-    width: 340px !important;
-  }
+	#MUI-Card {
+		width: 340px !important;
+	}
 }
 
 @media (min-width: 1440px) {
-  #MUI-Card {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    width: fit-content;
-    font-size: 1.2rem;
-    min-height: 100%;
-  }
+	#MUI-Card {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		width: fit-content;
+		font-size: 1.2rem;
+		min-height: 100%;
+	}
 
-  #card-media {
-    width: 100%;
-    height: fit-content;
-    image-rendering: pixelated;
-  }
+	#card-media {
+		width: 100%;
+		height: fit-content;
+		image-rendering: pixelated;
+	}
 
-  .MuiCardHeader-title {
-    font-size: 2rem !important;
-  }
+	.MuiCardHeader-title {
+		font-size: 2rem !important;
+	}
 
-  .card-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-around;
-  }
+	.card-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: space-around;
+	}
 
-  .project-description {
-    font-size: 1.25rem;
-  }
+	.project-description {
+		font-size: 1.25rem;
+	}
 
-  .icon-div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.icon-div {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .card-content-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 300px;
-    height: 100%;
-  }
+	.card-content-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 300px;
+		height: 100%;
+	}
 
-  .MUI-icon {
-    font-size: 3rem;
-  }
+	.MUI-icon {
+		font-size: 3rem;
+	}
 
-  .MUI-icon:hover {
-    transform: scale(1.5);
-    transition: transform 0.5s ease-in-out;
-    color: var(--secondary-color);
-    transform: translateY(-5px);
-  }
+	.MUI-icon:hover {
+		transform: scale(1.5);
+		transition: transform 0.5s ease-in-out;
+		color: var(--secondary-color);
+		transform: translateY(-5px);
+	}
 
-  #MUI-Card:hover {
-    transform: scale(1);
-  }
+	#MUI-Card:hover {
+		transform: scale(1);
+	}
 
-  @media (min-width: 1300px) {
-    .MuiCardHeader-title {
-      text-align: left;
-    }
+	@media (min-width: 1300px) {
+		.MuiCardHeader-title {
+			text-align: left;
+		}
 
-    #card-media {
-      width: 100% !important;
-      height: auto !important;
-      max-width: 1200px !important;
-    }
-  }
+		#card-media {
+			width: 100% !important;
+			height: auto !important;
+			max-width: 1200px !important;
+		}
+	}
 }
 
 /* highlight card based on github link */
 
 /* gold border */
 .my-anime-collection {
-  border: 2px solid gold !important;
+	border: 2px solid gold !important;
 }
 /* silver border */
 /* .vue-music-app {

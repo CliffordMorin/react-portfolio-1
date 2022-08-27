@@ -16,178 +16,184 @@ import japan from "../../../images/japan.webp";
 import "./ProjectCard.css";
 
 export default function MUIProjectCard(props) {
-  const TagButton = styled(Button)(({ theme }) => ({
-    color: "var(--secondary-color)",
-    backgroundColor: "white",
-    disabled: true,
-    ":hover": {},
-  }));
+	const TagButton = styled(Button)(({ theme }) => ({
+		color: "var(--secondary-color)",
+		backgroundColor: "white",
+		disabled: true,
+		":hover": {},
+	}));
 
-  return (
-    <Card
-      sx={{
-        "&:hover": {
-          transform: "scale(1.05)",
-          transition: "transform 0.5s ease-in-out",
-          boxShadow: "0px 0px 10px var(--primary-color)",
-        },
-      }}
-      id="MUI-Card"
-      // slice the github to link to only have the github project name
-      className={props.github.slice(props.github.lastIndexOf("/") + 1)}
-    >
-      <CardHeader
-        title={props.index + ". " + props.title}
-        className="card-header"
-        style={{
-          color: "white",
-          backgroundColor: "var(--primary-color)",
-        }}
-      />
+	return (
+		<Card
+			sx={{
+				"&:hover": {
+					transform: "scale(1.05)",
+					transition: "transform 0.5s ease-in-out",
+					boxShadow: "0px 0px 10px var(--primary-color)",
+				},
+			}}
+			id="MUI-Card"
+			// slice the github to link to only have the github project name
+			className={props.github.slice(props.github.lastIndexOf("/") + 1)}
+		>
+			<CardHeader
+				title={props.index + ". " + props.title}
+				className="card-header"
+				style={{
+					color: "white",
+					backgroundColor: "var(--primary-color)",
+				}}
+			/>
 
-      <div className="card-content">
-        <a href={props.link} target={"_blank"} rel="noreferrer">
-          <CardMedia
-            component={"img"}
-            id="card-media"
-            image={props.image}
-            alt={props.title}
-            loading="lazy"
-            object-fit="contain"
-            style={{
-              //darken
-              filter: "brightness(0.85)",
-            }}
-          />
-        </a>
-        <CardContent>
-          <div className="card-content-text">
-            <Typography
-              variant="body2"
-              color="var(--off-white)"
-              id="MUI-description"
-            >
-              <span className="project-description">{props.description}</span>
-            </Typography>
-            <Typography paragraph align="left" minHeight="73px">
-              {props.tags.map((tag) => (
-                <TagButton
-                  disabled={true}
-                  key={tag}
-                  style={{
-                    background: "var(--primary-color)",
-                    cursor: "default",
-                    color: "var(--off-white)",
-                    marginRight: "10px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {tag}
-                </TagButton>
-              ))}
-              <div
-                className="flag-div"
-                style={{
-                  display: "flex",
-                  justifyContent: "initial",
-                }}
-              >
-                {props.japanese ? (
-                  <div>
-                    <img
-                      className="flag"
-                      src={japan}
-                      alt="Japan Flag"
-                      style={{
-                        filter: "brightness(0.85)",
-                        marginRight: "10px",
-                        marginTop: "10px",
-                      }}
-                    ></img>
-                  </div>
-                ) : null}
-                {props.english ? (
-                  <div>
-                    <img
-                      className="flag"
-                      src={america}
-                      alt="America Flag"
-                      style={{
-                        filter: "brightness(0.85)",
-                        marginRight: "10px",
-                        marginTop: "10px",
-                      }}
-                    ></img>
-                  </div>
-                ) : null}
-              </div>
-            </Typography>
+			<div className="card-content">
+				<a href={props.link} target={"_blank"} rel="noreferrer">
+					<CardMedia
+						component={"img"}
+						id="card-media"
+						image={props.image}
+						alt={props.title}
+						loading="lazy"
+						object-fit="contain"
+						style={{
+							//darken
+							filter: "brightness(0.85)",
+						}}
+					/>
+				</a>
+				<CardContent>
+					<div className="card-content-text">
+						<Typography
+							variant="body2"
+							color="var(--off-white)"
+							id="MUI-description"
+						>
+							<span className="project-description">{props.description}</span>
+						</Typography>
+						<Typography paragraph align="left" minHeight="90px">
+							<div
+								style={{
+									minHeight: "90px",
+								}}
+							>
+								{props.tags.map((tag) => (
+									<TagButton
+										disabled={true}
+										key={tag}
+										style={{
+											background: "var(--primary-color)",
+											cursor: "default",
+											color: "var(--off-white)",
+											marginRight: "10px",
+											marginBottom: "10px",
+										}}
+									>
+										{tag}
+									</TagButton>
+								))}
+							</div>
+							<div
+								className="flag-div"
+								style={{
+									display: "flex",
+									justifyContent: "initial",
+								}}
+							>
+								{props.japanese ? (
+									<div>
+										<img
+											className="flag"
+											src={japan}
+											alt="Japan Flag"
+											style={{
+												filter: "brightness(0.85)",
+												marginRight: "10px",
+												marginTop: "10px",
+											}}
+										></img>
+									</div>
+								) : null}
+								{props.english ? (
+									<div>
+										<img
+											className="flag"
+											src={america}
+											alt="America Flag"
+											style={{
+												filter: "brightness(0.85)",
+												marginRight: "10px",
+												marginTop: "10px",
+											}}
+										></img>
+									</div>
+								) : null}
+							</div>
+						</Typography>
 
-            <CardActions disableSpacing className="icon-div">
-              <IconButton aria-label="github link">
-                <div>
-                  <a href={props.github} target="_blank" rel="noreferrer">
-                    <AiFillGithub
-                      className="MUI-icon"
-                      style={{
-                        color: "white",
-                      }}
-                    />
-                  </a>
-                </div>
-              </IconButton>
-              <IconButton aria-label="live-demo">
-                <div>
-                  <a href={props.link} target="_blank" rel="noreferrer">
-                    <RiComputerLine
-                      className="MUI-icon"
-                      style={{
-                        color: "white",
-                      }}
-                    />
-                  </a>
-                </div>
-              </IconButton>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  width: "100%",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    width: "fit-content",
-                    justifyContent: "end",
-                    alignItems: "center",
-                  }}
-                >
-                  {props.youtube && (
-                    <IconButton aria-label="youtube link">
-                      <div>
-                        <a
-                          href={props.youtube}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <AiFillYoutube
-                            className="MUI-icon"
-                            style={{
-                              color: "white",
-                            }}
-                          />
-                        </a>
-                      </div>
-                    </IconButton>
-                  )}
-                </div>
-              </div>
-            </CardActions>
-          </div>
-        </CardContent>
-      </div>
-    </Card>
-  );
+						<CardActions disableSpacing className="icon-div">
+							<IconButton aria-label="github link">
+								<div>
+									<a href={props.github} target="_blank" rel="noreferrer">
+										<AiFillGithub
+											className="MUI-icon"
+											style={{
+												color: "white",
+											}}
+										/>
+									</a>
+								</div>
+							</IconButton>
+							<IconButton aria-label="live-demo">
+								<div>
+									<a href={props.link} target="_blank" rel="noreferrer">
+										<RiComputerLine
+											className="MUI-icon"
+											style={{
+												color: "white",
+											}}
+										/>
+									</a>
+								</div>
+							</IconButton>
+							<div
+								style={{
+									display: "flex",
+									flexDirection: "row",
+									width: "100%",
+									justifyContent: "flex-end",
+								}}
+							>
+								<div
+									style={{
+										display: "flex",
+										width: "fit-content",
+										justifyContent: "end",
+										alignItems: "center",
+									}}
+								>
+									{props.youtube && (
+										<IconButton aria-label="youtube link">
+											<div>
+												<a
+													href={props.youtube}
+													target="_blank"
+													rel="noreferrer"
+												>
+													<AiFillYoutube
+														className="MUI-icon"
+														style={{
+															color: "white",
+														}}
+													/>
+												</a>
+											</div>
+										</IconButton>
+									)}
+								</div>
+							</div>
+						</CardActions>
+					</div>
+				</CardContent>
+			</div>
+		</Card>
+	);
 }
