@@ -5,12 +5,13 @@ import { connect } from "react-redux";
 import zach from "../../images/zachFinal4.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+
 const About = (props) => {
 	let content = {
 		English: {
-			title: "About Me",
+			title: "My Advantage",
 			description:
-				"Hi, I'm Zach. I'm a self-taught web developer with business-level Japanese.",
+			"I'm a self-taught software engineer, self-taught Japanese speaker, and professionally trained musician.",
 			description2:
 				"I fell in love with coding while I was an English teacher in Japan. Starting with HTML, CSS, and Javascript, I worked hard to improve my skills and now make complex full-stack applications with frameworks such as React, Vue, and Gatsby.",
 			description3: "You can reach me at Zach.Stone.Developer@gmail.com",
@@ -41,9 +42,11 @@ const About = (props) => {
 				}}
 			>
 				<div className="about" id="About">
+                    
 					<div className="about-left">
 						<div className="picture">
 							<img className="zach-img" src={zach} alt="zach" loading="lazy" />
+                            
 						</div>
 					</div>
 
@@ -66,6 +69,7 @@ const About = (props) => {
 							<p className="about-description">{content.description2}</p>
 							<p className="about-description">{content.description3}</p>
 						</AnimationOnScroll>
+                        
 						<AnimationOnScroll
 							animateIn="animate__fadeInRight"
 							animateOnce={true}

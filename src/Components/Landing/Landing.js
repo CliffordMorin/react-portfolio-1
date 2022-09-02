@@ -8,11 +8,11 @@ const Landing = (props) => {
   let content = {
     English: {
       title: "Zach Stone",
-      description: "Web Developer",
+      description: "Software Engineer",
     },
     Japanese: {
       title: "Zach Stone",
-      description: "ウェブ開発者",
+      description: "ソフトウェアエンジニア",
     },
   };
 
