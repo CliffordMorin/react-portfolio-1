@@ -11,7 +11,7 @@ const About = (props) => {
 		English: {
 			title: "My Advantage",
 			description:
-			"I'm a self-taught software engineer, self-taught Japanese speaker, and professionally trained musician.",
+			"I'm a self-taught software engineer, a self-taught Japanese speaker, and a professionally trained musician.",
 			description2:
 				"I fell in love with coding while I was an English teacher in Japan. Starting with HTML, CSS, and Javascript, I worked hard to improve my skills and now make complex full-stack applications with frameworks such as React, Vue, and Gatsby.",
 			description3: "You can reach me at Zach.Stone.Developer@gmail.com",
