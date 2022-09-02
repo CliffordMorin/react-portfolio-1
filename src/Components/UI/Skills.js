@@ -17,6 +17,7 @@ import { IoMdPaper } from "react-icons/io";
 import { SiMaterialui } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import { GithubContributions } from "react-github-graph"
 
 const Skills = (props) => {
 	let content = {
@@ -185,34 +186,7 @@ const Skills = (props) => {
 								</a>
 							</>
 							<>
-								<a
-									href="https://docs.google.com/document/d/1wwbJUsLuv55qcojnKzQ48qSYR2eNR1FG/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
-									target="_blank"
-									rel="noopener noreferrer"
-									id="resume-link"
-									style={{
-										color: "var(--primary-color)",
-										textDecoration: "none",
-										marginTop: "20px",
-										marginBottom: "20px",
-										marginRight: "20px",
-									}}
-								>
-									{" "}
-									<IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
-									<span
-										className="about-description resume-link-text"
-										style={{
-											marginLeft: "10px",
-											color: "white",
-										}}
-									>
-										{content.japaneseWorkHistory}
-									</span>
-								</a>
-							</>
-						</div>
-						<a
+							<a
 							href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -235,21 +209,14 @@ const Skills = (props) => {
 								{content.certifications}
 							</span>
 						</a>
-						<a
-							href="https://www.codewars.com/"
-							target={"_blank"}
-							rel="noreferrer"
-						>
-							<img
-								src="https://www.codewars.com/users/zachinjapan/badges/small"
-								alt="codewars"
-								style={{
-									marginTop: "0px",
-								}}
-							/>
-						</a>
+							</>
+						</div>
+			
 					</div>
-					<span className="skills-container">
+					<div className="skills-container">
+						<div className="github">
+					<GithubContributions username="ZacharyTStone"/>
+					</div>
 						{content.skills.map((skill) => (
 							<a
 								href={skill[2]}
@@ -268,7 +235,7 @@ const Skills = (props) => {
 								</div>
 							</a>
 						))}
-					</span>
+					</div>
 				</div>
 			</IconContext.Provider>
 		</>
