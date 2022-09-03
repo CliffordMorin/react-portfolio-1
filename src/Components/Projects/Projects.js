@@ -37,11 +37,11 @@ const Projects = (props) => {
           japanese: true,
         },
         {
-          title: "Wow On-Ga-Ku",
+          title: "Riffs!",
           description:
             "A place to share your new songs, covers, and musical ideas with the world",
           image: niceRiff,
-          link: "https://wowongaku.netlify.app/",
+          link: "https://riffs.netlify.app/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "Tech",
@@ -145,11 +145,11 @@ const Projects = (props) => {
           japanese: true,
         },
         {
-          title: "ワァオ音楽",
+          title: "リッフス",
           description:
             "新曲、カバー、音楽のアイデアを世界と共有するためのサイトです。",
           image: niceRiff,
-          link: "https://wowongaku.netlify.app/",
+          link: "https://riffs.netlify.app/",
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/vue-music-app",
           tech: "技術",

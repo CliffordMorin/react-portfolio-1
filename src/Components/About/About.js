@@ -52,10 +52,10 @@ const About = (props) => {
 
 					<div className="about-right">
 						<AnimationOnScroll
-							animateIn="animate__fadeInRight"
+							animateIn="animate__fadeIn"
 							animateOnce={true}
 							offset={200}
-							duration={2}
+							duration={3}
 						>
 							<h1
 								style={{
@@ -71,7 +71,7 @@ const About = (props) => {
 						</AnimationOnScroll>
                         
 						<AnimationOnScroll
-							animateIn="animate__fadeInRight"
+							animateIn="animate__fadeIn"
 							animateOnce={true}
 							offset={250}
 							duration={2}
