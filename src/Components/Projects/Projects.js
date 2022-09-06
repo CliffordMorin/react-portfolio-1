@@ -100,7 +100,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["CSS", "React", "API", "Netlify", "TypeScript", "Netlify"],
+          tags: ["CSS", "React", "API", "TypeScript", "Netlify"],
           english: true,
           japanese: false,
         },
@@ -247,6 +247,7 @@ const Projects = (props) => {
 
         <div className="projects-container">
           {content.projects.map((project, index) => (
+            <div index={project.title + index}>
             <AnimationOnScroll
               animateIn="animate__fadeIn"
               animateOut="animate__fadeOut"
@@ -254,7 +255,6 @@ const Projects = (props) => {
             >
               <MUIProjectCard
                 cardWidth="405px"
-                index={index + 1}
                 title={project.title}
                 description={project.description}
                 tech_description={project.tech_description}
@@ -270,6 +270,7 @@ const Projects = (props) => {
                 japanese={project.japanese}
               />
             </AnimationOnScroll>
+          </div>
           ))}
         </div>
       </div>

@@ -37,7 +37,7 @@ export default function MUIProjectCard(props) {
 			className={props.github.slice(props.github.lastIndexOf("/") + 1)}
 		>
 			<CardHeader
-				title={props.index + ". " + props.title}
+				title={ props.title}
 				className="card-header"
 				style={{
 					color: "white",

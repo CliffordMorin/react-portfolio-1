@@ -99,9 +99,7 @@
 	}
 
 	@media (min-width: 1300px) {
-		.MuiCardHeader-title {
-			text-align: left;
-		}
+		
 
 		#card-media {
 			width: 100% !important;

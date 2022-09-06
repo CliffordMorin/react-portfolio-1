@@ -34,12 +34,9 @@ const About = (props) => {
 		: (content = content.English);
 
 	return (
-		<>
+		<div className="about-full">
 			<div className="up-arrow-special"></div>
 			<div
-				style={{
-					backgroundColor: "var(--primary-color)",
-				}}
 			>
 				<div className="about" id="About">
                     
@@ -82,7 +79,7 @@ const About = (props) => {
 				</div>
 				<div className="down-arrow-special" />
 			</div>
-		</>
+		</div>
 	);
 };
 

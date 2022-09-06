@@ -218,6 +218,7 @@ const Skills = (props) => {
 					<GithubContributions username="ZacharyTStone"/>
 					</div>
 						{content.skills.map((skill) => (
+							<div key = {skill[1]} >
 							<a
 								href={skill[2]}
 								target="_blank"
@@ -234,6 +235,7 @@ const Skills = (props) => {
 									</span>
 								</div>
 							</a>
+							</div>
 						))}
 					</div>
 				</div>

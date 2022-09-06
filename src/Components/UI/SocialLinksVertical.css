@@ -7,7 +7,7 @@
   flex-direction: column;
   width: 75px;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   border-radius: 20px;
 }
 

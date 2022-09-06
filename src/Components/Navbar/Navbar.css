@@ -1,6 +1,6 @@
 .nav {
   z-index: 100 !important;
-  background-color: #000000 !important;
+  background-color:var(--primary-color) !important;
   /* position: relative; */
   overflow: hidden;
 }
@@ -13,28 +13,21 @@
 
 .full-flag-div {
   position: fixed;
-  right: 0.5%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.flag-div-holder :hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  right: 1.5%;
 }
 
 .flag {
-  width: 35px;
-  height: 25px;
+  width: 45px;
+  height: 35px;
+  
+
 }
+
 
 /*  mobile */
 @media (max-width: 768px) {
   .nav {
-    position: fixed !important;
+    /* position: fixed !important; */
     opacity: 0.8;
   }
 }
