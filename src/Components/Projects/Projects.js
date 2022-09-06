@@ -237,12 +237,14 @@ const Projects = (props) => {
     <>
       <div className="Projects" id="Projects">
         <h1>{content.mainTitle}</h1>
+        <RunningImg src={Naruto} />
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
           animateOnce={true}
+          
         >
-          <RunningImg src={Naruto} />
+         
         </AnimationOnScroll>
 
         <div className="projects-container">

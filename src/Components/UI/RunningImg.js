@@ -7,6 +7,7 @@ const RunningImg = (img) => {
     animateIn="animate__fadeIn"
     animateOut="animate__fadeOut"
     animateOnce={true}
+    delay={400}
   >
     <Wrapper>
       <img
