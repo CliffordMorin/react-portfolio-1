@@ -213,10 +213,11 @@ const Skills = (props) => {
 						</div>
 			
 					</div>
-					<div className="skills-container">
-						<div className="github">
+					<div className="github">
 					<GithubContributions username="ZacharyTStone"/>
 					</div>
+					<div className="skills-container">
+						
 						{content.skills.map((skill) => (
 							<div key = {skill[1]} >
 							<a
