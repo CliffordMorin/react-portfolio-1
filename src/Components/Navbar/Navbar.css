@@ -1,6 +1,6 @@
 .nav {
   z-index: 100 !important;
-  background-color:var(--primary-color) !important;
+  background-color: black !important;
   /* position: relative; */
   overflow: hidden;
 }
