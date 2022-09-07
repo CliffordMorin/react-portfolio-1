@@ -48,7 +48,7 @@ color : "var(--secondary-color)"
                         <span> and I build </span>
                         <span style ={{
                             color : "var(--secondary-color)" }
-                        }> web apps </span>
+                        }> web applications</span>
                         {/* <span> and </span>
                         <span style ={{
                             color :"#F5A623" }
