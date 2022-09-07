@@ -2,7 +2,7 @@ import "../About/About.css";
 import Skills from "../UI/Skills";
 import { connect } from "react-redux";
 
-import zach from "../../images/zachFinal4.png";
+// import zach from "../../images/zachFinal4.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 
