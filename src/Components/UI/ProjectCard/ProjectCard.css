@@ -79,6 +79,11 @@
 		border: 2px solid var(--secondary-color);
 		border-radius: 20px;
 	}
+
+	.card-title-div {
+		top : 0px !important;
+		left: 0px !important;
+	}
 }
 
 #MUI-Card:hover {
