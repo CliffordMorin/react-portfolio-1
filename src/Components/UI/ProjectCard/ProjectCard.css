@@ -54,12 +54,15 @@
 		display: block !important;
 		position: relative !important;
 		margin-bottom: 40px !important;
+		
 
 	}
 
 	.card-title {
 		font-size: 2.5rem !important;
 		text-decoration-thickness: 4px !important;
+		text-align: center !important;
+		padding-top: 30px !important;
 		
 	}
 

@@ -47,15 +47,17 @@ export default function MUIProjectCard(props) {
 						position: "absolute",
 						top: "10px",
 						left: "10px",
+						
 					}}>
 					<h1 
 						className="card-title"
 					
 					style={{
 						color: "white",
-						fontSize: "5.5rem",
+						fontSize: "4.7rem",
 						fontWeight: "bold",
-						textAlign: "center",
+						textAlign: "left",
+						
 						margin: "0",
 						padding: "0",
 						
