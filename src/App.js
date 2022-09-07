@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import "animate.css/animate.min.css";
 
 import {
-  Landing,
+  // Landing,
   LandingV2,  
   About,
   Projects,
