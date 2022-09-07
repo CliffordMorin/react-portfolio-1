@@ -1,4 +1,5 @@
 import "./LandingV2.css";
+import SocialLinksVertical from "../UI/SocialLinksVertical";
 
 const LandingV2 = (props) => {
     let content = {
@@ -35,6 +36,7 @@ const LandingV2 = (props) => {
 
     return (
         <div className="landing-v2">
+
         
           
                     <h1 className="landing-v2-title">
@@ -53,7 +55,7 @@ color : "var(--secondary-color)"
                         }> mobile apps</span> */}
                         <span>.</span>
                     </h1>
-            
+                    <SocialLinksVertical />
       
         </div>
     );

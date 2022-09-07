@@ -1,6 +1,7 @@
 .social-links-vertical {
-  position: absolute;
-  left: 30px;
+  position: fixed;
+  left: 0px;
+  bottom: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,13 +10,14 @@
   height: fit-content;
   /* background-color: rgba(0, 0, 0, 0.5); */
   border-radius: 20px;
+  z-index: 0;
 }
 
 .social-links-vertical a {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .social-links-vertical {
     display: flex;
     position: relative;

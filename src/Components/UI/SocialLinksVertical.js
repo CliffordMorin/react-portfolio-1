@@ -12,7 +12,7 @@ const SocialLinksVertical = (backgroundColor) => {
       value={{
         color: "white",
         className: "global-class-name",
-        size: "50px",
+        size: "30px",
       }}
     >
       <div className="social-links-vertical" id={`${backgroundColor}`}>

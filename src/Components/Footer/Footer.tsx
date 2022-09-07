@@ -9,6 +9,8 @@ const Footer = () => {
           style={{
             fontSize: "1rem",
             fontWeight: "bold",
+        
+            
           }}
         >
           Thanks for looking at my portfolio. Let's connect!

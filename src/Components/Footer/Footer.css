@@ -1,9 +1,14 @@
 footer {
   background-color: var(--black);
   color: white;
-  padding: 10px;
+
   display: flex;
   justify-content: space-between;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+
 }
 
 .footer-text {
@@ -12,9 +17,11 @@ footer {
   justify-content: center;
   align-items: center;
   color: white;
+
 }
 @media (max-width: 455px) {
   .footer-text {
     display: none;
+    z-index: 10
   }
 }
