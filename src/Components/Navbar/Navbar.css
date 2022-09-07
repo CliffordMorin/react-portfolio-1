@@ -27,7 +27,7 @@
 /*  mobile */
 @media (max-width: 768px) {
   .nav {
-    /* position: fixed !important; */
+    position: fixed !important;
     opacity: 0.8;
   }
 }
