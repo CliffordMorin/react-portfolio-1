@@ -44,7 +44,7 @@
 }
 
 /* mobile only */
-@media (max-width: 1024px) {
+@media (max-width: 1439px) {
 	.card-title-div
 	{
 		font-size: 1rem !important;
