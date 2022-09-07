@@ -105,19 +105,19 @@ const Projects = (props) => {
           japanese: false,
         },
 
-        // {
-        //   title: "Prefecture Match",
-        //   description:
-        //     "Learn the Japanese prefectures using this fun matching game",
-        //   image: prefecture,
-        //   link: "https://prefecture-match.herokuapp.com",
-        //   linkText: "Live Demo",
-        //   github: "https://github.com/zachinjapan/prefecture-match",
-        //   tech: "Tech",
-        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
-        //   english: false,
-        //   japanese: true,
-        // },
+        {
+          title: "Prefecture Match",
+          description:
+            "Learn the Japanese prefectures using this fun matching game",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
+          linkText: "Live Demo",
+          github: "https://github.com/zachinjapan/prefecture-match",
+          tech: "Tech",
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
+          english: false,
+          japanese: true,
+        },
       ],
     },
     Japanese: {
@@ -212,19 +212,19 @@ const Projects = (props) => {
           english: true,
           japanese: false,
         },
-        // {
-        //   title: "都道府県マッチング",
-        //   description:
-        //     "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
-        //   image: prefecture,
-        //   link: "https://prefecture-match.herokuapp.com",
-        //   linkText: "ウェブサイト",
-        //   github: "https://github.com/zachinjapan/prefecture-match",
-        //   tech: "技術",
-        //   tags: ["React", "CSS", "JavaScript", "Heroku"],
-        //   english: false,
-        //   japanese: true,
-        // },
+        {
+          title: "都道府県マッチング",
+          description:
+            "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
+          image: prefecture,
+          link: "https://prefecture-match.herokuapp.com",
+          linkText: "ウェブサイト",
+          github: "https://github.com/zachinjapan/prefecture-match",
+          tech: "技術",
+          tags: ["React", "CSS", "JavaScript", "Heroku"],
+          english: false,
+          japanese: true,
+        },
       ],
     },
   };

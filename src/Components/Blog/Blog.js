@@ -95,13 +95,17 @@ const Blog = (props) => {
       speed={4}
     >
       <div
-        className="CodingChallenges Projects"
+        className=""
         id="Blog"
         style={{
-          marginBottom: "50px",
+          paddingBottom: "50px",
+         
         }}
       >
-        <h1>{content.mainTitle}</h1>
+        <h1 style={{
+          marginTop: "0px",
+          marginBottom: "50px",
+        }}>{content.mainTitle}</h1>
 
         <div
           style={{

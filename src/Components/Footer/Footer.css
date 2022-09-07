@@ -1,6 +1,6 @@
 footer {
-  background-color: black;
-  color: var(--off-white);
+  background-color:black;
+  color: white;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: rgb(191, 191, 191);
+  color: white;
 }
 @media (max-width: 455px) {
   .footer-text {

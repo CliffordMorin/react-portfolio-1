@@ -6,6 +6,11 @@
   display: none;
 }
 
+#Blog {
+ text-align: center;
+ background-color: black
+}
+
 @media (min-width: 600px) {
   .direction-btn {
     display: flex !important;

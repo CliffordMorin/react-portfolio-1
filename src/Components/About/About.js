@@ -40,12 +40,12 @@ const About = (props) => {
 			>
 				<div className="about" id="About">
                     
-					<div className="about-left">
+					{/* <div className="about-left">
 						<div className="picture">
 							<img className="zach-img" src={zach} alt="zach" loading="lazy" />
                             
 						</div>
-					</div>
+					</div> */}
 
 					<div className="about-right">
 						<AnimationOnScroll

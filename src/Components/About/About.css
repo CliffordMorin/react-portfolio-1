@@ -16,8 +16,8 @@
  }
 
 .about-full {
-  /* background: rgb(0,0,0); */
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 100%);
+  background: rgb(0,0,0);
+  /* background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(50, 50, 50) 100%); */
   
 
 }
@@ -58,6 +58,7 @@
 
 .about-description {
   font-size: 1.3rem;
+  margin-left: 10px;
 }
 
 @media (max-width: 1000px) {
@@ -108,7 +109,7 @@
   width: 0;
   height: 0;
   border: 50vw solid transparent;
-  border-bottom: 100px solid rgba(48,48,48,1);
+  border-bottom: 100px solid black;
   border-top: 0px;
   position: absolute;
   transform: translateY(-100px) translateX(-15px);
