@@ -3,7 +3,7 @@
   width: 100%;
   user-select: none;
   margin-top: 150px;
-  background: rgb(0,0,0);
+  background: var(--black);
   /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 100%); */
 }
 

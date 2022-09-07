@@ -1,6 +1,6 @@
 .nav {
   z-index: 100 !important;
-  background-color: black !important;
+  background-color: var(--black) !important;
   /* position: relative; */
   overflow: hidden;
 }
@@ -13,7 +13,8 @@
 
 .full-flag-div {
   position: fixed;
-  right: 1.5%;
+  right: 1%;
+  top: 2.5%;
 }
 
 .flag {

@@ -178,7 +178,7 @@ const Projects = (props) => {
           japanese: false,
         },
         {
-          title: `HAKU （ハク）`,
+          title: `ハク`,
           description:
             "ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
           image: haku,
@@ -251,11 +251,7 @@ const Projects = (props) => {
           
           {content.projects.map((project, index) => (
             <div index={project.title + index}>
-            <AnimationOnScroll
-              animateIn="animate__fadeIn"
-              animateOut="animate__fadeOut"
-              animateOnce={true}
-            >
+       
               <MUIProjectCard
                 cardWidth="405px"
                 index = {index + 1}
@@ -273,7 +269,7 @@ const Projects = (props) => {
                 english={project.english}
                 japanese={project.japanese}
               />
-            </AnimationOnScroll>
+          
           </div>
           ))}
         </div>

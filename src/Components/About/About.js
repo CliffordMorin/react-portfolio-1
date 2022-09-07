@@ -35,7 +35,7 @@ const About = (props) => {
 
 	return (
 		<div className="about-full">
-			<div className="up-arrow-special"></div>
+			{/* <div className="up-arrow-special"></div> */}
 			<div
 			>
 				<div className="about" id="About">

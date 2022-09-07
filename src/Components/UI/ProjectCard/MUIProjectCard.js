@@ -25,28 +25,52 @@ export default function MUIProjectCard(props) {
 
 	return (
 		<Card
-			sx={{
-				"&:hover": {
-					transform: "scale(1.05)",
-					transition: "transform 0.5s ease-in-out",
-					boxShadow: "0px 0px 10px var(--primary-color)",
-				},
-			}}
+		
 			id="MUI-Card"
 			// slice the github to link to only have the github project name
 			className={props.github.slice(props.github.lastIndexOf("/") + 1)}
 		>
-			<CardHeader
+			{/* <CardHeader
 				title={ props.index + ". " + props.title }
 				className="card-header"
 				style={{
 					color: "white",
-					backgroundColor: "var(--primary-color)",
+					backgroundColor: "var(--black)",
 				}}
-			/>
+			/> */}
 
-			<div className="card-content">
+			<div className="card-content" style={{
+				position: "relative",
+			}}>
 				<a href={props.link} target={"_blank"} rel="noreferrer">
+					<div className="card-title-div" style={{
+						position: "absolute",
+						top: "10px",
+						left: "10px",
+					}}>
+					<h1 
+						className="card-title"
+					
+					style={{
+						color: "white",
+						fontSize: "5.5rem",
+						fontWeight: "bold",
+						textAlign: "center",
+						margin: "0",
+						padding: "0",
+						
+						opactiy: 1,
+						zIndex: 1,
+						// underline
+						textDecoration: "underline",
+						textDecorationColor: "var(--secondary-color)",
+						textDecorationThickness: "10px",
+						textDecorationStyle: "solid",
+					}}
+					>
+						{ props.title}
+					</h1>
+					</div>
 					<CardMedia
 						component={"img"}
 						id="card-media"
@@ -59,9 +83,10 @@ export default function MUIProjectCard(props) {
 							filter: "brightness(0.85)",
 						}}
 					/>
+					
 				</a>
-				<CardContent>
-					<div className="card-content-text">
+				<CardContent  className="card-content-text">
+			
 						<Typography
 							variant="body2"
 							color="var(--off-white)"
@@ -191,7 +216,7 @@ export default function MUIProjectCard(props) {
 								</div>
 							</div>
 						</CardActions>
-					</div>
+				
 				</CardContent>
 			</div>
 		</Card>

@@ -4,6 +4,7 @@ import "animate.css/animate.min.css";
 
 import {
   Landing,
+  LandingV2,  
   About,
   Projects,
   Footer,
@@ -20,7 +21,8 @@ function App(props) {
   return (
     <div className="App">
       <MUINav />
-      <Landing language={props.language} />
+      <LandingV2 language={props.language} />
+      {/* <Landing language={props.language} /> */}
       <About language={props.language} />
       <Projects language={props.language} />
       <Blog language={props.language} />

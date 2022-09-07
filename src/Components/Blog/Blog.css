@@ -8,7 +8,7 @@
 
 #Blog {
  text-align: center;
- background-color: black
+ background-color: var(--black);
 }
 
 @media (min-width: 600px) {

@@ -12,14 +12,58 @@
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-	background-color: #555555;
+	background-color: var(--black);
 	border-radius: 20px;
+	
+}
+
+#MUI-Card:hover {
+	/* darken the card on hover */
+	background-color: var(--black 0.1);
+	/* darken the card on hover */
+	
+}
+
+.card-content-text {
+	border: 2px solid var(--secondary-color);
 }
 
 #card-media {
 	width: 100%;
 	height: 250px;
 	border-radius: "10px";
+	
+	
+}
+
+#card-media:hover {
+	/* darken the card on hover */
+	opacity:  0.3;
+	/* darken the card on hover */
+	
+}
+
+/* mobile only */
+@media (max-width: 1024px) {
+	.card-title-div
+	{
+		font-size: 1rem !important;
+		display: block !important;
+		position: relative !important;
+		margin-bottom: 40px !important;
+
+	}
+
+	.card-title {
+		font-size: 2.5rem !important;
+	}
+
+	#card-media:hover {
+		/* darken the card on hover */
+		opacity:  1;
+		/* darken the card on hover */
+		
+	}
 }
 
 #MUI-Card:hover {
@@ -47,7 +91,7 @@
 
 	#card-media {
 		width: 100%;
-		height: fit-content;
+		height: 525px;
 		image-rendering: pixelated;
 	}
 
@@ -60,6 +104,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: space-around;
+		
 	}
 
 	.project-description {
@@ -80,7 +125,7 @@
 		justify-content: space-around;
 		align-items: center;
 		max-width: 300px;
-		height: 100%;
+		height: 480px;
 	}
 
 	.MUI-icon {
@@ -104,9 +149,9 @@
 		}
 
 		#card-media {
-			width: 100% !important;
-			height: auto !important;
-			max-width: 1200px !important;
+			
+
+			width: 1000px !important;
 		}
 	}
 }
@@ -114,7 +159,7 @@
 /* highlight card based on github link */
 
 /* gold border */
-.my-anime-collection {
+.my-anime-collection.card-content-text {
 	border: 2px solid gold !important;
 }
 /* silver border */
