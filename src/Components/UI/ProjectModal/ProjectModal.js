@@ -26,9 +26,10 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: "var(--primary-color)",
+    backgroundColor: "var(--black)",
     width : "fit-content",
-    border : "solid 10px var(--secondary-color)",
+    border : "solid 5px var(--secondary-color)",
+    borderRadius : "10px",
    
   },
 };
