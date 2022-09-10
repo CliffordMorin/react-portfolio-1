@@ -142,6 +142,53 @@ function ProjectModal({project}) {
             >
                 <span className="project-description">{project.description}</span>
             </Typography>
+            <CardActions disableSpacing className="icon-div">
+            <div>
+                <IconButton aria-label="github link" >
+             
+                        <a href={project.github} target="_blank" rel="noreferrer">
+                            
+                            <AiFillGithub
+                                className="MUI-icon"
+                                style={{
+                                    color: "white",
+                                }}
+                                
+                           />
+                             </a>
+                       
+
+
+                           
+                      
+               
+                </IconButton>
+                <h5 className="icon-button-text">Code</h5>
+                </div>
+                <div>
+                <IconButton aria-label="live-demo">
+               
+                        <a href={project.link} target="_blank" rel="noreferrer">
+                            <RiComputerLine
+                                className="MUI-icon"
+                                style={{
+                                    color: "white",
+                                }}
+                            />
+                            </a>
+
+                        
+                
+                </IconButton>
+                <h5 className="icon-button-text">Site</h5>
+                </div>
+               
+                        
+                      
+                  
+                    
+              
+            </CardActions>
             <Typography paragraph align="left" minHeight="90px">
                 <div
                     style={{
@@ -203,39 +250,7 @@ function ProjectModal({project}) {
             </Typography>
 
 
-            <CardActions disableSpacing className="icon-div">
-                <IconButton aria-label="github link">
-                    <div>
-                        <a href={project.github} target="_blank" rel="noreferrer">
-                            <AiFillGithub
-                                className="MUI-icon"
-                                style={{
-                                    color: "white",
-                                }}
-                            />
-                        </a>
-                    </div>
-                </IconButton>
-                <IconButton aria-label="live-demo">
-                    <div>
-                        <a href={project.link} target="_blank" rel="noreferrer">
-                            <RiComputerLine
-                                className="MUI-icon"
-                                style={{
-                                    color: "white",
-                                }}
-                            />
-                        </a>
-                    </div>
-                </IconButton>
-               
-                        
-                      
-                  
-                    
-              d
-                
-            </CardActions>
+     
             
     
     </CardContent>

@@ -5,8 +5,18 @@
 	text-align: left;
 }
 
+.icon-button-text {
+	font-size: 1.2rem;
+	color: white;
+	/* hide a tag styling */
+	text-decoration: none;
+	text-align: center;
+	cursor: default;
+}
+
+
 #MUI-Card {
-	width: 425px;
+	width: 100%;
 	min-width: 325;
 	min-height: 520;
 	max-height: 70vh;
@@ -85,9 +95,12 @@
 	transform: scale(1);
 }
 
+
 .MUI-icon {
 	font-size: 3rem;
+	margin-bottom: -25px;
 }
+
 
 @media (max-width: 455px) {
 	#MUI-Card {
@@ -136,7 +149,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		align-items: center;
+	
 	}
 
 	.card-content-text {
@@ -148,10 +161,7 @@
 		height: 480px;
 	}
 
-	.MUI-icon {
-		font-size: 3rem;
-	}
-
+	
 	.MUI-icon:hover {
 		transform: scale(1.5);
 		transition: transform 0.5s ease-in-out;
@@ -171,7 +181,8 @@
 		#card-media {
 			
 
-			width: 1000px !important;
+			width: 1200px !important;
+			max-width: 100% !important;
 		}
 	}
 }
