@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+.ReactModal__Overlay {
+  background-color: black !important;
+}
+
 @media (max-width: 800px) {
   .project-icons {
     display: none !important;

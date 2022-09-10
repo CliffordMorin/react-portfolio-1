@@ -4,11 +4,12 @@ import blog from "../../images/projects/blog.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
-import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
+// import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import RunningImg from "../UI/RunningImg";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 import Naruto from "../../images/UI/narutoRun.gif";
+import ProjectModal from "../UI/ProjectModal/ProjectModal";
 const Projects = (props) => {
   let content = {
     English: {
@@ -32,7 +33,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
-          youtube: "https://youtu.be/L_BcbOyHGzs",
+          youtube: "https://www.youtube.com/embed/L_BcbOyHGzs",
           english: true,
           japanese: true,
         },
@@ -66,7 +67,7 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-          youtube: "https://youtu.be/I96IPEaj4qA",
+          youtube: "https://www.youtube.com/embed/I96IPEaj4qA",
           english: true,
           japanese: false,
         },
@@ -87,7 +88,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
-          youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
+          youtube: "https://www.youtube.com/embed/q1rVbqMw0ug",
           english: true,
           japanese: false,
         },
@@ -140,7 +141,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
-          youtube: "https://youtu.be/L_BcbOyHGzs",
+          youtube: "https://www.youtube.com/embed/L_BcbOyHGzs",
           english: true,
           japanese: true,
         },
@@ -173,7 +174,7 @@ const Projects = (props) => {
             "GraphQL",
             "Gatsby Cloud",
           ],
-          youtube: "https://youtu.be/I96IPEaj4qA",
+          youtube: "https://www.youtube.com/embed/I96IPEaj4qA",
           english: true,
           japanese: false,
         },
@@ -195,7 +196,7 @@ const Projects = (props) => {
             "MongoDB",
             "Heroku",
           ],
-          youtube: "https://www.youtube.com/watch?v=q1rVbqMw0ug",
+          youtube: "https://www.youtube.com/embed/q1rVbqMw0ug",
           english: true,
           japanese: false,
         },
@@ -250,31 +251,17 @@ const Projects = (props) => {
         <div className="projects-container">
           
           {content.projects.map((project, index) => (
-            <div index={project.title + index}>
        
-              <MUIProjectCard
-                cardWidth="405px"
-                index = {index + 1}
-                title={project.title}
-                description={project.description}
-                tech_description={project.tech_description}
-                image={project.image}
-                link={project.link}
-                linkText={project.linkText}
-                github={project.github}
-                tags={project.tags}
-                tech={project.tech}
-                callToAction={project.callToAction}
-                youtube={project.youtube}
-                english={project.english}
-                japanese={project.japanese}
-              />
-          
-          </div>
+              <ProjectModal
+                project={project}
+                />
+            
           ))}
         </div>
       </div>
     </>
+            
+         
   );
 };
 

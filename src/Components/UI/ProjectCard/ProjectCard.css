@@ -9,6 +9,8 @@
 	width: 425px;
 	min-width: 325;
 	min-height: 520;
+	max-height: 70vh;
+	overflow: auto;
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -20,31 +22,22 @@
 #MUI-Card:hover {
 	/* darken the card on hover */
 	background-color: var(--black 0.1);
-	/* darken the card on hover */
 	
 }
 
-.card-content-text {
-	border-top: 2px solid var(--secondary-color);
-	border-right: 2px solid var(--secondary-color);
-	border-bottom: 2px solid var(--secondary-color);
 
-}
 
 #card-media {
 	width: 100%;
 	height: 250px;
 	/* border-radius: "10px"; */
+	    /* pointer to show that it is clickable */
+		cursor: pointer;
 	
 	
 }
 
-#card-media:hover {
-	/* darken the card on hover */
-	opacity:  0.3;
-	/* darken the card on hover */
-	
-}
+
 
 /* mobile only */
 @media (max-width: 1439px) {
@@ -79,8 +72,7 @@
 	}
 
 	#MUI-Card {
-		border: 2px solid var(--secondary-color);
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 
 	.card-title-div {
@@ -104,10 +96,15 @@
 }
 
 @media (min-width: 1440px) {
+	.darken-on-hover:hover {
+		/* darken the card on hover */
+		opacity:  0.3 !important;
+		/* darken the card on hover */
+	}
 	#MUI-Card {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
-		width: fit-content;
+		width: 100% !important;
 		font-size: 1.2rem;
 		min-height: 100%;
 	}
