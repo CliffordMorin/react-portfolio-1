@@ -119,6 +119,7 @@
 		width: 100% !important;
 		font-size: 1.2rem;
 		height: 100%;
+		min-height: 525px;
 	}
 
 	#card-media {
