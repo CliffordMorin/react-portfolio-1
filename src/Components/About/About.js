@@ -54,7 +54,7 @@ const About = (props) => {
 				react : "React",
 				vue : "Vue",
 				gatsby : "Gatsby",
-				"はZach.Stone.Developer@gmail.comま": true,
+				"Zach.Stone.Developer@gmail.com": true,
 		},
 	},
 	};
@@ -85,7 +85,7 @@ const About = (props) => {
 				}
 			})
 		);
-	}, [props.language]);
+	}, [props.language, content.keywords,content.description1, content.description2, content.description3]);
 
 	
 
