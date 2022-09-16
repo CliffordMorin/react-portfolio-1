@@ -1,5 +1,6 @@
 import "./LandingV2.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
+import 'animate.css';
 
 const LandingV2 = (props) => {
     let content = {
@@ -39,7 +40,7 @@ const LandingV2 = (props) => {
 
         
           
-                    <h1 className="landing-v2-title">
+                    <h1 className="landing-v2-title animate__animated animate__fadeIn">
                         <span>{`${currGreeting}`}, I'm </span>
                         <span style={{
 

@@ -4,6 +4,10 @@
   /* position: relative; */
   overflow: hidden;
 }
+.nav-menu-item:hover {
+  background-color: var(--black) !important;
+  color: var(--secondary-color) !important;
+}
 
 .flag-div {
   display: flex;

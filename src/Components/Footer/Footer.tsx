@@ -13,8 +13,20 @@ const Footer = () => {
             
           }}
         >
-          Thanks for looking at my portfolio. Let's connect!
-          {"  "}
+          Thanks for looking at my portfolio.
+      
+        </span>
+      
+        <span
+          style={{
+            fontSize: "1rem",
+            fontWeight: "bold",
+            color: "var(--secondary-color)",
+            
+          }}
+        >
+          
+          Let's connect!
         </span>
       </div>
       <SocialLinks />

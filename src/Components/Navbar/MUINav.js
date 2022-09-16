@@ -102,7 +102,7 @@ const MUINav = (props) => {
                 <a
                   href={item[1]}
                   style={{ textDecoration: "none" }}
-                  key={Math.random()}
+                  key={item[1]}
                   className="nav-menu-item"
                 >
                   <MenuItem
@@ -135,6 +135,7 @@ const MUINav = (props) => {
                 key={Math.random()}
                 href={item[1]}
                 style={{ textDecoration: "none" }}
+              
               >
                 <Button
                   color="inherit"
@@ -145,6 +146,7 @@ const MUINav = (props) => {
                     marginLeft: "10px",
                     marginRight: "10px",
                   }}
+                  className="nav-menu-item"
                 >
                   {item[0]}
                 </Button>
