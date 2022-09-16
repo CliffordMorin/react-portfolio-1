@@ -19,6 +19,7 @@ import styled from "styled-components";
 
 
 const customStyles = {
+    overflow: "auto",
   content: {
     top: '50%',
     left: '50%',
@@ -93,7 +94,9 @@ function ProjectModal({project}) {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal">
-            <div>
+            <div style={{
+                overflow: "auto",
+            }}>
             <Card
 		
         id="MUI-Card"
@@ -104,7 +107,8 @@ function ProjectModal({project}) {
    
 
         <div className="card-content" style={{
-            position: "relative",
+            // position: "relative",
+            overflow: "auto",
         }}>
             
                
