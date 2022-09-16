@@ -26,7 +26,7 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(-50%, -35%)',
     backgroundColor: "var(--black)",
     width : "fit-content",
     border : "solid 5px var(--secondary-color)",
@@ -109,6 +109,7 @@ function ProjectModal({project}) {
         <div className="card-content" style={{
             // position: "relative",
             overflow: "auto",
+            // paddingTop: "50px",
         }}>
             
                

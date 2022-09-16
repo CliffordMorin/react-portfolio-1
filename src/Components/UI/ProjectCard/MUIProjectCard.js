@@ -34,7 +34,7 @@ export default function MUIProjectCard(props) {
 				}}
 			/> */}
 
-			<div className="card-content" style={{
+			<div className="" style={{
 				position: "relative",
 			}}>
 				<a href={props.link} target={"_blank"} rel="noreferrer">

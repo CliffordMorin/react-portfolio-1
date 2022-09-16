@@ -1,5 +1,6 @@
 .ReactModal__Overlay {
 	overflow: auto !important;
+	/* padding-top: 200px !important; */
 }
 
 #MUI-description {
@@ -54,6 +55,8 @@
 
 
 
+
+
 /* mobile only */
 @media (max-width: 1439px) {
 	.card-title-div
@@ -85,6 +88,7 @@
 		border: none !important;
 		
 	}
+	
 
 	#MUI-Card {
 		border-radius: 10px;
@@ -143,6 +147,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: space-around;
+
 		
 	}
 
