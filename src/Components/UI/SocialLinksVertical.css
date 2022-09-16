@@ -21,12 +21,12 @@
 
 
 
-.social-links-vertical a:hover .social-link-text {
+/* .social-links-vertical a:hover .social-link-text {
   display: block;
   
     color: var(--secondary-color) !important;
   
-}
+} */
 
 .social-links-vertical .social-link-img:hover {
   color: var(--secondary-color) !important;
