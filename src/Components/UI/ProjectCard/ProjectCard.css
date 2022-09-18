@@ -27,7 +27,6 @@
 	overflow: auto;
 	padding-top: 20px !important;
 	padding-bottom: 20px !important;
-	margin-top: 50px;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 	background-color: var(--black);
 	
@@ -73,7 +72,6 @@
 		font-size: 2.5rem !important;
 		text-decoration-thickness: 4px !important;
 		text-align: center !important;
-		padding-top: 30px !important;
 		
 	}
 
