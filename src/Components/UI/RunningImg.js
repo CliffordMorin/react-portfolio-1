@@ -37,6 +37,7 @@ const Wrapper = styled.div`
       animation-timing-function: linear;
       // move down
       top: 0px;
+      z-index: 100;
     }
 
     @keyframes run {
