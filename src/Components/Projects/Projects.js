@@ -112,7 +112,7 @@ const Projects = (props) => {
           description:
             "Learn the Japanese prefectures using this fun matching game",
           image: prefecture,
-          link: "https://prefecture-match.herokuapp.com",
+          link: "https://prefecture-match-lpnr.vercel.app/",
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "Tech",
@@ -220,7 +220,7 @@ const Projects = (props) => {
           description:
             "日本の都道府県を学ぶための、楽しいマッチングゲームです。",
           image: prefecture,
-          link: "https://prefecture-match.herokuapp.com",
+          link: "https://prefecture-match-lpnr.vercel.app/",
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/prefecture-match",
           tech: "技術",
