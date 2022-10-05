@@ -72,7 +72,7 @@
 
 .about-description {
   font-size: 1.5rem;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 @media (max-width: 1000px) {
@@ -84,8 +84,9 @@
     width: 100%;
   }
   .about-description {
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .picture {
     width: 45%;
