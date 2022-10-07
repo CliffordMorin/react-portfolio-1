@@ -21,7 +21,7 @@ import styled from "styled-components";
 const customStyles = {
     overflow: "auto",
   content: {
-    top: '50%',
+    top: '40%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
