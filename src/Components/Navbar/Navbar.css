@@ -1,5 +1,6 @@
 .nav {
   z-index: 100 !important;
+  background-color: var(--black) !important;
   /* position: relative; */
   overflow: hidden;
 }
@@ -27,18 +28,12 @@
 
 }
 
-@media (min-width: 769px({
-  .nav {
-     background-color: var(--black) !important;
-  }
-}
 
 /*  mobile */
 @media (max-width: 768px) {
   .nav {
     position: fixed !important;
-/*     opacity: 0.8; */
-    
+    opacity: 0.8;
   }
 }
 
