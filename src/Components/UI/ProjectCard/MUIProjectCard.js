@@ -6,23 +6,11 @@ import CardMedia from "@mui/material/CardMedia";
 import "./ProjectCard.css";
 
 import { FaReact } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3Full } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
+
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
-import { SiRedux } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { BsUiChecks } from "react-icons/bs";
-import { IoMdPaper } from "react-icons/io";
-import { SiMaterialui } from "react-icons/si";
+
 import { RiVuejsFill } from "react-icons/ri";
-import { AiOutlineConsoleSql } from "react-icons/ai";
-import { GithubContributions } from "react-github-graph";
 
 export default function MUIProjectCard(props) {
   console.log(props);
