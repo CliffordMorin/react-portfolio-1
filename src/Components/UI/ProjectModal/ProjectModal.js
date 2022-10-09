@@ -77,7 +77,7 @@ function ProjectModal({project}) {
             //  link={project?.link}
             //  linkText={project?.linkText}
              github={project?.github}
-            //  tags={project?.tags}
+             tags={project?.tags}
             //  tech={project?.tech}
             //  callToAction={project?.callToAction}
             //  youtube={project?.youtube}

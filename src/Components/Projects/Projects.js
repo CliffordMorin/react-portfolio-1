@@ -61,10 +61,11 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "Tech",
           tags: [
+            "Gatsby",
             "React",
             "CSS",
             "Markdown",
-            "Gatsby",
+          
             "GraphQL",
             "Gatsby Cloud",
           ],
@@ -102,7 +103,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["CSS", "React", "API", "TypeScript", "Netlify"],
+          tags: ["React","CSS",  "API", "TypeScript", "Netlify"],
           english: true,
           japanese: false,
         },
@@ -169,10 +170,11 @@ const Projects = (props) => {
           github: "https://github.com/zachinjapan/my-gatsby-blog",
           tech: "技術",
           tags: [
+            "Gatsby",
             "React",
             "CSS",
             "Markdown",
-            "Gatsby",
+           
             "GraphQL",
             "Gatsby Cloud",
           ],
@@ -211,7 +213,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
-          tags: ["CSS", "React", "API", "Typescript", "Netlify"],
+          tags: [ "React","CSS", "API", "Typescript", "Netlify"],
           english: true,
           japanese: false,
         },
