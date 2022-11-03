@@ -65,7 +65,7 @@ const Projects = (props) => {
             "React",
             "CSS",
             "Markdown",
-          
+
             "GraphQL",
             "Gatsby Cloud",
           ],
@@ -103,7 +103,7 @@ const Projects = (props) => {
           linkText: "Live Demo",
           github: "https://github.com/zachinjapan/quotes",
           tech: "Tech",
-          tags: ["React","CSS",  "API", "TypeScript", "Netlify"],
+          tags: ["React", "CSS", "API", "TypeScript", "Netlify"],
           english: true,
           japanese: false,
         },
@@ -174,11 +174,11 @@ const Projects = (props) => {
             "React",
             "CSS",
             "Markdown",
-           
+
             "GraphQL",
             "Gatsby Cloud",
           ],
-          youtube: "https://www.youtube.com/embed/I96IPEaj4qA",
+          youtube: "https://www.youtube.com/embed/lt48zTXl6j0",
           english: true,
           japanese: false,
         },
@@ -213,7 +213,7 @@ const Projects = (props) => {
           linkText: "ウェブサイト",
           github: "https://github.com/zachinjapan/quotes",
           tech: "技術",
-          tags: [ "React","CSS", "API", "Typescript", "Netlify"],
+          tags: ["React", "CSS", "API", "Typescript", "Netlify"],
           english: true,
           japanese: false,
         },
@@ -247,25 +247,15 @@ const Projects = (props) => {
           animateIn="animate__fadeIn"
           animateOut="animate__fadeOut"
           animateOnce={true}
-          
-        >
-         
-        </AnimationOnScroll>
+        ></AnimationOnScroll>
 
         <div className="projects-container">
-          
           {content.projects.map((project, index) => (
-       
-              <ProjectModal
-                project={project}
-                />
-            
+            <ProjectModal project={project} />
           ))}
         </div>
       </div>
     </>
-            
-         
   );
 };
 
