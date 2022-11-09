@@ -197,7 +197,7 @@ function ProjectModal({ project }) {
                     ))}
                   </div>
                   <div
-                    className="flag-div"
+                    className="project-flag-div"
                     style={{
                       display: "flex",
                       justifyContent: "initial",

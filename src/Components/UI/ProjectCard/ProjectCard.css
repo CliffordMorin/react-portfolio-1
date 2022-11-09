@@ -47,7 +47,7 @@
 
 /* mobile only */
 @media (max-width: 1439px) {
-  .flag-div {
+  .project-flag-div {
     display: none !important;
   }
   .icon-button-text {
