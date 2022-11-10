@@ -4,10 +4,9 @@ import "animate.css/animate.min.css";
 import React, { Suspense } from "react";
 import LoadingSpinner from "./Components/UI/LoadingSpinner";
 
-import { LandingV2, Footer, MUINav } from "./Components/index";
+import { LandingV2, Footer, MUINav, Blog } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
 const Projects = React.lazy(() => import("./Components/Projects/Projects"));
-const Blog = React.lazy(() => import("./Components/Blog/Blog"));
 
 function App(props: { language: string }) {
   console.log(
@@ -22,8 +21,9 @@ function App(props: { language: string }) {
       <Suspense fallback={<LoadingSpinner />}>
         <About language={props.language} />
         <Projects language={props.language} />
-        <Blog language={props.language} />
       </Suspense>
+      <Blog language={props.language} />
+
       <Footer />
     </div>
   );
