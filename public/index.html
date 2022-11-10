@@ -59,64 +59,9 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Zach Stone</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
-
-      .loader-wrapper {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #212020;
-        display: grid;
-        place-items: center;
-      }
-
-      .loader {
-        border: 25px solid #ca0505;
-        border-top: 25px solid #830505;
-        border-radius: 50%;
-        width: 175px;
-        height: 175px;
-        animation: spin 1s linear infinite;
-      }
-      .loader-text {
-        color: #fff;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-top: 1rem;
-        width: 100%;
-        height: 95%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #000000;
-        display: grid;
-        place-items: center;
-        font-family: "Roboto", sans-serif !important;
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-      <div class="loader-wrapper">
-        <div class="loader"></div>
-      </div>
     </div>
     <!--
       This HTML file is a template.
