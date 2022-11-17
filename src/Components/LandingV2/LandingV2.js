@@ -44,23 +44,27 @@ const LandingV2 = (props) => {
         </span>
         <span> and I build </span>
         <span
-          style={{
-            color: "var(--secondary-color)",
-          }}
+          style={
+            {
+              // color: "var(--third-color)",
+            }
+          }
         >
           {" "}
-          websites
+          web
         </span>
         <span> and </span>
         <span
-          style={{
-            color: "var(--third-color)",
-          }}
+          style={
+            {
+              // color: "var(--fourth-color)",
+            }
+          }
         >
           {" "}
-          iOS applications
+          iOS
         </span>
-        <span>.</span>
+        <span> applications.</span>
       </h1>
       <SocialLinksVertical />
     </div>
