@@ -13,13 +13,11 @@
   flex-wrap: wrap;
   color: var(--off-white);
   overflow: hidden;
- }
+}
 
 .about-full {
   background: var(--black);
   /* background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(50, 50, 50) 100%); */
-  
-
 }
 
 .about h1 {
@@ -66,8 +64,6 @@
   /* cut off underline at end of text */
   overflow: hidden;
   margin-bottom: 50px;
-
-  
 }
 
 .about-description {
@@ -131,8 +127,6 @@
   z-index: 99;
   max-width: 99vw !important;
   overflow: hidden;
-  
-  
 }
 
 @media (min-width: 2000px) {

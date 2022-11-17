@@ -1,32 +1,28 @@
-
-
-
 .landing-v2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;    
+  height: 100vh;
   background-color: var(--black);
-  
 }
 
 @media (min-width: 1024px) {
-
-.landing-v2-title {
-
+  .landing-v2-title {
     padding-bottom: 10vh;
-}}
+  }
+}
 
 .landing-v2-title {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    width: fit-content;
-    max-width: 1600px;
-    height: max-content;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: fit-content;
+  max-width: 800px;
+  height: max-content;
 
-    background-color: var(--black);
+  background-color: var(--black);
 
-    margin: 50px;
-    font-size: 3rem;
+  margin: 50px;
+  font-size: 3rem;
 }
