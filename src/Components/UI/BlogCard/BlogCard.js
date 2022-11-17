@@ -30,9 +30,11 @@ export default function BlogCard(props) {
           }}
           // draggable="false"
         />
-        <CardContent style={{
-          minHeight: "100px",
-        }}>
+        <CardContent
+          style={{
+            minHeight: "100px",
+          }}
+        >
           <Typography
             variant="h5"
             component="div"
