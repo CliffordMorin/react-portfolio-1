@@ -1,10 +1,21 @@
-import moment from "moment";
+const javascriptlocale =
+  window.navigator.userLanguage || window.navigator.language;
 
-console.log(moment().locale());
+const language = javascriptlocale.split(/[-_]/)[0]; // language without region code
+
+console.log("language:", language);
+
+const checkLanguage = (language) => {
+  if (language.toLowerCase() === "ja") {
+    return "Japanese";
+  } else {
+    return "English";
+  }
+};
 
 export default function reducerFunc(
   state = {
-    language: moment().locale() === "ja" ? "Japanese" : "English",
+    language: checkLanguage(language),
   },
   action
 ) {
