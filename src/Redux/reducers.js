@@ -1,6 +1,10 @@
+import moment from "moment";
+
+console.log(moment().locale());
+
 export default function reducerFunc(
   state = {
-    language: "English",
+    language: moment().locale() === "ja" ? "Japanese" : "English",
   },
   action
 ) {

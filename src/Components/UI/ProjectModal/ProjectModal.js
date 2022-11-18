@@ -13,8 +13,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
 // import { AiFillYoutube } from "react-icons/ai";
 import { AiFillCloseCircle } from "react-icons/ai";
-import america from "../../../images/america.webp";
-import japan from "../../../images/japan.webp";
+import america from "../../../images/america-big.png";
+import japan from "../../../images/japan-big.png";
 import styled from "styled-components";
 
 const customStyles = {

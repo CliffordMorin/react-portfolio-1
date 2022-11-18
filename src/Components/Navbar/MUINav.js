@@ -8,8 +8,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import america from "../../images/america.webp";
-import japan from "../../images/japan.webp";
+import america from "../../images/america-big.png";
+import japan from "../../images/japan-big.png";
 import { connect } from "react-redux";
 import "./Navbar.css";
 
