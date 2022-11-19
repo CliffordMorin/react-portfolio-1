@@ -1,15 +1,18 @@
-const javascriptlocale =
+const browserLanguageSettings =
   window.navigator.userLanguage || window.navigator.language;
 
-const language = javascriptlocale.split(/[-_]/)[0]; // language without region code
+const language = browserLanguageSettings.split(/[-_]/)[0].toLowerCase(); // language without region code
 
 console.log("language:", language);
 
 const checkLanguage = (language) => {
-  if (language.toLowerCase() === "ja") {
-    return "Japanese";
-  } else {
-    return "English";
+  switch (language) {
+    case "en":
+      return "English";
+    case "ja":
+      return "Japanese";
+    default:
+      return "English";
   }
 };
 
