@@ -104,7 +104,14 @@ export default function Index() {
     setTimeout(() => {
       setActive(false);
     }, 4000);
-  }, [DivSequence]);
+  }, [
+    divAnimation1,
+    divAnimation2,
+    divAnimation3,
+    divAnimation4,
+    divAnimation5,
+    divAnimation6,
+  ]);
 
   return (
     <Container
