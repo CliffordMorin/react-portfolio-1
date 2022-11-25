@@ -105,6 +105,7 @@ export default function Index() {
       setActive(false);
     }, 4000);
   }, [
+    DivSequence,
     divAnimation1,
     divAnimation2,
     divAnimation3,
