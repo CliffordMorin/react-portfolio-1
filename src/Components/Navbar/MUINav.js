@@ -1,4 +1,3 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,6 +11,7 @@ import america from "../../images/america-big.png";
 import japan from "../../images/japan-big.png";
 import { connect } from "react-redux";
 import "./Navbar.css";
+import React, { useEffect, useState } from "react";
 
 const MUINav = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {
@@ -62,127 +62,129 @@ const MUINav = (props) => {
   };
 
   return (
-    <AppBar position="relative" className="nav">
-      <Container
-        maxWidth="100vw
+    <>
+      <AppBar position="relative" className="nav">
+        <Container
+          maxWidth="100vw
     "
-      >
-        <Toolbar disableGutters="true">
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              disableScrollLock={true}
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
+        >
+          <Toolbar disableGutters="true">
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                disableScrollLock={true}
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {content.menu.map((item) => (
+                  <a
+                    href={item[1]}
+                    style={{ textDecoration: "none" }}
+                    key={item[1]}
+                    className="nav-menu-item"
+                  >
+                    <MenuItem
+                      onClick={handleCloseNavMenu}
+                      key={Math.random()}
+                      sx={{
+                        my: 1,
+                        color: "var(--secondary-color)",
+                        display: "block",
+                      }}
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      {item[0]}
+                    </MenuItem>
+                  </a>
+                ))}
+              </Menu>
+            </Box>
+
+            <Box
+              overflow="visible"
+              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
             >
               {content.menu.map((item) => (
                 <a
+                  key={Math.random()}
                   href={item[1]}
                   style={{ textDecoration: "none" }}
-                  key={item[1]}
-                  className="nav-menu-item"
                 >
-                  <MenuItem
+                  <Button
+                    color="inherit"
                     onClick={handleCloseNavMenu}
-                    key={Math.random()}
-                    sx={{
-                      my: 1,
-                      color: "var(--secondary-color)",
-                      display: "block",
-                    }}
+                    sx={{ my: 1, color: "white", display: "block" }}
                     style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
+                      fontSize: "1.2rem",
+                      marginLeft: "10px",
+                      marginRight: "10px",
                     }}
+                    className="nav-menu-item"
                   >
                     {item[0]}
-                  </MenuItem>
+                  </Button>
                 </a>
               ))}
-            </Menu>
-          </Box>
+            </Box>
 
-          <Box
-            overflow="visible"
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-          >
-            {content.menu.map((item) => (
-              <a
-                key={Math.random()}
-                href={item[1]}
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  color="inherit"
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 1, color: "white", display: "block" }}
-                  style={{
-                    fontSize: "1.2rem",
-                    marginLeft: "10px",
-                    marginRight: "10px",
-                  }}
-                  className="nav-menu-item"
-                >
-                  {item[0]}
-                </Button>
-              </a>
-            ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }} className="full-flag-div">
-            <div className="flag-div nav-button">
-              {props.language === "English" ? (
-                <div className="flag-div">
-                  <div className="flag-div-holder">
-                    <img
-                      className="flag"
-                      src={japan}
-                      alt="Japan Flag"
-                      onClick={() => handleChangeLanguageToJapanese()}
-                    />
+            <Box sx={{ flexGrow: 0 }} className="full-flag-div">
+              <div className="flag-div nav-button">
+                {props.language === "English" ? (
+                  <div className="flag-div">
+                    <div className="flag-div-holder">
+                      <img
+                        className="flag"
+                        src={japan}
+                        alt="Japan Flag"
+                        onClick={() => handleChangeLanguageToJapanese()}
+                      />
+                    </div>
                   </div>
-                </div>
-              ) : (
-                <div className="Japanese">
-                  <div className="flag-div-holder">
-                    <img
-                      className="flag"
-                      src={america}
-                      alt="America Flag"
-                      onClick={() => handleChangeLanguageToEnglish()}
-                    />
+                ) : (
+                  <div className="Japanese">
+                    <div className="flag-div-holder">
+                      <img
+                        className="flag"
+                        src={america}
+                        alt="America Flag"
+                        onClick={() => handleChangeLanguageToEnglish()}
+                      />
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+                )}
+              </div>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import "./LandingV2.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
 import "animate.css";
+import React, { useEffect, useState } from "react";
 
 const LandingV2 = (props) => {
   let content = {
@@ -33,40 +34,30 @@ const LandingV2 = (props) => {
 
   return (
     <div className="landing-v2">
-      <h1 className="landing-v2-title animate__animated animate__fadeIn">
-        <span>{`${currGreeting}`}, I'm </span>
-        <span
-          style={{
-            color: "var(--secondary-color)",
-          }}
-        >
-          Zach
-        </span>
-        <span> and I build </span>
-        <span
-          style={
-            {
-              // color: "var(--third-color)",
+      <>
+        <h1 className="landing-v2-title animate__animated animate__fadeIn">
+          <span>{`${currGreeting}`}, I'm </span>
+          <span
+            style={{
+              color: "var(--secondary-color)",
+            }}
+          >
+            Zach
+          </span>
+          <span> and I build </span>
+          <span
+            style={
+              {
+                // color: "var(--third-color)",
+              }
             }
-          }
-        >
-          {" "}
-          web
-        </span>
-        <span> and </span>
-        <span
-          style={
-            {
-              // color: "var(--fourth-color)",
-            }
-          }
-        >
-          {" "}
-          iOS
-        </span>
-        <span> applications.</span>
-      </h1>
-      <SocialLinksVertical />
+          >
+            {" "}
+            web applications.
+          </span>
+        </h1>
+        <SocialLinksVertical />
+      </>
     </div>
   );
 };

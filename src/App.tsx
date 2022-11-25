@@ -1,10 +1,10 @@
 import "./App.css";
 import { connect } from "react-redux";
 import "animate.css/animate.min.css";
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import LoadingSpinner from "./Components/UI/LoadingSpinner";
 
-import { LandingV2, Footer, MUINav, Blog } from "./Components/index";
+import { LandingV2, Footer, MUINav, Blog, Overlay } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
 const Projects = React.lazy(() => import("./Components/Projects/Projects"));
 
@@ -14,17 +14,30 @@ function App(props: { language: string }) {
     "color:green;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold"
   );
 
+  const [showApp, setShowApp] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowApp(true);
+    }, 3200);
+  });
+
   return (
     <div className="App">
-      <MUINav />
-      <LandingV2 language={props.language} />
-      <Suspense fallback={<LoadingSpinner />}>
-        <About language={props.language} />
-        <Projects language={props.language} />
-      </Suspense>
-      <Blog language={props.language} />
+      <Overlay />
+      {showApp && (
+        <>
+          <MUINav />
+          <LandingV2 language={props.language} />
+          <Suspense fallback={<LoadingSpinner />}>
+            <About language={props.language} />
+            <Projects language={props.language} />
+          </Suspense>
+          <Blog language={props.language} />
 
-      <Footer />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

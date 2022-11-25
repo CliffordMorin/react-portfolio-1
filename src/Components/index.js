@@ -4,5 +4,6 @@ import Blog from "./Blog/Blog";
 import Projects from "./Projects/Projects";
 import MUINav from "./Navbar/MUINav";
 import LandingV2 from "./LandingV2/LandingV2";
+import Overlay from "./Overlay/Overlay";
 
-export { About, Footer, Blog, LandingV2, MUINav, Projects };
+export { About, Footer, Blog, LandingV2, MUINav, Projects, Overlay };
