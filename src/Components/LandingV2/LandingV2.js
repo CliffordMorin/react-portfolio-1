@@ -1,7 +1,6 @@
 import "./LandingV2.css";
 import SocialLinksVertical from "../UI/SocialLinksVertical";
 import "animate.css";
-import React, { useEffect, useState } from "react";
 
 const LandingV2 = (props) => {
   let content = {

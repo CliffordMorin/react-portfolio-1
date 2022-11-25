@@ -11,7 +11,6 @@ import america from "../../images/america-big.png";
 import japan from "../../images/japan-big.png";
 import { connect } from "react-redux";
 import "./Navbar.css";
-import React, { useEffect, useState } from "react";
 
 const MUINav = (props) => {
   const handleChangeLanguageToJapanese = (evt) => {

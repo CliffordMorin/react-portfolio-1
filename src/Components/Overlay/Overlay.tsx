@@ -104,7 +104,7 @@ export default function Index() {
     setTimeout(() => {
       setActive(false);
     }, 4000);
-  }, []);
+  }, [DivSequence]);
 
   return (
     <Container
