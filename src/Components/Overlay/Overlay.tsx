@@ -61,6 +61,7 @@ export default function Index() {
         ease: "easeInOut",
       },
     });
+    //test
     await currentAnimation.start({
       x:
         number === 1
