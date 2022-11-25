@@ -13,88 +13,87 @@ export default function Index() {
   const divAnimation5 = useAnimation();
   const divAnimation6 = useAnimation();
 
-  const DivSequence = async (number: any) => {
-    let currentAnimation = divAnimation1;
-
-    switch (number) {
-      case 1:
-        currentAnimation = divAnimation1;
-        break;
-      case 2:
-        currentAnimation = divAnimation2;
-        break;
-      case 3:
-        currentAnimation = divAnimation3;
-        break;
-      case 4:
-        currentAnimation = divAnimation4;
-        break;
-      case 5:
-        currentAnimation = divAnimation5;
-        break;
-      case 6:
-        currentAnimation = divAnimation6;
-        break;
-    }
-
-    await currentAnimation.start({ scale: 0 });
-    await currentAnimation.start({ scale: 2 });
-    await currentAnimation.start({ scale: 1 });
-
-    // move away in a random direction but not too far and
-    await currentAnimation.start({
-      x: (Math.random() * 50 - 60) * (Math.random() > 0.5 ? 1 : -1),
-      y: (Math.random() * 100 - 50) * (Math.random() > 0.5 ? 1 : -1),
-
-      transition: {
-        duration: 0.75,
-        ease: "easeInOut",
-      },
-    });
-
-    await currentAnimation.start({
-      x: (Math.random() * 50 - 60) * (Math.random() > 0.5 ? 1 : -1),
-      y: (Math.random() * 100 - 50) * (Math.random() > 0.5 ? 1 : -1),
-
-      transition: {
-        duration: 0.75,
-        ease: "easeInOut",
-      },
-    });
-    //test
-    await currentAnimation.start({
-      x:
-        number === 1
-          ? -14
-          : number === 2
-          ? -6
-          : number === 3
-          ? 0
-          : number === 4
-          ? 6
-          : number === 5
-          ? 14
-          : 0,
-
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut",
-      },
-    });
-    // explode and spin out while fading out
-    await currentAnimation.start({
-      scale: 60,
-      rotate: 180,
-      opacity: 0,
-
-      transition: {
-        duration: 2.5,
-      },
-    });
-  };
-
   useEffect(() => {
+    const DivSequence = async (number: any) => {
+      let currentAnimation = divAnimation1;
+
+      switch (number) {
+        case 1:
+          currentAnimation = divAnimation1;
+          break;
+        case 2:
+          currentAnimation = divAnimation2;
+          break;
+        case 3:
+          currentAnimation = divAnimation3;
+          break;
+        case 4:
+          currentAnimation = divAnimation4;
+          break;
+        case 5:
+          currentAnimation = divAnimation5;
+          break;
+        case 6:
+          currentAnimation = divAnimation6;
+          break;
+      }
+
+      await currentAnimation.start({ scale: 0 });
+      await currentAnimation.start({ scale: 2 });
+      await currentAnimation.start({ scale: 1 });
+
+      // move away in a random direction but not too far and
+      await currentAnimation.start({
+        x: (Math.random() * 50 - 60) * (Math.random() > 0.5 ? 1 : -1),
+        y: (Math.random() * 100 - 50) * (Math.random() > 0.5 ? 1 : -1),
+
+        transition: {
+          duration: 0.75,
+          ease: "easeInOut",
+        },
+      });
+
+      await currentAnimation.start({
+        x: (Math.random() * 50 - 60) * (Math.random() > 0.5 ? 1 : -1),
+        y: (Math.random() * 100 - 50) * (Math.random() > 0.5 ? 1 : -1),
+
+        transition: {
+          duration: 0.75,
+          ease: "easeInOut",
+        },
+      });
+      //test
+      await currentAnimation.start({
+        x:
+          number === 1
+            ? -14
+            : number === 2
+            ? -6
+            : number === 3
+            ? 0
+            : number === 4
+            ? 6
+            : number === 5
+            ? 14
+            : 0,
+
+        y: 0,
+        transition: {
+          duration: 0.5,
+          ease: "easeInOut",
+        },
+      });
+      // explode and spin out while fading out
+      await currentAnimation.start({
+        scale: 60,
+        rotate: 180,
+        opacity: 0,
+
+        transition: {
+          duration: 2.5,
+        },
+      });
+    };
     DivSequence(1);
     DivSequence(2);
     DivSequence(3);
@@ -105,7 +104,6 @@ export default function Index() {
       setActive(false);
     }, 4000);
   }, [
-    DivSequence,
     divAnimation1,
     divAnimation2,
     divAnimation3,
