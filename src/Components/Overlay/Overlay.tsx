@@ -61,7 +61,6 @@ export default function Index() {
         ease: "easeInOut",
       },
     });
-    // move back to the center but each square should be slightyly differnt layout basd on the number
     await currentAnimation.start({
       x:
         number === 1
