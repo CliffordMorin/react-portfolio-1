@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const About = () => {
-	const { i18n, t } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<AboutDiv className="about" id="About">
