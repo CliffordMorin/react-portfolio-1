@@ -83,7 +83,6 @@ function ProjectModal({ project }) {
         >
           <Card
             id="MUI-Card"
-            // slice the github to link to only have the github project name
             className={project.github.slice(
               project.github.lastIndexOf("/") + 1
             )}
