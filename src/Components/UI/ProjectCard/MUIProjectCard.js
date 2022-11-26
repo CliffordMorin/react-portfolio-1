@@ -1,4 +1,3 @@
-import * as React from "react";
 import Card from "@mui/material/Card";
 
 import CardMedia from "@mui/material/CardMedia";
@@ -17,7 +16,6 @@ export default function MUIProjectCard(props) {
   return (
     <Card
       id="MUI-Card"
-      // slice the github to link to only have the github project name
       className={props.github.slice(props.github.lastIndexOf("/") + 1)}
     >
       <div

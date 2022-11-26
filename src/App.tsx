@@ -1,5 +1,4 @@
 import "./App.css";
-import { connect } from "react-redux";
 import "animate.css/animate.min.css";
 import React, { Suspense, useState, useEffect } from "react";
 import LoadingSpinner from "./Components/UI/LoadingSpinner";
@@ -8,7 +7,7 @@ import { LandingV2, Footer, MUINav, Blog, Overlay } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
 const Projects = React.lazy(() => import("./Components/Projects/Projects"));
 
-function App(props: { language: string }) {
+function App() {
   console.log(
     "%cHi! Thanks for checking out my code ☺ If you have any questions, feel free to reach out to me on Linkedin",
     "color:green;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold"
@@ -28,12 +27,12 @@ function App(props: { language: string }) {
       {showApp && (
         <>
           <MUINav />
-          <LandingV2 language={props.language} />
+          <LandingV2 />
           <Suspense fallback={<LoadingSpinner />}>
-            <About language={props.language} />
-            <Projects language={props.language} />
+            <About />
+            <Projects />
           </Suspense>
-          <Blog language={props.language} />
+          <Blog />
 
           <Footer />
         </>
@@ -42,10 +41,4 @@ function App(props: { language: string }) {
   );
 }
 
-const mapStateToProps = (state: { language: string }) => {
-  return {
-    language: state.language,
-  };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;

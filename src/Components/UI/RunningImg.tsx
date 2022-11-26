@@ -1,22 +1,22 @@
 import styled from "styled-components";
 import Nartuo from "../../images/UI/narutoRun.gif";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-const RunningImg = (img) => {
+const RunningImg = (img: any) => {
   return (
     <AnimationOnScroll
-    animateIn="animate__fadeIn"
-    animateOut="animate__fadeOut"
-    animateOnce={true}
-    delay={400}
-  >
-    <Wrapper>
-      <img
-        src={Nartuo}
-        loading="lazy"
-        alt="anime character"
-        className="img naruto"
-      />
-    </Wrapper>
+      animateIn="animate__fadeIn"
+      animateOut="animate__fadeOut"
+      animateOnce={true}
+      delay={400}
+    >
+      <Wrapper>
+        <img
+          src={Nartuo}
+          loading="lazy"
+          alt="anime character"
+          className="img naruto"
+        />
+      </Wrapper>
     </AnimationOnScroll>
   );
 };

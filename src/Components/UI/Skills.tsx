@@ -1,4 +1,3 @@
-import "./Skills.css";
 import * as React from "react";
 import { FaReact } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -18,90 +17,38 @@ import { SiMaterialui } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import { GithubContributions } from "react-github-graph";
+import { useTranslation } from "react-i18next";
+import styled from "styled-components";
 
-const Skills = (props) => {
-  let content = {
-    English: {
-      title: "Skills",
-      skills: [
-        [
-          <AiFillHtml5 />,
-          "HTML",
-          "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        ],
-        [
-          <DiCss3Full />,
-          "CSS",
-          "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        ],
-        [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
-        [
-          <IoLogoJavascript />,
-          "JavaScript",
-          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        ],
-        [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-        [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
-        [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+const Skills = () => {
+  const { i18n, t } = useTranslation();
 
-        [<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
-        [<FaReact />, "React", "https://reactjs.org/"],
-        [<SiRedux />, "Redux", "https://redux.js.org/"],
-        [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
-        [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
-        [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
-        [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
-      ],
+  const technologies = [
+    [
+      <AiFillHtml5 />,
+      "HTML",
+      "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    ],
+    [<DiCss3Full />, "CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
+    [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+    [
+      <IoLogoJavascript />,
+      "JavaScript",
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    ],
+    [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
+    [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+    [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
 
-      resume: "Resume",
-      japaneseResume: "Japanese Resume",
-      japaneseWorkHistory: "Japanese Work History",
-      certifications: "Certifications",
-    },
-    Japanese: {
-      title: "スキル",
+    [<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
+    [<FaReact />, "React", "https://reactjs.org/"],
+    [<SiRedux />, "Redux", "https://redux.js.org/"],
+    [<SiMaterialui />, "Material UI", "https://material-ui.com/"],
+    [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
+    [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
+    [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
+  ];
 
-      skills: [
-        [
-          <AiFillHtml5 />,
-          "HTML",
-          "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        ],
-        [
-          <DiCss3Full />,
-          "CSS",
-          "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        ],
-        [<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
-        [
-          <IoLogoJavascript />,
-          "JavaScript",
-          "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        ],
-        [<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-        [<FaNodeJs />, "Node", "https://nodejs.org/en/"],
-        [<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
-        // sql
-
-        [<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
-
-        [<FaReact />, "React", "https://reactjs.org/"],
-        [<SiRedux />, "Redux", "https://redux.js.org/"],
-        [<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
-        [<GrGraphQl />, "GraphQL", "https://graphql.org/"],
-        [<RiVuejsFill />, "Vue", "https://vuejs.org/"],
-      ],
-      resume: "履歴書(英語)",
-      japaneseResume: "履歴書(日本語)",
-      japaneseWorkHistory: "職務経歴書(日本語)",
-
-      certifications: "資格",
-    },
-  };
-
-  props.language === "Japanese"
-    ? (content = content.Japanese)
-    : (content = content.English);
   return (
     <>
       <IconContext.Provider
@@ -111,8 +58,7 @@ const Skills = (props) => {
           size: "40px",
         }}
       >
-        <div className="Skills">
-          {/* <h1 className="skills-title">{content.title}</h1> */}
+        <SkillsDiv className="Skills">
           <div
             style={{
               display: "flex",
@@ -154,7 +100,7 @@ const Skills = (props) => {
                       color: "white",
                     }}
                   >
-                    {content.resume}
+                    {t("skills.resume")}
                   </span>
                 </a>
               </>
@@ -181,7 +127,7 @@ const Skills = (props) => {
                       color: "white",
                     }}
                   >
-                    {content.japaneseResume}
+                    {t("skills.japaneseResume")}
                   </span>
                 </a>
               </>
@@ -206,7 +152,7 @@ const Skills = (props) => {
                       color: "white",
                     }}
                   >
-                    {content.certifications}
+                    {t("skills.certifications")}
                   </span>
                 </a>
               </>
@@ -216,7 +162,7 @@ const Skills = (props) => {
             <GithubContributions username="ZacharyTStone" />
           </div>
           <div className="skills-container">
-            {content.skills.map((skill) => (
+            {technologies.map((skill: any) => (
               <div key={skill[1]}>
                 <a
                   href={skill[2]}
@@ -237,10 +183,87 @@ const Skills = (props) => {
               </div>
             ))}
           </div>
-        </div>
+        </SkillsDiv>
       </IconContext.Provider>
     </>
   );
 };
+
+const SkillsDiv = styled.div`
+  .Skills {
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--off-white);
+  }
+
+  .skills-title {
+    text-align: center;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .skill-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 10px;
+    color: var(--off-white);
+    text-decoration: none !important;
+  }
+
+  .skill-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
+    color: var(--secondary-color);
+    transform: translateY(-5px);
+  }
+
+  .skill-icon-text {
+    margin-bottom: 10px;
+    color: var(--off-white);
+    text-decoration: none;
+  }
+
+  .skill-img {
+    margin-top: 10px;
+  }
+
+  .modals {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .resume-link-text:hover {
+    cursor: pointer;
+    color: var(--secondary-color) !important;
+  }
+`;
 
 export default Skills;

@@ -1,5 +1,4 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
 import { CardMedia } from "@mui/material";
 import Card from "@mui/material/Card";
 import Modal from "react-modal";
@@ -11,7 +10,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { RiComputerLine } from "react-icons/ri";
-// import { AiFillYoutube } from "react-icons/ai";
 import { AiFillCloseCircle } from "react-icons/ai";
 import america from "../../../images/america-big.png";
 import japan from "../../../images/japan-big.png";
@@ -28,7 +26,6 @@ const customStyles = {
     transform: "translate(-50%, -35%)",
     backgroundColor: "var(--black)",
     width: "fit-content",
-    maxWidth: "90vw",
     border: "solid 5px var(--secondary-color)",
     borderRadius: "10px",
   },
@@ -64,16 +61,9 @@ function ProjectModal({ project }) {
           cardWidth="405px"
           index={project?.index}
           title={project?.title}
-          //  description={project?.description}
-          //  tech_description={project?.tech_description}
           image={project?.image}
-          //  link={project?.link}
-          //  linkText={project?.linkText}
           github={project?.github}
           tags={project?.tags}
-          //  tech={project?.tech}
-          //  callToAction={project?.callToAction}
-          //  youtube={project?.youtube}
           english={project?.english}
           japanese={project?.japanese}
         />
@@ -93,7 +83,6 @@ function ProjectModal({ project }) {
         >
           <Card
             id="MUI-Card"
-            // slice the github to link to only have the github project name
             className={project.github.slice(
               project.github.lastIndexOf("/") + 1
             )}
@@ -214,6 +203,8 @@ function ProjectModal({ project }) {
                             filter: "brightness(0.85)",
                             marginRight: "10px",
                             marginTop: "10px",
+                            width: "50px",
+                            height: "40px",
                           }}
                         ></img>
                       </div>
@@ -228,6 +219,8 @@ function ProjectModal({ project }) {
                             filter: "brightness(0.85)",
                             marginRight: "10px",
                             marginTop: "10px",
+                            width: "50px",
+                            height: "40px",
                           }}
                         ></img>
                       </div>

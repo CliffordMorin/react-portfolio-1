@@ -1,10 +1,9 @@
-import "./SocialLinks.css";
-
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiTwotoneMail } from "react-icons/ai";
 import { IconContext } from "react-icons";
+import styled from "styled-components";
 
 const SocialLinks = () => {
   return (
@@ -15,7 +14,7 @@ const SocialLinks = () => {
         size: "40px",
       }}
     >
-      <div className="social-links">
+      <Main className="social-links">
         <a
           href="https://www.linkedin.com/in/ZacharyStone42"
           target="_blank"
@@ -48,9 +47,28 @@ const SocialLinks = () => {
         >
           <AiTwotoneMail className="social-link-img" />
         </a>
-      </div>
+      </Main>
     </IconContext.Provider>
   );
 };
 
+const Main = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 455px) {
+    .social-link {
+      margin: 10px;
+    }
+  }
+  @media (max-width: 600px) {
+    .social-links {
+      width: 100%;
+    }
+  }
+`;
 export default SocialLinks;

@@ -7,7 +7,9 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import "./Blog.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-const Blog = (props) => {
+import { useTranslation } from "react-i18next";
+const Blog = () => {
+  const { t, i18n } = useTranslation();
   const [activeSlide, setActiveSlide] = useState(0);
 
   let content = {
@@ -83,10 +85,9 @@ const Blog = (props) => {
     },
   };
 
-  props.language === "Japanese"
-    ? (content = content.Japanese)
-    : (content = content.English);
-
+  i18n.language === "en"
+    ? (content = content.English)
+    : (content = content.Japanese);
   return (
     <AnimationOnScroll
       animateIn="animate__fadeIn"
@@ -99,13 +100,16 @@ const Blog = (props) => {
         id="Blog"
         style={{
           paddingBottom: "50px",
-         
         }}
       >
-        <h1 style={{
-          marginTop: "0px",
-          marginBottom: "50px",
-        }}>{content.mainTitle}</h1>
+        <h1
+          style={{
+            marginTop: "0px",
+            marginBottom: "50px",
+          }}
+        >
+          {content.mainTitle}
+        </h1>
 
         <div
           style={{
