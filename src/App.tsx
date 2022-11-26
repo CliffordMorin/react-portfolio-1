@@ -28,9 +28,9 @@ function App(props: { language: string }) {
       {showApp && (
         <>
           <MUINav />
-          <LandingV2 language={props.language} />
+          <LandingV2 />
           <Suspense fallback={<LoadingSpinner />}>
-            <About language={props.language} />
+            <About />
             <Projects language={props.language} />
           </Suspense>
           <Blog language={props.language} />

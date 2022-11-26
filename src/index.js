@@ -10,6 +10,8 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducerFunc from "./Redux/reducers";
 
+import "./translations/i18n.js";
+
 const store = createStore(reducerFunc);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
