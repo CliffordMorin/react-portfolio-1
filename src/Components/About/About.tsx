@@ -1,8 +1,6 @@
 import Skills from "../UI/Skills";
-import { connect } from "react-redux";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 

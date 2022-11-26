@@ -10,8 +10,12 @@ import niceRiff from "../../images/projects/niceRiff.jpeg";
 import Naruto from "../../images/UI/narutoRun.gif";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
+// import i18n from "../../translations/i18n";
+import { useTranslation } from "react-i18next";
 
 const Projects = (props) => {
+  const { t, i18n } = useTranslation();
+
   let content = {
     English: {
       mainTitle: "Featured Projects",
@@ -235,9 +239,9 @@ const Projects = (props) => {
     },
   };
 
-  props.language === "Japanese"
-    ? (content = content.Japanese)
-    : (content = content.English);
+  i18n.language === "en"
+    ? (content = content.English)
+    : (content = content.Japanese);
 
   return (
     <>
