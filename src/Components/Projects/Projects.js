@@ -4,12 +4,13 @@ import blog from "../../images/projects/blog.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
-// import MUIProjectCard from "../UI/ProjectCard/MUIProjectCard";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import RunningImg from "../UI/RunningImg";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 import Naruto from "../../images/UI/narutoRun.gif";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
+import styled from "styled-components";
+
 const Projects = (props) => {
   let content = {
     English: {
@@ -240,7 +241,7 @@ const Projects = (props) => {
 
   return (
     <>
-      <div className="Projects" id="Projects">
+      <Main className="Projects" id="Projects">
         <h1>{content.mainTitle}</h1>
         <RunningImg src={Naruto} />
         <AnimationOnScroll
@@ -254,9 +255,53 @@ const Projects = (props) => {
             <ProjectModal project={project} />
           ))}
         </div>
-      </div>
+      </Main>
     </>
   );
 };
+
+const Main = styled.div`
+  text-align: center;
+  width: 100%;
+  user-select: none;
+  margin-top: 150px;
+  background: var(--black);
+
+  .projects-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .ReactModal__Overlay {
+    background-color: var(--black) !important;
+  }
+
+  @media (max-width: 800px) {
+    .project-icons {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .projects-container {
+      width: 90%;
+      flex-wrap: wrap;
+      margin: auto;
+      margin-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+`;
 
 export default Projects;
