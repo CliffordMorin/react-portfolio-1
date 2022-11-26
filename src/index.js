@@ -9,8 +9,8 @@ import App from "./App";
 import "./translations/i18n.js";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById("root")
 );
