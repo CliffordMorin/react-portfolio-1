@@ -28,6 +28,7 @@ const customStyles = {
 		width: "fit-content",
 		border: "solid 5px var(--secondary-color)",
 		borderRadius: "10px",
+		maxWidth: "100vw",
 	},
 };
 
