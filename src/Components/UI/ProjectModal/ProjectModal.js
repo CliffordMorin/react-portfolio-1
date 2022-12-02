@@ -25,7 +25,6 @@ const customStyles = {
 		marginRight: "-50%",
 		transform: "translate(-50%, -35%)",
 		backgroundColor: "var(--black)",
-		width: "fit-content",
 		border: "solid 5px var(--secondary-color)",
 		borderRadius: "10px",
 		maxWidth: "100vw",
