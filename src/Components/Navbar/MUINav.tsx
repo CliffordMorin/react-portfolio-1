@@ -192,6 +192,7 @@ const Nav = styled(AppBar)`
 		position: fixed;
 		right: 1.5%;
 		top: 15px;
+		cursor: pointer;
 	}
 
 	.flag {
