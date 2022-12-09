@@ -1,30 +1,30 @@
 {
-  "translation": {
-    "landing": {
-      "morning": "おはようございます",
-      "afternoon": "こんにちは",
-      "evening": "こんばんは",
-      "name": "Zach"
-    },
-    "nav": {
-      "home": "ホーム",
-      "about": "私について",
-      "projects": "プロジェクト",
-      "blog": "ブログ"
-    },
-    "about": {
-      "title": "自己紹介",
-      "description1": "独学のソフトエンジニアであり、独学の日本語学習者であり、大学で訓練を受けたミュージシャンでもあります。",
-      "description2": "日本で英語を教えていた頃、コーディングが大好きになりました。 HTML、CSS、Javascriptだけから始めました。スキルを向上させるために一生懸命に勉強し、今ではReact、Vue、Gatsbyなどのフレームワークを使用して複雑なフルスタックアプリケーションを作成しています。",
-      "description3": "現在、Rapptr Labsでソフトウェアエンジニアとして働いています。",
-      "description4": "お問い合わせはZach.Stone.Developer@gmail.comまでメールでお問い合わせください。"
-    },
-    "skills": {
-      "title": "スキル",
-      "resume": "履歴書(英語)",
-      "japaneseResume": "履歴書(日本語)",
-      "japaneseWorkHistory": "職務経歴書(日本語)",
-      "certifications": "資格"
-    }
-  }
+	"translation": {
+		"landing": {
+			"morning": "おはようございます",
+			"afternoon": "こんにちは",
+			"evening": "こんばんは",
+			"name": "Zach"
+		},
+		"nav": {
+			"home": "ホーム",
+			"about": "私について",
+			"projects": "プロジェクト",
+			"blog": "ブログ"
+		},
+		"about": {
+			"title": "自己紹介",
+			"description1": "独学のソフトウェアエンジニアであり、独学の日本語学習者であり、大学で訓練を受けたミュージシャンでもあります。",
+			"description2": "日本で英語を教えていた頃、コーディングが大好きになりました。 HTML、CSS、Javascriptから始めました。スキルを向上させるために一生懸命に勉強し、今ではReact、Vue、Gatsbyなどのフレームワークを使用して複雑なフルスタックアプリケーションを作成しています。",
+			"description3": "現在、Rapptr Labsでソフトウェアエンジニアとして働いています。",
+			"description4": "ご連絡ははZach.Stone.Developer@gmail.comまでメールでお問い合わせください。"
+		},
+		"skills": {
+			"title": "スキル",
+			"resume": "履歴書(英語)",
+			"japaneseResume": "履歴書(日本語)",
+			"japaneseWorkHistory": "職務経歴書(日本語)",
+			"certifications": "資格"
+		}
+	}
 }

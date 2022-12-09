@@ -190,7 +190,7 @@ const Projects = () => {
 				{
 					title: `ハク`,
 					description:
-						"ハクは面接の過程でエントリした会社を追跡して比較できるアプリケーションです。",
+						"ハクは面接の過程でエントリ-した会社を追跡して比較できるアプリケーションです。",
 					image: haku,
 					link: "https://hakujobs.com",
 					linkText: "ウェブサイト",
