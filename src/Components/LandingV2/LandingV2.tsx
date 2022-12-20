@@ -65,14 +65,10 @@ const LandingTile = styled.h1`
 	background-color: var(--black);
 
 	margin: 50px;
-	font-size: 2rem
+	font-size: 3rem
 
-	@media (min-width: 1024px) {
-		font-size: 3rem;
-	}
-
-	@media (min-width: 767px) {
-		font-size: 2.5rem;
+	@media (max-width: 1024px) {
+		font-size: 2rem;
 	}
 `;
 
