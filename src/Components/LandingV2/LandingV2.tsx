@@ -23,7 +23,7 @@ const LandingV2 = () => {
 			<>
 				<LandingTile className="animate__animated animate__fadeIn">
 					<span>
-						{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : ""}
+						{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : " "}
 					</span>
 					<span
 						style={{
