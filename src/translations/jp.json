@@ -4,7 +4,8 @@
 			"morning": "おはようございます",
 			"afternoon": "こんにちは",
 			"evening": "こんばんは",
-			"name": "Zach"
+			"name": "ザックと申します。",
+			"description": "日本語が話せるのソフトウェアエンジニアです。"
 		},
 		"nav": {
 			"home": "ホーム",
@@ -16,7 +17,9 @@
 			"title": "自己紹介",
 			"description1": "独学のソフトウェアエンジニアであり、独学の日本語学習者であり、大学で訓練を受けたミュージシャンでもあります。",
 			"description2": "日本で英語を教えていた頃、コーディングが大好きになりました。 HTML、CSS、Javascriptから始めました。スキルを向上させるために一生懸命に勉強し、今ではReact、Vue、Gatsby、NextJSなどのフレームワークを使用して複雑なフルスタックアプリケーションを作成しています。",
-			"description3": "現在、Rapptr Labsでソフトウェアエンジニアとして働いています。",
+			"description3a": "現在、",
+			"description3b": "でソフトウェアエンジニアとして働いています。",
+			"currentCompany": "Rapptr Labs",
 			"description4": "ご連絡ははZach.Stone.Developer@gmail.comまでメールでお問い合わせください。"
 		},
 		"skills": {

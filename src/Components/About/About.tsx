@@ -32,7 +32,20 @@ const About = () => {
 					>
 						<p className="about-description">{t("about.description1")}</p>
 						<p className="about-description">{t("about.description2")}</p>
-						<p className="about-description">{t("about.description3")}</p>
+						<p className="about-description">
+							{t("about.description3a")}
+							<a
+								href="https://www.rapptrlabs.com/"
+								target="_blank"
+								rel="noreferrer"
+								style={{
+									color: "var(--secondary-color)",
+								}}
+							>
+								{t("about.currentCompany")}
+							</a>
+							{t("about.description3b")}
+						</p>
 						<p className="about-description">{t("about.description4")}</p>
 					</div>
 				</AnimationOnScroll>

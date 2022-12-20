@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const LandingV2 = () => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	// get the current language
 
 	// find if the user is in the morning, afternoon, or evening
 	const time = new Date().getHours();
@@ -21,7 +22,9 @@ const LandingV2 = () => {
 		<Landing>
 			<>
 				<LandingTile className="animate__animated animate__fadeIn">
-					<span>{`${currGreeting}`}, I'm </span>
+					<span>
+						{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : ""}
+					</span>
 					<span
 						style={{
 							color: "var(--secondary-color)",
@@ -29,8 +32,7 @@ const LandingV2 = () => {
 					>
 						{t("landing.name")}
 					</span>
-					<span> and I build </span>
-					<span> web applications.</span>
+					<span>{t("landing.description")}</span>
 				</LandingTile>
 				<SocialLinksVertical />
 			</>
