@@ -60,6 +60,7 @@ const LandingTile = styled.h1`
 	width: fit-content;
 	max-width: 800px;
 	height: max-content;
+	text-align: center;
 
 	background-color: var(--black);
 
