@@ -71,6 +71,8 @@ const LandingTile = styled.h1`
 
 	margin: 50px;
 	font-size: 3rem;
+	// move up 61 px to account for the navbar
+	padding-bottom: 61px;
 
 	@media (max-width: 1024px) {
 		font-size: 2rem;
