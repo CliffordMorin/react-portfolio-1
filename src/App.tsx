@@ -3,7 +3,7 @@ import "animate.css/animate.min.css";
 import React, { Suspense, useState, useEffect } from "react";
 import LoadingSpinner from "./Components/UI/LoadingSpinner";
 
-import { LandingV2, Footer, MUINav, Blog, Overlay } from "./Components/index";
+import { LandingV2, Footer, Blog, Overlay } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
 const Projects = React.lazy(() => import("./Components/Projects/Projects"));
 
