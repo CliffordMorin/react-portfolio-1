@@ -26,7 +26,7 @@ function App() {
 			<Overlay />
 			{showApp && (
 				<>
-					<MUINav />
+					{/* <MUINav /> */}
 					<LandingV2 />
 					<Suspense fallback={<LoadingSpinner />}>
 						<About />

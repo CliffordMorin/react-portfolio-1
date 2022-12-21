@@ -2,6 +2,7 @@ import SocialLinksVertical from "../UI/SocialLinksVertical";
 import "animate.css";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import MUINav from "../Navbar/MUINav";
 
 const LandingV2 = () => {
 	const { t, i18n } = useTranslation();
@@ -20,7 +21,16 @@ const LandingV2 = () => {
 
 	return (
 		<Landing>
-			<>
+			<MUINav />
+			<div
+				style={{
+					height: "100%",
+					justifyContent: "center",
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center",
+				}}
+			>
 				<LandingTile className="animate__animated animate__fadeIn">
 					<span>
 						{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : " "}
@@ -35,7 +45,7 @@ const LandingV2 = () => {
 					<span>{t("landing.description")}</span>
 				</LandingTile>
 				<SocialLinksVertical />
-			</>
+			</div>
 		</Landing>
 	);
 };
@@ -44,14 +54,9 @@ const Landing = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	background-color: var(--black);
-
-	@media (min-width: 1024px) {
-		padding-bottom: 10vh;
-	}
 `;
 
 const LandingTile = styled.h1`
