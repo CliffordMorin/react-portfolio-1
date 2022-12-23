@@ -86,4 +86,8 @@ svg:hover {
 .ContributionCalendar-label {
      fill: var(--secondary-color) !important;
 }
+
+.contributions-header {
+  margin-bottom: 20px !important;
+}
   
