@@ -101,7 +101,7 @@ export default function Index() {
     // hide the overlay after the animation is done
     setTimeout(() => {
       setActive(false);
-    }, 5000);
+    }, 6000);
   }, [
     divAnimation1,
     divAnimation2,
