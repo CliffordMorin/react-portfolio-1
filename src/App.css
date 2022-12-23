@@ -82,3 +82,8 @@ svg:hover {
     transform: rotate(360deg);
   }
 }
+
+.ContributionCalendar-label {
+     color: var(--secondary-color) !important;
+}
+  
