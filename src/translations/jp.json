@@ -5,7 +5,8 @@
 			"afternoon": "こんにちは",
 			"evening": "こんばんは",
 			"name": "ザックと申します。",
-			"description": "ウェブ開発者です。"
+			"description1": "",
+			"description2": "ウェブ開発者です。"
 		},
 		"nav": {
 			"home": "ホーム",
