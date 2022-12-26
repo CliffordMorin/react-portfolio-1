@@ -47,8 +47,10 @@ const LandingV2 = () => {
 						style={{
 							color: "var(--secondary-color)",
 						}}
-						>{t("landing.description2")}</span>
-
+					>
+						{t("landing.description2")}
+					</span>
+					<span>{t("landing.description3")}</span>
 				</LandingTile>
 				<SocialLinksVertical />
 			</div>
