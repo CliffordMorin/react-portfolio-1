@@ -5,7 +5,8 @@
 			"afternoon": "Good afternoon",
 			"evening": "Good evening",
 			"name": "Zach",
-			"description": " and I build web applications."
+			"description1": " and I build web"
+			"description2": " web applications"
 		},
 		"nav": {
 			"home": "Home",
