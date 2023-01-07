@@ -1,5 +1,4 @@
 import Skills from "../UI/Skills";
-
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -12,24 +11,17 @@ const About = () => {
 			<div className="about-inner">
 				<AnimationOnScroll
 					animateIn="animate__fadeIn"
-					animateOnce={true}
+					animateOnce
 					offset={200}
 					duration={3}
 				>
 					<h1
-						style={{
-							textAlign: "center",
-							paddingBottom: "1rem",
-						}}
+						style={{ textAlign: "center", paddingBottom: "1rem" }}
 						className="about-title"
 					>
 						{t("about.title")}
 					</h1>
-					<div
-						style={{
-							paddingBottom: "1rem",
-						}}
-					>
+					<div style={{ paddingBottom: "1rem" }}>
 						<p className="about-description">{t("about.description1")}</p>
 						<p className="about-description">{t("about.description2")}</p>
 						<p className="about-description">
@@ -38,9 +30,7 @@ const About = () => {
 								href="https://www.rapptrlabs.com/"
 								target="_blank"
 								rel="noreferrer"
-								style={{
-									color: "var(--secondary-color)",
-								}}
+								style={{ color: "var(--secondary-color)" }}
 							>
 								{t("about.currentCompany")}
 							</a>
@@ -52,7 +42,7 @@ const About = () => {
 
 				<AnimationOnScroll
 					animateIn="animate__fadeIn"
-					animateOnce={true}
+					animateOnce
 					offset={250}
 					duration={2}
 				>
@@ -66,7 +56,6 @@ const About = () => {
 const AboutDiv = styled.div`
 	width: 85vw;
 	margin: auto;
-
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
@@ -101,11 +90,6 @@ const AboutDiv = styled.div`
 		}
 		.about-inner {
 			width: 100%;
-		}
-		.about-description {
-			font-size: 1.2rem;
-			padding-left: 5px;
-			padding-right: 5px;
 		}
 	}
 `;

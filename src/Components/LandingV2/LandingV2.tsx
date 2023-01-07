@@ -3,6 +3,8 @@ import "animate.css";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import MUINav from "../Navbar/MUINav";
+import "./special-text.css";
+import { useEffect } from "react";
 
 const LandingV2 = () => {
 	const { t, i18n } = useTranslation();
@@ -19,6 +21,50 @@ const LandingV2 = () => {
 		currGreeting = t("landing.evening");
 	}
 
+	// text animation
+
+	useEffect(() => {
+		const rand = (min: number, max: number) =>
+			Math.floor(Math.random() * (max - min + 1)) + min;
+
+		const enhance = (id: string) => {
+			const element = document.getElementById(id),
+				text = element?.innerText.split("");
+
+			if (element) {
+				element.innerText = "";
+			}
+
+			text?.forEach((value, index) => {
+				const outer = document.createElement("span");
+
+				outer.className = "outer";
+
+				const inner = document.createElement("span");
+
+				inner.className = "inner";
+
+				inner.style.animationDelay = `${rand(-5000, 0)}ms`;
+
+				const letter = document.createElement("span");
+
+				letter.className = "letter";
+
+				letter.innerText = value;
+
+				letter.style.animationDelay = `${index * 1000}ms`;
+
+				inner.appendChild(letter);
+
+				outer.appendChild(inner);
+
+				element?.appendChild(outer);
+			});
+		};
+		enhance("special-1");
+		enhance("special-2");
+	}, [i18n.language]);
+
 	return (
 		<Landing>
 			<MUINav />
@@ -32,25 +78,29 @@ const LandingV2 = () => {
 				}}
 			>
 				<LandingTile className="animate__animated animate__fadeIn">
-					<span>
-						{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : " "}
-					</span>
-					<span
-						style={{
-							color: "var(--secondary-color)",
-						}}
-					>
-						{t("landing.name")}
-					</span>
-					<span>{t("landing.description1")}</span>
-					<span
-						style={{
-							color: "var(--secondary-color)",
-						}}
-					>
-						{t("landing.description2")}
-					</span>
-					<span>{t("landing.description3")}</span>
+					<div id="text">
+						<div className="line">
+							<p className="word">
+								{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : " "}
+							</p>
+						</div>
+						<div className="line">
+							<p className="word fancy" id="special-1">
+								{t("landing.name")}
+							</p>
+						</div>
+
+						<div className="line">
+							<p className="word">{t("landing.description1")}</p>
+						</div>
+						<div className="line">
+							<p className="word fancy" id="special-2">
+								{t("landing.description2")}
+							</p>
+
+							<p className="word ">{t("landing.description3")}</p>
+						</div>
+					</div>
 				</LandingTile>
 				<SocialLinksVertical />
 			</div>
@@ -79,7 +129,6 @@ const LandingTile = styled.h1`
 
 	margin: 50px;
 	font-size: 3rem;
-	// move up 61 px to account for the navbar
 	padding-bottom: 61px;
 
 	@media (max-width: 1024px) {
