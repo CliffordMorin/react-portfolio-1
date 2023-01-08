@@ -50,7 +50,7 @@ const LandingV2 = () => {
 
 				letter.className = "letter";
 
-				letter.innerText = value;
+				letter.innerHTML = value === " " ? "&nbsp" : value;
 
 				letter.style.animationDelay = `${index * 1000}ms`;
 
