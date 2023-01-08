@@ -36,7 +36,14 @@ const About = () => {
 							</a>
 							{t("about.description3b")}
 						</p>
-						<p className="about-description">{t("about.description4")}</p>
+						<p
+							className="about-description"
+							style={{
+								wordBreak: "break-all",
+							}}
+						>
+							{t("about.description4")}
+						</p>
 					</div>
 				</AnimationOnScroll>
 
