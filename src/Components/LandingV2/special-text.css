@@ -17,7 +17,7 @@
 
 .word {
 	color: var(--off-white);
-	/* font-size: clamp(2rem, 8vw, 10rem); */
+	font-size: clamp(1rem, 4vw, 9rem);
 	font-family: "Rubik", sans-serif;
 	margin: 0rem;
 	text-transform: uppercase;
