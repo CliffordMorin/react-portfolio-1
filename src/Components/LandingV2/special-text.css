@@ -16,7 +16,6 @@
 }
 
 .word {
-	color: var(--off-white);
 	font-size: clamp(1.75rem, 4vw, 9rem);
 	font-family: "Rubik", sans-serif;
 	font-weight: 400;
@@ -32,6 +31,12 @@
 
 #special-2:hover {
 	opacity: 1 !important;
+	color: var(--secondary-color);
+}
+
+#special-2 {
+	color: gray !important;
+	opacity: 0.5 !important;
 }
 
 a {
