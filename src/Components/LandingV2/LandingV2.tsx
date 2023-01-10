@@ -61,7 +61,7 @@ const LandingV2 = () => {
 				element?.appendChild(outer);
 			});
 		};
-		enhance("special-1");
+		// enhance("special-1");
 		enhance("special-2");
 	}, [i18n.language]);
 
@@ -85,7 +85,7 @@ const LandingV2 = () => {
 							</p>
 						</div>
 						<div className="line">
-							<p className="word fancy" id="special-1">
+							<p className="word " id="special-1">
 								{t("landing.name")}
 							</p>
 						</div>
