@@ -98,6 +98,10 @@ const AboutDiv = styled.div`
 		.about-inner {
 			width: 100%;
 		}
+
+		.about-description {
+			font-size: 1.2rem;
+		}
 	}
 `;
 
