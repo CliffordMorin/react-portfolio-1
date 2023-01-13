@@ -29,7 +29,12 @@ const Skills = () => {
 			"HTML",
 			"https://developer.mozilla.org/en-US/docs/Web/HTML",
 		],
-		[<DiCss3Full />, "CSS", "https://developer.mozilla.org/en-US/docs/Web/CSS"],
+		[
+			// make the size grow with the viewport
+			<DiCss3Full />,
+			"CSS",
+			"https://developer.mozilla.org/en-US/docs/Web/CSS",
+		],
 		[<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
 		[
 			<IoLogoJavascript />,
@@ -218,6 +223,13 @@ const SkillsDiv = styled.div`
 		flex-flow: row wrap;
 		margin-top: 20px;
 		margin-bottom: 10px;
+	}
+
+	// don't show skills container on mobile
+	@media (max-width: 768px) {
+		.skills-container {
+			display: none;
+		}
 	}
 
 	.skill-icon {
