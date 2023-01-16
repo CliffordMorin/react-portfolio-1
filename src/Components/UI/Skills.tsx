@@ -31,7 +31,6 @@ import { SiStyledcomponents } from "react-icons/si";
 import { GithubContributions } from "react-github-graph";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { minHeight } from "@mui/system";
 
 const Skills = () => {
 	const { t } = useTranslation();
@@ -354,13 +353,7 @@ const ButtonContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
 	width: 100%;
-	height: auto;
-
-	@media (max-width: 768px) {
-		flex-direction: column;
-	}
 `;
 
 const SkillsDiv = styled.div`
@@ -398,10 +391,6 @@ const SkillsDiv = styled.div`
 		.skills-container {
 			display: none;
 		}
-	}
-
-	.mapped-skill-div {
-		min-height: 300px;
 	}
 
 	.skill-icon {
@@ -452,6 +441,7 @@ const SkillsDiv = styled.div`
 			0 0 0 0.5px rgba(0, 0, 0, 0.1);
 
 		font-size: medium;
+		font-weight: 600;
 		padding: 10px;
 		margin: 10px;
 		min-height: 70px;
