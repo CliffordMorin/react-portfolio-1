@@ -31,6 +31,7 @@ import { SiStyledcomponents } from "react-icons/si";
 import { GithubContributions } from "react-github-graph";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { minHeight } from "@mui/system";
 
 const Skills = () => {
 	const { t } = useTranslation();
@@ -232,7 +233,7 @@ const Skills = () => {
 						</ButtonContainer>
 						{selectedSkill === "Frontend Frameworks" &&
 							FRAMEWORKS.map((skill: any) => (
-								<div key={skill[1]}>
+								<div key={skill[1]} className={"mapped-skill-div"}>
 									<a
 										href={skill[2]}
 										target="_blank"
@@ -255,7 +256,7 @@ const Skills = () => {
 							))}
 						{selectedSkill === "Frontend Tools" &&
 							TOOLS.map((skill: any) => (
-								<div key={skill[1]}>
+								<div key={skill[1]} className={"mapped-skill-div"}>
 									<a
 										href={skill[2]}
 										target="_blank"
@@ -277,7 +278,7 @@ const Skills = () => {
 							))}
 						{selectedSkill === "Backend" &&
 							Backend.map((skill: any) => (
-								<div key={skill[1]}>
+								<div key={skill[1]} className={"mapped-skill-div"}>
 									<a
 										href={skill[2]}
 										target="_blank"
@@ -299,7 +300,7 @@ const Skills = () => {
 							))}
 						{selectedSkill === "Server" &&
 							Server.map((skill: any) => (
-								<div key={skill[1]}>
+								<div key={skill[1]} className={"mapped-skill-div"}>
 									<a
 										href={skill[2]}
 										target="_blank"
@@ -322,7 +323,7 @@ const Skills = () => {
 
 						{selectedSkill === "Other" &&
 							Other.map((skill: any) => (
-								<div key={skill[1]}>
+								<div key={skill[1]} className={"mapped-skill-div"}>
 									<a
 										href={skill[2]}
 										target="_blank"
@@ -390,7 +391,6 @@ const SkillsDiv = styled.div`
 		flex-flow: row wrap;
 		margin-top: 20px;
 		margin-bottom: 10px;
-		min-height: 400px;
 	}
 
 	// don't show skills container on mobile
@@ -398,6 +398,10 @@ const SkillsDiv = styled.div`
 		.skills-container {
 			display: none;
 		}
+	}
+
+	.mapped-skill-div {
+		min-height: 300px;
 	}
 
 	.skill-icon {
