@@ -1,36 +1,36 @@
 import * as React from "react";
-import { FaReact } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3Full } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import { RiGatsbyFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { SiTwilio } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
-import { TbCloudDataConnection } from "react-icons/tb";
-import { AiFillWechat } from "react-icons/ai";
-import { SiVercel } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
-import { SiJira } from "react-icons/si";
-import { SiHasura } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { BsUiChecks } from "react-icons/bs";
-import { IoMdPaper } from "react-icons/io";
-import { SiMaterialui } from "react-icons/si";
-import { RiVuejsFill } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { DiHeroku } from "react-icons/di";
-import { AiOutlineApi } from "react-icons/ai";
-import { SiNetlify } from "react-icons/si";
-import { AiOutlineConsoleSql } from "react-icons/ai";
-import { SiStyledcomponents } from "react-icons/si";
-import { GithubContributions } from "react-github-graph";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { IconContext } from "react-icons";
+import { GithubContributions } from "react-github-graph";
+
+import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
+import {
+	AiFillHtml5,
+	AiFillWechat,
+	AiFillGithub,
+	AiOutlineApi,
+	AiOutlineConsoleSql,
+} from "react-icons/ai";
+import { RiGatsbyFill, RiVuejsFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io";
+import {
+	SiTypescript,
+	SiTwilio,
+	SiVercel,
+	SiJira,
+	SiHasura,
+	SiRedux,
+	SiMongodb,
+	SiMaterialui,
+	SiStyledcomponents,
+	SiNetlify,
+} from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
+import { TbCloudDataConnection, TbBrandNextjs } from "react-icons/tb";
+import { BsUiChecks } from "react-icons/bs";
+import { IoMdPaper } from "react-icons/io";
+import { DiHeroku, DiCss3Full } from "react-icons/di";
 
 const Skills = () => {
 	const { t } = useTranslation();
