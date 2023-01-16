@@ -8,14 +8,26 @@ import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
+import { SiTwilio } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
+import { TbCloudDataConnection } from "react-icons/tb";
+import { AiFillWechat } from "react-icons/ai";
+import { SiVercel } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { SiJira } from "react-icons/si";
+import { SiHasura } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { BsUiChecks } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
 import { SiMaterialui } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
+import { DiHeroku } from "react-icons/di";
+import { AiOutlineApi } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import { SiStyledcomponents } from "react-icons/si";
 import { GithubContributions } from "react-github-graph";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -23,7 +35,14 @@ import styled from "styled-components";
 const Skills = () => {
 	const { t } = useTranslation();
 
-	const technologies = [
+	const FRAMEWORKS = [
+		[<FaReact />, "React", "https://reactjs.org/"],
+		[<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
+		[<RiVuejsFill />, "Vue", "https://vuejs.org/"],
+		[<TbBrandNextjs />, "Next.js", "https://nextjs.org/"],
+	];
+
+	const TOOLS = [
 		[
 			<AiFillHtml5 />,
 			"HTML",
@@ -41,18 +60,47 @@ const Skills = () => {
 			"JavaScript",
 			"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 		],
+		[
+			<SiStyledcomponents />,
+			"Styled Components",
+			"https://styled-components.com/",
+		],
 		[<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-		[<FaNodeJs />, "Node", "https://nodejs.org/en/"],
-		[<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
-
-		[<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
-		[<FaReact />, "React", "https://reactjs.org/"],
 		[<SiRedux />, "Redux", "https://redux.js.org/"],
 		[<SiMaterialui />, "Material UI", "https://material-ui.com/"],
-		[<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
-		[<GrGraphQl />, "GraphQL", "https://graphql.org/"],
-		[<RiVuejsFill />, "Vue", "https://vuejs.org/"],
 	];
+
+	const Backend = [
+		[<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+		[<AiOutlineApi />, "REST", "https://restfulapi.net/"],
+		[<GrGraphQl />, "GraphQL", "https://graphql.org/"],
+		[<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+		[<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
+		[<SiHasura />, "Hasura", "https://hasura.io/"],
+	];
+
+	const Server = [
+		[<DiHeroku />, "Heroku", "https://www.heroku.com/"],
+		[<SiNetlify />, "Netlify", "https://www.netlify.com/"],
+		[<SiVercel />, "Vercel", "https://vercel.com/"],
+	];
+
+	const Other = [
+		[<SiJira />, "Jira", "https://www.atlassian.com/software/jira"],
+		[<AiFillGithub />, "Github", "https ://github.com/"],
+		[<SiTwilio />, "Twilio", "https://www.twilio.com/"],
+		[<TbCloudDataConnection />, "Ably Web Sockets", "https://www.ably.io/"],
+		[<AiFillWechat />, "Chat GPT", "https://chat.openai.com/chat"],
+	];
+	const SKILL_OPTIONS = [
+		"Frontend Frameworks",
+		"Frontend Tools",
+		"Backend",
+		"Server",
+		"Other",
+	];
+
+	const [selectedSkill, setSelectedSkill] = React.useState("Frontend");
 
 	return (
 		<>
@@ -167,32 +215,152 @@ const Skills = () => {
 						<GithubContributions username="ZacharyTStone" />
 					</div>
 					<div className="skills-container">
-						{technologies.map((skill: any) => (
-							<div key={skill[1]}>
-								<a
-									href={skill[2]}
-									target="_blank"
-									rel="noopener noreferrer"
-									style={{
-										textDecoration: "none",
-									}}
+						<ButtonContainer>
+							{SKILL_OPTIONS.map((skill: any) => (
+								<button
+									key={skill[0]}
+									onClick={() => setSelectedSkill(skill)}
+									className={
+										selectedSkill === skill
+											? "active skill_option_button"
+											: "skill_option_button"
+									}
 								>
-									<div key={skill[1]} className="skill-icon">
-										<h4 className="skill-icon-text showOnHover">{skill[1]}</h4>
-										<span>
-											{" "}
-											<span>{skill[0]}</span>
-										</span>
-									</div>
-								</a>
-							</div>
-						))}
+									{skill}
+								</button>
+							))}
+						</ButtonContainer>
+						{selectedSkill === "Frontend Frameworks" &&
+							FRAMEWORKS.map((skill: any) => (
+								<div key={skill[1]}>
+									<a
+										href={skill[2]}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill[1]} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill[1]}
+											</h4>
+											<span>
+												{" "}
+												<span>{skill[0]}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
+						{selectedSkill === "Frontend Tools" &&
+							TOOLS.map((skill: any) => (
+								<div key={skill[1]}>
+									<a
+										href={skill[2]}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill[1]} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill[1]}
+											</h4>
+											<span>
+												<span>{skill[0]}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
+						{selectedSkill === "Backend" &&
+							Backend.map((skill: any) => (
+								<div key={skill[1]}>
+									<a
+										href={skill[2]}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill[1]} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill[1]}
+											</h4>
+											<span>
+												<span>{skill[0]}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
+						{selectedSkill === "Server" &&
+							Server.map((skill: any) => (
+								<div key={skill[1]}>
+									<a
+										href={skill[2]}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill[1]} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill[1]}
+											</h4>
+											<span>
+												<span>{skill[0]}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
+
+						{selectedSkill === "Other" &&
+							Other.map((skill: any) => (
+								<div key={skill[1]}>
+									<a
+										href={skill[2]}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill[1]} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill[1]}
+											</h4>
+											<span>
+												<span>{skill[0]}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
 					</div>
 				</SkillsDiv>
 			</IconContext.Provider>
 		</>
 	);
 };
+
+const ButtonContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: auto;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+`;
 
 const SkillsDiv = styled.div`
 	.Skills {
@@ -215,14 +383,14 @@ const SkillsDiv = styled.div`
 	.skills-container {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
 		width: 100%;
 		height: auto;
+		justify-content: space-around;
 		flex-wrap: wrap;
 		flex-flow: row wrap;
 		margin-top: 20px;
 		margin-bottom: 10px;
+		min-height: 400px;
 	}
 
 	// don't show skills container on mobile
@@ -261,20 +429,33 @@ const SkillsDiv = styled.div`
 		margin-top: 10px;
 	}
 
-	.modals {
-		width: 100%;
-		height: fit-content;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-top: 40px;
-	}
-
 	.resume-link-text:hover {
 		cursor: pointer;
 		color: var(--secondary-color) !important;
+	}
+
+	// skill option button neomorphic styling using the seconday color
+
+	.skill_option_button {
+		border: 2px solid var(--secondary-color);
+		background: var(--background-color);
+		color: var(--secondary-color);
+		border-radius: 10px;
+		cursor: pointer;
+
+		box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1),
+			0 0 0 0.5px rgba(0, 0, 0, 0.1);
+
+		font-size: medium;
+		padding: 10px;
+		margin: 10px;
+		min-height: 70px;
+	}
+
+	.active {
+		background: var(--secondary-color);
+		color: var(--off-white);
 	}
 `;
 
