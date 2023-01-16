@@ -100,7 +100,9 @@ const Skills = () => {
 		"Other",
 	];
 
-	const [selectedSkill, setSelectedSkill] = React.useState("Frontend");
+	const [selectedSkill, setSelectedSkill] = React.useState(
+		"Frontend Frameworks"
+	);
 
 	return (
 		<>
