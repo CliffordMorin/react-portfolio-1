@@ -219,17 +219,13 @@ const Skills = () => {
 					<div className="skills-container">
 						<ButtonContainer>
 							{SKILL_OPTIONS.map((skill: any) => (
-								<button
+								<SkillTypeButton
 									key={skill[0]}
 									onClick={() => setSelectedSkill(skill)}
-									className={
-										selectedSkill === skill
-											? "active skill_option_button"
-											: "skill_option_button"
-									}
+									className={selectedSkill === skill ? "active" : ""}
 								>
 									{skill}
-								</button>
+								</SkillTypeButton>
 							))}
 						</ButtonContainer>
 						<SkillIconsDiv>
@@ -368,6 +364,26 @@ const SkillIconsDiv = styled.div`
 	flex-wrap: wrap;
 `;
 
+const SkillTypeButton = styled.button`
+	border: 2px solid var(--secondary-color);
+	background: linear-gradient(var(--secondary_color), var(--black_color));
+	color: var(--secondary-color);
+	border-radius: 10px;
+	cursor: pointer;
+
+	box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1),
+		0 0 0 0.5px rgba(0, 0, 0, 0.1);
+
+	font-size: medium;
+	font-weight: 600;
+	padding: 10px;
+	margin: 10px;
+	min-height: 70px;
+
+	border-radius: 10px;
+`;
+
 const SkillsDiv = styled.div`
 	.Skills {
 		margin: auto;
@@ -442,24 +458,6 @@ const SkillsDiv = styled.div`
 	}
 
 	// skill option button neomorphic styling using the seconday color
-
-	.skill_option_button {
-		border: 2px solid var(--secondary-color);
-		background: var(--background-color);
-		color: var(--secondary-color);
-		border-radius: 10px;
-		cursor: pointer;
-
-		box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
-		box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1),
-			0 0 0 0.5px rgba(0, 0, 0, 0.1);
-
-		font-size: medium;
-		font-weight: 600;
-		padding: 10px;
-		margin: 10px;
-		min-height: 70px;
-	}
 
 	.active {
 		background: var(--secondary-color);
