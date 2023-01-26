@@ -232,118 +232,120 @@ const Skills = () => {
 								</button>
 							))}
 						</ButtonContainer>
-						{selectedSkill === "Frontend Frameworks" &&
-							FRAMEWORKS.map((skill: any) => (
-								<div key={skill[1]} className={"mapped-skill-div"}>
-									<a
-										href={skill[2]}
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{
-											textDecoration: "none",
-										}}
-									>
-										<div key={skill[1]} className="skill-icon">
-											<h4 className="skill-icon-text showOnHover">
-												{skill[1]}
-											</h4>
-											<span>
-												{" "}
-												<span>{skill[0]}</span>
-											</span>
-										</div>
-									</a>
-								</div>
-							))}
-						{selectedSkill === "Frontend Tools" &&
-							TOOLS.map((skill: any) => (
-								<div key={skill[1]} className={"mapped-skill-div"}>
-									<a
-										href={skill[2]}
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{
-											textDecoration: "none",
-										}}
-									>
-										<div key={skill[1]} className="skill-icon">
-											<h4 className="skill-icon-text showOnHover">
-												{skill[1]}
-											</h4>
-											<span>
-												<span>{skill[0]}</span>
-											</span>
-										</div>
-									</a>
-								</div>
-							))}
-						{selectedSkill === "Backend" &&
-							Backend.map((skill: any) => (
-								<div key={skill[1]} className={"mapped-skill-div"}>
-									<a
-										href={skill[2]}
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{
-											textDecoration: "none",
-										}}
-									>
-										<div key={skill[1]} className="skill-icon">
-											<h4 className="skill-icon-text showOnHover">
-												{skill[1]}
-											</h4>
-											<span>
-												<span>{skill[0]}</span>
-											</span>
-										</div>
-									</a>
-								</div>
-							))}
-						{selectedSkill === "Server" &&
-							Server.map((skill: any) => (
-								<div key={skill[1]} className={"mapped-skill-div"}>
-									<a
-										href={skill[2]}
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{
-											textDecoration: "none",
-										}}
-									>
-										<div key={skill[1]} className="skill-icon">
-											<h4 className="skill-icon-text showOnHover">
-												{skill[1]}
-											</h4>
-											<span>
-												<span>{skill[0]}</span>
-											</span>
-										</div>
-									</a>
-								</div>
-							))}
+						<SkillIconsDiv>
+							{selectedSkill === "Frontend Frameworks" &&
+								FRAMEWORKS.map((skill: any) => (
+									<div key={skill[1]}>
+										<a
+											href={skill[2]}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{
+												textDecoration: "none",
+											}}
+										>
+											<div key={skill[1]} className="skill-icon">
+												<h4 className="skill-icon-text showOnHover">
+													{skill[1]}
+												</h4>
+												<span>
+													{" "}
+													<span>{skill[0]}</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								))}
+							{selectedSkill === "Frontend Tools" &&
+								TOOLS.map((skill: any) => (
+									<div key={skill[1]}>
+										<a
+											href={skill[2]}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{
+												textDecoration: "none",
+											}}
+										>
+											<div key={skill[1]} className="skill-icon">
+												<h4 className="skill-icon-text showOnHover">
+													{skill[1]}
+												</h4>
+												<span>
+													<span>{skill[0]}</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								))}
+							{selectedSkill === "Backend" &&
+								Backend.map((skill: any) => (
+									<div key={skill[1]}>
+										<a
+											href={skill[2]}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{
+												textDecoration: "none",
+											}}
+										>
+											<div key={skill[1]} className="skill-icon">
+												<h4 className="skill-icon-text showOnHover">
+													{skill[1]}
+												</h4>
+												<span>
+													<span>{skill[0]}</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								))}
+							{selectedSkill === "Server" &&
+								Server.map((skill: any) => (
+									<div key={skill[1]}>
+										<a
+											href={skill[2]}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{
+												textDecoration: "none",
+											}}
+										>
+											<div key={skill[1]} className="skill-icon">
+												<h4 className="skill-icon-text showOnHover">
+													{skill[1]}
+												</h4>
+												<span>
+													<span>{skill[0]}</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								))}
 
-						{selectedSkill === "Other" &&
-							Other.map((skill: any) => (
-								<div key={skill[1]} className={"mapped-skill-div"}>
-									<a
-										href={skill[2]}
-										target="_blank"
-										rel="noopener noreferrer"
-										style={{
-											textDecoration: "none",
-										}}
-									>
-										<div key={skill[1]} className="skill-icon">
-											<h4 className="skill-icon-text showOnHover">
-												{skill[1]}
-											</h4>
-											<span>
-												<span>{skill[0]}</span>
-											</span>
-										</div>
-									</a>
-								</div>
-							))}
+							{selectedSkill === "Other" &&
+								Other.map((skill: any) => (
+									<div key={skill[1]}>
+										<a
+											href={skill[2]}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{
+												textDecoration: "none",
+											}}
+										>
+											<div key={skill[1]} className="skill-icon">
+												<h4 className="skill-icon-text showOnHover">
+													{skill[1]}
+												</h4>
+												<span>
+													<span>{skill[0]}</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								))}
+						</SkillIconsDiv>
 					</div>
 				</SkillsDiv>
 			</IconContext.Provider>
@@ -356,6 +358,14 @@ const ButtonContainer = styled.div`
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
+`;
+
+const SkillIconsDiv = styled.div`
+	min-height: 150px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
 `;
 
 const SkillsDiv = styled.div`
@@ -418,6 +428,8 @@ const SkillsDiv = styled.div`
 		margin-bottom: 10px;
 		color: var(--off-white);
 		text-decoration: none;
+		text-align: center;
+		white-space: nowrap;
 	}
 
 	.skill-img {
