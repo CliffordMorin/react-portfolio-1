@@ -25,8 +25,10 @@ import {
 	SiMaterialui,
 	SiStyledcomponents,
 	SiNetlify,
+	SiTailwindcss,
 } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
+
+import { GrGraphQl, GrReactjs } from "react-icons/gr";
 import { TbCloudDataConnection, TbBrandNextjs } from "react-icons/tb";
 import { BsUiChecks } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
@@ -54,20 +56,24 @@ const Skills = () => {
 			"CSS",
 			"https://developer.mozilla.org/en-US/docs/Web/CSS",
 		],
-		[<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+
 		[
 			<IoLogoJavascript />,
 			"JavaScript",
 			"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 		],
+
+		[<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
 		[
 			<SiStyledcomponents />,
 			"Styled Components",
 			"https://styled-components.com/",
 		],
-		[<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-		[<SiRedux />, "Redux", "https://redux.js.org/"],
+		[<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
+		[<SiTailwindcss />, "Tailwind", "https://tailwindcss.com/"],
 		[<SiMaterialui />, "Material UI", "https://material-ui.com/"],
+		[<GrReactjs />, "Context API", "https://reactjs.org/docs/context.html"],
+		[<SiRedux />, "Redux", "https://redux.js.org/"],
 	];
 
 	const Backend = [
@@ -366,8 +372,11 @@ const SkillIconsDiv = styled.div`
 
 const SkillTypeButton = styled.button`
 	border: 2px solid var(--secondary-color);
-	background: linear-gradient(var(--secondary_color), var(--black_color));
-	color: var(--secondary-color);
+	background: linear-gradient(
+		var(--secondary_color),
+		var(--secondary-color-dark)
+	);
+	color: var(--secondary-color-dark);
 	border-radius: 10px;
 	cursor: pointer;
 
@@ -379,7 +388,7 @@ const SkillTypeButton = styled.button`
 	font-weight: 600;
 	padding: 10px;
 	margin: 10px;
-	min-height: 70px;
+	min-height: 50px;
 
 	border-radius: 10px;
 `;
@@ -460,8 +469,11 @@ const SkillsDiv = styled.div`
 	// skill option button neomorphic styling using the seconday color
 
 	.active {
-		background: var(--secondary-color);
-		color: var(--off-white);
+		background: linear-gradient(
+			var(--secondary_color),
+			var(--secondary-color-dark)
+		);
+		color: var(--secondary-color);
 	}
 `;
 
