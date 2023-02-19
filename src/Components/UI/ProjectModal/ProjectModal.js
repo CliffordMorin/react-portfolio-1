@@ -169,7 +169,7 @@ function ProjectModal({ project }) {
 												key={tag}
 												style={{
 													background: "var(--primary-color)",
-													cursor: "default",
+
 													color: "var(--off-white)",
 													marginRight: "10px",
 													marginBottom: "10px",

@@ -378,7 +378,7 @@ const SkillTypeButton = styled.button`
 	);
 	color: var(--secondary-color-dark);
 	border-radius: 10px;
-	cursor: pointer;
+	/* cursor: pointer; */
 
 	box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 0 0 0.5px rgba(0, 0, 0, 0.1),
@@ -442,7 +442,7 @@ const SkillsDiv = styled.div`
 	}
 
 	.skill-icon:hover {
-		cursor: pointer;
+		/* cursor: pointer; */
 		transform: scale(1.5);
 		transition: transform 0.5s ease-in-out;
 		color: var(--secondary-color);
@@ -462,7 +462,7 @@ const SkillsDiv = styled.div`
 	}
 
 	.resume-link-text:hover {
-		cursor: pointer;
+		/* cursor: pointer; */
 		color: var(--secondary-color) !important;
 	}
 

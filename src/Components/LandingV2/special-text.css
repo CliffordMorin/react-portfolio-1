@@ -12,7 +12,6 @@
 .line {
 	display: flex;
 	justify-content: space-between;
-	cursor: default;
 }
 
 .word {

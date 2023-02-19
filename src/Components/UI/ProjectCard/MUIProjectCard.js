@@ -121,7 +121,6 @@ const ProjectCard = styled(Card)`
 		/* hide a tag styling */
 		text-decoration: none;
 		text-align: center;
-		cursor: default;
 	}
 
 	#MUI-Card {
@@ -147,7 +146,7 @@ const ProjectCard = styled(Card)`
 		height: 250px;
 		/* border-radius: "10px"; */
 		/* pointer to show that it is clickable */
-		cursor: pointer;
+		/* cursor: pointer; */
 	}
 
 	/* mobile only */
@@ -161,7 +160,6 @@ const ProjectCard = styled(Card)`
 			/* hide a tag styling */
 			text-decoration: none;
 			text-align: center;
-			cursor: default;
 		}
 		#MUI-description {
 			margin-top: 10px;

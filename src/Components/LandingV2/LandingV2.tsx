@@ -118,6 +118,8 @@ const Landing = styled.div`
 `;
 
 const LandingTile = styled.h1`
+	//default cursor
+
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	width: fit-content;
