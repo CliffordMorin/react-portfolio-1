@@ -185,6 +185,14 @@ const Blog = () => {
 				</div>
 				<div id="Projects" />
 			</div>
+			<div id="BlogList">
+				<h1 className="blog-post-list-heading">Blog Posts</h1>
+				{content.posts.map((post, index) => (
+					<a href={post.link} target="_blank">
+						<h3 className="blog-post-list-title">{post.title}</h3>
+					</a>
+				))}
+			</div>
 		</AnimationOnScroll>
 	);
 };
