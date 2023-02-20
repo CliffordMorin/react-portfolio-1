@@ -389,6 +389,7 @@ const SkillTypeButton = styled.button`
 	padding: 10px;
 	margin: 10px;
 	min-height: 50px;
+	cursor: pointer;
 
 	border-radius: 10px;
 `;
