@@ -11,6 +11,7 @@ import america from "../../images/america-big.png";
 import japan from "../../images/japan-big.png";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import Dot from "../../images/ring-pointer.png";
 
 const MUINav = () => {
 	const { i18n, t } = useTranslation();
@@ -98,6 +99,7 @@ const MUINav = () => {
 											display: "flex",
 											justifyContent: "center",
 											alignItems: "center",
+											cursor: `url(${Dot}), 4, 4 pointer !important`,
 										}}
 									>
 										{link.name}
@@ -180,6 +182,11 @@ const Nav = styled(AppBar)`
 	.nav-menu-item:hover {
 		background-color: var(--black) !important;
 		color: var(--secondary-color) !important;
+		cursor: url(${Dot}), 4, 4 pointer !important;
+	}
+
+	.nav-menu-item {
+		cursor: url(${Dot}), 4, 4 pointer !important;
 	}
 
 	.flag-div {
@@ -192,12 +199,12 @@ const Nav = styled(AppBar)`
 		position: fixed;
 		right: 1.5%;
 		top: 15px;
-		cursor: pointer;
 	}
 
 	.flag {
 		width: 45px;
 		height: 35px;
+		cursor: url(${Dot}), auto !important;
 	}
 
 	/*  mobile */

@@ -42,6 +42,7 @@
 	/* border-radius: "10px"; */
 	/* pointer to show that it is clickable */
 	/* cursor: pointer; */
+	cursor: url("../../../images/ring-pointer.png"), 4, 4 pointer !important;
 }
 
 /* mobile only */
@@ -78,6 +79,7 @@
 		/* darken the card on hover */
 		opacity: 1;
 		/* darken the card on hover */
+		cursor: url("../../../images/ring-pointer.png"), 4, 4 pointer !important;
 	}
 
 	.card-content-text {
@@ -128,6 +130,7 @@
 		width: 100%;
 		height: 525px;
 		image-rendering: pixelated;
+		cursor: url("../../../images/ring-pointer.png"), 4, 4 pointer !important;
 	}
 
 	.MuiCardHeader-title {
@@ -180,6 +183,7 @@
 		#card-media {
 			width: 1200px !important;
 			max-width: 100% !important;
+			cursor: url("../../../images/ring-pointer.png"), 4, 4 pointer !important;
 		}
 	}
 }

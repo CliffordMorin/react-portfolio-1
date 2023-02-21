@@ -11,6 +11,7 @@ import { RiGatsbyFill } from "react-icons/ri";
 
 import { RiVuejsFill } from "react-icons/ri";
 import styled from "styled-components";
+import Dot from "../../../images/cursor-ring.png";
 
 export default function MUIProjectCard(props) {
 	return (
@@ -24,7 +25,12 @@ export default function MUIProjectCard(props) {
 					position: "relative",
 				}}
 			>
-				<a href={props.link} target={"_blank"} rel="noreferrer">
+				<a
+					href={props.link}
+					target={"_blank"}
+					rel="noreferrer"
+					className="cardMediaTag"
+				>
 					<div
 						className="card-title-div"
 						style={{
@@ -108,6 +114,10 @@ const ProjectCard = styled(Card)`
 		/* padding-top: 200px !important; */
 	}
 
+	.cardMediaTag {
+		cursor: url(${Dot}), 4, 4 pointer !important;
+	}
+
 	#MUI-description {
 		margin-top: 20px;
 		min-height: 100px;
@@ -132,6 +142,7 @@ const ProjectCard = styled(Card)`
 		padding-bottom: 20px !important;
 		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 		background-color: var(--black);
+		cursor: url(${Dot}), 4, 4 pointer !important;
 
 		/* border-radius: 20px; */
 	}
@@ -147,6 +158,7 @@ const ProjectCard = styled(Card)`
 		/* border-radius: "10px"; */
 		/* pointer to show that it is clickable */
 		/* cursor: pointer; */
+		cursor: url(${Dot}), 4, 4 pointer !important;
 	}
 
 	/* mobile only */
@@ -183,6 +195,7 @@ const ProjectCard = styled(Card)`
 			/* darken the card on hover */
 			opacity: 1;
 			/* darken the card on hover */
+			cursor: url(${Dot}), 4, 4 pointer !important;
 		}
 
 		.card-content-text {
@@ -233,6 +246,7 @@ const ProjectCard = styled(Card)`
 			width: 100%;
 			height: 525px;
 			image-rendering: pixelated;
+			cursor: url(${Dot}), 4, 4 pointer !important;
 		}
 
 		.MuiCardHeader-title {
@@ -285,6 +299,7 @@ const ProjectCard = styled(Card)`
 			#card-media {
 				width: 1200px !important;
 				max-width: 100% !important;
+				cursor: url(${Dot}), 4, 4 pointer !important;
 			}
 		}
 	}

@@ -1,18 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
 
+* {
+	cursor: url("./images/ring-pointer.png"), 4, 4 auto !important;
+}
 body {
 	margin: 0;
 	font-family: "Roboto", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--black);
-	cursor: url("./images/circle.svg") 4 4, default !important;
+	cursor: url("./images/cursor-ring.png") 4 4, default !important;
 }
 
 html {
 	scroll-behavior: smooth !important;
 }
 
+a {
+	cursor: url("./images/ring-pointer.png"), auto;
+}
+
+a :hover {
+	cursor: url("./images/ring-pointer.png"), auto !important;
+}
+
+a::after {
+	cursor: url("./images/ring-pointer.png"), 4, 4 pointer !important;
+}
+
+a:hover {
+	cursor: url("./images/ring-pointer.png"), 4, 4 pointer !important;
+}
 :root {
 	--primary-color: #303030;
 	--secondary-color: #43c396;

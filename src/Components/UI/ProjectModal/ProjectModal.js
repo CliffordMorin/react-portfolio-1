@@ -100,6 +100,7 @@ function ProjectModal({ project }) {
 									allowfullscreen
 									style={{
 										hover: "none",
+										cursor: "url(../../images/cursor-pointer.png), auto",
 									}}
 								></iframe>
 							) : (

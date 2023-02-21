@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { GithubContributions } from "react-github-graph";
+import Dot from "../../images/ring-pointer.png";
 
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
 import {
@@ -389,7 +390,7 @@ const SkillTypeButton = styled.button`
 	padding: 10px;
 	margin: 10px;
 	min-height: 50px;
-	cursor: pointer;
+	cursor: url(${Dot}) 4 4, pointer;
 
 	border-radius: 10px;
 `;
@@ -443,7 +444,7 @@ const SkillsDiv = styled.div`
 	}
 
 	.skill-icon:hover {
-		/* cursor: pointer; */
+		cursor: url(${Dot}) 4 4, pointer;
 		transform: scale(1.5);
 		transition: transform 0.5s ease-in-out;
 		color: var(--secondary-color);
@@ -464,6 +465,7 @@ const SkillsDiv = styled.div`
 
 	.resume-link-text:hover {
 		/* cursor: pointer; */
+		cursor: url(${Dot}) 4 4, pointer;
 		color: var(--secondary-color) !important;
 	}
 
