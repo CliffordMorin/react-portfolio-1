@@ -44,6 +44,8 @@
 		align-items: center;
 		gap: 8px;
 		margin-bottom: 32px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 }
 
