@@ -82,7 +82,7 @@ const Projects = () => {
 					title: `HAKU`,
 					description: "Track and compare jobs during the interview process.",
 					image: haku,
-					link: "https://hakujobs.com",
+					link: "https://hataraku.herokuapp.com",
 					linkText: "Live Demo",
 					github: "https://github.com/zachinjapan/haku",
 					tech: "Tech",
@@ -192,7 +192,7 @@ const Projects = () => {
 					description:
 						"ハクは面接の過程でエントリ-した会社を追跡して比較できるアプリケーションです。",
 					image: haku,
-					link: "https://hakujobs.com",
+					link: "https://hataraku.herokuapp.com/",
 					linkText: "ウェブサイト",
 					github: "github.com/zachinjapan/haku",
 					tech: "技術",
