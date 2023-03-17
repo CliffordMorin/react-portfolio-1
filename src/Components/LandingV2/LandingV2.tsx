@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import MUINav from "../Navbar/MUINav";
 import "./special-text.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const LandingV2 = () => {
 	const { t, i18n } = useTranslation();
@@ -23,47 +23,47 @@ const LandingV2 = () => {
 
 	// text animation
 
-	useEffect(() => {
-		const rand = (min: number, max: number) =>
-			Math.floor(Math.random() * (max - min + 1)) + min;
+	// useEffect(() => {
+	// 	const rand = (min: number, max: number) =>
+	// 		Math.floor(Math.random() * (max - min + 1)) + min;
 
-		const enhance = (id: string) => {
-			const element = document.getElementById(id),
-				text = element?.innerText.split("");
+	// 	const enhance = (id: string) => {
+	// 		const element = document.getElementById(id),
+	// 			text = element?.innerText.split("");
 
-			if (element) {
-				element.innerText = "";
-			}
+	// 		if (element) {
+	// 			element.innerText = "";
+	// 		}
 
-			text?.forEach((value, index) => {
-				const outer = document.createElement("span");
+	// 		text?.forEach((value, index) => {
+	// 			const outer = document.createElement("span");
 
-				outer.className = "outer";
+	// 			outer.className = "outer";
 
-				const inner = document.createElement("span");
+	// 			const inner = document.createElement("span");
 
-				inner.className = "inner";
+	// 			inner.className = "inner";
 
-				inner.style.animationDelay = `${rand(-5000, 0)}ms`;
+	// 			inner.style.animationDelay = `${rand(-5000, 0)}ms`;
 
-				const letter = document.createElement("span");
+	// 			const letter = document.createElement("span");
 
-				letter.className = "letter";
+	// 			letter.className = "letter";
 
-				letter.innerHTML = value === " " ? "&nbsp" : value;
+	// 			letter.innerHTML = value === " " ? "&nbsp" : value;
 
-				letter.style.animationDelay = `${index * 1000}ms`;
+	// 			letter.style.animationDelay = `${index * 1000}ms`;
 
-				inner.appendChild(letter);
+	// 			inner.appendChild(letter);
 
-				outer.appendChild(inner);
+	// 			outer.appendChild(inner);
 
-				element?.appendChild(outer);
-			});
-		};
-		// enhance("special-1");
-		enhance("special-2");
-	}, [i18n.language]);
+	// 			element?.appendChild(outer);
+	// 		});
+	// 	};
+	// 	// enhance("special-1");
+	// 	enhance("special-2");
+	// }, [i18n.language]);
 
 	return (
 		<Landing>
@@ -94,9 +94,7 @@ const LandingV2 = () => {
 							<p className="word">{t("landing.description1")}</p>
 						</div>
 						<div className="line">
-							<p className="word fancy" id="special-2">
-								{t("landing.description2")}
-							</p>
+							<p className="word">{t("landing.description2")}</p>
 
 							<p className="word ">{t("landing.description3")}</p>
 						</div>
