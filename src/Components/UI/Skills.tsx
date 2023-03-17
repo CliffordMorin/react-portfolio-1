@@ -407,6 +407,7 @@ const SkillsDiv = styled.div`
 		margin-bottom: 10px;
 		margin-top: 10px;
 		color: var(--off-white);
+		gap: 24px;
 	}
 
 	.skills-title {
