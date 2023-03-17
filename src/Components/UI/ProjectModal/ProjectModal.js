@@ -46,12 +46,17 @@ function ProjectModal({ project }) {
 
 	function openModal() {
 		setIsOpen(true);
+
+		// lock the scroll
+		document.body.style.overflow = "hidden";
 	}
 
 	function afterOpenModal() {}
 
 	function closeModal() {
 		setIsOpen(false);
+		// unlock the scroll
+		document.body.style.overflow = "unset";
 	}
 
 	return (
