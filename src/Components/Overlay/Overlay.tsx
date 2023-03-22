@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export default function Index() {
-	const [active, setActive] = useState<boolean>(true);
-
 	const divAnimation1 = useAnimation();
 	const divAnimation2 = useAnimation();
 	const divAnimation3 = useAnimation();
@@ -87,11 +85,6 @@ export default function Index() {
 		DivSequence(2);
 		DivSequence(3);
 		DivSequence(4);
-
-		// hide the overlay after the animation is done
-		setTimeout(() => {
-			setActive(false);
-		}, 7000);
 	}, [divAnimation1, divAnimation2, divAnimation3, divAnimation4]);
 
 	return (
@@ -99,7 +92,6 @@ export default function Index() {
 			animate={{ opacity: 0 }}
 			initial={{ opacity: 1 }}
 			transition={{ duration: 0.001, delay: 4 }}
-			style={{ display: active ? "fixed" : "none" }}
 		>
 			<LogoContainer animate={divAnimation1} initial={{ scale: 0, rotate: 45 }}>
 				<Logo

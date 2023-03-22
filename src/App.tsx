@@ -23,8 +23,9 @@ function App() {
 
 	return (
 		<div className="App">
-			<Overlay />
-			{showApp && (
+			{!showApp ? (
+				<Overlay />
+			) : (
 				<>
 					<LandingV2 />
 					<Suspense fallback={<LoadingSpinner />}>
