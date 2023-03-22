@@ -15,7 +15,7 @@ const LandingV2 = () => {
 	let currGreeting = "Hello";
 	if (time < 12) {
 		currGreeting = t("landing.morning");
-	} else if (time <= 12 && time >= 18) {
+	} else if (time >= 12 && time <= 18) {
 		currGreeting = t("landing.afternoon");
 	} else {
 		currGreeting = t("landing.evening");
