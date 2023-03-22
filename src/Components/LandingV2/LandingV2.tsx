@@ -95,8 +95,6 @@ const LandingV2 = () => {
 						</div>
 						<div className="line">
 							<p className="word">{t("landing.description2")}</p>
-
-							<p className="word ">{t("landing.description3")}</p>
 						</div>
 					</div>
 				</LandingTile>
