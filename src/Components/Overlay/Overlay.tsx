@@ -71,11 +71,11 @@ export default function Index() {
 			});
 			await currentAnimation.start({
 				scale: 60,
-				rotate: 180,
-				opacity: 0,
+				// rotate: 180,
+				// opacity: 0,
 
 				transition: {
-					duration: 2.5,
+					duration: 1.5,
 				},
 			});
 		};
