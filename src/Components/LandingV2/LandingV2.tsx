@@ -21,50 +21,6 @@ const LandingV2 = () => {
 		currGreeting = t("landing.evening");
 	}
 
-	// text animation
-
-	// useEffect(() => {
-	// 	const rand = (min: number, max: number) =>
-	// 		Math.floor(Math.random() * (max - min + 1)) + min;
-
-	// 	const enhance = (id: string) => {
-	// 		const element = document.getElementById(id),
-	// 			text = element?.innerText.split("");
-
-	// 		if (element) {
-	// 			element.innerText = "";
-	// 		}
-
-	// 		text?.forEach((value, index) => {
-	// 			const outer = document.createElement("span");
-
-	// 			outer.className = "outer";
-
-	// 			const inner = document.createElement("span");
-
-	// 			inner.className = "inner";
-
-	// 			inner.style.animationDelay = `${rand(-5000, 0)}ms`;
-
-	// 			const letter = document.createElement("span");
-
-	// 			letter.className = "letter";
-
-	// 			letter.innerHTML = value === " " ? "&nbsp" : value;
-
-	// 			letter.style.animationDelay = `${index * 1000}ms`;
-
-	// 			inner.appendChild(letter);
-
-	// 			outer.appendChild(inner);
-
-	// 			element?.appendChild(outer);
-	// 		});
-	// 	};
-	// 	// enhance("special-1");
-	// 	enhance("special-2");
-	// }, [i18n.language]);
-
 	return (
 		<Landing>
 			<MUINav />
@@ -110,7 +66,7 @@ const Landing = styled.div`
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	height: 100svh;
+	/* height: 100svh; */
 	background-color: var(--black);
 `;
 
