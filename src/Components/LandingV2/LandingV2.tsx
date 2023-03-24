@@ -76,7 +76,7 @@ const LandingTile = styled.h1`
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	width: fit-content;
-	max-width: 900px;
+	max-width: 1000px;
 	height: max-content;
 	text-align: center;
 
