@@ -18,7 +18,7 @@ const Projects = () => {
 
 	let content: any = {
 		English: {
-			mainTitle: "Featured Projects",
+			mainTitle: "Personal Projects",
 
 			projects: [
 				{
