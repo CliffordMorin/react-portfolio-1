@@ -16,7 +16,9 @@ import japan from "../../../images/japan-big.png";
 import styled from "styled-components";
 
 const customStyles = {
-	overflow: "auto",
+	overflowX: "auto",
+	overflowY: "hidden",
+	maxWidth: "95vw",
 	content: {
 		top: "40%",
 		left: "50%",
@@ -81,155 +83,149 @@ function ProjectModal({ project }) {
 				style={customStyles}
 				contentLabel="Example Modal"
 			>
-				<div
-					style={{
-						overflow: "auto",
-					}}
-				>
-					<Card id="MUI-Card">
-						<div
-							className="card-content"
-							style={{
-								overflow: "auto",
-							}}
-						>
-							{project.youtube ? (
-								<iframe
-									id="card-media"
-									width="100%"
-									height="fit-content"
-									src={project.youtube}
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
-									style={{
-										hover: "none",
-										cursor: "url(../../images/cursor-pointer.png), auto",
-									}}
-								></iframe>
-							) : (
-								<CardMedia
-									component={"img"}
-									id="card-media"
-									image={project.image}
-									alt={project.title}
-									loading="lazy"
-									object-fit="contain"
-									style={{
-										//darken
-										filter: "brightness(0.85)",
-										// rounded corners
-										borderRadius: "20px",
-									}}
-								/>
-							)}
+				<Card id="MUI-Card">
+					<div
+						className="card-content"
+						style={{
+							overflow: "auto",
+						}}
+					>
+						{project.youtube ? (
+							<iframe
+								id="card-media"
+								width="100%"
+								height="fit-content"
+								src={project.youtube}
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								style={{
+									hover: "none",
+									cursor: "url(../../images/cursor-pointer.png), auto",
+								}}
+							></iframe>
+						) : (
+							<CardMedia
+								component={"img"}
+								id="card-media"
+								image={project.image}
+								alt={project.title}
+								loading="lazy"
+								object-fit="contain"
+								style={{
+									//darken
+									filter: "brightness(0.85)",
+									// rounded corners
+									borderRadius: "20px",
+								}}
+							/>
+						)}
 
-							<CardContent className="card-content-text">
-								<Typography
-									variant="body2"
-									color="var(--off-white)"
-									id="MUI-description"
-								>
-									<span className="project-description">
-										{project.description}
-									</span>
-								</Typography>
-								<CardActions disableSpacing className="icon-div">
-									<div>
-										<IconButton aria-label="github link">
-											<a href={project.github} target="_blank" rel="noreferrer">
-												<AiFillGithub
-													className="MUI-icon"
-													style={{
-														color: "white",
-													}}
-												/>
-											</a>
-										</IconButton>
-										<h5 className="icon-button-text">Code</h5>
-									</div>
-									<div>
-										<IconButton aria-label="live-demo">
-											<a href={project.link} target="_blank" rel="noreferrer">
-												<RiComputerLine
-													className="MUI-icon"
-													style={{
-														color: "white",
-													}}
-												/>
-											</a>
-										</IconButton>
-										<h5 className="icon-button-text">Site</h5>
-									</div>
-								</CardActions>
-								<Typography paragraph align="left" minHeight="90px">
-									<div
-										style={{
-											minHeight: "90px",
-										}}
-									>
-										{project.tags.map((tag) => (
-											<TagButton
-												disabled={true}
-												key={tag}
+						<CardContent className="card-content-text">
+							<Typography
+								variant="body2"
+								color="var(--off-white)"
+								id="MUI-description"
+							>
+								<span className="project-description">
+									{project.description}
+								</span>
+							</Typography>
+							<CardActions disableSpacing className="icon-div">
+								<div>
+									<IconButton aria-label="github link">
+										<a href={project.github} target="_blank" rel="noreferrer">
+											<AiFillGithub
+												className="MUI-icon"
 												style={{
-													background: "var(--primary-color)",
-
-													color: "var(--off-white)",
-													marginRight: "10px",
-													marginBottom: "10px",
+													color: "white",
 												}}
-											>
-												{tag}
-											</TagButton>
-										))}
-									</div>
-									<div
-										className="project-flag-div"
-										style={{
-											display: "flex",
-											justifyContent: "initial",
-										}}
-									>
-										{project.japanese ? (
-											<div>
-												<img
-													className="flag"
-													src={japan}
-													alt="Japan Flag"
-													style={{
-														filter: "brightness(0.85)",
-														marginRight: "10px",
-														marginTop: "10px",
-														width: "50px",
-														height: "40px",
-													}}
-												></img>
-											</div>
-										) : null}
-										{project.english ? (
-											<div>
-												<img
-													className="flag"
-													src={america}
-													alt="America Flag"
-													style={{
-														filter: "brightness(0.85)",
-														marginRight: "10px",
-														marginTop: "10px",
-														width: "50px",
-														height: "40px",
-													}}
-												></img>
-											</div>
-										) : null}
-									</div>
-								</Typography>
-							</CardContent>
-						</div>
-					</Card>
-				</div>
+											/>
+										</a>
+									</IconButton>
+									<h5 className="icon-button-text">Code</h5>
+								</div>
+								<div>
+									<IconButton aria-label="live-demo">
+										<a href={project.link} target="_blank" rel="noreferrer">
+											<RiComputerLine
+												className="MUI-icon"
+												style={{
+													color: "white",
+												}}
+											/>
+										</a>
+									</IconButton>
+									<h5 className="icon-button-text">Site</h5>
+								</div>
+							</CardActions>
+							<Typography paragraph align="left" minHeight="90px">
+								<div
+									style={{
+										minHeight: "90px",
+									}}
+								>
+									{project.tags.map((tag) => (
+										<TagButton
+											disabled={true}
+											key={tag}
+											style={{
+												background: "var(--primary-color)",
+
+												color: "var(--off-white)",
+												marginRight: "10px",
+												marginBottom: "10px",
+											}}
+										>
+											{tag}
+										</TagButton>
+									))}
+								</div>
+								<div
+									className="project-flag-div"
+									style={{
+										display: "flex",
+										justifyContent: "initial",
+									}}
+								>
+									{project.japanese ? (
+										<div>
+											<img
+												className="flag"
+												src={japan}
+												alt="Japan Flag"
+												style={{
+													filter: "brightness(0.85)",
+													marginRight: "10px",
+													marginTop: "10px",
+													width: "50px",
+													height: "40px",
+												}}
+											></img>
+										</div>
+									) : null}
+									{project.english ? (
+										<div>
+											<img
+												className="flag"
+												src={america}
+												alt="America Flag"
+												style={{
+													filter: "brightness(0.85)",
+													marginRight: "10px",
+													marginTop: "10px",
+													width: "50px",
+													height: "40px",
+												}}
+											></img>
+										</div>
+									) : null}
+								</div>
+							</Typography>
+						</CardContent>
+					</div>
+				</Card>
 
 				<IconButton
 					aria-label="close modal"

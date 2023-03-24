@@ -20,7 +20,7 @@
 
 #MUI-Card {
 	width: 100%;
-	min-width: 325;
+	min-width: 300px;
 	min-height: 520px;
 	overflow: auto;
 	margin-top: 20px !important;
