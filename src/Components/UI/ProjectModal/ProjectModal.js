@@ -27,7 +27,6 @@ const customStyles = {
 		backgroundColor: "var(--black)",
 		border: "solid 5px var(--secondary-color)",
 		borderRadius: "10px",
-		width: "100%",
 		maxWidth: "99vw",
 	},
 };
