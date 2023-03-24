@@ -65,9 +65,13 @@ const Landing = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
-	/* height: 100svh; */
 	background-color: var(--black);
+	// for desktop
+	height: 100vh;
+	// on mobile, the landing tile will be centered by factoring in the height of the navbar
+	@media (max-width: 768px) {
+		height: calc(100vh -48px);
+	}
 `;
 
 const LandingTile = styled.h1`
