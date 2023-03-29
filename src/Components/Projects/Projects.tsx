@@ -281,6 +281,7 @@ const Main = styled.div`
 		align-items: center;
 		align-content: center;
 		overflow: hidden;
+		gap: 8px;
 	}
 
 	.ReactModal__Overlay {

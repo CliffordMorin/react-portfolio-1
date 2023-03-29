@@ -34,7 +34,12 @@ const LandingV2 = () => {
 				}}
 			>
 				<LandingTile className="animate__animated animate__fadeIn">
-					<div id="text">
+					<div
+						id="text"
+						style={{
+							pointerEvents: "none",
+						}}
+					>
 						<div className="line">
 							<p className="word">
 								{`${currGreeting}`}, {i18n.language === "en" ? " I'm " : " "}
@@ -65,7 +70,7 @@ const Landing = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	// for desktop
 
 	height: 100vh;
@@ -87,11 +92,12 @@ const LandingTile = styled.h1`
 	height: max-content;
 	text-align: center;
 
-	background-color: var(--black);
+	/* background-color: var(--black); */
 
 	margin: 50px;
 	font-size: 3rem;
 	padding-bottom: 61px;
+	pointer-events: none !important;
 
 	@media (max-width: 1024px) {
 		font-size: 2rem;

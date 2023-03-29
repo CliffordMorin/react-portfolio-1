@@ -62,6 +62,7 @@ const About = () => {
 
 const AboutDiv = styled.div`
 	width: 85vw;
+
 	margin: auto;
 	border-radius: 10px;
 	display: flex;

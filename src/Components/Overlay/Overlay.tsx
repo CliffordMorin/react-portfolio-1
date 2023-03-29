@@ -71,8 +71,6 @@ export default function Index() {
 			});
 			await currentAnimation.start({
 				scale: 60,
-				// rotate: 180,
-				// opacity: 0,
 
 				transition: {
 					duration: 1.5,
@@ -85,13 +83,13 @@ export default function Index() {
 		DivSequence(2);
 		DivSequence(3);
 		DivSequence(4);
-	}, [divAnimation1, divAnimation2, divAnimation3, divAnimation4]);
+	});
 
 	return (
 		<Container
-			animate={{ opacity: 0 }}
-			initial={{ opacity: 1 }}
-			transition={{ duration: 0.001, delay: 4 }}
+		// animate={{ opacity: 0 }}
+		// initial={{ opacity: 1 }}
+		// transition={{ duration: 0.001, delay: 4 }}
 		>
 			<LogoContainer animate={divAnimation1} initial={{ scale: 0, rotate: 45 }}>
 				<Logo
@@ -183,7 +181,7 @@ export default function Index() {
 }
 
 export const Container = styled(motion.div)`
-	z-index: 10;
+	z-index: 999;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -195,6 +193,7 @@ export const Container = styled(motion.div)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 
 	background-color: "var(--secondary-color)";
 `;
