@@ -247,7 +247,7 @@ const Projects = () => {
 		<>
 			<Main className="Projects" id="Projects">
 				<h1>{content.mainTitle}</h1>
-				<RunningImg src={Naruto} />
+				{/* <RunningImg src={Naruto} /> */}
 				<AnimationOnScroll
 					animateIn="animate__fadeIn"
 					animateOut="animate__fadeOut"
