@@ -89,6 +89,7 @@ const AboutDiv = styled.div`
 
 	.about-description {
 		font-size: 1.5rem;
+		user-select: none;
 	}
 
 	@media (max-width: 1000px) {

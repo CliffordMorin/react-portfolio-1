@@ -12,11 +12,9 @@
 .line {
 	display: flex;
 	justify-content: space-between;
-	pointer-events: none;
 }
 
 .word {
-	pointer-events: none !important;
 	font-size: clamp(1.6rem, 6vw, 5rem);
 	font-family: "Rubik", sans-serif;
 	font-weight: 400;

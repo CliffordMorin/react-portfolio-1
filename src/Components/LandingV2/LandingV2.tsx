@@ -91,13 +91,13 @@ const LandingTile = styled.h1`
 	max-width: 1000px;
 	height: max-content;
 	text-align: center;
+	user-select: none;
 
 	/* background-color: var(--black); */
 
 	margin: 50px;
 	font-size: 3rem;
 	padding-bottom: 61px;
-	pointer-events: none !important;
 
 	@media (max-width: 1024px) {
 		font-size: 2rem;
