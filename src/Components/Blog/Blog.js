@@ -247,7 +247,6 @@ const Main = styled.div`
 
 	#Blog {
 		text-align: center;
-		background-color: var(--black);
 		padding-bottom: 50px;
 	}
 

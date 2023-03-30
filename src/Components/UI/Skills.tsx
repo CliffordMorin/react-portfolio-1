@@ -406,7 +406,7 @@ const SkillsDiv = styled.div`
 		padding: 10px;
 		margin-bottom: 10px;
 		margin-top: 10px;
-		color: var(--off-white);
+
 		gap: 24px;
 	}
 
@@ -454,7 +454,6 @@ const SkillsDiv = styled.div`
 
 	.skill-icon-text {
 		margin-bottom: 10px;
-		color: var(--off-white);
 		text-decoration: none;
 		text-align: center;
 		white-space: nowrap;
