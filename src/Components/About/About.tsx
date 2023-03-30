@@ -62,6 +62,7 @@ const AboutDiv = styled.div`
 	flex-wrap: wrap;
 	color: var(--off-white);
 	overflow: hidden;
+	user-select: none;
 
 	@media (max-width: 1000px) {
 		width: 90%;
