@@ -27,7 +27,6 @@ export default function Index() {
 					currentAnimation = divAnimation4;
 					break;
 			}
-			// start of animation sequence
 			await currentAnimation.start({ scale: 0 });
 			await currentAnimation.start({ scale: 2 });
 			await currentAnimation.start({ scale: 1 });
@@ -78,7 +77,6 @@ export default function Index() {
 			});
 		};
 
-		// run the above sequence for the 6 divs eahch with it's own unique animation
 		DivSequence(1);
 		DivSequence(2);
 		DivSequence(3);
@@ -86,11 +84,7 @@ export default function Index() {
 	});
 
 	return (
-		<Container
-		// animate={{ opacity: 0 }}
-		// initial={{ opacity: 1 }}
-		// transition={{ duration: 0.001, delay: 4 }}
-		>
+		<Container>
 			<LogoContainer animate={divAnimation1} initial={{ scale: 0, rotate: 45 }}>
 				<Logo
 					xmlns="http://www.w3.org/2000/svg"
@@ -185,16 +179,13 @@ export const Container = styled(motion.div)`
 	position: fixed;
 	bottom: 0;
 	left: 0;
-
 	width: 100%;
 	height: 100vh;
 	height: 100svh;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-
 	background-color: "var(--secondary-color)";
 `;
 
@@ -203,7 +194,6 @@ export const LogoContainer = styled(motion.div)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	width: 100px;
 	height: 100px;
 `;

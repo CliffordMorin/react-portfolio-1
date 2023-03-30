@@ -7,7 +7,8 @@ import MUINav from "../Navbar/MUINav";
 const LandingV2 = () => {
 	const { t, i18n } = useTranslation();
 	const time = new Date().getHours();
-	let currGreeting = "Hello";
+
+	let currGreeting = "";
 	if (time < 12) {
 		currGreeting = t("landing.morning");
 	} else if (time >= 12 && time <= 18) {

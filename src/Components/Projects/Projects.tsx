@@ -8,7 +8,6 @@ import niceRiff from "../../images/projects/niceRiff.jpeg";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
 import "./Projects.css";
-// import i18n from "../../translations/i18n";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {

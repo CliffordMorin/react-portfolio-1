@@ -28,7 +28,6 @@ svg:hover {
 	background-color: transparent !important;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
 	background: var(--black) !important;
 	border-radius: 20px;
@@ -36,7 +35,6 @@ svg:hover {
 	border: var(--secondary-color) 0.5px solid;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
@@ -44,7 +42,6 @@ svg:hover {
 .loader-wrapper {
 	width: 100%;
 	height: 100%;
-	/* position: fixed; */
 	top: 0;
 	left: 0;
 	display: grid;
@@ -72,15 +69,6 @@ svg:hover {
 	display: grid;
 	place-items: center;
 	font-family: "Roboto", sans-serif !important;
-}
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
 }
 
 .ContributionCalendar-label {

@@ -7,9 +7,11 @@ import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 
-import { LandingV2, Footer, Blog, Overlay } from "./Components/index";
+import { LandingV2, Overlay } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
 const Projects = React.lazy(() => import("./Components/Projects/Projects"));
+const Blog = React.lazy(() => import("./Components/Blog/Blog"));
+const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 
 function App() {
 	console.log(
@@ -128,10 +130,9 @@ function App() {
 					<Suspense fallback={<LoadingSpinner />}>
 						<About />
 						<Projects />
+						<Blog />
+						<Footer />
 					</Suspense>
-					<Blog />
-
-					<Footer />
 				</>
 			)}
 		</div>

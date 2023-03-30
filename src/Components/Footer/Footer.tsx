@@ -6,19 +6,10 @@ const Footer = () => {
 			<footer>
 				<div className="footer-text">
 					<span>
-						<span
-							style={{
-								fontSize: "1rem",
-								fontWeight: "bold",
-							}}
-						>
-							Thanks for looking at my portfolio.
-						</span>
+						<span>Thanks for looking at my portfolio.</span>
 						<span> </span>
 						<span
 							style={{
-								fontSize: "1rem",
-								fontWeight: "bold",
 								color: "var(--secondary-color)",
 							}}
 						>
@@ -42,6 +33,11 @@ const Main = styled.footer`
 		z-index: 10;
 		position: absolute;
 		width: 100%;
+	}
+
+	span {
+		font-size: 1rem;
+		font-weight: bold;
 	}
 
 	.footer-text {

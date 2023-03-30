@@ -1,6 +1,5 @@
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiTwotoneMail } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import styled from "styled-components";
