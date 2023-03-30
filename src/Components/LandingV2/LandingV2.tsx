@@ -3,14 +3,9 @@ import "animate.css";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import MUINav from "../Navbar/MUINav";
-import "./special-text.css";
-// import { useEffect } from "react";
 
 const LandingV2 = () => {
 	const { t, i18n } = useTranslation();
-	// get the current language
-
-	// find if the user is in the morning, afternoon, or evening
 	const time = new Date().getHours();
 	let currGreeting = "Hello";
 	if (time < 12) {
@@ -66,16 +61,37 @@ const LandingV2 = () => {
 };
 
 const Landing = styled.div`
+	.line {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.word {
+		font-size: clamp(1.6rem, 6vw, 5rem);
+		font-family: "Rubik", sans-serif;
+		font-weight: 400;
+		margin: 0rem;
+		text-transform: uppercase;
+		transition: opacity 250ms ease;
+		opacity: 0.2;
+	}
+
+	#special-1 {
+		opacity: 1 !important;
+	}
+
+	#special-2 {
+		color: gray !important;
+		opacity: 0.5 !important;
+	}
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	/* background-color: var(--black); */
-	// for desktop
-
 	height: 100vh;
 	height: 100svh;
-	// on mobile, the landing tile will be centered by factoring in the height of the navbar
+
 	@media (max-width: 768px) {
 		height: calc(100vh -56px);
 		height: calc(100svh -56px);
@@ -83,8 +99,6 @@ const Landing = styled.div`
 `;
 
 const LandingTile = styled.h1`
-	//default cursor
-
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	width: fit-content;
@@ -92,8 +106,6 @@ const LandingTile = styled.h1`
 	height: max-content;
 	text-align: center;
 	user-select: none;
-
-	/* background-color: var(--black); */
 
 	margin: 50px;
 	font-size: 3rem;

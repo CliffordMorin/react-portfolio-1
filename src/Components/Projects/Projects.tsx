@@ -1,13 +1,10 @@
-import "./Projects.css";
 import quote from "../../images/projects/quote.webp";
 import blog from "../../images/projects/blog.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import RunningImg from "../UI/RunningImg";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
-import Naruto from "../../images/UI/narutoRun.gif";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
 // import i18n from "../../translations/i18n";
@@ -265,6 +262,46 @@ const Projects = () => {
 };
 
 const Main = styled.div`
+	.Projects {
+		text-align: center;
+		width: 100%;
+		user-select: none;
+		margin-top: 150px;
+		background: var(--black);
+	}
+
+	.projects-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.ReactModal__Overlay {
+		background-color: var(--black) !important;
+	}
+
+	@media (max-width: 800px) {
+		.project-icons {
+			display: none !important;
+		}
+	}
+
+	@media (min-width: 1300px) {
+		.projects-container {
+			width: 90%;
+			margin: 60px auto;
+			padding-bottom: 60px;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
+
 	text-align: center;
 	width: 100%;
 	user-select: none;

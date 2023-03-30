@@ -1,3 +1,4 @@
+import React from "react";
 import Skills from "../UI/Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "react-i18next";
@@ -8,43 +9,32 @@ const About = () => {
 
 	return (
 		<AboutDiv className="about" id="About">
-			<div className="about-inner">
+			<AboutInner className="about-inner">
 				<AnimationOnScroll
 					animateIn="animate__fadeIn"
 					animateOnce
 					offset={200}
 					duration={3}
 				>
-					<h1
-						style={{ textAlign: "center", paddingBottom: "1rem" }}
-						className="about-title"
-					>
-						{t("about.title")}
-					</h1>
-					<div style={{ paddingBottom: "1rem" }}>
-						<p className="about-description">{t("about.description1")}</p>
-						<p className="about-description">{t("about.description2")}</p>
-						<p className="about-description">
+					<AboutTitle>{t("about.title")}</AboutTitle>
+					<AboutDescriptionWrapper>
+						<AboutDescription>{t("about.description1")}</AboutDescription>
+						<AboutDescription>{t("about.description2")}</AboutDescription>
+						<AboutDescription>
 							{t("about.description3a")}
-							<a
+							<AboutLink
 								href="https://www.rapptrlabs.com/"
 								target="_blank"
 								rel="noreferrer"
-								style={{ color: "var(--secondary-color)" }}
 							>
 								{t("about.currentCompany")}
-							</a>
+							</AboutLink>
 							{t("about.description3b")}
-						</p>
-						<p
-							className="about-description"
-							style={{
-								wordBreak: "break-all",
-							}}
-						>
+						</AboutDescription>
+						<AboutDescription style={{ wordBreak: "break-all" }}>
 							{t("about.description4")}
-						</p>
-					</div>
+						</AboutDescription>
+					</AboutDescriptionWrapper>
 				</AnimationOnScroll>
 
 				<AnimationOnScroll
@@ -55,7 +45,7 @@ const About = () => {
 				>
 					<Skills />
 				</AnimationOnScroll>
-			</div>
+			</AboutInner>
 		</AboutDiv>
 	);
 };
@@ -73,38 +63,46 @@ const AboutDiv = styled.div`
 	color: var(--off-white);
 	overflow: hidden;
 
-	.about-inner {
-		width: 50%;
+	@media (max-width: 1000px) {
+		width: 90%;
+		padding: 10px;
 	}
+`;
 
-	.about-title {
-		text-decoration: underline;
-		text-decoration-color: var(--secondary-color);
-		text-decoration-thickness: 5px;
-		text-underline-offset: 6px;
-		text-decoration-skip-ink: none;
-		overflow: hidden;
-		margin-bottom: 50px;
-	}
-
-	.about-description {
-		font-size: 1.5rem;
-		user-select: none;
-	}
+const AboutInner = styled.div`
+	width: 50%;
 
 	@media (max-width: 1000px) {
-		.about {
-			width: 90%;
-			padding: 10px;
-		}
-		.about-inner {
-			width: 100%;
-		}
-
-		.about-description {
-			font-size: 1rem;
-		}
+		width: 100%;
 	}
+`;
+
+const AboutTitle = styled.h1`
+	text-align: center;
+	padding-bottom: 1rem;
+	text-decoration: underline;
+	text-decoration-color: var(--secondary-color);
+	text-decoration-thickness: 5px;
+	text-underline-offset: 6px;
+	text-decoration-skip-ink: none;
+	overflow: hidden;
+	margin-bottom: 50px;
+`;
+
+const AboutDescriptionWrapper = styled.div`
+	padding-bottom: 1rem;
+`;
+
+const AboutDescription = styled.p`
+	font-size: 1.5rem;
+
+	@media (max-width: 1000px) {
+		font-size: 1rem;
+	}
+`;
+
+const AboutLink = styled.a`
+	color: var(--secondary-color);
 `;
 
 export default About;

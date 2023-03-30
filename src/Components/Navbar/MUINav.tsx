@@ -89,7 +89,6 @@ const MUINav = () => {
 								>
 									<MenuItem
 										onClick={handleCloseNavMenu}
-										key={Math.random()}
 										sx={{
 											my: 1,
 											color: "var(--secondary-color)",
@@ -175,7 +174,6 @@ const MUINav = () => {
 const Nav = styled(AppBar)`
 	z-index: 100 !important;
 	background-color: var(--black) !important;
-	/* position: relative; */
 	overflow: hidden;
 	width: 100% !important;
 

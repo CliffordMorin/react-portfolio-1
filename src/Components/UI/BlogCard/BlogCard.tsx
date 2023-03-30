@@ -5,7 +5,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-export default function BlogCard(props) {
+export default function BlogCard({
+	link,
+	image,
+	title,
+}: {
+	link: string;
+	image: string;
+	title: string;
+}) {
 	return (
 		<Card
 			sx={{
@@ -16,16 +24,15 @@ export default function BlogCard(props) {
 				height: "fit-content",
 				margin: "10px",
 				borderRadius: "20px",
-				// boxShadow: "inset 8px 8px 16px #cbced1, inset -8px -8px 16px #ffffff",
 				opacity: 0.9,
 				backgroundImage: "linear-gradient(to bottom, #00000080, #00000040)",
 			}}
 		>
-			<CardActionArea href={props.link} target="_blank">
+			<CardActionArea href={link} target="_blank">
 				<CardMedia
 					component="img"
 					height={300}
-					image={props.image}
+					image={image}
 					alt="blog post image"
 					loading="lazy"
 					style={{
@@ -46,7 +53,7 @@ export default function BlogCard(props) {
 							color: "var(--off-white)",
 						}}
 					>
-						{props.title}
+						{title}
 					</Typography>
 				</CardContent>
 			</CardActionArea>
