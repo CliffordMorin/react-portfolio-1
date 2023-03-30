@@ -198,14 +198,7 @@ const Blog = () => {
 };
 
 const Main = styled.div`
-	.Projects {
-		text-align: center;
-		width: 100%;
-		user-select: none;
-		margin-top: 150px;
-		background: var(--black);
-	}
-
+	background-color: var(--black);
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;

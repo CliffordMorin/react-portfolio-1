@@ -25,8 +25,7 @@ const Footer = () => {
 
 const Main = styled.footer`
 	footer {
-		color: white;
-
+		background-color: var(--black);
 		display: flex;
 		justify-content: space-between;
 		z-index: 10;
