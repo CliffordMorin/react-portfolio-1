@@ -71,11 +71,9 @@ export default function MUIProjectCard(props) {
 						loading="lazy"
 						object-fit="contain"
 						style={{
-							//darken
 							filter: "brightness(0.85)",
-							// rounded corners
+
 							borderRadius: "20px",
-							// darken on hover
 						}}
 					/>
 
@@ -183,13 +181,11 @@ const ProjectCard = styled(Card)`
 			font-size: 2.5rem !important;
 			text-decoration-thickness: 4px !important;
 			text-align: center !important;
-			/* padding-top: 30px !important; */
 		}
 
 		#card-media:hover {
-			/* darken the card on hover */
 			opacity: 1;
-			/* darken the card on hover */
+
 			cursor: url(${Dot}), 4, 4 pointer !important;
 		}
 
@@ -224,9 +220,7 @@ const ProjectCard = styled(Card)`
 
 	@media (min-width: 1300px) {
 		.darken-on-hover:hover {
-			/* darken the card on hover */
 			opacity: 0.3 !important;
-			/* darken the card on hover */
 		}
 		#MUI-Card {
 			margin-left: 0px !important;

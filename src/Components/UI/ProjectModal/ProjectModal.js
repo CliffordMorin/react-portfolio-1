@@ -114,9 +114,7 @@ function ProjectModal({ project }) {
 								loading="lazy"
 								object-fit="contain"
 								style={{
-									//darken
 									filter: "brightness(0.85)",
-									// rounded corners
 									borderRadius: "20px",
 								}}
 							/>
