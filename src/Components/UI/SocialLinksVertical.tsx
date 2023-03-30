@@ -57,23 +57,6 @@ const SocialLinksVertical = () => {
 					className="social-link"
 				>
 					<a
-						href="https://twitter.com/zachstonewebdev"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<AiFillTwitterCircle className="social-link-img" />
-						<div className="social-link-text">
-							<span className="social-link-text-span">Twitter</span>
-						</div>
-					</a>
-				</div>
-				<div
-					style={{
-						position: "relative",
-					}}
-					className="social-link"
-				>
-					<a
 						href="mailto:Zach.Stone.Developer@gmail.com"
 						target="_blank"
 						rel="noopener noreferrer"

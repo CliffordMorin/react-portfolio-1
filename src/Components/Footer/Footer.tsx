@@ -51,6 +51,7 @@ const Main = styled.footer`
 		align-items: center;
 		color: white;
 		margin-left: 8px;
+		user-select: none;
 	}
 	@media (max-width: 455px) {
 		.footer-text {
