@@ -7,6 +7,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
+import "./Projects.css";
 // import i18n from "../../translations/i18n";
 import { useTranslation } from "react-i18next";
 
@@ -262,46 +263,6 @@ const Projects = () => {
 };
 
 const Main = styled.div`
-	.Projects {
-		text-align: center;
-		width: 100%;
-		user-select: none;
-		margin-top: 150px;
-		background: var(--black);
-	}
-
-	.projects-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-	}
-
-	.ReactModal__Overlay {
-		background-color: var(--black) !important;
-	}
-
-	@media (max-width: 800px) {
-		.project-icons {
-			display: none !important;
-		}
-	}
-
-	@media (min-width: 1300px) {
-		.projects-container {
-			width: 90%;
-			margin: 60px auto;
-			padding-bottom: 60px;
-		}
-
-		h1 {
-			font-size: 2.5rem;
-		}
-	}
-
 	text-align: center;
 	width: 100%;
 	user-select: none;

@@ -128,7 +128,6 @@ const ProjectCard = styled(Card)`
 	.icon-button-text {
 		font-size: 1.2rem;
 		color: white;
-		/* hide a tag styling */
 		text-decoration: none;
 		text-align: center;
 	}
@@ -155,9 +154,6 @@ const ProjectCard = styled(Card)`
 	#card-media {
 		width: 100%;
 		height: 250px;
-		/* border-radius: "10px"; */
-		/* pointer to show that it is clickable */
-		/* cursor: pointer; */
 		cursor: url(${Dot}), 4, 4 pointer !important;
 	}
 
@@ -169,7 +165,6 @@ const ProjectCard = styled(Card)`
 		.icon-button-text {
 			font-size: 1rem;
 			color: white;
-			/* hide a tag styling */
 			text-decoration: none;
 			text-align: center;
 		}
