@@ -31,7 +31,9 @@ const About = () => {
 							</AboutLink>
 							{t("about.description3b")}
 						</AboutDescription>
-						<AboutDescription style={{ wordBreak: "break-all" }}>
+						<AboutDescription
+							style={{ wordBreak: "break-all", userSelect: "all" }}
+						>
 							{t("about.description4")}
 						</AboutDescription>
 					</AboutDescriptionWrapper>
