@@ -78,9 +78,3 @@ svg:hover {
 .contributions-header {
 	margin-bottom: 20px !important;
 }
-
-@media (max-width: 1000px) {
-	#tsparticles {
-		display: none;
-	}
-}

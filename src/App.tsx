@@ -6,6 +6,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+import { useMediaQuery } from "react-responsive";
 
 import { LandingV2, Overlay } from "./Components/index";
 const About = React.lazy(() => import("./Components/About/About"));
@@ -18,6 +19,10 @@ function App() {
 		"%cHi! Thanks for checking out my code ☺ If you have any questions, feel free to reach out to me on Linkedin",
 		"color:green;font-family:system-ui;font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold"
 	);
+
+	const isDesktopOrLaptop = useMediaQuery({
+		query: "(min-width: 1224px)",
+	});
 
 	const particlesInit = useCallback(async (engine: Engine) => {
 		console.log(engine);
@@ -49,83 +54,85 @@ function App() {
 				<Overlay />
 			) : (
 				<>
-					<Particles
-						id="tsparticles"
-						init={particlesInit}
-						loaded={particlesLoaded}
-						options={{
-							background: {
-								color: {
-									value: "var(--black)",
+					{isDesktopOrLaptop && (
+						<Particles
+							id="tsparticles"
+							init={particlesInit}
+							loaded={particlesLoaded}
+							options={{
+								background: {
+									color: {
+										value: "var(--black)",
+									},
 								},
-							},
-							fpsLimit: 60,
-							interactivity: {
-								events: {
-									onClick: {
+								fpsLimit: 60,
+								interactivity: {
+									events: {
+										onClick: {
+											enable: true,
+											mode: "push",
+										},
+										onHover: {
+											enable: false,
+											mode: "repulse",
+										},
+										resize: true,
+									},
+									modes: {
+										push: {
+											quantity: 4,
+										},
+										repulse: {
+											distance: 200,
+											duration: 0.4,
+										},
+									},
+								},
+								particles: {
+									color: {
+										value: "#ffffff",
+									},
+									links: {
+										color: "#43c396",
+										distance: 150,
 										enable: true,
-										mode: "push",
+										opacity: 0.2,
+										width: 1,
 									},
-									onHover: {
-										enable: false,
-										mode: "repulse",
-									},
-									resize: true,
-								},
-								modes: {
-									push: {
-										quantity: 4,
-									},
-									repulse: {
-										distance: 200,
-										duration: 0.4,
-									},
-								},
-							},
-							particles: {
-								color: {
-									value: "#ffffff",
-								},
-								links: {
-									color: "#43c396",
-									distance: 150,
-									enable: true,
-									opacity: 0.2,
-									width: 1,
-								},
-								collisions: {
-									enable: true,
-								},
-								move: {
-									direction: "none",
-									enable: true,
-									outModes: {
-										default: "bounce",
-									},
-									random: false,
-									speed: 1,
-									straight: false,
-								},
-								number: {
-									density: {
+									collisions: {
 										enable: true,
-										area: 800,
 									},
-									value: 40,
+									move: {
+										direction: "none",
+										enable: true,
+										outModes: {
+											default: "bounce",
+										},
+										random: false,
+										speed: 1,
+										straight: false,
+									},
+									number: {
+										density: {
+											enable: true,
+											area: 800,
+										},
+										value: 40,
+									},
+									opacity: {
+										value: 0.1,
+									},
+									shape: {
+										type: "circle",
+									},
+									size: {
+										value: { min: 1, max: 5 },
+									},
 								},
-								opacity: {
-									value: 0.1,
-								},
-								shape: {
-									type: "circle",
-								},
-								size: {
-									value: { min: 1, max: 5 },
-								},
-							},
-							detectRetina: true,
-						}}
-					/>
+								detectRetina: true,
+							}}
+						/>
+					)}
 					<LandingV2 />
 					<Suspense fallback={<LoadingSpinner />}>
 						<About />
