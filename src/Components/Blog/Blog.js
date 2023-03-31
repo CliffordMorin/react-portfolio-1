@@ -1,12 +1,13 @@
+import React, { useState } from "react";
 import BlogCard from "../UI/BlogCard/BlogCard";
 import Carousel from "react-simply-carousel";
-import React, { useState } from "react";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
+
 const Blog = () => {
 	const { i18n } = useTranslation();
 	const [activeSlide, setActiveSlide] = useState(0);
@@ -91,6 +92,96 @@ const Blog = () => {
 	i18n.language === "en"
 		? (content = content.English)
 		: (content = content.Japanese);
+
+	const DesktopBlogCarousel = ({ content, activeSlide, setActiveSlide }) => {
+		return (
+			<div
+				style={{
+					display: "flex",
+					flexDirection: "row",
+					justifyContent: "center",
+				}}
+			>
+				<Carousel
+					updateOnItemClick
+					containerProps={{
+						style: {
+							width: "100%",
+							maxWidth: "2000px",
+							justifyContent: "space-evenly",
+						},
+					}}
+					className="Carousel"
+					activeSlideIndex={activeSlide}
+					onRequestChange={(index) => setActiveSlide(index)}
+					activeSlideProps={{
+						style: {
+							border: "40px solid black",
+						},
+					}}
+					forwardBtnProps={{
+						children: (
+							<FaArrowCircleRight size={50} className="direction-icon" />
+						),
+						className: "direction-btn",
+						style: {
+							alignSelf: "center",
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+							justifySelf: "center",
+							color: "white",
+							marginLeft: "10px",
+							marginRight: "10px",
+						},
+					}}
+					backwardBtnProps={{
+						children: (
+							<FaArrowCircleLeft
+								size={50}
+								color="white"
+								className="direction-icon"
+							/>
+						),
+						className: "direction-btn",
+						style: {
+							display: "flex",
+							alignSelf: "center",
+							justifySelf: "center",
+							justifyContent: "center",
+							alignItems: "center",
+							marginLeft: "10px",
+							marginRight: "10px",
+						},
+					}}
+					itemsToShow={0}
+					speed={300}
+				>
+					{content.posts.map((post, index) => (
+						<BlogCard
+							key={index}
+							title={post.title}
+							image={post.image}
+							link={post.link}
+						/>
+					))}
+				</Carousel>
+			</div>
+		);
+	};
+
+	const MobileBlogList = ({ content }) => {
+		return (
+			<div id="BlogList">
+				<h1 className="blog-post-list-heading">Blog Posts</h1>
+				{content.posts.map((post, index) => (
+					<a href={post.link} target="_blank" rel="noreferrer" key={post.link}>
+						<h3 className="blog-post-list-title">{post.title}</h3>
+					</a>
+				))}
+			</div>
+		);
+	};
 	return (
 		<AnimationOnScroll
 			animateIn="animate__fadeIn"
@@ -100,107 +191,15 @@ const Blog = () => {
 		>
 			<Main>
 				<div id="Blog">
-					<h1
-						style={{
-							marginTop: "0px",
-							marginBottom: "50px",
-						}}
-					>
-						{content.mainTitle}
-					</h1>
+					<Title>{content.mainTitle}</Title>
 					{isDesktopOrLaptop ? (
-						<>
-							<div
-								style={{
-									display: "flex",
-									flexDirection: "row",
-									justifyContent: "center",
-								}}
-							>
-								<Carousel
-									updateOnItemClick
-									containerProps={{
-										style: {
-											width: "100%",
-											maxWidth: "2000px",
-											justifyContent: "space-evenly",
-										},
-									}}
-									className="Carousel"
-									activeSlideIndex={activeSlide}
-									onRequestChange={(index) => setActiveSlide(index)}
-									activeSlideProps={{
-										style: {
-											border: "40px solid black",
-										},
-									}}
-									forwardBtnProps={{
-										children: (
-											<FaArrowCircleRight
-												size={50}
-												className="direction-icon"
-											/>
-										),
-										className: "direction-btn",
-										style: {
-											alignSelf: "center",
-											display: "flex",
-											justifyContent: "center",
-											alignItems: "center",
-											justifySelf: "center",
-											color: "white",
-											marginLeft: "10px",
-											marginRight: "10px",
-										},
-									}}
-									backwardBtnProps={{
-										children: (
-											<FaArrowCircleLeft
-												size={50}
-												color="white"
-												className="direction-icon"
-											/>
-										),
-										className: "direction-btn",
-										style: {
-											display: "flex",
-											alignSelf: "center",
-											justifySelf: "center",
-											justifyContent: "center",
-											alignItems: "center",
-											marginLeft: "10px",
-											marginRight: "10px",
-										},
-									}}
-									itemsToShow={0}
-									speed={300}
-								>
-									{content.posts.map((post, index) => (
-										<BlogCard
-											key={index}
-											title={post.title}
-											image={post.image}
-											link={post.link}
-										/>
-									))}
-								</Carousel>
-							</div>
-							<div id="Projects" />
-						</>
+						<DesktopBlogCarousel
+							content={content}
+							activeSlide={activeSlide}
+							setActiveSlide={setActiveSlide}
+						/>
 					) : (
-						<div id="BlogList">
-							<h1 className="blog-post-list-heading">Blog Posts</h1>
-							{content.posts.map((post, index) => (
-								<a
-									href={post.link}
-									target="_blank"
-									rel="noreferrer"
-									key={post.link}
-								>
-									<h3 className="blog-post-list-title">{post.title}</h3>
-								</a>
-							))}
-						</div>
+						<MobileBlogList content={content} />
 					)}
 				</div>
 			</Main>
@@ -208,8 +207,14 @@ const Blog = () => {
 	);
 };
 
+const Title = styled.h1`
+	margin-top: 0px;
+	margin-bottom: 50px;
+`;
+
 const Main = styled.div`
 	background-color: var(--black);
+
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
