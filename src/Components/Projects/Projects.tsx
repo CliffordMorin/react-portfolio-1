@@ -39,20 +39,7 @@ const Projects = () => {
 					english: true,
 					japanese: true,
 				},
-				{
-					title: "Riffs!",
-					description:
-						"A place to share your new songs, covers, and musical ideas with the world",
-					image: niceRiff,
-					link: "https://riffs.netlify.app/",
-					linkText: "Live Demo",
-					github: "https://github.com/zachinjapan/vue-music-app",
-					tech: "Tech",
-					tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
-					youtube: "https://www.youtube.com/embed/gBIhz-0Jkg8",
-					english: true,
-					japanese: true,
-				},
+
 				{
 					title: "Zach In Japan",
 					description:
@@ -95,6 +82,20 @@ const Projects = () => {
 					youtube: "https://www.youtube.com/embed/q1rVbqMw0ug",
 					english: true,
 					japanese: false,
+				},
+				{
+					title: "Riffs!",
+					description:
+						"A place to share your new songs, covers, and musical ideas with the world",
+					image: niceRiff,
+					link: "https://riffs.netlify.app/",
+					linkText: "Live Demo",
+					github: "https://github.com/zachinjapan/vue-music-app",
+					tech: "Tech",
+					tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+					youtube: "https://www.youtube.com/embed/gBIhz-0Jkg8",
+					english: true,
+					japanese: true,
 				},
 				{
 					title: "Quote Quiz",
@@ -149,20 +150,7 @@ const Projects = () => {
 					english: true,
 					japanese: true,
 				},
-				{
-					title: "リッフス",
-					description:
-						"新曲、カバー、音楽のアイデアを世界と共有するためのサイトです。",
-					image: niceRiff,
-					link: "https://riffs.netlify.app/",
-					linkText: "ウェブサイト",
-					github: "https://github.com/zachinjapan/vue-music-app",
-					tech: "技術",
-					tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
-					youtube: "https://www.youtube.com/embed/gBIhz-0Jkg8",
-					english: true,
-					japanese: true,
-				},
+
 				{
 					title: "ザック・イン・ジャパン",
 					description: "私のテクノロジーブログです。",
@@ -205,6 +193,20 @@ const Projects = () => {
 					youtube: "https://www.youtube.com/embed/q1rVbqMw0ug",
 					english: true,
 					japanese: false,
+				},
+				{
+					title: "リッフス",
+					description:
+						"新曲、カバー、音楽のアイデアを世界と共有するためのサイトです。",
+					image: niceRiff,
+					link: "https://riffs.netlify.app/",
+					linkText: "ウェブサイト",
+					github: "https://github.com/zachinjapan/vue-music-app",
+					tech: "技術",
+					tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
+					youtube: "https://www.youtube.com/embed/gBIhz-0Jkg8",
+					english: true,
+					japanese: true,
 				},
 
 				{
