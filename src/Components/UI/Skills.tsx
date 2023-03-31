@@ -151,6 +151,7 @@ const Skills = () => {
 										marginTop: "20px",
 										marginBottom: "20px",
 										marginRight: "20px",
+										display: "flex",
 									}}
 								>
 									{" "}
@@ -178,6 +179,7 @@ const Skills = () => {
 										marginTop: "20px",
 										marginBottom: "20px",
 										marginRight: "20px",
+										display: "flex",
 									}}
 								>
 									{" "}
@@ -204,6 +206,7 @@ const Skills = () => {
 										color: "white",
 										marginTop: "20px",
 										marginBottom: "20px",
+										display: "flex",
 									}}
 								>
 									<BsUiChecks color="var(--secondary-color)" size={"1.25rem"} />
