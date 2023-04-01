@@ -69,10 +69,23 @@ export default function Index() {
 				},
 			});
 			await currentAnimation.start({
-				scale: 60,
-
+				//rotate 180 degrees
+				rotate: 180,
 				transition: {
-					duration: 1.5,
+					duration: 0.5,
+					ease: "easeInOut",
+				},
+
+				// move to the center of the screen
+				x: 0,
+				y: 0,
+			});
+			await currentAnimation.start({
+				// get smaller and smaller until it's gone into the center of the screen
+				scale: 0,
+				transition: {
+					duration: 0.5,
+					ease: "easeInOut",
 				},
 			});
 		};
