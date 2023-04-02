@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AiOutlineMenu as MenuIcon } from "react-icons/ai";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import america from "../../images/america-big.png";

@@ -39,38 +39,6 @@ svg:hover {
 	background: #555;
 }
 
-.loader-wrapper {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display: grid;
-	place-items: center;
-}
-
-.loader {
-	border: 25px solid #ca0505;
-	border-top: 25px solid #830505;
-	border-radius: 50%;
-	width: 175px;
-	height: 175px;
-	animation: spin 1s linear infinite;
-}
-.loader-text {
-	color: #fff;
-	font-size: 2.5rem;
-	font-weight: bold;
-	margin-top: 1rem;
-	width: 100%;
-	height: 95%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: grid;
-	place-items: center;
-	font-family: "Roboto", sans-serif !important;
-}
-
 .ContributionCalendar-label {
 	fill: var(--secondary-color) !important;
 }

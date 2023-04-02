@@ -23,7 +23,7 @@ import {
 	SiHasura,
 	SiRedux,
 	SiMongodb,
-	SiMaterialui,
+	SiMaterialdesign,
 	SiStyledcomponents,
 	SiNetlify,
 	SiTailwindcss,
@@ -72,7 +72,7 @@ const Skills = () => {
 		],
 		[<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
 		[<SiTailwindcss />, "Tailwind", "https://tailwindcss.com/"],
-		[<SiMaterialui />, "Material UI", "https://material-ui.com/"],
+		[<SiMaterialdesign />, "Material UI", "https://material-ui.com/"],
 		[<GrReactjs />, "Context API", "https://reactjs.org/docs/context.html"],
 		[<SiRedux />, "Redux", "https://redux.js.org/"],
 	];
@@ -429,7 +429,6 @@ const SkillsDiv = styled.div`
 		margin-bottom: 10px;
 	}
 
-	// don't show skills container on mobile
 	@media (max-width: 768px) {
 		.skills-container {
 			display: none;

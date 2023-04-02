@@ -1,18 +1,28 @@
 import "./App.css";
 import "animate.css/animate.min.css";
 import React, { Suspense, useState, useEffect } from "react";
-import LoadingSpinner from "./Components/UI/LoadingSpinner";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { useMediaQuery } from "react-responsive";
 
-import { LandingV2, Overlay } from "./Components/index";
-const About = React.lazy(() => import("./Components/About/About"));
-const Projects = React.lazy(() => import("./Components/Projects/Projects"));
-const Blog = React.lazy(() => import("./Components/Blog/Blog"));
-const Footer = React.lazy(() => import("./Components/Footer/Footer"));
+import { Overlay } from "./Components/index";
+
+// kicks off immediately when the current file is imported
+const LandingComponentPromise = import("./Components/LandingV2/LandingV2");
+const AboutComponentPromise = import("./Components/About/About");
+const ProjectsComponentPromise = import("./Components/Projects/Projects");
+const BlogComponentPromise = import("./Components/Blog/Blog");
+const FooterComponentPromise = import("./Components/Footer/Footer");
+
+// by the time this gets rendered, your component is probably already loaded
+// Suspense still works exactly the same with this.
+const LandingV2 = React.lazy(() => LandingComponentPromise);
+const About = React.lazy(() => AboutComponentPromise);
+const Projects = React.lazy(() => ProjectsComponentPromise);
+const Blog = React.lazy(() => BlogComponentPromise);
+const Footer = React.lazy(() => FooterComponentPromise);
 
 function App() {
 	console.log(
@@ -133,8 +143,9 @@ function App() {
 							}}
 						/>
 					)}
-					<LandingV2 />
-					<Suspense fallback={<LoadingSpinner />}>
+
+					<Suspense fallback={<h1>Loading...</h1>}>
+						<LandingV2 />
 						<About />
 						<Projects />
 						<Blog />
