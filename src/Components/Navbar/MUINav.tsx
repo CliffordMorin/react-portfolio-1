@@ -193,12 +193,6 @@ const Nav = styled(AppBar)`
 		align-items: center;
 	}
 
-	.full-flag-div {
-		position: fixed;
-		right: 1.5%;
-		top: 15px;
-	}
-
 	.flag {
 		width: 45px;
 		height: 35px;
