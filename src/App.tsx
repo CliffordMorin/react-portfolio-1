@@ -1,7 +1,7 @@
 import "./App.css";
 import "animate.css/animate.min.css";
-import React, { Suspense, useState, useEffect } from "react";
-import { useCallback } from "react";
+import React, { Suspense, useState, useEffect, useCallback } from "react";
+
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
