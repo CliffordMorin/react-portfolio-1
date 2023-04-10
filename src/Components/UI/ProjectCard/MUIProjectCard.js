@@ -9,7 +9,8 @@ import { FaReact } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { RiGatsbyFill } from "react-icons/ri";
 
-import { RiVuejsFill } from "react-icons/ri";
+// import { RiVuejsFill } from "react-icons/ri";
+import { SiNextdotjs, SiJavascript } from "react-icons/si";
 import styled from "styled-components";
 import Dot from "../../../images/cursor-ring.png";
 
@@ -93,10 +94,10 @@ export default function MUIProjectCard(props) {
 						>
 							{props.tags[0] === "React" ? (
 								<FaReact />
-							) : props.tags[0] === "Vue" ? (
-								<RiVuejsFill />
-							) : props.tags[0] === "Gatsby" ? (
-								<RiGatsbyFill />
+							) : props.tags[0] === "Next" ? (
+								<SiNextdotjs />
+							) : props.tags[0] === "Javascript" ? (
+								<SiJavascript />
 							) : null}
 						</IconContext.Provider>
 					</div>

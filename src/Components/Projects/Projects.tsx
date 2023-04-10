@@ -7,6 +7,7 @@ import martinDiaz from "../../images/projects/martinDiaz.webp";
 import glenndonGifford from "../../images/projects/glenndonGifford.webp";
 import uShop from "../../images/projects/uShop.webp";
 import mindump from "../../images/projects/mindump.webp";
+import movieSoundtrack from "../../images/projects/movieSoundtrack.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
@@ -58,8 +59,8 @@ const Projects = () => {
 				github: "https://github.com/CliffordMorin/E-Commerce-Site",
 				tech: "Tech",
 				tags: [
+					"Next",
 					"React",
-					"Next.js",
 					"CSS",
 					"Strapi.io",
 					"Stripe",
@@ -100,40 +101,17 @@ const Projects = () => {
 				],
 			},
 			{
-				title: `HAKU`,
-				description: "Track and compare jobs during the interview process.",
-				image: haku,
-				link: "https://hataraku.herokuapp.com",
-				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/haku",
-				tech: "Tech",
-				tags: [
-					"React",
-					"CSS",
-					"Node",
-					"API",
-					"Authentication",
-					"MongoDB",
-					"Heroku",
-				],
-				youtube: "https://www.youtube.com/embed/q1rVbqMw0ug",
-				english: true,
-				japanese: false,
-			},
-			{
-				title: "Riffs!",
+				title: `Movie Soundtrack`,
 				description:
-					"A place to share your new songs, covers, and musical ideas with the world",
-				image: niceRiff,
-				link: "https://riffs.netlify.app/",
+					"A group project I worked on where you can find your favorite soundtracks tracks from your favorite movies!",
+				image: movieSoundtrack,
+				link: "https://chloeyu17.github.io/movie-soundtrack-generator/",
 				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/vue-music-app",
+				github: "https://github.com/chloeyu17/movie-soundtrack-generator",
 				tech: "Tech",
-				tags: ["Vue", "CSS", "Firebase", "Authentication", "Netlify"],
-				youtube: "https://www.youtube.com/embed/gBIhz-0Jkg8",
-				english: true,
-				japanese: true,
+				tags: ["Javascript", "HTML", "CSS", "Bootstrap", "API", "Heroku"],
 			},
+
 			{
 				title: "Quote Quiz",
 				description:
@@ -144,22 +122,6 @@ const Projects = () => {
 				github: "https://github.com/zachinjapan/quotes",
 				tech: "Tech",
 				tags: ["React", "CSS", "API", "TypeScript", "Netlify"],
-				english: true,
-				japanese: false,
-			},
-
-			{
-				title: "Prefecture Match",
-				description:
-					"Learn the Japanese prefectures using this fun matching game",
-				image: prefecture,
-				link: "https://prefecture-match.herokuapp.com",
-				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/prefecture-match",
-				tech: "Tech",
-				tags: ["React", "CSS", "JavaScript", "Heroku"],
-				english: false,
-				japanese: true,
 			},
 		],
 		// },
