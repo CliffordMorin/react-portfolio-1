@@ -14,7 +14,7 @@ import styled from "styled-components";
 import Dot from "../../images/ring-pointer.png";
 
 const MUINav = () => {
-	const { i18n, t } = useTranslation();
+	const { t } = useTranslation();
 
 	const links = [
 		{

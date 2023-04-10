@@ -13,7 +13,7 @@ import { Overlay } from "./Components/index";
 const LandingComponentPromise = import("./Components/LandingV2/LandingV2");
 const AboutComponentPromise = import("./Components/About/About");
 const ProjectsComponentPromise = import("./Components/Projects/Projects");
-const BlogComponentPromise = import("./Components/Blog/Blog");
+
 const FooterComponentPromise = import("./Components/Footer/Footer");
 
 // by the time this gets rendered, your component is probably already loaded
@@ -21,7 +21,7 @@ const FooterComponentPromise = import("./Components/Footer/Footer");
 const LandingV2 = React.lazy(() => LandingComponentPromise);
 const About = React.lazy(() => AboutComponentPromise);
 const Projects = React.lazy(() => ProjectsComponentPromise);
-const Blog = React.lazy(() => BlogComponentPromise);
+
 const Footer = React.lazy(() => FooterComponentPromise);
 
 function App() {
@@ -148,7 +148,7 @@ function App() {
 						<LandingV2 />
 						<About />
 						<Projects />
-						<Blog />
+
 						<Footer />
 					</Suspense>
 				</>
