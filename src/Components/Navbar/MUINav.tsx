@@ -137,7 +137,7 @@ const MUINav = () => {
 							</a>
 						))}
 					</Box>
-
+					{/* 
 					<Box sx={{ flexGrow: 0 }} className="full-flag-div">
 						<div className="flag-div nav-button">
 							{i18n.language === "en" ? (
@@ -164,7 +164,7 @@ const MUINav = () => {
 								</div>
 							)}
 						</div>
-					</Box>
+					</Box> */}
 				</Toolbar>
 			</Nav>
 		</>
