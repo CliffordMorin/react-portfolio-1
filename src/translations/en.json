@@ -4,29 +4,26 @@
 			"morning": "Good morning",
 			"afternoon": "Good afternoon",
 			"evening": "Good evening",
-			"name": "Zach Stone",
+			"name": "Clifford Morin",
 			"description1": " and I build",
 			"description2": " web applications."
 		},
 		"nav": {
 			"home": "Home",
 			"about": "About",
-			"projects": "Projects",
-			"blog": "Blog"
+			"projects": "Projects"
 		},
 		"about": {
 			"title": "My Advantage",
-			"description1": "I'm a self-taught web developer, a self-taught Japanese speaker, and a professionally trained musician.",
-			"description2": "I fell in love with coding while I was an English teacher in Japan. Starting with HTML, CSS, and Javascript, I worked hard to improve my skills and now make complex full-stack applications with technologies such as React, Vue, Gatsby, and Next JS.",
-			"description3a": "I am currently working as a front-end software engineer at ",
+			"description1": "I'm a aspiring web developer/ software engineer, artist, music producer, and multi-instrumentalist.",
+			"description2": "After completing a full-stack coding bootcamp from Rutger's University in 2021 I have been free-lancing making web sites and applications for clients.",
+			"description3a": "I am currently looking for a full-time position as a front end software engineer",
 			"description3b": ".",
-			"currentCompany": "Rapptr Labs",
-			"description4": "You can reach me at Zach.Stone.Developer@gmail.com"
+			"description4": "You can reach me at cliffthedev@gmail.com"
 		},
 		"skills": {
 			"title": "Skills",
 			"resume": "Resume",
-			"japaneseResume": "Japanese Resume",
 			"certifications": "Certifications"
 		}
 	}

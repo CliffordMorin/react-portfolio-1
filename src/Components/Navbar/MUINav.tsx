@@ -29,11 +29,6 @@ const MUINav = () => {
 			name: t("nav.projects"),
 			link: "/#Projects",
 		},
-
-		{
-			name: t("nav.blog"),
-			link: "/#Blog",
-		},
 	];
 
 	const [anchorElNav, setAnchorElNav] = React.useState(null);

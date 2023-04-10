@@ -22,13 +22,6 @@ const About = () => {
 						<AboutDescription>{t("about.description2")}</AboutDescription>
 						<AboutDescription>
 							{t("about.description3a")}
-							<AboutLink
-								href="https://www.rapptrlabs.com/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								{t("about.currentCompany")}
-							</AboutLink>
 							{t("about.description3b")}
 						</AboutDescription>
 						<AboutDescription
