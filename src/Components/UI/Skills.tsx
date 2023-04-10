@@ -13,36 +13,47 @@ import {
 	AiOutlineApi,
 	AiOutlineConsoleSql,
 } from "react-icons/ai";
-import { RiGatsbyFill, RiVuejsFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import {
 	SiTypescript,
-	SiTwilio,
 	SiVercel,
-	SiJira,
-	SiHasura,
+	SiExpress,
 	SiRedux,
 	SiMongodb,
-	SiMaterialdesign,
+	SiMui,
 	SiStyledcomponents,
 	SiNetlify,
 	SiTailwindcss,
+	SiJquery,
+	SiHandlebarsdotjs,
+	SiReactrouter,
+	SiSass,
+	SiAuth0,
+	SiFigma,
+	SiCanva,
+	SiInvision,
+	SiMysql,
+	SiSequelize,
+	SiStrapi,
+	SiStripe,
+	SiInsomnia,
+	SiPostman,
 } from "react-icons/si";
 
 import { GrGraphQl, GrReactjs } from "react-icons/gr";
-import { TbCloudDataConnection, TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs } from "react-icons/tb";
 import { BsUiChecks } from "react-icons/bs";
 import { IoMdPaper } from "react-icons/io";
-import { DiHeroku, DiCss3Full } from "react-icons/di";
+import { DiHeroku, DiCss3Full, DiMaterializecss } from "react-icons/di";
 
 const Skills = () => {
 	const { t } = useTranslation();
 
 	const FRAMEWORKS = [
 		[<FaReact />, "React", "https://reactjs.org/"],
-		[<RiGatsbyFill />, "Gatsby", "https://www.gatsbyjs.org/"],
-		[<RiVuejsFill />, "Vue", "https://vuejs.org/"],
 		[<TbBrandNextjs />, "Next.js", "https://nextjs.org/"],
+		[<SiJquery />, "Jquery", "https://jquery.com/"],
+		[<SiHandlebarsdotjs />, "Handlebars js", "https://handlebarsjs.com/"],
 	];
 
 	const TOOLS = [
@@ -65,25 +76,29 @@ const Skills = () => {
 		],
 
 		[<SiTypescript />, "Typescript", "https://www.typescriptlang.org/"],
-		[
-			<SiStyledcomponents />,
-			"Styled Components",
-			"https://styled-components.com/",
-		],
+		[<SiStyledcomponents />, "Styled", "https://styled-components.com/"],
 		[<FaBootstrap />, "Bootstrap", "https://getbootstrap.com/"],
 		[<SiTailwindcss />, "Tailwind", "https://tailwindcss.com/"],
-		[<SiMaterialdesign />, "Material UI", "https://material-ui.com/"],
+		[<SiReactrouter />, "React Router", "https://reactrouter.com/"],
+		[<SiMui />, "MUI", "https://mui.com/"],
 		[<GrReactjs />, "Context API", "https://reactjs.org/docs/context.html"],
 		[<SiRedux />, "Redux", "https://redux.js.org/"],
+		[<DiMaterializecss />, "Materialize Css", "https://materializecss.com/"],
+		[<SiSass />, "Sass", "https://sass-lang.com/"],
 	];
 
 	const Backend = [
 		[<FaNodeJs />, "Node", "https://nodejs.org/en/"],
+		[<SiStrapi />, "Strapi", "https://strapi.io/"],
 		[<AiOutlineApi />, "REST", "https://restfulapi.net/"],
 		[<GrGraphQl />, "GraphQL", "https://graphql.org/"],
 		[<SiMongodb />, "MongoDB", "https://www.mongodb.com/"],
+		[<SiMysql />, "MySQL", "https://www.mysql.com/"],
 		[<AiOutlineConsoleSql />, "SQL", "https://www.w3schools.com/sql/"],
-		[<SiHasura />, "Hasura", "https://hasura.io/"],
+		[<SiSequelize />, "Sequelize", "https://sequelize.org/"],
+		[<SiExpress />, "Express.js", "https://expressjs.com/"],
+		[<SiInsomnia />, "Insomnia", "https://insomnia.rest/"],
+		[<SiPostman />, "Postman", "https://www.postman.com/"],
 	];
 
 	const Server = [
@@ -93,10 +108,12 @@ const Skills = () => {
 	];
 
 	const Other = [
-		[<SiJira />, "Jira", "https://www.atlassian.com/software/jira"],
 		[<AiFillGithub />, "Github", "https ://github.com/"],
-		[<SiTwilio />, "Twilio", "https://www.twilio.com/"],
-		[<TbCloudDataConnection />, "Ably Web Sockets", "https://www.ably.io/"],
+		[<SiStripe />, "Stripe", "https://stripe.com/"],
+		[<SiAuth0 />, "Auth0", "https://auth0.com/"],
+		[<SiFigma />, "Figma", "https://www.figma.com/"],
+		[<SiCanva />, "Canva", "https://www.canva.com/"],
+		[<SiInvision />, "Invision", "https://www.invisionapp.com/"],
 		[<AiFillWechat />, "Chat GPT", "https://chat.openai.com/chat"],
 	];
 	const SKILL_OPTIONS = [
@@ -141,7 +158,7 @@ const Skills = () => {
 						>
 							<>
 								<a
-									href="https://docs.google.com/document/d/1r5U9UF6FJc0zr_L98dpIwj9Xe0-0CtoVfoux4nxD-g8/edit?usp=sharing"
+									href="https://docs.google.com/document/d/1EYfnlQZsB0ONPOjjPR5jJEeRlv_R1xkN7CuSOdOjgII/edit?usp=sharing"
 									target="_blank"
 									id="resume-link"
 									rel="noopener noreferrer"
@@ -169,35 +186,7 @@ const Skills = () => {
 							</>
 							<>
 								<a
-									href="https://docs.google.com/document/d/11O216h5jTIj0ln6_Gx0yDqBL9GHCv-rJ/edit?usp=sharing&ouid=110021340560949770286&rtpof=true&sd=true"
-									target="_blank"
-									rel="noopener noreferrer"
-									id="resume-link"
-									style={{
-										color: "var(--primary-color)",
-										textDecoration: "none",
-										marginTop: "20px",
-										marginBottom: "20px",
-										marginRight: "20px",
-										display: "flex",
-									}}
-								>
-									{" "}
-									<IoMdPaper size={"1.25rem"} color="var(--secondary-color)" />
-									<span
-										className="about-description resume-link-text"
-										style={{
-											marginLeft: "10px",
-											color: "white",
-										}}
-									>
-										{t("skills.japaneseResume")}
-									</span>
-								</a>
-							</>
-							<>
-								<a
-									href="https://docs.google.com/document/d/1fRI7eljSkGz4WSPEQplo96WJkOopIMpU2teJUlozhyg/edit?usp=sharing"
+									href="https://www.credly.com/badges/864f5eeb-a1e8-4098-ac10-da1c2a86ea7e/public_url"
 									target="_blank"
 									rel="noopener noreferrer"
 									id="resume-link"
@@ -224,7 +213,7 @@ const Skills = () => {
 						</div>
 					</div>
 					<div className="github">
-						<GithubContributions username="ZacharyTStone" />
+						<GithubContributions username="CliffordMorin" />
 					</div>
 					<div className="skills-container">
 						<ButtonContainer>
