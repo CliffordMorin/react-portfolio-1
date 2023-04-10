@@ -3,6 +3,10 @@ import blog from "../../images/projects/blog.webp";
 import prefecture from "../../images/projects/prefecture.webp";
 import anime from "../../images/projects/anime.webp";
 import haku from "../../images/projects/haku.webp";
+import martinDiaz from "../../images/projects/martinDiaz.webp";
+import glenndonGifford from "../../images/projects/glenndonGifford.webp";
+import uShop from "../../images/projects/uShop.webp";
+import mindump from "../../images/projects/mindump.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import niceRiff from "../../images/projects/niceRiff.jpeg";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
@@ -15,44 +19,85 @@ const Projects = () => {
 
 	let content: any = {
 		// English: {
-		mainTitle: "Personal Projects",
+		professionalTitle: "Professional Projects",
+		personalTitle: "Personal Projects",
 
-		projects: [
+		professionalProjects: [
 			{
-				title: "My Anime Collection",
-				description: "Find and keep track of your favorite anime.",
-				image: anime,
-				link: "https://www.my-anime-collection.com/landing",
+				title: "Martin Diaz Music",
+				description:
+					"This application is a functional professional musician website I built for this client.",
+				image: martinDiaz,
+				link: "https://www.martindiazmusic.com",
 				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/my-anime-collection",
+				github: "https://github.com/CliffordMorin/martin-diaz-website",
+				tech: "Tech",
+				tags: ["React", "HTML", "CSS", "JavaScript", "MUI", "React Router"],
+			},
+			{
+				title: "Glenndon Gifford Music",
+				description:
+					"This application is a functional musician website I built for this client.",
+				image: glenndonGifford,
+				link: "https://www.glenndongifford.com/",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/Glenn-Gifford-Website",
+				tech: "Tech",
+				tags: ["React", "HTML", "CSS", "JavaScript", "MUI", "React Router"],
+			},
+		],
+
+		personalProjects: [
+			{
+				title: "uShop.",
+				description:
+					"E-commerce website where users can browse and purchase items securely through stripe.io, as well as sign up using Auth0 to track their recent purchases.",
+				image: uShop,
+				link: "https://e-commerce-site-tawny.vercel.app/",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/E-Commerce-Site",
+				tech: "Tech",
+				tags: [
+					"React",
+					"Next.js",
+					"CSS",
+					"Strapi.io",
+					"Stripe",
+					"graphQL",
+					"Autho0",
+					"API",
+					"Styled Components",
+					"Vercel",
+				],
+			},
+
+			{
+				title: "MINDUMP",
+				description:
+					"Read about coding concepts, Japan, and all things related to being a web developer.",
+				image: mindump,
+				link: "https://mindump.netlify.app/",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/Mern-Stack-App",
 				tech: "Tech",
 				tags: [
 					"React",
 					"CSS",
-					"Node",
-					"API",
-					"Authentication",
+					"MUI",
+					"Axios",
+					"Redux",
+					"JWT",
+					"File-base 64",
 					"MongoDB",
+					"Mongoose",
+					"Express JS",
+					"Node JS",
+					"Bcrypt JS",
+					"Authentication",
+					"Google Login",
 					"Heroku",
+					"Netlify",
 				],
-				youtube: "https://www.youtube.com/embed/D_lXDfCJf6k",
-				english: true,
-				japanese: true,
-			},
-
-			{
-				title: "Zach In Japan",
-				description:
-					"Read about coding concepts, Japan, and all things related to being a web developer.",
-				image: blog,
-				link: "https://zachinjapan.com",
-				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/my-gatsby-blog",
-				tech: "Tech",
-				tags: ["Gatsby", "React", "CSS", "Markdown", "GraphQL", "Gatsby Cloud"],
-				youtube: "https://www.youtube.com/embed/lt48zTXl6j0",
-				english: true,
-				japanese: false,
 			},
 			{
 				title: `HAKU`,
@@ -237,8 +282,8 @@ const Projects = () => {
 	return (
 		<>
 			<Main className="Projects" id="Projects">
-				<h1>{content?.mainTitle}</h1>
-				{/* <RunningImg src={Naruto} /> */}
+				{/* Professional Projects Section */}
+				<h1>{content?.professionalTitle}</h1>
 				<AnimationOnScroll
 					animateIn="animate__fadeIn"
 					animateOut="animate__fadeOut"
@@ -246,7 +291,20 @@ const Projects = () => {
 				></AnimationOnScroll>
 
 				<div className="projects-container">
-					{content?.projects?.map((project: any) => (
+					{content?.professionalProjects?.map((project: any) => (
+						<ProjectModal project={project} />
+					))}
+				</div>
+				{/* Personal Projects Section */}
+				<h1>{content?.personalTitle}</h1>
+				<AnimationOnScroll
+					animateIn="animate__fadeIn"
+					animateOut="animate__fadeOut"
+					animateOnce={true}
+				></AnimationOnScroll>
+
+				<div className="projects-container">
+					{content?.personalProjects?.map((project: any) => (
 						<ProjectModal project={project} />
 					))}
 				</div>
