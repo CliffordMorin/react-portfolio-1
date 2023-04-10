@@ -22,7 +22,7 @@ const SocialLinksVertical = () => {
 					className="social-link"
 				>
 					<a
-						href="https://www.linkedin.com/in/ZacharyStone42"
+						href="https://www.linkedin.com/in/clifford-morin-ma-129888a9/"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -39,7 +39,7 @@ const SocialLinksVertical = () => {
 					className="social-link"
 				>
 					<a
-						href="https://github.com/ZacharyTStone"
+						href="https://github.com/CliffordMorin"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -56,7 +56,7 @@ const SocialLinksVertical = () => {
 					className="social-link"
 				>
 					<a
-						href="mailto:Zach.Stone.Developer@gmail.com"
+						href="mailto:cliffthedev@gmail.com"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="social-link"
