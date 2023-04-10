@@ -15,7 +15,7 @@ const SocialLinks = () => {
 		>
 			<Main className="social-links">
 				<a
-					href="https://www.linkedin.com/in/ZacharyStone42"
+					href="https://www.linkedin.com/in/clifford-morin-ma-129888a9/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="social-link"
@@ -23,7 +23,7 @@ const SocialLinks = () => {
 					<BsLinkedin className="social-link-img" />
 				</a>
 				<a
-					href="https://github.com/ZacharyTStone"
+					href="https://github.com/CliffordMorin"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="social-link"
@@ -31,7 +31,7 @@ const SocialLinks = () => {
 					<AiOutlineGithub className="social-link-img" />
 				</a>
 				<a
-					href="mailto:Zach.Stone.Developer@gmail.com"
+					href="mailto:cliffthedev@gmail.com"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="social-link"
