@@ -6,6 +6,7 @@ import mindump from "../../images/projects/mindump.webp";
 import cliffordMorinMusic from "../../images/projects/cliffordMorinMusic.webp";
 import todoApp from "../../images/projects/todoApp.webp";
 import movieSoundtrack from "../../images/projects/movieSoundtrack.webp";
+import ecomBackend from "../../images/projects/ecomBackend.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
@@ -98,6 +99,17 @@ const Projects = () => {
 				],
 			},
 			{
+				title: "E-commerce Backend",
+				description: "E-commerce backend built with Node.js and Express.js",
+				image: ecomBackend,
+				link: "https://github.com/CliffordMorin/E-Commerce-Back-End",
+				linkText: "Github",
+				github: "https://github.com/CliffordMorin/E-Commerce-Back-End",
+				tech: "Tech",
+				tags: ["Node", "Express", "MySQL", "Sequelize", "Heroku"],
+				youtube: "https://youtube.com/embed/5IwHupXWMbw",
+			},
+			{
 				title: "Clifford Morin Music",
 				description:
 					"My personal music website, with a custom built music player.",
@@ -117,17 +129,6 @@ const Projects = () => {
 				],
 			},
 			{
-				title: "Quote Quiz",
-				description:
-					"Quiz your knowledge of famous quotes and share your favorite quotes on twitter.",
-				image: quote,
-				link: "https://quotequiz.netlify.app",
-				linkText: "Live Demo",
-				github: "https://github.com/zachinjapan/quotes",
-				tech: "Tech",
-				tags: ["React", "CSS", "API", "TypeScript", "Netlify"],
-			},
-			{
 				title: "Todo App",
 				description:
 					"Todo app built with React. Use user: test@rapptrlabs.com, password: Test123. To login and save your todos to local storage.",
@@ -137,6 +138,17 @@ const Projects = () => {
 				github: "https://github.com/CliffordMorin/Todo-app",
 				tech: "Tech",
 				tags: ["React", "API", "HTML", "CSS", "Netlify", "Local Storage"],
+			},
+			{
+				title: "Quote Quiz",
+				description:
+					"Quiz your knowledge of famous quotes and share your favorite quotes on twitter.",
+				image: quote,
+				link: "https://quotequiz.netlify.app",
+				linkText: "Live Demo",
+				github: "https://github.com/zachinjapan/quotes",
+				tech: "Tech",
+				tags: ["React", "CSS", "API", "TypeScript", "Netlify"],
 			},
 			{
 				title: `Movie Soundtrack`,

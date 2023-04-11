@@ -4,7 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 
 import "./ProjectCard.css";
 
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNode } from "react-icons/fa";
 
 import { IconContext } from "react-icons";
 
@@ -95,6 +95,8 @@ export default function MUIProjectCard(props) {
 								<FaReact />
 							) : props.tags[0] === "Next" ? (
 								<SiNextdotjs />
+							) : props.tags[0] === "Node" ? (
+								<FaNode />
 							) : props.tags[0] === "Javascript" ? (
 								<SiJavascript />
 							) : null}
