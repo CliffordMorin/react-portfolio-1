@@ -14,8 +14,6 @@
 
 ## Description
 
-私の Portfolio サイトです。
-
 My portfolio website
 
 </br>
@@ -30,8 +28,8 @@ My portfolio website
 
 ## Links
 
-- GH-Pages demo site link: (https://zstone.dev)
-- Github Repository URL: (https://github.com/zachinjapan/react-portfolio)
+- GH-Pages demo site link: (https://cliffordmorin.dev)
+- Github Repository URL: (https://github.com/CliffordMorin/react-portfolio-1)
 
 ## Technologies Used
 
@@ -53,9 +51,7 @@ Fork, request, or contact me.
 
 ## Questions
 
-[![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/zachinjapan)
-[![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/zach-stone-45b649211/)
+[![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/CliffordMorin)
+[![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/clifford-morin-ma-129888a9/)
 
-このプロジェクトに関するご質問は、Zach.Stone.Developer@gmail.com までお気軽にご連絡ください。
-
-Feel free to reach me at Zach.Stone.Developer@gmail.com with any question regarding this project!
+Feel free to reach me at cliffthedev@gmail.com with any question regarding this project!
