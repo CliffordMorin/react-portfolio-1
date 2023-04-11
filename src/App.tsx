@@ -5,6 +5,7 @@ import React, { Suspense, useState, useEffect, useCallback } from "react";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
+
 import { useMediaQuery } from "react-responsive";
 
 import { Overlay } from "./Components/index";
@@ -40,6 +41,7 @@ function App() {
 		// you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
 		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
 		// starting from v2 you can add only the features you need reducing the bundle size
+
 		await loadFull(engine);
 	}, []);
 

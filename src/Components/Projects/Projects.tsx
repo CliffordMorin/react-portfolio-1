@@ -3,6 +3,8 @@ import martinDiaz from "../../images/projects/martinDiaz.webp";
 import glenndonGifford from "../../images/projects/glenndonGifford.webp";
 import uShop from "../../images/projects/uShop.webp";
 import mindump from "../../images/projects/mindump.webp";
+import cliffordMorinMusic from "../../images/projects/cliffordMorinMusic.webp";
+import todoApp from "../../images/projects/todoApp.webp";
 import movieSoundtrack from "../../images/projects/movieSoundtrack.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
@@ -96,17 +98,24 @@ const Projects = () => {
 				],
 			},
 			{
-				title: `Movie Soundtrack`,
+				title: "Clifford Morin Music",
 				description:
-					"A group project I worked on where you can find your favorite soundtracks tracks from your favorite movies!",
-				image: movieSoundtrack,
-				link: "https://chloeyu17.github.io/movie-soundtrack-generator/",
+					"My personal music website, with a custom built music player.",
+				image: cliffordMorinMusic,
+				link: "https://www.cliffordmorinmusic.com",
 				linkText: "Live Demo",
-				github: "https://github.com/chloeyu17/movie-soundtrack-generator",
+				github: "https://github.com/CliffordMorin/Clifford-Morin-Music",
 				tech: "Tech",
-				tags: ["Javascript", "HTML", "CSS", "Bootstrap", "API", "Heroku"],
+				tags: [
+					"React",
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"MUI",
+					"React Router",
+					"Styled Components",
+				],
 			},
-
 			{
 				title: "Quote Quiz",
 				description:
@@ -117,6 +126,28 @@ const Projects = () => {
 				github: "https://github.com/zachinjapan/quotes",
 				tech: "Tech",
 				tags: ["React", "CSS", "API", "TypeScript", "Netlify"],
+			},
+			{
+				title: "Todo App",
+				description:
+					"Todo app built with React. Use user: test@rapptrlabs.com, password: Test123. To login and save your todos to local storage.",
+				image: todoApp,
+				link: "https://singular-paprenjak-896541.netlify.app/",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/Todo-app",
+				tech: "Tech",
+				tags: ["React", "API", "HTML", "CSS", "Netlify", "Local Storage"],
+			},
+			{
+				title: `Movie Soundtrack`,
+				description:
+					"A group project I worked on where you can find your favorite soundtracks tracks from your favorite movies!",
+				image: movieSoundtrack,
+				link: "https://chloeyu17.github.io/movie-soundtrack-generator/",
+				linkText: "Live Demo",
+				github: "https://github.com/chloeyu17/movie-soundtrack-generator",
+				tech: "Tech",
+				tags: ["Javascript", "HTML", "CSS", "Bootstrap", "API", "Heroku"],
 			},
 		],
 		// },

@@ -9276,6 +9276,20 @@
   dependencies:
     "tsparticles-engine" "^2.9.3"
 
+"tsparticles-preset-triangles@^2.9.3":
+  "integrity" "sha512-/FZ02rFQS5tFvnCMO+oIV/Qv1PNnB+3r4ZuzE5Bst29fqTw3tNF2NIx5Z9bJeAfkpYKqJ41hSgjRszi+ALfLMQ=="
+  "resolved" "https://registry.npmjs.org/tsparticles-preset-triangles/-/tsparticles-preset-triangles-2.9.3.tgz"
+  "version" "2.9.3"
+  dependencies:
+    "tsparticles-engine" "^2.9.3"
+    "tsparticles-interaction-particles-links" "^2.9.3"
+    "tsparticles-move-base" "^2.9.3"
+    "tsparticles-shape-circle" "^2.9.3"
+    "tsparticles-updater-color" "^2.9.3"
+    "tsparticles-updater-opacity" "^2.9.3"
+    "tsparticles-updater-out-modes" "^2.9.3"
+    "tsparticles-updater-size" "^2.9.3"
+
 "tsparticles-shape-circle@^2.9.3":
   "integrity" "sha512-d+PjFELhoCzPf2G+XKIew3Ho/Ql2fHzY0TrrIKVHzHufqWdQCWrhxNri2v0POLJFkcIYqvFThxM23I/cyKPgQw=="
   "resolved" "https://registry.npmjs.org/tsparticles-shape-circle/-/tsparticles-shape-circle-2.9.3.tgz"
