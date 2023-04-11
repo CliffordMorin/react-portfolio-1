@@ -249,7 +249,7 @@ const Projects = () => {
 
 				<div className="projects-container">
 					{content?.professionalProjects?.map((project: any) => (
-						<ProjectModal project={project} />
+						<ProjectModal project={project} key={project?.link} />
 					))}
 				</div>
 				{/* Personal Projects Section */}
@@ -262,7 +262,7 @@ const Projects = () => {
 
 				<div className="projects-container">
 					{content?.personalProjects?.map((project: any) => (
-						<ProjectModal project={project} />
+						<ProjectModal project={project} key={project?.link} />
 					))}
 				</div>
 			</Main>

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { GithubContributions } from "react-github-graph";
 import Dot from "../../images/ring-pointer.png";
+import { v4 as uuidv4 } from "uuid";
 
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
 import {
@@ -56,6 +57,13 @@ const Skills = () => {
 		[<SiHandlebarsdotjs />, "Handlebars js", "https://handlebarsjs.com/"],
 	];
 
+	const FrameWorksObj = FRAMEWORKS?.map(([icon, name, link]) => ({
+		id: uuidv4(),
+		icon,
+		name,
+		link,
+	}));
+
 	const TOOLS = [
 		[
 			<AiFillHtml5 />,
@@ -87,6 +95,13 @@ const Skills = () => {
 		[<SiSass />, "Sass", "https://sass-lang.com/"],
 	];
 
+	const ToolsObj = TOOLS?.map(([icon, name, link]) => ({
+		id: uuidv4(),
+		icon,
+		name,
+		link,
+	}));
+
 	const Backend = [
 		[<FaNodeJs />, "Node", "https://nodejs.org/en/"],
 		[<SiStrapi />, "Strapi", "https://strapi.io/"],
@@ -101,11 +116,25 @@ const Skills = () => {
 		[<SiPostman />, "Postman", "https://www.postman.com/"],
 	];
 
+	const BackendObj = Backend?.map(([icon, name, link]) => ({
+		id: uuidv4(),
+		icon,
+		name,
+		link,
+	}));
+
 	const Server = [
 		[<DiHeroku />, "Heroku", "https://www.heroku.com/"],
 		[<SiNetlify />, "Netlify", "https://www.netlify.com/"],
 		[<SiVercel />, "Vercel", "https://vercel.com/"],
 	];
+
+	const ServerObj = Server?.map(([icon, name, link]) => ({
+		id: uuidv4(),
+		icon,
+		name,
+		link,
+	}));
 
 	const Other = [
 		[<AiFillGithub />, "Github", "https ://github.com/"],
@@ -116,16 +145,34 @@ const Skills = () => {
 		[<SiInvision />, "Invision", "https://www.invisionapp.com/"],
 		[<AiFillWechat />, "Chat GPT", "https://chat.openai.com/chat"],
 	];
+
+	const OtherObj = Other?.map(([icon, name, link]) => ({
+		id: uuidv4(),
+		icon,
+		name,
+		link,
+	}));
+
 	const SKILL_OPTIONS = [
-		"Frontend Frameworks",
-		"Frontend Tools",
-		"Backend",
-		"Server",
-		"Other",
+		{ name: "Frontend Frameworks", options: FrameWorksObj },
+		{ name: "Tools", options: ToolsObj },
+		{ name: "Backend", options: BackendObj },
+		{ name: "Server", options: ServerObj },
+		{ name: "Other", options: OtherObj },
 	];
+
+	const SkillOptionsObj = SKILL_OPTIONS?.map(({ name, options }) => ({
+		id: uuidv4(),
+		name,
+		options,
+	}));
 
 	const [selectedSkill, setSelectedSkill] = React.useState(
 		"Frontend Frameworks"
+	);
+
+	const selectedSkills = SkillOptionsObj.find(
+		(skill) => skill.name === selectedSkill
 	);
 
 	return (
@@ -217,129 +264,38 @@ const Skills = () => {
 					</div>
 					<div className="skills-container">
 						<ButtonContainer>
-							{SKILL_OPTIONS.map((skill: any) => (
+							{SkillOptionsObj.map((skill: any) => (
 								<SkillTypeButton
-									key={skill[0]}
-									onClick={() => setSelectedSkill(skill)}
-									className={selectedSkill === skill ? "active" : ""}
+									key={skill.id}
+									onClick={() => setSelectedSkill(skill.name)}
+									className={selectedSkill === skill.name ? "active" : ""}
 								>
-									{skill}
+									{skill.name}
 								</SkillTypeButton>
 							))}
 						</ButtonContainer>
 						<SkillIconsDiv>
-							{selectedSkill === "Frontend Frameworks" &&
-								FRAMEWORKS.map((skill: any) => (
-									<div key={skill[1]}>
-										<a
-											href={skill[2]}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "none",
-											}}
-										>
-											<div key={skill[1]} className="skill-icon">
-												<h4 className="skill-icon-text showOnHover">
-													{skill[1]}
-												</h4>
-												<span>
-													{" "}
-													<span>{skill[0]}</span>
-												</span>
-											</div>
-										</a>
-									</div>
-								))}
-							{selectedSkill === "Frontend Tools" &&
-								TOOLS.map((skill: any) => (
-									<div key={skill[1]}>
-										<a
-											href={skill[2]}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "none",
-											}}
-										>
-											<div key={skill[1]} className="skill-icon">
-												<h4 className="skill-icon-text showOnHover">
-													{skill[1]}
-												</h4>
-												<span>
-													<span>{skill[0]}</span>
-												</span>
-											</div>
-										</a>
-									</div>
-								))}
-							{selectedSkill === "Backend" &&
-								Backend.map((skill: any) => (
-									<div key={skill[1]}>
-										<a
-											href={skill[2]}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "none",
-											}}
-										>
-											<div key={skill[1]} className="skill-icon">
-												<h4 className="skill-icon-text showOnHover">
-													{skill[1]}
-												</h4>
-												<span>
-													<span>{skill[0]}</span>
-												</span>
-											</div>
-										</a>
-									</div>
-								))}
-							{selectedSkill === "Server" &&
-								Server.map((skill: any) => (
-									<div key={skill[1]}>
-										<a
-											href={skill[2]}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "none",
-											}}
-										>
-											<div key={skill[1]} className="skill-icon">
-												<h4 className="skill-icon-text showOnHover">
-													{skill[1]}
-												</h4>
-												<span>
-													<span>{skill[0]}</span>
-												</span>
-											</div>
-										</a>
-									</div>
-								))}
-
-							{selectedSkill === "Other" &&
-								Other.map((skill: any) => (
-									<div key={skill[1]}>
-										<a
-											href={skill[2]}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "none",
-											}}
-										>
-											<div key={skill[1]} className="skill-icon">
-												<h4 className="skill-icon-text showOnHover">
-													{skill[1]}
-												</h4>
-												<span>
-													<span>{skill[0]}</span>
-												</span>
-											</div>
-										</a>
-									</div>
-								))}
+							{selectedSkills?.options?.map((skill: any) => (
+								<div key={skill.id}>
+									<a
+										href={skill.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										style={{
+											textDecoration: "none",
+										}}
+									>
+										<div key={skill.id} className="skill-icon">
+											<h4 className="skill-icon-text showOnHover">
+												{skill.name}
+											</h4>
+											<span>
+												<span>{skill.icon}</span>
+											</span>
+										</div>
+									</a>
+								</div>
+							))}
 						</SkillIconsDiv>
 					</div>
 				</SkillsDiv>

@@ -110,7 +110,7 @@ export default function Index() {
 						data-name="Rectangle 1"
 						fill="none"
 						stroke="#3CCF48"
-						stroke-width="4"
+						strokeWidth="4"
 					>
 						<rect width="71" height="70" stroke="none" />
 						<rect x="2" y="2" width="67" height="66" fill="none" />
@@ -132,7 +132,7 @@ export default function Index() {
 						data-name="Rectangle 1"
 						fill="none"
 						stroke="#3FD977"
-						stroke-width="4"
+						strokeWidth="4"
 					>
 						<rect width="71" height="70" stroke="none" />
 						<rect x="2" y="2" width="67" height="66" fill="none" />
@@ -154,7 +154,7 @@ export default function Index() {
 						data-name="Rectangle 1"
 						fill="none"
 						stroke="#43C396"
-						stroke-width="4"
+						strokeWidth="4"
 					>
 						<rect width="71" height="70" stroke="none" />
 						<rect x="2" y="2" width="67" height="66" fill="none" />
@@ -176,7 +176,7 @@ export default function Index() {
 						data-name="Rectangle 1"
 						fill="none"
 						stroke="#3FD9CE"
-						stroke-width="4"
+						strokeWidth="4"
 					>
 						<rect width="71" height="70" stroke="none" />
 						<rect x="2" y="2" width="67" height="66" fill="none" />
