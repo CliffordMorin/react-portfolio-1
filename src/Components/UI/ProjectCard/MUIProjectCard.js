@@ -7,7 +7,6 @@ import "./ProjectCard.css";
 import { FaReact } from "react-icons/fa";
 
 import { IconContext } from "react-icons";
-import { RiGatsbyFill } from "react-icons/ri";
 
 // import { RiVuejsFill } from "react-icons/ri";
 import { SiNextdotjs, SiJavascript } from "react-icons/si";

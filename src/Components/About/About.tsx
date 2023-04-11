@@ -95,8 +95,8 @@ const AboutDescription = styled.p`
 	}
 `;
 
-const AboutLink = styled.a`
-	color: var(--secondary-color);
-`;
+// const AboutLink = styled.a`
+// 	color: var(--secondary-color);
+// `;
 
 export default About;
