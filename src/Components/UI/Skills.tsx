@@ -152,7 +152,7 @@ const Skills = () => {
 		name,
 		link,
 	}));
-
+	// An array of skill options, each with a name and an associated array of options
 	const SKILL_OPTIONS = [
 		{ name: "Frontend Frameworks", options: FrameWorksObj },
 		{ name: "Tools", options: ToolsObj },
@@ -160,17 +160,17 @@ const Skills = () => {
 		{ name: "Server", options: ServerObj },
 		{ name: "Other", options: OtherObj },
 	];
-
+	// Maps each skill option to an object with an ID, name, and options array
 	const SkillOptionsObj = SKILL_OPTIONS?.map(({ name, options }) => ({
 		id: uuidv4(),
 		name,
 		options,
 	}));
-
+	// The currently selected skill, defaulting to "Frontend Frameworks"
 	const [selectedSkill, setSelectedSkill] = React.useState(
 		"Frontend Frameworks"
 	);
-
+	// The currently selected skill's options, based on the selectedSkill state
 	const selectedSkills = SkillOptionsObj.find(
 		(skill) => skill.name === selectedSkill
 	);
