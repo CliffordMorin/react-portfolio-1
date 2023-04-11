@@ -1,15 +1,10 @@
 import quote from "../../images/projects/quote.webp";
-import blog from "../../images/projects/blog.webp";
-import prefecture from "../../images/projects/prefecture.webp";
-import anime from "../../images/projects/anime.webp";
-import haku from "../../images/projects/haku.webp";
 import martinDiaz from "../../images/projects/martinDiaz.webp";
 import glenndonGifford from "../../images/projects/glenndonGifford.webp";
 import uShop from "../../images/projects/uShop.webp";
 import mindump from "../../images/projects/mindump.webp";
 import movieSoundtrack from "../../images/projects/movieSoundtrack.webp";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import niceRiff from "../../images/projects/niceRiff.jpeg";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
 import "./Projects.css";
