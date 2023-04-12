@@ -88,7 +88,8 @@ function ProjectModal({ project }) {
 					<div
 						className="card-content"
 						style={{
-							overflow: "auto",
+							maxHeight: "calc(100vh - 200px)", // set maximum height
+							overflow: "auto", // enable scrolling
 						}}
 					>
 						{project.youtube ? (
