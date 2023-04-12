@@ -345,6 +345,7 @@ const Main = styled.div`
 	}
 
 	@media (max-width: 800px) {
+		margin-top: 50px;
 		.project-icons {
 			display: none !important;
 		}

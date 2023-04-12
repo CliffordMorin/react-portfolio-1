@@ -1,6 +1,6 @@
 .ReactModal__Overlay {
-	/* overflow: auto !important; */
-	/* padding-top: 200px !important; */
+	overflow: auto !important;
+	padding-top: 200px !important;
 }
 
 #MUI-description {

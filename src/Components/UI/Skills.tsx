@@ -341,6 +341,12 @@ const SkillTypeButton = styled.button`
 	cursor: url(${Dot}) 4 4, pointer;
 
 	border-radius: 10px;
+
+	@media (max-width: 768px) {
+		font-size: small;
+		margin: 5px;
+		padding: 5px;
+	}
 `;
 
 const SkillsDiv = styled.div`
@@ -372,12 +378,6 @@ const SkillsDiv = styled.div`
 		flex-flow: row wrap;
 		margin-top: 20px;
 		margin-bottom: 10px;
-	}
-
-	@media (max-width: 768px) {
-		.skills-container {
-			display: none;
-		}
 	}
 
 	.skill-icon {
@@ -424,6 +424,16 @@ const SkillsDiv = styled.div`
 			var(--secondary-color-dark)
 		);
 		color: var(--secondary-color);
+	}
+
+	/* To change the size of the svg logo and text size on mobile for skills */
+	@media (max-width: 768px) {
+		.skill-icon svg {
+			height: 34px;
+		}
+		.skill-icon-text {
+			font-size: 14px;
+		}
 	}
 `;
 
