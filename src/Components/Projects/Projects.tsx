@@ -332,6 +332,13 @@ const Main = styled.div`
 		overflow: hidden;
 		gap: 8px;
 	}
+	h1 {
+		text-decoration: underline;
+		text-decoration-color: var(--secondary-color);
+		text-decoration-thickness: 5px;
+		text-underline-offset: 6px;
+		text-decoration-skip-ink: none;
+	}
 
 	.ReactModal__Overlay {
 		background-color: var(--black) !important;
