@@ -1,26 +1,26 @@
 {
-  "short_name": "Zach Stone",
-  "name": "Zach Stone's Portfolio",
-  "url": "https:/zstone.dev",
-  "icons": [
-    {
-      "src": "favicon.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "./thumb1.jpg",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/thumb1.jpg",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#E62776",
-  "background_color": "#ffffff"
+	"short_name": "Clifford Morin",
+	"name": "Clifford Morin's Portfolio",
+	"url": "https:/cliffordmorin.dev",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "./thumb.webp",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/thumb.webp",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "./index.html",
+	"display": "standalone",
+	"theme_color": "#E62776",
+	"background_color": "#ffffff"
 }
