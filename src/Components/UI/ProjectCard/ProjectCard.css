@@ -88,6 +88,7 @@
 
 	#MUI-Card {
 		border-radius: 10px;
+		min-height: 450px;
 	}
 
 	.card-title-div {

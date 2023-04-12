@@ -180,7 +180,7 @@ const ProjectCard = styled(Card)`
 		}
 
 		.card-title {
-			font-size: 2.5rem !important;
+			font-size: 1.7rem !important;
 			text-decoration-thickness: 4px !important;
 			text-align: center !important;
 		}
