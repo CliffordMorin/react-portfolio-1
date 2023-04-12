@@ -20,8 +20,8 @@ const checkLanguage = (language) => {
 	switch (language) {
 		case "en":
 			return "en";
-		case "ja":
-			return "jp";
+		// case "ja":
+		// 	return "jp";
 		default:
 			return "en";
 	}
