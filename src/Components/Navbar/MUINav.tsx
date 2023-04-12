@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
+
 import { AiOutlineMenu as MenuIcon } from "react-icons/ai";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
@@ -73,6 +74,12 @@ const MUINav = () => {
 							onClose={handleCloseNavMenu}
 							sx={{
 								display: { xs: "block", md: "none" },
+							}}
+							PaperProps={{
+								style: {
+									backgroundColor: "var(--black)",
+									borderRadius: "5px",
+								},
 							}}
 						>
 							{links.map((link: { name: string; link: string }) => (
