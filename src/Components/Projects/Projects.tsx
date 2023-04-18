@@ -31,7 +31,15 @@ const Projects = () => {
 				linkText: "Live Demo",
 				github: "https://github.com/CliffordMorin/martin-diaz-website",
 				tech: "Tech",
-				tags: ["React", "HTML", "CSS", "JavaScript", "MUI", "React Router"],
+				tags: [
+					"React",
+					"API",
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"MUI",
+					"React Router",
+				],
 			},
 			{
 				title: "Glenndon Gifford Music",
@@ -42,7 +50,15 @@ const Projects = () => {
 				linkText: "Live Demo",
 				github: "https://github.com/CliffordMorin/Glenn-Gifford-Website",
 				tech: "Tech",
-				tags: ["React", "HTML", "CSS", "JavaScript", "MUI", "React Router"],
+				tags: [
+					"React",
+					"API",
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"MUI",
+					"React Router",
+				],
 			},
 		],
 
