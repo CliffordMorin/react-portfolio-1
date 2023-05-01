@@ -7,7 +7,6 @@ import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { useMediaQuery } from "react-responsive";
 import { Overlay } from "./Components/index";
-import { inject } from "@vercel/analytics";
 
 // kicks off immediately when the current file is imported
 const LandingComponentPromise = import("./Components/LandingV2/LandingV2");
@@ -23,8 +22,6 @@ const About = React.lazy(() => AboutComponentPromise);
 const Projects = React.lazy(() => ProjectsComponentPromise);
 
 const Footer = React.lazy(() => FooterComponentPromise);
-
-inject();
 
 function App() {
 	console.log(
