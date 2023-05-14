@@ -205,7 +205,7 @@ const Skills = () => {
 						>
 							<>
 								<a
-									href="https://docs.google.com/document/d/1EYfnlQZsB0ONPOjjPR5jJEeRlv_R1xkN7CuSOdOjgII/edit?usp=sharing"
+									href="https://docs.google.com/document/d/1n5zSKvN9q7CGdgw6V256HM8Vowim2ZCxPv8B8cbGddg/edit?usp=sharing"
 									target="_blank"
 									id="resume-link"
 									rel="noopener noreferrer"

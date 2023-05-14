@@ -1,4 +1,5 @@
 import quote from "../../images/projects/quote.webp";
+import joanFort from "../../images/projects/joanFort.webp";
 import martinDiaz from "../../images/projects/martinDiaz.webp";
 import glenndonGifford from "../../images/projects/glenndonGifford.webp";
 import uShop from "../../images/projects/uShop.webp";
@@ -7,6 +8,7 @@ import cliffordMorinMusic from "../../images/projects/cliffordMorinMusic.webp";
 import todoApp from "../../images/projects/todoApp.webp";
 import movieSoundtrack from "../../images/projects/movieSoundtrack.webp";
 import ecomBackend from "../../images/projects/ecomBackend.webp";
+import pokemonTcg from "../../images/projects/screenRecordPokemonApp.gif";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ProjectModal from "../UI/ProjectModal/ProjectModal";
 import styled from "styled-components";
@@ -23,6 +25,26 @@ const Projects = () => {
 
 		professionalProjects: [
 			{
+				title: "Joan Fort",
+				description:
+					"This application is a functional professional musician website I built for this client.",
+				image: joanFort,
+				link: "https://www.joanfort.com",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/Joan-Fort-Website",
+				tech: "Tech",
+				tags: [
+					"React",
+					"BandsinTown API",
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"EmailJS",
+					"MUI",
+					"React Router",
+				],
+			},
+			{
 				title: "Martin Diaz Music",
 				description:
 					"This application is a functional professional musician website I built for this client.",
@@ -33,11 +55,12 @@ const Projects = () => {
 				tech: "Tech",
 				tags: [
 					"React",
-					"API",
+					"Bandsintown API",
 					"HTML",
 					"CSS",
 					"JavaScript",
 					"MUI",
+					"EmailJS",
 					"React Router",
 				],
 			},
@@ -88,8 +111,7 @@ const Projects = () => {
 
 			{
 				title: "MINDUMP",
-				description:
-					"Read about coding concepts, Japan, and all things related to being a web developer.",
+				description: "Social media app where .",
 				image: mindump,
 				link: "https://mindump.netlify.app/",
 				linkText: "Live Demo",
@@ -112,6 +134,32 @@ const Projects = () => {
 					"Google Login",
 					"Heroku",
 					"Netlify",
+				],
+			},
+			{
+				title: "Pokemon TCG App",
+				description:
+					"Pokemon trading card site where users can browse, save and trade cards with other users.",
+				image: pokemonTcg,
+				link: "https://pokemon-tcg-app.herokuapp.com/",
+				linkText: "Live Demo",
+				github: "https://github.com/CliffordMorin/Pokemon-TCG",
+				tech: "Tech",
+				tags: [
+					"Node",
+					"JavaScript",
+					"HTML",
+					"Jquery",
+					"Handlebars.js",
+					"SQL",
+					"Sequilize",
+					"Socket.io",
+					"API",
+					"CSS",
+					"Express JS",
+					"Bcrypt JS",
+					"Authentication",
+					"Heroku",
 				],
 			},
 			{
