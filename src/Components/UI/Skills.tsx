@@ -205,7 +205,7 @@ const Skills = () => {
 						>
 							<>
 								<a
-									href="https://docs.google.com/document/d/1n5zSKvN9q7CGdgw6V256HM8Vowim2ZCxPv8B8cbGddg/edit?usp=sharing"
+									href="https://www.canva.com/design/DAGIc3GbJYo/zW8gw2OUDWOYOb0LQ3YBLg/edit?utm_content=DAGIc3GbJYo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 									target="_blank"
 									id="resume-link"
 									rel="noopener noreferrer"
